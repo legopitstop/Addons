@@ -1,0 +1,17 @@
+give @s xmas:white_terracotta_quarter_block_horz
+give @s xmas:orange_terracotta_quarter_block_horz
+give @s xmas:magenta_terracotta_quarter_block_horz
+give @s xmas:light_blue_terracotta_quarter_block_horz
+give @s xmas:yellow_terracotta_quarter_block_horz
+give @s xmas:lime_terracotta_quarter_block_horz
+give @s xmas:pink_terracotta_quarter_block_horz
+give @s xmas:light_gray_terracotta_quarter_block_horz
+give @s xmas:gray_terracotta_quarter_block_horz
+give @s xmas:cyan_terracotta_quarter_block_horz
+give @s xmas:purple_terracotta_quarter_block_horz
+give @s xmas:blue_terracotta_quarter_block_horz
+give @s xmas:brown_terracotta_quarter_block_horz
+give @s xmas:green_terracotta_quarter_block_horz
+give @s xmas:red_terracotta_quarter_block_horz
+give @s xmas:black_terracotta_quarter_block_horz
+give @s xmas:terracotta_quarter_block_horz

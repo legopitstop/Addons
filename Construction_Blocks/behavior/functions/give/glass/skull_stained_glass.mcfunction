@@ -1,0 +1,17 @@
+give @p const:black_skull_stained_glass
+give @p const:blue_skull_stained_glass
+give @p const:brown_skull_stained_glass
+give @p const:cyan_skull_stained_glass
+give @p const:gray_skull_stained_glass
+give @p const:green_skull_stained_glass
+give @p const:light_blue_skull_stained_glass
+give @p const:light_gray_skull_stained_glass
+give @p const:lime_skull_stained_glass
+give @p const:magenta_skull_stained_glass
+give @p const:orange_skull_stained_glass
+give @p const:pink_skull_stained_glass
+give @p const:purple_skull_stained_glass
+give @p const:red_skull_stained_glass
+give @p const:white_skull_stained_glass
+give @p const:yellow_skull_stained_glass
+give @p const:tinted_skull_glass

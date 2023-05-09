@@ -1,0 +1,244 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas",
+    "format_version": "1.10.0",
+    "geometry.player.armor.santa_hat": {
+        "texturewidth": 64,
+        "textureheight": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+            0,
+            2,
+            0
+        ],
+        "bones": [
+            {
+                "name": "hat",
+                "parent": "head",
+                "pivot": [
+                    0,
+                    24,
+                    0
+                ],
+                "cubes": [
+                    {
+                        "origin": [
+                            -4.5,
+                            32,
+                            -4.5
+                        ],
+                        "size": [
+                            9,
+                            1,
+                            9
+                        ],
+                        "uv": [
+                            0,
+                            22
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -3.5,
+                            33,
+                            -3.5
+                        ],
+                        "size": [
+                            7,
+                            3,
+                            7
+                        ],
+                        "uv": [
+                            36,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -2.5,
+                            36,
+                            -2.5
+                        ],
+                        "size": [
+                            5,
+                            3,
+                            5
+                        ],
+                        "uv": [
+                            44,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -1.5,
+                            39,
+                            -1.5
+                        ],
+                        "size": [
+                            3,
+                            2,
+                            3
+                        ],
+                        "uv": [
+                            52,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -0.5,
+                            41,
+                            -0.5
+                        ],
+                        "size": [
+                            4,
+                            1,
+                            1.5
+                        ],
+                        "uv": [
+                            54,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            2.5,
+                            39.5,
+                            -0.75
+                        ],
+                        "size": [
+                            2,
+                            2,
+                            2
+                        ],
+                        "uv": [
+                            13,
+                            11
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "geometry.humanoid.armor.santa_hat": {
+        "texturewidth": 64,
+        "textureheight": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+            0,
+            2,
+            0
+        ],
+        "bones": [
+            {
+                "name": "hat",
+                "parent": "head",
+                "pivot": [
+                    0,
+                    24,
+                    0
+                ],
+                "cubes": [
+                    {
+                        "origin": [
+                            -4.5,
+                            32,
+                            -4.5
+                        ],
+                        "size": [
+                            9,
+                            1,
+                            9
+                        ],
+                        "uv": [
+                            0,
+                            22
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -3.5,
+                            33,
+                            -3.5
+                        ],
+                        "size": [
+                            7,
+                            3,
+                            7
+                        ],
+                        "uv": [
+                            36,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -2.5,
+                            36,
+                            -2.5
+                        ],
+                        "size": [
+                            5,
+                            3,
+                            5
+                        ],
+                        "uv": [
+                            44,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -1.5,
+                            39,
+                            -1.5
+                        ],
+                        "size": [
+                            3,
+                            2,
+                            3
+                        ],
+                        "uv": [
+                            52,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            -0.5,
+                            41,
+                            -0.5
+                        ],
+                        "size": [
+                            4,
+                            1,
+                            1.5
+                        ],
+                        "uv": [
+                            54,
+                            0
+                        ]
+                    },
+                    {
+                        "origin": [
+                            2.5,
+                            39.5,
+                            -0.75
+                        ],
+                        "size": [
+                            2,
+                            2,
+                            2
+                        ],
+                        "uv": [
+                            13,
+                            11
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:paint_roller"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            " //",
+            " / "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:wool"
+            },
+            "/": {
+                "item": "const:stick_iron"
+            }
+        },
+        "result": [
+            {
+                "item": "const:paint_roller"
+            }
+        ]
+    }
+}

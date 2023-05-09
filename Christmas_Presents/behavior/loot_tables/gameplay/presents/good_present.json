@@ -1,0 +1,79 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "presents:santa_hat"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "presents:santa_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "presents:santa_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "presents:santa_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 30,
+                            "treasure": true
+                        }
+                    ],
+                    "name": "minecraft:book"
+                },
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "minecraft:diamond"
+                },
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "minecraft:netherite_scrap"
+                },
+                {
+                    "weight": 10,
+                    "type": "item",
+                    "name": "minecraft:cookie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "add": false,
+                            "count": {
+                                "type": "uniform",
+                                "damage": 1.0,
+                                "max": 3.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 10,
+                    "type": "item",
+                    "name": "minecraft:name_tag"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "presents:milk_bottle"
+                }
+            ]
+        }
+    ]
+}

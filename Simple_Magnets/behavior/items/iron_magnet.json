@@ -1,0 +1,60 @@
+{
+    "format_version": "1.19.20",
+    "minecraft:item": {
+        "description": {
+            "identifier": "magnet:iron_magnet",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": true,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:icon": {
+                "texture": "magnet:iron_magnet"
+            },
+            "minecraft:durability": {
+                "max_durability": 250
+            },
+            "minecraft:cooldown": {
+                "duration": 5,
+                "category": "iron_magnet"
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "event:teleport_item"
+                }
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "magnet:iron_magnet"
+                        ],
+                        "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
+                    },
+                    {
+                        "items": [
+                            "minecraft:iron_ingot"
+                        ],
+                        "repair_amount": "q.remaining_durability + 0.05"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "event:teleport_item": {
+                "run_command": {
+                    "target": "self",
+                    "command": "tp @e[type=item,r=3.425] ~ ~ ~"
+                },
+                "damage": {
+                    "amount": 1,
+                    "type": "durability",
+                    "target": "self"
+                }
+            }
+        }
+    }
+}

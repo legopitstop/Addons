@@ -1,0 +1,156 @@
+{
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "moregold:golden_fruit_sapling_block",
+            "properties": {
+                "moregold:stage": [
+                    0,
+                    1
+                ]
+            }
+        },
+        "components": {
+            "tag:non_full": {},
+            "tag:plant": {},
+            "minecraft:loot": "loot_tables/moregold/blocks/golden_fruit_sapling.json",
+            "minecraft:block_light_filter": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:breakonpush": true,
+            "minecraft:geometry": "geometry.template_cross",
+            "minecraft:block_collision": false,
+            "minecraft:on_interact": {
+                "condition": "query.get_equipped_item_name == 'bone_meal'",
+                "event": "moregold:bone_meal_growth"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "block_filter": [
+                            "minecraft:grass",
+                            "minecraft:dirt",
+                            "minecraft:podzol",
+                            {
+                                "tags": "query.any_tag('dirt','grass') && !query.any_tag('non_full')"
+                            }
+                        ],
+                        "allowed_faces": [
+                            "up"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:aim_collision": {
+                "origin": [
+                    -7,
+                    0,
+                    -7
+                ],
+                "size": [
+                    14,
+                    16,
+                    14
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "moregold:golden_fruit_sapling",
+                    "render_method": "alpha_test"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('moregold:stage') == 0",
+                "components": {
+                    "minecraft:ticking": {
+                        "looping": true,
+                        "range": [
+                            360,
+                            360
+                        ],
+                        "on_tick": {
+                            "event": "moregold:increase_stage",
+                            "target": "self"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('moregold:stage') == 1",
+                "components": {
+                    "minecraft:ticking": {
+                        "looping": true,
+                        "range": [
+                            180,
+                            180
+                        ],
+                        "on_tick": {
+                            "event": "moregold:increase_stage",
+                            "target": "self"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "moregold:bone_meal_growth": {
+                "decrement_stack": {},
+                "run_command": {
+                    "command": [
+                        "particle minecraft:crop_growth_emitter ~ ~ ~",
+                        "playsound item.bone_meal.use @p ~ ~ ~"
+                    ]
+                },
+                "trigger": {
+                    "event": "moregold:increase_stage"
+                }
+            },
+            "moregold:increase_stage": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('moregold:stage') == 1",
+                        "trigger": {
+                            "event": "moregold:place_tree"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('moregold:stage') == 0",
+                        "set_block_property": {
+                            "moregold:stage": "1"
+                        }
+                    }
+                ]
+            },
+            "moregold:place_tree": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "target": "self",
+                            "command": [
+                                "setblock ~ ~ ~ air 0",
+                                "fill ~-2 ~ ~-2 ~2 ~5 ~2 air 0 destroy"
+                            ]
+                        },
+                        "set_block_at_pos": {
+                            "block_offset": [
+                                0,
+                                -1,
+                                0
+                            ],
+                            "block_type": "minecraft:dirt"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "structure load moregold:golden_fruit_tree ~-3 ~ ~-3",
+                            "target": "self"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,361 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "seuss:wocket",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"suess:wocket_baby": {
+                "minecraft:is_baby": {},
+                "minecraft:scale": {
+                    "value": 0.5
+                },
+                "minecraft:ageable": {
+                    "duration": 1200,
+                    "feed_items": "wheat",
+                    "grow_up": {
+                        "event": "minecraft:ageable_grow_up",
+                        "target": "self"
+                    }
+                },
+                "minecraft:behavior.follow_parent": {
+                    "priority": 6,
+                    "speed_multiplier": 1.1
+                }
+            },
+			"suess:wocket_adult": {
+				"minecraft:experience_reward": {
+					"on_bred": "Math.Random(1,7)",
+					"on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/wocket.json"
+				},
+				"minecraft:behavior.breed": {
+					"priority": 3,
+					"speed_multiplier": 1
+				},
+				"minecraft:breedable": {
+					"require_tame": false,
+					"breed_items": "wheat",
+					"breeds_with": {
+						"mate_type": "suess:wocket",
+						"baby_type": "suess:wocket",
+						"breed_event": {
+							"event": "minecraft:entity_born",
+							"target": "baby"
+						}
+					}
+				},
+				"track_attacker": {
+					"minecraft:behavior.hurt_by_target": {
+						"priority": 1
+					}
+				},
+// wocket angry
+				"wocket_angry": {
+					"minecraft:angry": {
+						"duration": 25,
+						"broadcastAnger": true,
+						"broadcastRange": 20,
+						"broadcast_filters": {
+							"test": "is_family",
+							"operator": "!=",
+							"value": "pacified"
+						},
+						"calm_event": {
+							"event": "calmed_down",
+							"target": "self"
+						}
+					},
+					"minecraft:behavior.melee_attack": {
+						"priority": 2,
+						"target_dist": 1.2,
+						"track_target": false,
+						"attack_once": true,
+						"reach_multiplier": 2.0,
+						"look_distance": 30,
+						"untrackable_cooldown_delay": 17,
+						"speed_multiplier": 9,
+						"target_tracking": {
+							"refresh_period_min": 4,
+							"refresh_period_max": 11,
+							"backoff": [
+								{
+									"distance_squared_gt": 256,
+									"refresh_period_delta": 50
+								},
+								{
+									"distance_squared_gt": 1024,
+									"refresh_period_delta": 100
+								}
+							]
+						}
+					}
+				},
+// damage types
+				"easy_attack": {
+					"minecraft:attack": {
+						"damage": 2
+					}
+				},
+				"normal_attack": {
+					"minecraft:attack": {
+						"damage": 2,
+						"effect_name": "poison",
+						"effect_duration": 10
+					}
+				},
+				"hard_attack": {
+					"minecraft:attack": {
+						"damage": 2,
+						"effect_name": "poison",
+						"effect_duration": 18
+					}
+				}
+			}
+		},
+// AI ?? Componets
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"wocket",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:on_target_acquired": {
+                "event": "attacked",
+                "target": "self"
+            },
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+	//hit box
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.8
+			},
+			"minecraft:nameable": {},
+	// health
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.panic": {
+				"priority": 1,
+				"speed_multiplier": 1.25
+			},
+			"minecraft:behavior.mount_pathing": {
+				"priority": 2,
+				"speed_multiplier": 1.5,
+				"target_dist": 0,
+				"track_target": true
+			},
+			"minecraft:behavior.breed": {
+				"priority": 3,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.tempt": {
+				"priority": 4,
+				"speed_multiplier": 1.25,
+				"items": [
+					"wheat"
+				]
+			},
+			"minecraft:behavior.follow_parent": {
+				"priority": 5,
+				"speed_multiplier": 1.1
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 0.8
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:balloonable": {},
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"family_types": [
+					"zombie"
+				],
+				"seats": {
+					"position": [
+						0,
+						1.105,
+						0
+					]
+				}
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+// destroyed block
+			"minecraft:block_sensor": {
+				"sensor_radius": 16,
+				"on_break": [
+					{
+						"block_list": [
+							"seuss:truffula_log"
+						],
+						"on_block_broken": "log_destroyed"
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 95,
+						"add": {
+							"component_groups": [
+								"suess:wocket_adult"
+							]
+						}
+					},
+					{
+						"weight": 5,
+						"add": {
+							"component_groups": [
+								"suess:wocket_baby"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_born": {
+				"add": {
+					"component_groups": [
+						"suess:wocket_baby"
+					]
+				}
+			},
+			"minecraft:ageable_grow_up": {
+				"remove": {
+					"component_groups": [
+						"suess:wocket_baby"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"suess:wocket_adult"
+					]
+				}
+			},
+			"log_destroyed": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "self",
+                            "operator": "!=",
+                            "value": "pacified"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "take_nearest_target"
+                            ]
+                        }
+                    }
+                ]
+			},
+// attacked
+			"attacked": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "angry_bee"
+                            ]
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "take_nearest_target"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": { "test" : "is_difficulty", "value" : "easy"},            
+                        "remove": {
+                            "component_groups": [ "normal_attack", "hard_attack" ]
+                        },
+                        "add": {
+                            "component_groups": [ "easy_attack" ]
+                        }
+                    },
+                    {
+                        "filters": { "test" : "is_difficulty", "value" : "normal"},
+                        "remove": {
+                            "component_groups": [ "easy_attack", "hard_attack" ]
+                        },
+                        "add": {
+                            "component_groups": [ "normal_attack" ]
+                        }
+                    },
+                    {
+                        "filters": { "test" : "is_difficulty", "value" : "hard"},
+                        "remove": {
+                            "component_groups": [ "easy_attack", "normal_attack" ]
+                        },
+                        "add": {
+                            "component_groups": [ "hard_attack" ]
+                        }
+                    }
+                ]
+            },
+            "calmed_down": {
+                "remove": {
+                    "component_groups": [
+                        "angry_bee",
+                        "take_nearest_target"
+                    ]
+                }
+            }
+		}
+	}
+}

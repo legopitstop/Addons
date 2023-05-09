@@ -1,0 +1,20 @@
+{
+    "format_version": "1.18",
+    "minecraft:item": {
+        "description": {
+            "identifier": "moregold:golden_fruit_sapling",
+            "category": "nature"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sapling"
+            },
+            "minecraft:icon": {
+                "texture": "moregold:golden_fruit_sapling"
+            },
+            "minecraft:block_placer": {
+                "block": "moregold:golden_fruit_sapling_block"
+            }
+        }
+    }
+}

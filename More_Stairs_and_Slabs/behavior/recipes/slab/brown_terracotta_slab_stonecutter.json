@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:brown_terracotta_slab_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 0,
+        "ingredients": [
+            {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 12
+            }
+        ],
+        "result": {
+            "item": "more_ss:brown_terracotta_slab",
+            "count": 2
+        }
+    }
+}

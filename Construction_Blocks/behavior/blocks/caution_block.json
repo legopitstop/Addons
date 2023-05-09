@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:caution_block",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/caution_block.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#000000",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:caution_block",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

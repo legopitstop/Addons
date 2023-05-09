@@ -1,0 +1,52 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:brown_dirt_path"
+        },
+        "components": {
+            "tag:dirt": {},
+            "tag:dirt_path": {},
+            "tag:non_full": {},
+            "minecraft:loot": "loot_tables/const/blocks/brown_dirt_path.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:map_color": "#ffffff",
+            "minecraft:geometry": "geometry.block.dirt_path",
+            "minecraft:on_interact": {
+                "condition": "q.get_equipped_item_name == 'wooden_hoe' || q.get_equipped_item_name == 'stone_hoe' || q.get_equipped_item_name == 'iron_hoe' || q.get_equipped_item_name == 'golden_hoe' || q.get_equipped_item_name == 'diamond_hoe' || q.get_equipped_item_name == 'netherite_hoe'",
+                "event": "const:on_interact"
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "const:brown_dirt_path_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "dirt",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "const:brown_dirt_path_side",
+                    "render_method": "opaque"
+                }
+            }
+        },
+        "events": {
+            "const:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name == 'wooden_hoe' || q.get_equipped_item_name == 'stone_hoe' || q.get_equipped_item_name == 'iron_hoe' || q.get_equipped_item_name == 'golden_hoe' || q.get_equipped_item_name == 'diamond_hoe' || q.get_equipped_item_name == 'netherite_hoe'",
+                        "set_block": {
+                            "block_type": "minecraft:farmland"
+                        },
+                        "run_command": {
+                            "target": "block",
+                            "command": "playsound step.grass @p"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

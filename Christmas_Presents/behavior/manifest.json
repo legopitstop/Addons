@@ -1,0 +1,47 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Christmas! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "Christmas Presents",
+        "uuid": "17217958-9dce-4150-9dd1-c3400bb73cbe",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            1
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "Christmas! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+            "type": "data",
+            "uuid": "1651ac7e-a6c8-449b-8933-b7dc459c1898",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "07b40dd1-7356-4dd6-89fd-b4d0666d19cd",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

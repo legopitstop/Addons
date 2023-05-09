@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:black_brick_slab_from_black_aged_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:black_aged_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:black_brick_slab",
+                "count": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:light_blue_wool_quarter_block_vert"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:wool",
+                "data": 3
+            }
+        ],
+        "result": {
+            "item": "xmas:light_blue_wool_quarter_block_vert",
+            "count": 4
+        }
+    }
+}

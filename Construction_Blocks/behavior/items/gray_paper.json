@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:paper_gray",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:icon": {
+                "texture": "const:dyed_paper",
+                "frame": 4
+            }
+        }
+    }
+}

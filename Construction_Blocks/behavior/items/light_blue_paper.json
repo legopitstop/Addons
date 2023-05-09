@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:paper_light_blue",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.paper"
+            },
+            "minecraft:icon": {
+                "texture": "const:dyed_paper",
+                "frame": 6
+            }
+        }
+    }
+}

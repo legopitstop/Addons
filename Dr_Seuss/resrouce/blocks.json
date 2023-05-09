@@ -1,0 +1,39 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "seuss:orange_truffula_fluff": {
+        "textures": "orange_truffula_fluff",
+        "sound": "cloth"
+    },
+    "seuss:pink_truffula_fluff": {
+        "textures": "pink_truffula_fluff",
+        "sound": "cloth"
+    },
+    "seuss:purple_truffula_fluff": {
+        "textures": "purple_truffula_fluff",
+        "sound": "cloth"
+    },
+    "seuss:yellow_truffula_fluff": {
+        "textures": "yellow_truffula_fluff",
+        "sound": "cloth"
+    },
+    "seuss:truffula_log": {
+        "textures": {
+            "up": "truffula_log_top",
+            "down": "truffula_log_top",
+            "side": "truffula_log"
+        },
+        "sound": "wood"
+    },
+    "seuss:stripped_truffula_log": {
+        "textures": {
+            "up": "stripped_truffula_log_top",
+            "down": "stripped_truffula_log_top",
+            "side": "stripped_truffula_log"
+        },
+        "sound": "wood"
+    }
+}

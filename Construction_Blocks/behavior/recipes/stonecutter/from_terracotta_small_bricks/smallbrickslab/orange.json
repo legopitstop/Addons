@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:orange_terracotta_small_brick_slab_from_orange_terracotta_small_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:orange_terracotta_small_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:orange_terracotta_small_brick_slab",
+                "count": 2
+            }
+        ]
+    }
+}

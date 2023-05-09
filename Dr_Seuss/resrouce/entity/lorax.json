@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "seuss:lorax",
+            "materials": {
+                "default": "zombie"
+            },
+            "textures": {
+                "default": "textures/entity/lorax",
+                "angry": "textures/entity/lorax_angry"
+            },
+            "geometry": {
+                "default": "geometry.lorax"
+            },
+            "scripts": {
+                "animate": [
+                    "setup",
+                    {
+                        "walk": "query.modified_move_speed"
+                    },
+                    "look_at_target",
+                    {
+                        "baby_transform": "query.is_baby"
+                    }
+                ]
+            },
+            "animations": {
+                "setup": "animation.lorax.setup",
+                "walk": "animation.lorax.walking",
+                "look_at_target": "animation.common.look_at_target"
+            },
+            "render_controllers": [
+                "controller.render.lorax"
+            ],
+            "spawn_egg": {
+                "overlay_color": "#fafc00",
+                "base_color": "#ff7700"
+            }
+        }
+    }
+}

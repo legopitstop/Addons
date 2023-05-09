@@ -1,0 +1,16 @@
+give @p const:dye_block_black
+give @p const:dye_block_blue
+give @p const:dye_block_brown
+give @p const:dye_block_cyan
+give @p const:dye_block_gray
+give @p const:dye_block_green
+give @p const:dye_block_light_blue
+give @p const:dye_block_light_gray
+give @p const:dye_block_lime
+give @p const:dye_block_magenta
+give @p const:dye_block_orange
+give @p const:dye_block_pink
+give @p const:dye_block_purple
+give @p const:dye_block_red
+give @p const:dye_block_white
+give @p const:dye_block_yellow

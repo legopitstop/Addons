@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:light_blue_terracotta_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 3
+            }
+        ],
+        "result": {
+            "item": "moreblocks:light_blue_terracotta_layer",
+            "count": 8
+        }
+    }
+}

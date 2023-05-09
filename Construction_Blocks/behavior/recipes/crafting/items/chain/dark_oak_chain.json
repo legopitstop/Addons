@@ -1,0 +1,28 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:dark_oak_chain_item"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "/",
+            "#",
+            "/"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:planks",
+                "data": 5
+            },
+            "/": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "const:dark_oak_chain_item"
+        }
+    }
+}

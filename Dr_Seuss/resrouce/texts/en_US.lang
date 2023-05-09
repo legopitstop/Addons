@@ -1,0 +1,45 @@
+﻿pack.name=Dr Seuss Resource Pack
+pack.description=Nostalgia Is Real!                                             §8Pack by:§6 Lego§epit§rstop
+
+item.spawn_egg.entity.seuss:lorax.name=Lorax Spawn Egg (#seuss)
+item.spawn_egg.entity.seuss:wocket.name=Wocket Spawn Egg (#seuss)
+
+## fish
+item.spawn_egg.entity.seuss:one_fish.name=One Fish Spawn Egg (#seuss)
+item.spawn_egg.entity.seuss:two_fish.name=Two Fish Spawn Egg (#seuss)
+item.spawn_egg.entity.seuss:red_fish.name=Red Fish Spawn Egg (#seuss)
+item.spawn_egg.entity.seuss:blue_fish.name=Blue Fish Spawn Egg (#seuss)
+
+tile.seuss:orange_truffula_fluff.name=Orange Truffula Fluff
+tile.seuss:pink_truffula_fluff.name=Pink Truffula Fluff
+tile.seuss:purple_truffula_fluff.name=Purple Truffula Fluff
+tile.seuss:yellow_truffula_fluff.name=Yellow Truffula Fluff
+tile.seuss:truffula_log.name=Truffula Log
+tile.seuss:stripped_truffula_log.name=Stripped Truffula Log
+
+item.seuss:blue_fish.name=Blue Fish
+item.seuss:cat_hat.name=Cat Hat
+item.seuss:cooked_blue_fish.name=Cooked Blue Fish
+item.seuss:cooked_one_fish.name=Cooked One Fish
+item.seuss:cooked_red_fish.name=Cooked Red Fish
+item.seuss:cooked_two_fish.name=Cooked Two Fish
+item.seuss:fried_green_egg.name=Fried Green Egg
+item.seuss:green_egg.name=Green Egg
+item.seuss:green_ham.name=Green Ham
+item.seuss:ham.name=Ham
+item.seuss:one_fish.name=One Fish
+item.seuss:red_fish.name=Red Fish
+item.seuss:socks.name=Socks
+item.seuss:two_fish.name=Two Fish
+
+item.seuss:music_disc_cat_hat.name=Music Disc
+item.seuss:music_disc_cat_hat.desc=(Cat In The Hat)
+
+item.seuss:music_disc_fish.name=Music Disc
+item.seuss:music_disc_fish.desc=(1 Fish, 2 Fish, Red Fish, Blue Fish)
+
+item.seuss:music_disc_green_eggs.name=Music Disc
+item.seuss:music_disc_green_eggs.desc=(Green Ham & Eggs)
+
+item.seuss:music_disc_the_lorax.name=Music Disc
+item.seuss:music_disc_the_lorax.desc=(The Lorax)

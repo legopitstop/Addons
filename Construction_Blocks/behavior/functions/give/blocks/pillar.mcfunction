@@ -1,0 +1,17 @@
+# pillar blocks
+give @p const:pillar_acacia
+give @p const:pillar_birch
+give @p const:pillar_crimson
+give @p const:pillar_dark_oak
+give @p const:pillar_jungle
+give @p const:pillar_oak
+give @p const:pillar_spruce
+give @p const:pillar_stripped_acacia
+give @p const:pillar_stripped_birch
+give @p const:pillar_stripped_crimson
+give @p const:pillar_stripped_dark_oak
+give @p const:pillar_stripped_jungle
+give @p const:pillar_stripped_oak
+give @p const:pillar_stripped_spruce
+give @p const:pillar_stripped_warped
+give @p const:pillar_warped

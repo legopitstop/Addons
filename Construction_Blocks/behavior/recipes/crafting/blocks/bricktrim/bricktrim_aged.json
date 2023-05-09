@@ -1,0 +1,27 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:craft/block/bricktrim_aged_white"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:aged_brick"
+            }
+        },
+        "result": [
+            {
+                "item": "const:bricktrim_aged_white",
+                "count": 9
+            }
+        ]
+    }
+}

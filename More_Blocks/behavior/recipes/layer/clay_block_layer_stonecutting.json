@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:clay_block_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:clay"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:clay_block_layer",
+            "count": 8
+        }
+    }
+}

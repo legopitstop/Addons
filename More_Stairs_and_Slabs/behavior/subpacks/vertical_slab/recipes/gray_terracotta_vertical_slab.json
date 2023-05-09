@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:gray_terracotta_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "stained_hardened_clay_vertical_slab",
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 7
+            }
+        },
+        "result": {
+            "item": "more_ss:gray_terracotta_vertical_slab",
+            "count": 6
+        }
+    }
+}

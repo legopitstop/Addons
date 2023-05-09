@@ -1,0 +1,26 @@
+{
+    "individual_event_sounds": {
+        "events": {
+            "record.cat_hat": {
+                "sound": "record.cat_hat",
+                "volume": 1.0,
+                "pitch": 1.0
+            },
+            "record.fish": {
+                "sound": "record.fish",
+                "volume": 1.0,
+                "pitch": 1.0
+            },
+            "record.green_eggs": {
+                "sound": "record.green_eggs",
+                "volume": 1.0,
+                "pitch": 1.0
+            },
+            "record.the_lorax": {
+                "sound": "record.the_lorax",
+                "volume": 1.0,
+                "pitch": 1.0
+            }
+        }
+    }
+}

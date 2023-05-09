@@ -1,0 +1,36 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "\u00c2\u00a77Canned goods? \u00c2\u00a76Legopitstop",
+        "name": "Canned RP",
+        "uuid": "7bcddacb-acea-4d89-a348-c5c358b0c143",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            10
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "dd2fca4e-cffa-42d0-b1e0-3e786f5d701c",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

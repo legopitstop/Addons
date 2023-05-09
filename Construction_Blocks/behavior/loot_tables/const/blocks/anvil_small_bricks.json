@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:small_bricks_anvil",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:blue_bookshelf"
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/blue_bookshelf.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "const:blue_bookshelf"
+                },
+                "south": {
+                    "texture": "const:blue_bookshelf"
+                },
+                "west": {
+                    "texture": "const:blue_bookshelf"
+                },
+                "east": {
+                    "texture": "const:blue_bookshelf"
+                },
+                "up": {
+                    "texture": "const:blue_planks"
+                },
+                "down": {
+                    "texture": "const:blue_planks"
+                }
+            }
+        }
+    }
+}

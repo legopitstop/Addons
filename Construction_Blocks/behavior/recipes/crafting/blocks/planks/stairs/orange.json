@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:orange_plank_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "##",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:orange_planks"
+            }
+        },
+        "result": {
+            "item": "const:orange_plank_stairs",
+            "count": 4
+        }
+    }
+}

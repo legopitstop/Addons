@@ -1,0 +1,319 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas#info",
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "more_ss:redstone_lamp_vertical_slab",
+            "properties": {
+                "lps:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "lps:type": [
+                    "single",
+                    "double"
+                ],
+                "lps:powered": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "Construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 2.0,
+            "minecraft:explosion_resistance": 2.0,
+            "minecraft:on_player_placing": {
+                "event": "lps:place_block"
+            },
+            "minecraft:on_interact": {
+                "event": "lps:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:direction') == 2 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/redstone_lamp_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.glass_vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -180,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 3 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/redstone_lamp_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.glass_vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 4 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/redstone_lamp_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.glass_vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 5 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/redstone_lamp_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.glass_vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/redstone_lamp_vertical_double_slab.json",
+                    "minecraft:unit_cube": {}
+                }
+            },
+            {
+                "condition": "query.block_property('lps:powered') == false && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:block_light_emission": 0,
+                    "minecraft:material_instances": {
+                        "north": {
+                            "texture": "minecraft:redstone_lamp",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "minecraft:redstone_lamp",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "more_ss:redstone_lamp_half_off",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "more_ss:redstone_lamp_half_off",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "more_ss:redstone_lamp_half_vertical_off",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:powered') == true && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:block_light_emission": 1.0,
+                    "minecraft:material_instances": {
+                        "north": {
+                            "texture": "minecraft:redstone_lamp_lit",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "minecraft:redstone_lamp_lit",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "more_ss:redstone_lamp_half_on",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "more_ss:redstone_lamp_half_on",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "more_ss:redstone_lamp_half_vertical_on",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:powered') == false && query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:block_light_emission": 0,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:redstone_lamp",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:powered') == true && query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:block_light_emission": 1.0,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:redstone_lamp_lit",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "lps:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name =='redstone_lamp_vertical_slab' && query.block_property('lps:type') != 'double'",
+                        "decrement_stack": {},
+                        "set_block_property": {
+                            "lps:type": "'double'",
+                            "lps:direction": "6"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": "playsound use.stone @p"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "lps:toggle_powered"
+                        }
+                    }
+                ]
+            },
+            "lps:toggle_powered": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('lps:powered') == false",
+                        "set_block_property": {
+                            "lps:powered": "true"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('lps:powered') == true",
+                        "set_block_property": {
+                            "lps:powered": "false"
+                        }
+                    }
+                ]
+            },
+            "lps:place_block": {
+                "set_block_property": {
+                    "lps:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        }
+    }
+}

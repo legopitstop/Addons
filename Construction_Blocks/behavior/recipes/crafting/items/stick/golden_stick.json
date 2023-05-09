@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:golden_stick"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            "#S#",
+            " # "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_nugget"
+            },
+            "S": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": [
+            {
+                "item": "const:stick_golden"
+            }
+        ]
+    }
+}

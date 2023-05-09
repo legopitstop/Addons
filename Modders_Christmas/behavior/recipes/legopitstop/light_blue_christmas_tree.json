@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "xmas:light_blue_christmas_tree"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " L ",
+            "LWL",
+            " D "
+        ],
+        "key": {
+            "W": {
+                "item": "minecraft:wool",
+                "data": 3
+            },
+            "D": {
+                "item": "minecraft:log"
+            },
+            "L": {
+                "item": "minecraft:leaves"
+            }
+        },
+        "result": "xmas:light_blue_christmas_tree"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:redstone_lamp_slab_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:redstone_lamp"
+            }
+        ],
+        "result": {
+            "item": "more_ss:redstone_lamp_slab",
+            "count": 2
+        }
+    }
+}

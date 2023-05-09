@@ -1,0 +1,39 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:acacia_crafting_station"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/const/blocks/acacia_crafting_station.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:breathability": "air",
+            "minecraft:geometry": "geometry.block.crafting_station",
+            "minecraft:crafting_table": {
+                "custom_description": "container.crafting",
+                "grid_size": 3,
+                "crafting_tags": [
+                    "crafting_table",
+                    "crafting_station"
+                ]
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "const:acacia_crafting_station_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "acacia_planks",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "const:acacia_crafting_station_side",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

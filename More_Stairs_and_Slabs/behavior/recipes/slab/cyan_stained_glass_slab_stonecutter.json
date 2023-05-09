@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:cyan_stained_glass_slab_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 0,
+        "ingredients": [
+            {
+                "item": "minecraft:stained_glass",
+                "data": 9
+            }
+        ],
+        "result": {
+            "item": "more_ss:cyan_stained_glass_slab",
+            "count": 2
+        }
+    }
+}

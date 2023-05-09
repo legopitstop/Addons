@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:green_concrete_large_bricks",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:destroy_time": 1.8,
+            "minecraft:explosion_resistance": 1.8,
+            "minecraft:map_color": "#526a1c",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:green_concrete_large_bricks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

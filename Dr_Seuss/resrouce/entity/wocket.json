@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "seuss:wocket",
+            "materials": {
+                "default": "zombie"
+            },
+            "textures": {
+                "default": "textures/entity/wocket",
+                "angry": "textures/entity/wocket_angry"
+            },
+            "geometry": {
+                "default": "geometry.wocket"
+            },
+            "scripts": {
+                "animate": [
+                    "setup",
+                    {
+                        "walk": "query.modified_move_speed"
+                    },
+                    "look_at_target",
+                    {
+                        "baby_transform": "query.is_baby"
+                    }
+                ]
+            },
+            "animations": {
+                "setup": "animation.wocket.setup",
+                "walk": "animation.wocket.walking",
+                "look_at_target": "animation.common.look_at_target"
+            },
+            "render_controllers": [
+                "controller.render.wocket"
+            ],
+            "spawn_egg": {
+                "overlay_color": "#efe204",
+                "base_color": "#1aca2e"
+            }
+        }
+    }
+}

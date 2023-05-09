@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:green_brick_stairs_from_green_aged_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:green_aged_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:green_brick_stairs"
+            }
+        ]
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:woodcutter",
+            "properties": {
+                "const:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/woodcutter.json",
+            "minecraft:destroy_time": 0.5,
+            "minecraft:explosion_resistance": 0.5,
+            "minecraft:on_player_placing": {
+                "event": "const:place_direction"
+            },
+            "minecraft:crafting_table": {
+                "crafting_tags": [
+                    "woodcutter"
+                ],
+                "custom_description": "container.woodcutter",
+                "grid_size": 3
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    9,
+                    16
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    9,
+                    16
+                ]
+            },
+            "minecraft:on_interact": {
+                "event": "const:message"
+            },
+            "minecraft:geometry": "geometry.block.woodcutter",
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "const:woodcutter_top"
+                },
+                "down": {
+                    "texture": "const:woodcutter_bottom"
+                },
+                "*": {
+                    "texture": "const:woodcutter_side"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "name": "direction=north",
+                "condition": "q.block_property('const:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "direction=south",
+                "condition": "q.block_property('const:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "direction=west",
+                "condition": "q.block_property('const:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "direction=east",
+                "condition": "q.block_property('const:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:place_direction": {
+                "set_block_property": {
+                    "const:direction": "(q.cardinal_facing_2d)"
+                }
+            },
+            "const:message": {
+                "run_command": {
+                    "command": "say This block is experimental, It may not stay inside the addon."
+                }
+            }
+        }
+    }
+}

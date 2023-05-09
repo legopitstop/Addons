@@ -1,0 +1,16 @@
+give @p const:bricktrim_normal_black
+give @p const:bricktrim_normal_blue
+give @p const:bricktrim_normal_brown
+give @p const:bricktrim_normal_cyan
+give @p const:bricktrim_normal_gray
+give @p const:bricktrim_normal_green
+give @p const:bricktrim_normal_light_blue
+give @p const:bricktrim_normal_light_gray
+give @p const:bricktrim_normal_lime
+give @p const:bricktrim_normal_magenta
+give @p const:bricktrim_normal_orange
+give @p const:bricktrim_normal_pink
+give @p const:bricktrim_normal_purple
+give @p const:bricktrim_normal_red
+give @p const:bricktrim_normal_white
+give @p const:bricktrim_normal_yellow

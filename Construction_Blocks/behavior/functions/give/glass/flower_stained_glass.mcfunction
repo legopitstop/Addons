@@ -1,0 +1,17 @@
+give @p const:black_flower_stained_glass
+give @p const:blue_flower_stained_glass
+give @p const:brown_flower_stained_glass
+give @p const:cyan_flower_stained_glass
+give @p const:gray_flower_stained_glass
+give @p const:green_flower_stained_glass
+give @p const:light_blue_flower_stained_glass
+give @p const:light_gray_flower_stained_glass
+give @p const:lime_flower_stained_glass
+give @p const:magenta_flower_stained_glass
+give @p const:orange_flower_stained_glass
+give @p const:pink_flower_stained_glass
+give @p const:purple_flower_stained_glass
+give @p const:red_flower_stained_glass
+give @p const:white_flower_stained_glass
+give @p const:yellow_flower_stained_glass
+give @p const:tinted_flower_glass

@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:simple_wool_green",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

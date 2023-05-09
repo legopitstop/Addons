@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:sea_lantern_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:sealantern"
+            }
+        },
+        "result": {
+            "item": "more_ss:sea_lantern_slab",
+            "count": 6
+        }
+    }
+}

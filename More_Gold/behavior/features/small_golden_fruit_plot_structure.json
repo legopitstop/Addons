@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "moregold:small_golden_fruit_plot_structure"
+        },
+        "structure_name": "moregold:small_golden_fruit_plot",
+        "adjustment_radius": 8,
+        "facing_direction": "random",
+        "constraints": {
+            "grounded": {}
+        }
+    }
+}

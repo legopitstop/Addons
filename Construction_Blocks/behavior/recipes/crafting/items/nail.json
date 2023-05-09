@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:nail"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "/"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:iron_ingot"
+            },
+            "/": {
+                "item": "const:stick_iron"
+            }
+        },
+        "result": [
+            {
+                "item": "const:nail",
+                "count": 16
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:bricktrim_normal_green",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/green_normal_bricktrim.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#526a1c",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:bricktrim_normal_green",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "const:bricktrim_top_green",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "brick",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

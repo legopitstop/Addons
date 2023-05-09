@@ -1,0 +1,32 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:bricktrim_aged_black",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/black_aged_bricktrim.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:bricktrim_aged_black",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "const:bricktrim_top_black",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "const:aged_brick",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

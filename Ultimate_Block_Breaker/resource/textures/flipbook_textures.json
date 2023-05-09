@@ -1,0 +1,38 @@
+[
+    {
+        "flipbook_texture": "textures/breaker/blocks/wooden_block_breaker_top_on",
+        "atlas_tile": "breaker:wooden_block_breaker_top_on",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    },
+    {
+        "flipbook_texture": "textures/breaker/blocks/stone_block_breaker_top_on",
+        "atlas_tile": "breaker:stone_block_breaker_top_on",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    },
+    {
+        "flipbook_texture": "textures/breaker/blocks/iron_block_breaker_top_on",
+        "atlas_tile": "breaker:iron_block_breaker_top_on",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    },
+    {
+        "flipbook_texture": "textures/breaker/blocks/gold_block_breaker_top_on",
+        "atlas_tile": "breaker:gold_block_breaker_top_on",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    },
+    {
+        "flipbook_texture": "textures/breaker/blocks/diamond_block_breaker_top_on",
+        "atlas_tile": "breaker:diamond_block_breaker_top_on",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    },
+    {
+        "flipbook_texture": "textures/breaker/blocks/netherite_block_breaker_top_on",
+        "atlas_tile": "breaker:netherite_block_breaker_top_on",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    }
+]

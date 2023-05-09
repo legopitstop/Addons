@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:white_paper"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:dye",
+                "data": 19
+            },
+            {
+                "item": "minecraft:paper"
+            }
+        ],
+        "result": {
+            "item": "const:paper_white"
+        }
+    }
+}

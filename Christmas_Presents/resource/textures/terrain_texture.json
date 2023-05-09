@@ -1,0 +1,49 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas",
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "presents:wood_present": {
+            "textures": [
+                "textures/blocks/wood_present.png"
+            ]
+        },
+        "presents:stone_present": {
+            "textures": [
+                "textures/blocks/stone_present.png"
+            ]
+        },
+        "presents:iron_present": {
+            "textures": [
+                "textures/blocks/iron_present.png"
+            ]
+        },
+        "presents:copper_present": {
+            "textures": [
+                "textures/blocks/copper_present.png"
+            ]
+        },
+        "presents:gold_present": {
+            "textures": [
+                "textures/blocks/gold_present.png"
+            ]
+        },
+        "presents:diamond_present": {
+            "textures": [
+                "textures/blocks/diamond_present.png"
+            ]
+        },
+        "presents:emerald_present": {
+            "textures": [
+                "textures/blocks/emerald_present.png"
+            ]
+        },
+        "presents:netherite_present": {
+            "textures": [
+                "textures/blocks/netherite_present.png"
+            ]
+        }
+    }
+}

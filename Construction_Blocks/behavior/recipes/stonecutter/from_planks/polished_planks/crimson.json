@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_polished_crimson_planks1"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:crimson_planks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:polished_crimson_planks"
+            }
+        ]
+    }
+}

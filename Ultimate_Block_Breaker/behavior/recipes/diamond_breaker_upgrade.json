@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "breaker:diamond_breaker_upgrade"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "DGD",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:glass"
+            },
+            "G": {
+                "item": "minecraft:gold_ingot"
+            },
+            "D": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": "breaker:diamond_breaker_upgrade"
+    }
+}

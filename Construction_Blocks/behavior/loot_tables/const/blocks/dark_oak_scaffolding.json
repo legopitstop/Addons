@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:dark_oak_scaffolding",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,358 @@
+{
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "moreblocks:waxed_weathered_copper_layer",
+            "properties": {
+                "moreblocks:layers": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "moreblocks:half": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
+            },
+            "minecraft:block_light_filter": 0,
+            "minecraft:destroy_time": 3.0,
+            "minecraft:explosion_resistance": 6.0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "minecraft:weathered_copper",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_item_name_any('slot.weapon.mainhand','moreblocks:waxed_weathered_copper_layer', 'minecraft:wooden_axe','minecraft:iron_axe','minecraft:golden_axe','minecraft:diamond_axe','minecraft:netherite_axe')",
+                "event": "event:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('moreblocks:layers') == 1",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer1.json",
+                    "minecraft:geometry": "geometry.template_height0",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 2",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer2.json",
+                    "minecraft:geometry": "geometry.template_height1",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            4,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            4,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 3",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer3.json",
+                    "minecraft:geometry": "geometry.template_height2",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            6,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            6,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 4",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer4.json",
+                    "minecraft:geometry": "geometry.template_height3",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 5",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer5.json",
+                    "minecraft:geometry": "geometry.template_height4",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            10,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            10,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 6",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer6.json",
+                    "minecraft:geometry": "geometry.template_height5",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            12,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            12,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 7",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer7.json",
+                    "minecraft:geometry": "geometry.template_height6",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            14,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            14,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('moreblocks:layers') == 8",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/waxed_weathered_copper_layer8.json",
+                    "minecraft:unit_cube": {}
+                }
+            }
+        ],
+        "events": {
+            "event:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand','moreblocks:waxed_weathered_copper_layer') && q.block_property('moreblocks:layers') != 8",
+                        "trigger": {
+                            "event": "event:increase_layers"
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_axe','minecraft:iron_axe','minecraft:golden_axe','minecraft:diamond_axe','minecraft:netherite_axe')",
+                        "trigger": {
+                            "event": "event:remove_wax"
+                        }
+                    }
+                ]
+            },
+            "event:increase_layers": {
+                "sequence": [
+                    {
+                        "decrement_stack": {},
+                        "run_command": {
+                            "command": "playsound step.copper @p ~ ~ ~"
+                        },
+                        "set_block_property": {
+                            "moreblocks:layers": "q.block_property('moreblocks:layers') + 1"
+                        }
+                    }
+                ]
+            },
+            "event:remove_wax": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "playsound copper.wax.off @p ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 1",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer1 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 2",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer2 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 3",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer3 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 4",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer4 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 5",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer5 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 6",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer6 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 7",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer7 ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moreblocks:layers') == 8",
+                        "run_command": {
+                            "command": "structure load moreblocks:weathered_copper_layer8 ~ ~ ~"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

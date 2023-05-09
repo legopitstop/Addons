@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:light_blue_celingtile_stairs_from_light_blue_celingtile"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:celingtile_light_blue"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:light_blue_celingtile_stairs"
+            }
+        ]
+    }
+}

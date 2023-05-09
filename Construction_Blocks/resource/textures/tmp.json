@@ -1,0 +1,308 @@
+{
+    "const:black_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:blue_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:brown_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:cyan_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:gray_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:green_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_blue_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_gray_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:lime_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:magenta_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:orange_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:pink_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:purple_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:red_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:white_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:yellow_creeper_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:tinted_creeper_glass": {
+        "sounds": "glass"
+    },
+    "const:black_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:blue_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:brown_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:cyan_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:gray_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:green_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_blue_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_gray_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:lime_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:magenta_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:orange_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:pink_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:purple_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:red_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:white_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:yellow_flower_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:tinted_flower_glass": {
+        "sounds": "glass"
+    },
+    "const:black_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:blue_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:brown_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:cyan_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:gray_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:green_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_blue_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_gray_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:lime_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:magenta_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:orange_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:pink_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:purple_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:red_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:white_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:yellow_globe_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:tinted_globe_glass": {
+        "sounds": "glass"
+    },
+    "const:black_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:blue_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:brown_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:cyan_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:gray_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:green_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_blue_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_gray_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:lime_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:magenta_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:orange_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:pink_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:purple_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:red_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:white_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:yellow_mojang_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:tinted_mojang_glass": {
+        "sounds": "glass"
+    },
+    "const:black_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:blue_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:brown_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:cyan_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:gray_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:green_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_blue_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_gray_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:lime_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:magenta_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:orange_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:pink_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:purple_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:red_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:white_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:yellow_skull_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:tinted_skull_glass": {
+        "sounds": "glass"
+    },
+    "const:black_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:blue_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:brown_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:cyan_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:gray_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:green_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_blue_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:light_gray_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:lime_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:magenta_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:orange_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:pink_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:purple_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:red_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:white_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:yellow_snout_stained_glass": {
+        "sounds": "glass"
+    },
+    "const:tinted_snout_glass": {
+        "sounds": "glass"
+    }
+}

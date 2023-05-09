@@ -1,0 +1,118 @@
+{
+    "$credit": "Thanks to Legopitstop for creating this useful asset",
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "basaltblocks:polished_basalt_brick_pillar",
+            "properties": {
+                "basaltblocks:pillar_block": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_brick_pillar.json",
+            "minecraft:destroy_time": 0.15,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:map_color": "#191919",
+            "minecraft:unit_cube": {},
+            "minecraft:on_player_placing": {
+                "event": "event:on_place"
+            },
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "basaltblocks:polished_basalt_brick_pillar_top",
+                    "render_method": "alpha_test"
+                },
+                "down": {
+                    "texture": "basaltblocks:polished_basalt_brick_pillar_top",
+                    "render_method": "alpha_test"
+                },
+                "*": {
+                    "texture": "basaltblocks:polished_basalt_brick_pillar",
+                    "render_method": "alpha_test"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('basaltblocks:pillar_block') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:pillar_block') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:pillar_block') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:pillar_block') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:pillar_block') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:pillar_block') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "event:on_place": {
+                "set_block_property": {
+                    "basaltblocks:pillar_block": "(q.block_face )"
+                }
+            }
+        }
+    }
+}

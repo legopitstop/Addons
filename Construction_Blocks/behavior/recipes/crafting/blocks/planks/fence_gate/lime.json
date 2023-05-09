@@ -1,0 +1,27 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:lime_plank_fence_gate"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#W#",
+            "#W#"
+        ],
+        "key": {
+            "W": {
+                "item": "const:lime_planks"
+            },
+            "#": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "const:lime_plank_fence_gate",
+            "count": 1
+        }
+    }
+}

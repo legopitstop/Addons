@@ -1,0 +1,113 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "canned:empty_can": {
+            "textures": "textures/canned/blocks/empty_can.png"
+        },
+        "canned:apple_can": {
+            "textures": "textures/canned/blocks/apple_can.png"
+        },
+        "canned:baked_potato_can": {
+            "textures": "textures/canned/blocks/baked_potato_can.png"
+        },
+        "canned:beetroot_can": {
+            "textures": "textures/canned/blocks/beetroot_can.png"
+        },
+        "canned:beetroot_soup_can": {
+            "textures": "textures/canned/blocks/beetroot_soup_can.png"
+        },
+        "canned:bread_can": {
+            "textures": "textures/canned/blocks/bread_can.png"
+        },
+        "canned:cake_can": {
+            "textures": "textures/canned/blocks/cake_can.png"
+        },
+        "canned:carrot_can": {
+            "textures": "textures/canned/blocks/carrot_can.png"
+        },
+        "canned:chorus_fruit_can": {
+            "textures": "textures/canned/blocks/chorus_fruit_can.png"
+        },
+        "canned:cooked_chicken_can": {
+            "textures": "textures/canned/blocks/cooked_chicken_can.png"
+        },
+        "canned:cooked_cod_can": {
+            "textures": "textures/canned/blocks/cooked_cod_can.png"
+        },
+        "canned:cooked_mutton_can": {
+            "textures": "textures/canned/blocks/cooked_mutton_can.png"
+        },
+        "canned:cooked_porkchop_can": {
+            "textures": "textures/canned/blocks/cooked_porkchop_can.png"
+        },
+        "canned:cooked_rabbit_can": {
+            "textures": "textures/canned/blocks/cooked_rabbit_can.png"
+        },
+        "canned:cooked_salmon_can": {
+            "textures": "textures/canned/blocks/cooked_salmon_can.png"
+        },
+        "canned:cookie_can": {
+            "textures": "textures/canned/blocks/cookie_can.png"
+        },
+        "canned:dried_kelp_can": {
+            "textures": "textures/canned/blocks/dried_kelp_can.png"
+        },
+        "canned:enchanted_golden_apple_can": {
+            "textures": "textures/canned/blocks/enchanted_golden_apple_can.png"
+        },
+        "canned:golden_apple_can": {
+            "textures": "textures/canned/blocks/golden_apple_can.png"
+        },
+        "canned:glow_berries_can": {
+            "textures": "textures/canned/blocks/glow_berries_can.png"
+        },
+        "canned:golden_carrot_can": {
+            "textures": "textures/canned/blocks/golden_carrot_can.png"
+        },
+        "canned:honey_can": {
+            "textures": "textures/canned/blocks/honey_can.png"
+        },
+        "canned:melon_can": {
+            "textures": "textures/canned/blocks/melon_can.png"
+        },
+        "canned:mushroom_stew_can": {
+            "textures": "textures/canned/blocks/mushroom_stew_can.png"
+        },
+        "canned:poisonous_potato_can": {
+            "textures": "textures/canned/blocks/poisonous_potato_can.png"
+        },
+        "canned:potato_can": {
+            "textures": "textures/canned/blocks/potato_can.png"
+        },
+        "canned:pufferfish_can": {
+            "textures": "textures/canned/blocks/pufferfish_can.png"
+        },
+        "canned:pumpkin_pie_can": {
+            "textures": "textures/canned/blocks/pumpkin_pie_can.png"
+        },
+        "canned:rabbit_stew_can": {
+            "textures": "textures/canned/blocks/rabbit_stew_can.png"
+        },
+        "canned:rotten_flesh_can": {
+            "textures": "textures/canned/blocks/rotten_flesh_can.png"
+        },
+        "canned:spider_eye_can": {
+            "textures": "textures/canned/blocks/spider_eye_can.png"
+        },
+        "canned:cooked_beef_can": {
+            "textures": "textures/canned/blocks/cooked_beef_can.png"
+        },
+        "canned:suspicious_stew_can": {
+            "textures": "textures/canned/blocks/suspicious_stew_can.png"
+        },
+        "canned:sweet_berries_can": {
+            "textures": "textures/canned/blocks/sweet_berries_can.png"
+        },
+        "canned:tropical_fish_can": {
+            "textures": "textures/canned/blocks/tropical_fish_can.png"
+        }
+    }
+}

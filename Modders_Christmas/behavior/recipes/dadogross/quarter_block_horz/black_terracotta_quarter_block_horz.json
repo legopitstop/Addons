@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:black_terracotta_quarter_block_horz"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 15
+            }
+        ],
+        "result": {
+            "item": "xmas:black_terracotta_quarter_block_horz",
+            "count": 4
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:seamless_tinted_glass"
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/seamless_tinted_glass.json",
+            "minecraft:breathability": "air",
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:seamless_tinted_glass",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

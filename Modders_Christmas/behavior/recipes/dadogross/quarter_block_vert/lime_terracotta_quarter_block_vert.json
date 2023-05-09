@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:lime_terracotta_quarter_block_vert"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 5
+            }
+        ],
+        "result": {
+            "item": "xmas:lime_terracotta_quarter_block_vert",
+            "count": 4
+        }
+    }
+}

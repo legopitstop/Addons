@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:yellow_brick_stairs_from_yellow_aged_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:yellow_aged_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:yellow_brick_stairs"
+            }
+        ]
+    }
+}

@@ -1,0 +1,226 @@
+{
+    "$credit": "Thanks to Legopitstop for creating this useful asset",
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "basaltblocks:polished_basalt_vertical_slab",
+            "properties": {
+                "lps:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "lps:type": [
+                    "single",
+                    "double"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:map_color": "#000000",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0.15,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "minecraft:polished_basalt_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "minecraft:polished_basalt_top",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "minecraft:polished_basalt_side",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:on_player_placing": {
+                "event": "lps:place_block"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.block_property('lps:type') != 'double' && q.is_item_name_any('slot.weapon.mainhand','basaltblocks:polished_basalt_vertical_slab')",
+                "event": "lps:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:direction') == 2 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -180,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 3 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 4 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 5 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_double_vertical_slab.json",
+                    "minecraft:unit_cube": {}
+                }
+            }
+        ],
+        "events": {
+            "lps:on_interact": {
+                "decrement_stack": {},
+                "set_block_property": {
+                    "lps:type": "'double'",
+                    "lps:direction": "6"
+                },
+                "run_command": {
+                    "target": "player",
+                    "command": "playsound use.basalt @p"
+                }
+            },
+            "lps:place_block": {
+                "set_block_property": {
+                    "lps:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        }
+    }
+}

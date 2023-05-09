@@ -1,0 +1,49 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:yellow_crafting_table"
+        },
+        "components": {
+            "tag:wood": {},
+            "tag:crafting_table": {},
+            "minecraft:loot": "loot_tables/const/blocks/yellow_crafting_table.json",
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:unit_cube": {},
+            "minecraft:crafting_table": {
+                "crafting_tags": [
+                    "crafting_table"
+                ],
+                "grid_size": 3,
+                "custom_description": "container.crafting"
+            },
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "const:yellow_crafting_table_front",
+                    "render_method": "opaque"
+                },
+                "south": {
+                    "texture": "const:yellow_crafting_table_front",
+                    "render_method": "opaque"
+                },
+                "west": {
+                    "texture": "const:yellow_crafting_table_side",
+                    "render_method": "opaque"
+                },
+                "east": {
+                    "texture": "const:yellow_crafting_table_side",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "const:yellow_crafting_table_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "const:yellow_planks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

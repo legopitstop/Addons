@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "breaker:diamond_block_breaker"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "BBB",
+            "RDI",
+            "BBB"
+        ],
+        "key": {
+            "B": {
+                "item": "minecraft:iron_block"
+            },
+            "R": {
+                "item": "minecraft:redstone_block"
+            },
+            "D": {
+                "item": "minecraft:diamond_shovel"
+            },
+            "I": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "result": "breaker:diamond_block_breaker"
+    }
+}

@@ -1,0 +1,16 @@
+give @s xmas:white_concrete_quarter_block_horz
+give @s xmas:orange_concrete_quarter_block_horz
+give @s xmas:magenta_concrete_quarter_block_horz
+give @s xmas:light_blue_concrete_quarter_block_horz
+give @s xmas:yellow_concrete_quarter_block_horz
+give @s xmas:lime_concrete_quarter_block_horz
+give @s xmas:pink_concrete_quarter_block_horz
+give @s xmas:light_gray_concrete_quarter_block_horz
+give @s xmas:gray_concrete_quarter_block_horz
+give @s xmas:cyan_concrete_quarter_block_horz
+give @s xmas:purple_concrete_quarter_block_horz
+give @s xmas:blue_concrete_quarter_block_horz
+give @s xmas:brown_concrete_quarter_block_horz
+give @s xmas:green_concrete_quarter_block_horz
+give @s xmas:red_concrete_quarter_block_horz
+give @s xmas:black_concrete_quarter_block_horz

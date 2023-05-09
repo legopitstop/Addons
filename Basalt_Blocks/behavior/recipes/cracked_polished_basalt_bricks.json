@@ -1,0 +1,13 @@
+{
+    "format_version": "1.16.1",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "basaltblocks:cracked_polished_basalt_bricks"
+        },
+        "tags": [
+            "furnace"
+        ],
+        "input": "basaltblocks:polished_basalt_bricks",
+        "output": "basaltblocks:cracked_polished_basalt_bricks"
+    }
+}

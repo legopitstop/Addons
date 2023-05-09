@@ -1,0 +1,59 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Get Your Built On!                                             \u00c2\u00a78Pack by:\u00c2\u00a76 Lego\u00c2\u00a7epit\u00c2\u00a7rstop",
+        "name": "Construction Blocks BP",
+        "uuid": "654051c3-adf1-439c-87ee-6c92a1fbcec9",
+        "version": [
+            1,
+            8,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Get Your Built On!                                             \u00c2\u00a78Pack by:\u00c2\u00a76 Lego\u00c2\u00a7epit\u00c2\u00a7rstop",
+            "type": "data",
+            "uuid": "b820eed4-e49a-44aa-975a-1c6d85420d16",
+            "version": [
+                1,
+                8,
+                0
+            ],
+            "min_engine_version": [
+                1,
+                16,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "14b9a43a-8846-42e5-9eb5-d547510a60c7",
+            "version": [
+                1,
+                8,
+                0
+            ]
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "Legopitstop"
+        ],
+        "license": "https://legopitstop.weebly.com/legopitstops-common-license.html",
+        "url": "https://legopitstop.weebly.com/"
+    },
+    "subpacks": [
+        {
+            "folder_name": "test_features",
+            "name": "Test Features: \u00c2\u00a72ON\u00c2\u00a7r",
+            "memory_tier": 2
+        },
+        {
+            "folder_name": "pack",
+            "name": "Test Features: \u00c2\u00a74OFF\u00c2\u00a7r",
+            "memory_tier": 1
+        }
+    ]
+}

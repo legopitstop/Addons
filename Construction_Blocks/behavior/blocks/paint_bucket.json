@@ -1,0 +1,625 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:paint_bucket",
+            "properties": {
+                "const:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "const:level": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "const:color": [
+                    "black",
+                    "blue",
+                    "brown",
+                    "cyan",
+                    "gray",
+                    "green",
+                    "light_blue",
+                    "light_gray",
+                    "lime",
+                    "magenta",
+                    "orange",
+                    "pink",
+                    "purple",
+                    "red",
+                    "white",
+                    "yellow"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/paint_bucket.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:breakonpush": true,
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:entity_collision": false,
+            "minecraft:on_player_placing": {
+                "event": "const:place_block"
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -5,
+                    0,
+                    -5
+                ],
+                "size": [
+                    10,
+                    9,
+                    10
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "name": "direction=north",
+                "condition": "q.block_property('const:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "direction=south",
+                "condition": "q.block_property('const:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "direction=west",
+                "condition": "q.block_property('const:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "direction=east",
+                "condition": "q.block_property('const:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "level=0",
+                "condition": "q.block_property('const:level') == 0",
+                "components": {
+                    "minecraft:geometry": "geometry.block.paint_bucket",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name =='black_dye' || q.get_equipped_item_name =='blue_dye' || q.get_equipped_item_name =='brown_dye' || q.get_equipped_item_name =='cyan_dye' || q.get_equipped_item_name =='gray_dye' || q.get_equipped_item_name =='green_dye' || q.get_equipped_item_name =='light_blue_dye' || q.get_equipped_item_name =='light_gray_dye' || q.get_equipped_item_name =='lime_dye' || q.get_equipped_item_name =='magenta_dye' || q.get_equipped_item_name =='orange_dye' || q.get_equipped_item_name =='pink_dye' || q.get_equipped_item_name =='purple_dye' || q.get_equipped_item_name =='red_dye' || q.get_equipped_item_name =='white_dye' || q.get_equipped_item_name =='yellow_dye'",
+                        "event": "const:level_three"
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:empty_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "level=3",
+                "condition": "q.block_property('const:level') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.block.paint_bucket_level3",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name =='paint_roller'",
+                        "event": "const:level_two"
+                    }
+                }
+            },
+            {
+                "name": "level=2",
+                "condition": "q.block_property('const:level') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.block.paint_bucket_level2",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name =='paint_roller'",
+                        "event": "const:level_one"
+                    }
+                }
+            },
+            {
+                "name": "level=1",
+                "condition": "q.block_property('const:level') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.block.paint_bucket_level1",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name =='paint_roller'",
+                        "event": "const:level_empty"
+                    }
+                }
+            },
+            {
+                "name": "color=black",
+                "condition": "q.block_property('const:color') == 'black'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=blue",
+                "condition": "q.block_property('const:color') == 'blue'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:blue_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=brown",
+                "condition": "q.block_property('const:color') == 'brown'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:brown_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=cyan",
+                "condition": "q.block_property('const:color') == 'cyan'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:cyan_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=gray",
+                "condition": "q.block_property('const:color') == 'gray'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:gray_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=green",
+                "condition": "q.block_property('const:color') == 'green'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:green_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=light_blue",
+                "condition": "q.block_property('const:color') == 'light_blue'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:light_blue_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=light_gray",
+                "condition": "q.block_property('const:color') == 'light_gray'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:light_gray_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=lime",
+                "condition": "q.block_property('const:color') == 'lime'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:lime_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=magenta",
+                "condition": "q.block_property('const:color') == 'magenta'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:magenta_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=orange",
+                "condition": "q.block_property('const:color') == 'orange'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:orange_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=pink",
+                "condition": "q.block_property('const:color') == 'pink'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:pink_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=purple",
+                "condition": "q.block_property('const:color') == 'purple'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:purple_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=red",
+                "condition": "q.block_property('const:color') == 'red'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:red_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=white",
+                "condition": "q.block_property('const:color') == 'white'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:white_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "color=yellow",
+                "condition": "q.block_property('const:color') == 'yellow'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:yellow_paint_bucket",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "const:give_paint_roller": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:color') == 'black'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_black"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'blue'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_blue"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'brown'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_brown"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'cyan'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_cyan"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'gray'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_gray"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'green'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_green"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'light_blue'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_light_blue"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'light_gray'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_light_gray"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'lime'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_lime"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'magenta'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_magenta"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'orange'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_orange"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'pink'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_pink"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'purple'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_purple"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'red'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_red"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'white'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_white"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:color') == 'yellow'",
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p const:paint_roller_yellow"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "target": "player",
+                            "command": "playsound copper.wax.on @p"
+                        }
+                    }
+                ]
+            },
+            "const:place_block": {
+                "set_block_property": {
+                    "const:direction": "(q.cardinal_facing_2d)",
+                    "const:level": "0"
+                }
+            },
+            "const:level_empty": {
+                "sequence": [
+                    {
+                        "decrement_stack": {},
+                        "trigger": {
+                            "event": "const:give_paint_roller"
+                        },
+                        "set_block_property": {
+                            "const:level": "0"
+                        }
+                    }
+                ]
+            },
+            "const:level_one": {
+                "decrement_stack": {},
+                "set_block_property": {
+                    "const:level": "1"
+                },
+                "trigger": {
+                    "event": "const:give_paint_roller"
+                }
+            },
+            "const:level_two": {
+                "decrement_stack": {},
+                "set_block_property": {
+                    "const:level": "2"
+                },
+                "trigger": {
+                    "event": "const:give_paint_roller"
+                }
+            },
+            "const:level_three": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name =='black_dye'",
+                        "set_block_property": {
+                            "const:color": "'black'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='blue_dye'",
+                        "set_block_property": {
+                            "const:color": "'blue'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='brown_dye'",
+                        "set_block_property": {
+                            "const:color": "'brown'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='cyan_dye'",
+                        "set_block_property": {
+                            "const:color": "'cyan'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='gray_dye'",
+                        "set_block_property": {
+                            "const:color": "'gray'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='green_dye'",
+                        "set_block_property": {
+                            "const:color": "'green'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='light_blue_dye'",
+                        "set_block_property": {
+                            "const:color": "'blue'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='light_gray_dye'",
+                        "set_block_property": {
+                            "const:color": "'light_gray'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='lime_dye'",
+                        "set_block_property": {
+                            "const:color": "'lime'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='magenta_dye'",
+                        "set_block_property": {
+                            "const:color": "'magenta'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='orange_dye'",
+                        "set_block_property": {
+                            "const:color": "'orange'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='pink_dye'",
+                        "set_block_property": {
+                            "const:color": "'pink'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='purple_dye'",
+                        "set_block_property": {
+                            "const:color": "'purple'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='red_dye'",
+                        "set_block_property": {
+                            "const:color": "'red'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='white_dye'",
+                        "set_block_property": {
+                            "const:color": "'white'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='yellow_dye'",
+                        "set_block_property": {
+                            "const:color": "'yellow'"
+                        }
+                    },
+                    {
+                        "decrement_stack": {},
+                        "set_block_property": {
+                            "const:level": "3"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": "playsound copper.wax.on @p"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

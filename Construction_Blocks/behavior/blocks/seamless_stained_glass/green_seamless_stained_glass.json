@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:green_seamless_stained_glass"
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/green_seamless_stained_glass.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:breathability": "air",
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:green_seamless_stained_glass",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

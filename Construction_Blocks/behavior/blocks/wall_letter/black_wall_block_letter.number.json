@@ -1,0 +1,365 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:black_wall_block_letter.number",
+            "register_to_creative_menu": false,
+            "properties": {
+                "const:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "const:number": [
+                    "zero",
+                    "one",
+                    "two",
+                    "three",
+                    "four",
+                    "five",
+                    "six",
+                    "seven",
+                    "eight",
+                    "nine",
+                    "none"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/black_wall_letter.json",
+            "minecraft:geometry": "geometry.block.wall_letter",
+            "minecraft:entity_collision": false,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:on_player_placing": {
+                "event": "const:place_block"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_sneaking",
+                "event": "const:change_letter"
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    6
+                ],
+                "size": [
+                    16,
+                    16,
+                    2
+                ]
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "north",
+                            "south",
+                            "west",
+                            "east"
+                        ]
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'zero'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.zero",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'one'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.one",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'two'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.two",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'three'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.three",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'four'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.four",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'five'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.five",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'six'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.six",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'seven'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.seven",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'eight'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.eight",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:number') == 'nine'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.nine",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "const:place_block": {
+                "set_block_property": {
+                    "const:direction": "(q.cardinal_block_face_placed_on)"
+                }
+            },
+            "const:change_letter": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:number') == 'nine'",
+                        "set_block_property": {
+                            "const:number": "'zero'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar Reset back to 'zero'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'eight'",
+                        "set_block_property": {
+                            "const:number": "'nine'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 10: 'nine'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'seven'",
+                        "set_block_property": {
+                            "const:number": "'eight'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 9: 'eight'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'six'",
+                        "set_block_property": {
+                            "const:number": "'seven'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 8: 'seven'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'five'",
+                        "set_block_property": {
+                            "const:number": "'six'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 7: 'six'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'four'",
+                        "set_block_property": {
+                            "const:number": "'five'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 6: 'five'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'three'",
+                        "set_block_property": {
+                            "const:number": "'four'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 5: 'four'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'two'",
+                        "set_block_property": {
+                            "const:number": "'three'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 4: 'three'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'one'",
+                        "set_block_property": {
+                            "const:number": "'two'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 3: 'two'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:number') == 'zero'",
+                        "set_block_property": {
+                            "const:number": "'one'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 2: 'one'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

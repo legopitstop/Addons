@@ -1,0 +1,17 @@
+give @s bright:copper_candle_stick
+give @s bright:copper_white_candle_stick
+give @s bright:copper_orange_candle_stick
+give @s bright:copper_magenta_candle_stick
+give @s bright:copper_light_blue_candle_stick
+give @s bright:copper_yellow_candle_stick
+give @s bright:copper_lime_candle_stick
+give @s bright:copper_pink_candle_stick
+give @s bright:copper_light_gray_candle_stick
+give @s bright:copper_gray_candle_stick
+give @s bright:copper_cyan_candle_stick
+give @s bright:copper_purple_candle_stick
+give @s bright:copper_blue_candle_stick
+give @s bright:copper_brown_candle_stick
+give @s bright:copper_green_candle_stick
+give @s bright:copper_red_candle_stick
+give @s bright:copper_black_candle_stick

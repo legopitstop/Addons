@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:crimson_quarter_block_horz"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:crimson_planks"
+            }
+        ],
+        "result": {
+            "item": "xmas:crimson_quarter_block_horz",
+            "count": 4
+        }
+    }
+}

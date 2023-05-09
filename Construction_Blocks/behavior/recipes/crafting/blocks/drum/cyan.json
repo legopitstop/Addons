@@ -1,0 +1,34 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:cyan_drum"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "drum",
+        "pattern": [
+            "IPI",
+            "ICI",
+            "IDI"
+        ],
+        "key": {
+            "I": {
+                "item": "minecraft:iron_ingot"
+            },
+            "P": {
+                "item": "minecraft:heavy_weighted_pressure_plate"
+            },
+            "C": {
+                "item": "minecraft:cauldron"
+            },
+            "D": {
+                "item": "minecraft:cyan_dye"
+            }
+        },
+        "result": {
+            "item": "const:cyan_drum"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+give @p const:black_creeper_stained_glass
+give @p const:blue_creeper_stained_glass
+give @p const:brown_creeper_stained_glass
+give @p const:cyan_creeper_stained_glass
+give @p const:gray_creeper_stained_glass
+give @p const:green_creeper_stained_glass
+give @p const:light_blue_creeper_stained_glass
+give @p const:light_gray_creeper_stained_glass
+give @p const:lime_creeper_stained_glass
+give @p const:magenta_creeper_stained_glass
+give @p const:orange_creeper_stained_glass
+give @p const:pink_creeper_stained_glass
+give @p const:purple_creeper_stained_glass
+give @p const:red_creeper_stained_glass
+give @p const:white_creeper_stained_glass
+give @p const:yellow_creeper_stained_glass
+give @p const:tinted_creeper_glass

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.18.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "spawnercraft:piglin_spawn_egg"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "nether",
+        "ingredients": [
+            {
+                "item": "minecraft:gold_ingot"
+            },
+            {
+                "item": "minecraft:pig_spawn_egg"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:piglin_spawn_egg",
+                "count": 2
+            }
+        ]
+    }
+}

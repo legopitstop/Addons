@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:sea_lantern_off",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/sea_lantern_off.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#000000",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:sea_lantern_off",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

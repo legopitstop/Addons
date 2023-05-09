@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "seuss:craft/socks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#A#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:dye",
+                "data": 18
+            },
+            "A": {
+                "item": "minecraft:leather_boots"
+            }
+        },
+        "result": [
+            {
+                "item": "seuss:socks"
+            }
+        ]
+    }
+}

@@ -1,0 +1,456 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.two_fish",
+                "texture_width": 32,
+                "texture_height": 32,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 1,
+                "visible_bounds_offset": [
+                    0,
+                    0.5,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "fish",
+                    "pivot": [
+                        3,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "name": "body",
+                    "parent": "fish",
+                    "pivot": [
+                        3,
+                        0,
+                        3
+                    ],
+                    "mirror": true,
+                    "cubes": [
+                        {
+                            "origin": [
+                                2,
+                                0,
+                                -1
+                            ],
+                            "size": [
+                                2,
+                                4,
+                                7
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "origin": [
+                                3,
+                                4,
+                                -2
+                            ],
+                            "size": [
+                                0,
+                                1,
+                                6
+                            ],
+                            "uv": [
+                                20,
+                                -6
+                            ]
+                        },
+                        {
+                            "origin": [
+                                3,
+                                -1,
+                                3
+                            ],
+                            "size": [
+                                0,
+                                1,
+                                2
+                            ],
+                            "uv": [
+                                24,
+                                -2
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "head",
+                    "parent": "fish",
+                    "pivot": [
+                        3,
+                        2,
+                        -1
+                    ],
+                    "mirror": true,
+                    "cubes": [
+                        {
+                            "origin": [
+                                2,
+                                1,
+                                -5
+                            ],
+                            "size": [
+                                2,
+                                3,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "origin": [
+                                2,
+                                0,
+                                -4
+                            ],
+                            "size": [
+                                2,
+                                4,
+                                3
+                            ],
+                            "uv": [
+                                11,
+                                0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightFin",
+                    "parent": "fish",
+                    "pivot": [
+                        4,
+                        2,
+                        -1
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                4,
+                                1,
+                                -2
+                            ],
+                            "size": [
+                                2,
+                                1,
+                                2
+                            ],
+                            "pivot": [
+                                4,
+                                2,
+                                -1
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                -45
+                            ],
+                            "uv": [
+                                24,
+                                1
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "leftFin",
+                    "parent": "fish",
+                    "pivot": [
+                        2,
+                        2,
+                        -1
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                0,
+                                1,
+                                -2
+                            ],
+                            "size": [
+                                2,
+                                1,
+                                2
+                            ],
+                            "pivot": [
+                                2,
+                                2,
+                                -1
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                30
+                            ],
+                            "uv": [
+                                24,
+                                4
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "tailfin",
+                    "parent": "fish",
+                    "pivot": [
+                        3,
+                        2,
+                        6
+                    ],
+                    "mirror": true,
+                    "cubes": [
+                        {
+                            "origin": [
+                                3,
+                                0,
+                                6
+                            ],
+                            "size": [
+                                0,
+                                4,
+                                6
+                            ],
+                            "uv": [
+                                20,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "fish2",
+                    "pivot": [
+                        -3,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "name": "body2",
+                    "parent": "fish2",
+                    "pivot": [
+                        -3,
+                        0,
+                        3
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                0,
+                                -1
+                            ],
+                            "size": [
+                                2,
+                                4,
+                                7
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -3,
+                                4,
+                                -2
+                            ],
+                            "size": [
+                                0,
+                                1,
+                                6
+                            ],
+                            "uv": [
+                                20,
+                                -6
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -3,
+                                -1,
+                                3
+                            ],
+                            "size": [
+                                0,
+                                1,
+                                2
+                            ],
+                            "uv": [
+                                24,
+                                -2
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "head2",
+                    "parent": "fish2",
+                    "pivot": [
+                        -3,
+                        0,
+                        -1
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                1,
+                                -5
+                            ],
+                            "size": [
+                                2,
+                                3,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -4,
+                                0,
+                                -4
+                            ],
+                            "size": [
+                                2,
+                                4,
+                                3
+                            ],
+                            "uv": [
+                                11,
+                                0
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "leftFin2",
+                    "parent": "fish2",
+                    "pivot": [
+                        -4,
+                        2,
+                        -1
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -6,
+                                1,
+                                -2
+                            ],
+                            "size": [
+                                2,
+                                1,
+                                2
+                            ],
+                            "pivot": [
+                                -4,
+                                2,
+                                -1
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                30
+                            ],
+                            "uv": [
+                                24,
+                                4
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "rightFin2",
+                    "parent": "fish2",
+                    "pivot": [
+                        -2,
+                        2,
+                        -1
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -2,
+                                1,
+                                -2
+                            ],
+                            "size": [
+                                2,
+                                1,
+                                2
+                            ],
+                            "pivot": [
+                                -2,
+                                2,
+                                -1
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                -30
+                            ],
+                            "uv": [
+                                24,
+                                1
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "tailfin2",
+                    "parent": "fish2",
+                    "pivot": [
+                        -3,
+                        2,
+                        6
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -3,
+                                0,
+                                6
+                            ],
+                            "size": [
+                                0,
+                                4,
+                                6
+                            ],
+                            "uv": [
+                                20,
+                                1
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

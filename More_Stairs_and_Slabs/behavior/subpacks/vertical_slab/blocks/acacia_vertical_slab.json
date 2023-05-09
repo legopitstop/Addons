@@ -1,0 +1,220 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas#info",
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "more_ss:acacia_vertical_slab",
+            "properties": {
+                "lps:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "lps:type": [
+                    "single",
+                    "double"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "Construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 2.0,
+            "minecraft:explosion_resistance": 2.0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "minecraft:acacia_planks",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "lps:place_block"
+            },
+            "minecraft:on_interact": {
+                "event": "lps:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:direction') == 2 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/acacia_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -180,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 3 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/acacia_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 4 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/acacia_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 5 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/acacia_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/acacia_vertical_double_slab.json",
+                    "minecraft:unit_cube": {}
+                }
+            }
+        ],
+        "events": {
+            "lps:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name =='acacia_vertical_slab' && query.block_property('lps:type') != 'double'",
+                        "decrement_stack": {},
+                        "set_block_property": {
+                            "lps:type": "'double'",
+                            "lps:direction": "6"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": "playsound use.wood @p"
+                        }
+                    }
+                ]
+            },
+            "lps:place_block": {
+                "set_block_property": {
+                    "lps:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        }
+    }
+}

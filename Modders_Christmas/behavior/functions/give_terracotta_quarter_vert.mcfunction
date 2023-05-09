@@ -1,0 +1,17 @@
+give @s xmas:white_terracotta_quarter_block_vert
+give @s xmas:orange_terracotta_quarter_block_vert
+give @s xmas:magenta_terracotta_quarter_block_vert
+give @s xmas:light_blue_terracotta_quarter_block_vert
+give @s xmas:yellow_terracotta_quarter_block_vert
+give @s xmas:lime_terracotta_quarter_block_vert
+give @s xmas:pink_terracotta_quarter_block_vert
+give @s xmas:light_gray_terracotta_quarter_block_vert
+give @s xmas:gray_terracotta_quarter_block_vert
+give @s xmas:cyan_terracotta_quarter_block_vert
+give @s xmas:purple_terracotta_quarter_block_vert
+give @s xmas:blue_terracotta_quarter_block_vert
+give @s xmas:brown_terracotta_quarter_block_vert
+give @s xmas:green_terracotta_quarter_block_vert
+give @s xmas:red_terracotta_quarter_block_vert
+give @s xmas:black_terracotta_quarter_block_vert
+give @s xmas:terracotta_quarter_block_vert

@@ -1,0 +1,29 @@
+{
+    "$credit": "Thanks to Legopitstop for creating this useful asset",
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "basaltblocks:cracked_polished_basalt_bricks",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/basaltblocks/blocks/cracked_polished_basalt_bricks.json",
+            "minecraft:destroy_time": 0.15,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:map_color": "#191919",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "basaltblocks:cracked_polished_basalt_bricks",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:prismarine_brick_eighth_block"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:prismarine",
+                "data": 2
+            }
+        ],
+        "result": {
+            "item": "xmas:prismarine_brick_eighth_block",
+            "count": 8
+        }
+    }
+}

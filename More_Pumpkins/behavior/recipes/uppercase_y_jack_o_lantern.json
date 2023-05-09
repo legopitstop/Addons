@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "morepumpkin:uppercase_y_jack_o_lantern"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "P",
+            "T"
+        ],
+        "key": {
+            "P": {
+                "item": "morepumpkin:uppercase_y_carved_pumpkin"
+            },
+            "T": {
+                "item": "minecraft:torch"
+            }
+        },
+        "result": {
+            "item": "morepumpkin:uppercase_y_jack_o_lantern"
+        }
+    }
+}

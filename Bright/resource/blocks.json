@@ -1,0 +1,258 @@
+{
+    "format_version": "1.17.3",
+    "bright:iron_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_white_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_orange_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_magenta_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_light_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_yellow_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_lime_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_pink_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_light_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_cyan_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_purple_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_brown_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_green_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_red_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:iron_black_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_white_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_orange_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_magenta_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_light_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_yellow_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_lime_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_pink_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_light_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_cyan_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_purple_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_brown_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_green_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_red_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:copper_black_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_white_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_orange_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_magenta_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_light_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_yellow_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_lime_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_pink_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_light_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_cyan_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_purple_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_brown_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_green_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_red_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:gold_black_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_white_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_orange_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_magenta_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_light_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_yellow_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_lime_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_pink_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_light_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_cyan_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_purple_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_brown_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_green_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_red_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:diamond_black_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_white_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_orange_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_magenta_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_light_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_yellow_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_lime_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_pink_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_light_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_gray_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_cyan_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_purple_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_blue_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_brown_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_green_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_red_candle_stick": {
+        "sound": "candle"
+    },
+    "bright:netherite_black_candle_stick": {
+        "sound": "candle"
+    }
+}

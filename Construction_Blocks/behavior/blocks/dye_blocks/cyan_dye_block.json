@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:dye_block_cyan"
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/cyan_dye_block.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#157989",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:dye_block_cyan",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

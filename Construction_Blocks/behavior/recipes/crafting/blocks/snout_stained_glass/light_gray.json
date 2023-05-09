@@ -1,0 +1,35 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:light_gray_snout_stained_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "snout_stained_glass",
+        "pattern": [
+            "###",
+            "#B#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:stained_glass",
+                "data": 8
+            },
+            "B": {
+                "item": "minecraft:piglin_banner_pattern"
+            }
+        },
+        "result": [
+            {
+                "item": "const:light_gray_snout_stained_glass",
+                "count": 8
+            },
+            {
+                "item": "minecraft:piglin_banner_pattern"
+            }
+        ]
+    }
+}

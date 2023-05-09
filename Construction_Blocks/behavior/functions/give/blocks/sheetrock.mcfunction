@@ -1,0 +1,16 @@
+give @p const:sheetrock_black
+give @p const:sheetrock_blue
+give @p const:sheetrock_brown
+give @p const:sheetrock_cyan
+give @p const:sheetrock_gray
+give @p const:sheetrock_green
+give @p const:sheetrock_light_blue
+give @p const:sheetrock_light_gray
+give @p const:sheetrock_lime
+give @p const:sheetrock_magenta
+give @p const:sheetrock_orange
+give @p const:sheetrock_pink
+give @p const:sheetrock_purple
+give @p const:sheetrock_red
+give @p const:sheetrock_white
+give @p const:sheetrock_yellow

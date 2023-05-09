@@ -1,0 +1,16 @@
+give @p more_ss:white_concrete_slab
+give @p more_ss:orange_concrete_slab
+give @p more_ss:magenta_concrete_slab
+give @p more_ss:light_blue_concrete_slab
+give @p more_ss:yellow_concrete_slab
+give @p more_ss:lime_concrete_slab
+give @p more_ss:pink_concrete_slab
+give @p more_ss:gray_concrete_slab
+give @p more_ss:light_gray_concrete_slab
+give @p more_ss:cyan_concrete_slab
+give @p more_ss:purple_concrete_slab
+give @p more_ss:blue_concrete_slab
+give @p more_ss:brown_concrete_slab
+give @p more_ss:green_concrete_slab
+give @p more_ss:red_concrete_slab
+give @p more_ss:black_concrete_slab

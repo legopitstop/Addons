@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:cracked_stone_brick_stairs_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 0,
+        "ingredients": [
+            {
+                "item": "minecraft:stonebrick",
+                "data": 2
+            }
+        ],
+        "result": {
+            "item": "more_ss:cracked_stone_brick_slab",
+            "count": 1
+        }
+    }
+}

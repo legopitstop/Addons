@@ -1,0 +1,16 @@
+give @s xmas:white_wool_eighth_block
+give @s xmas:orange_wool_eighth_block
+give @s xmas:magenta_wool_eighth_block
+give @s xmas:light_blue_wool_eighth_block
+give @s xmas:yellow_wool_eighth_block
+give @s xmas:lime_wool_eighth_block
+give @s xmas:pink_wool_eighth_block
+give @s xmas:light_gray_wool_eighth_block
+give @s xmas:gray_wool_eighth_block
+give @s xmas:cyan_wool_eighth_block
+give @s xmas:purple_wool_eighth_block
+give @s xmas:blue_wool_eighth_block
+give @s xmas:brown_wool_eighth_block
+give @s xmas:green_wool_eighth_block
+give @s xmas:red_wool_eighth_block
+give @s xmas:black_wool_eighth_block

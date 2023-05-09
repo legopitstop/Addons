@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:stone_hammer"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#S ",
+            " S "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:stone"
+            },
+            "S": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": [
+            {
+                "item": "const:hammer_stone"
+            }
+        ]
+    }
+}

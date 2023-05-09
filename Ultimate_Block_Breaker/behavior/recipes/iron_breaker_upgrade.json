@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "breaker:iron_breaker_upgrade"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#C#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:iron_ingot"
+            },
+            "C": {
+                "item": "minecraft:cobblestone"
+            }
+        },
+        "result": "breaker:iron_breaker_upgrade"
+    }
+}

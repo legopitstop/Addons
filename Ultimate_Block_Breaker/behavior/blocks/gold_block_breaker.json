@@ -1,0 +1,289 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:block": {
+        "description": {
+            "identifier": "breaker:gold_block_breaker",
+            "properties": {
+                "breaker:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "breaker:powered": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            },
+            "minecraft:loot": "loot_tables/blocks/gold_block_breaker.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 3.5,
+            "minecraft:explosion_resistance": 3.5,
+            "minecraft:unit_cube": {},
+            "minecraft:on_player_placing": {
+                "event": "breaker:place_direction"
+            },
+            "minecraft:on_interact": {
+                "event": "breaker:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('breaker:powered') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "breaker:gold_block_breaker_top_on"
+                        },
+                        "down": {
+                            "texture": "breaker:block_breaker_bottom"
+                        },
+                        "north": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        },
+                        "south": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        },
+                        "east": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        },
+                        "west": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        }
+                    },
+                    "minecraft:ticking": {
+                        "looping": true,
+                        "range": [
+                            5,
+                            5
+                        ],
+                        "on_tick": {
+                            "event": "breaker:break_block"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:powered') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "breaker:gold_block_breaker_top"
+                        },
+                        "down": {
+                            "texture": "breaker:block_breaker_bottom"
+                        },
+                        "north": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        },
+                        "south": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        },
+                        "east": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        },
+                        "west": {
+                            "texture": "breaker:gold_block_breaker_side"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        -90,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "breaker:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name =='diamond_breaker_upgrade'",
+                        "trigger": {
+                            "event": "breaker:upgrade"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('breaker:powered') == true",
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "titleraw @s actionbar {\"rawtext\":[{\"translate\":\"gui.false\"}]}",
+                                "playsound random.click @p"
+                            ]
+                        },
+                        "set_block_property": {
+                            "breaker:powered": "false"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('breaker:powered') == false",
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "titleraw @s actionbar {\"rawtext\":[{\"translate\":\"gui.true\"}]}",
+                                "playsound random.click @p"
+                            ]
+                        },
+                        "set_block_property": {
+                            "breaker:powered": "true"
+                        }
+                    }
+                ]
+            },
+            "breaker:upgrade": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "playsound firework.blast @s",
+                                "titleraw @s actionbar {\"rawtext\":[{\"translate\":\"gui.upgrade\",\"with\":{\"rawtext\":[{\"translate\":\"tile.breaker:diamond_block_breaker.name\"}]}}]}"
+                            ]
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 2 && q.block_property('breaker:powered') == false",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_2_false ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 3 && q.block_property('breaker:powered') == false",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_3_false ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 4 && q.block_property('breaker:powered') == false",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_4_false ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 5 && q.block_property('breaker:powered') == false",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_5_false ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 2 && q.block_property('breaker:powered') == true",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_2_true ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 3 && q.block_property('breaker:powered') == true",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_3_true ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 4 && q.block_property('breaker:powered') == true",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_4_true ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('breaker:direction') == 5 && q.block_property('breaker:powered') == true",
+                        "run_command": {
+                            "target": "block",
+                            "command": "structure load breaker:diamond_block_breaker_5_true ~ ~ ~"
+                        }
+                    }
+                ]
+            },
+            "breaker:place_direction": {
+                "set_block_property": {
+                    "breaker:direction": "(query.cardinal_facing_2d)"
+                }
+            },
+            "breaker:break_block": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('breaker:direction') == 2",
+                        "run_command": {
+                            "command": [
+                                "function breaker/north"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('breaker:direction') == 3",
+                        "run_command": {
+                            "command": [
+                                "function breaker/south"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('breaker:direction') == 4",
+                        "run_command": {
+                            "command": [
+                                "function breaker/west"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('breaker:direction') == 5",
+                        "run_command": {
+                            "command": [
+                                "function breaker/east"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

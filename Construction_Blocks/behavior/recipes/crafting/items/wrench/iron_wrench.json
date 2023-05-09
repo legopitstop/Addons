@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:iron_wrench"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            " ##",
+            "/  "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:iron_ingot"
+            },
+            "/": {
+                "item": "const:stick_iron"
+            }
+        },
+        "result": [
+            {
+                "item": "const:wrench"
+            }
+        ]
+    }
+}

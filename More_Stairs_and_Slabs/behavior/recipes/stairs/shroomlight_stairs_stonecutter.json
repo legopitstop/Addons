@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:shroomlight_stairs_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:shroomlight"
+            }
+        ],
+        "result": {
+            "item": "more_ss:shroomlight_slab",
+            "count": 1
+        }
+    }
+}

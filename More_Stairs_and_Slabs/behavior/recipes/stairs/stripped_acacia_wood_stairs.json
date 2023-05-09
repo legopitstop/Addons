@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:stripped_acacia_wood_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "concrete_stairs",
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:wood",
+                "data": 12
+            }
+        },
+        "result": {
+            "item": "more_ss:stripped_acacia_wood_stairs",
+            "count": 4
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:craft/block/modern_lamp"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#A#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:glass_pane"
+            },
+            "A": {
+                "item": "minecraft:sealantern"
+            }
+        },
+        "result": [
+            {
+                "item": "const:modern_lamp"
+            }
+        ]
+    }
+}

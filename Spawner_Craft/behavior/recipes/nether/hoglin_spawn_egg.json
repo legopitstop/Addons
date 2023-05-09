@@ -1,0 +1,37 @@
+{
+    "format_version": "1.18.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "spawnercraft:hoglin_spawn_egg"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " T ",
+            "SES",
+            " G "
+        ],
+        "group": "nether",
+        "key": {
+            "E": {
+                "item": "minecraft:egg"
+            },
+            "G": {
+                "item": "minecraft:gold_ingot"
+            },
+            "S": {
+                "item": "minecraft:porkchop"
+            },
+            "T": {
+                "item": "minecraft:bone"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:hoglin_spawn_egg",
+                "count": 1
+            }
+        ]
+    }
+}

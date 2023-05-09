@@ -1,0 +1,37 @@
+{
+    "format_version": "1.18.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "spawnercraft:frog_spawn_egg_from_ochre"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " T ",
+            "SES",
+            " G "
+        ],
+        "group": "friendly",
+        "key": {
+            "E": {
+                "item": "minecraft:egg"
+            },
+            "G": {
+                "item": "minecraft:gold_ingot"
+            },
+            "T": {
+                "item": "minecraft:slime_ball"
+            },
+            "S": {
+                "item": "minecraft:ochre_froglight"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:frog_spawn_egg",
+                "count": 1
+            }
+        ]
+    }
+}

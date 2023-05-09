@@ -1,0 +1,25 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:copper_nugget"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:copper_ingot"
+            }
+        },
+        "result": [
+            {
+                "item": "const:copper_nugget",
+                "count": 9
+            }
+        ]
+    }
+}

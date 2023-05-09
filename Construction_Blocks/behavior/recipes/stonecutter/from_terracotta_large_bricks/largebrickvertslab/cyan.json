@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:cyan_terracotta_large_brick_vertical_slab_from_cyan_terracotta_large_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:cyan_terracotta_large_bricks"
+            }
+        ],
+        "result": {
+            "item": "const:cyan_terracotta_large_brick_vertical_slab",
+            "count": 2
+        }
+    }
+}

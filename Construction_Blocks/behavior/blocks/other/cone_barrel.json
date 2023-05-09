@@ -1,0 +1,105 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:cone_barrel",
+            "properties": {
+                "const:rotation": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/cone_barrel.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 1.25,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:geometry": "geometry.cone_barrel",
+            "minecraft:on_player_placing": {
+                "event": "const:rotational"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:cone_barrel",
+                    "render_method": "blend"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:rotation') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:rotation') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:rotation') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:rotation') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:rotation') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:rotation') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:rotational": {
+                "set_block_property": {
+                    "const:rotation": "(q.cardinal_player_facing)"
+                }
+            }
+        }
+    }
+}

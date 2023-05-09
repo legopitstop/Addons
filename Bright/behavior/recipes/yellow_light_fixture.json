@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "bright:yellow_light_fixture"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "CC",
+            "GC",
+            "GC"
+        ],
+        "key": {
+            "C": {
+                "item": "minecraft:concrete",
+                "data": 4
+            },
+            "G": {
+                "item": "minecraft:glowstone_dust"
+            }
+        },
+        "result": "bright:yellow_light_fixture"
+    }
+}

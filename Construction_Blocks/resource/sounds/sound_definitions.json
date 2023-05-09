@@ -1,0 +1,14 @@
+{
+    "format_version": "1.17.1",
+    "sound_definitions": {
+        "strip": {
+            "category": "neutral",
+            "sounds": [
+                "sounds/item/axe/strip1",
+                "sounds/item/axe/strip2",
+                "sounds/item/axe/strip3",
+                "sounds/item/axe/strip4"
+            ]
+        }
+    }
+}

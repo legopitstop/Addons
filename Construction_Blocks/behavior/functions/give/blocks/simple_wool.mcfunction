@@ -1,0 +1,16 @@
+give @p const:simple_wool_black
+give @p const:simple_wool_blue
+give @p const:simple_wool_brown
+give @p const:simple_wool_cyan
+give @p const:simple_wool_gray
+give @p const:simple_wool_green
+give @p const:simple_wool_light_blue
+give @p const:simple_wool_light_gray
+give @p const:simple_wool_lime
+give @p const:simple_wool_magenta
+give @p const:simple_wool_orange
+give @p const:simple_wool_pink
+give @p const:simple_wool_purple
+give @p const:simple_wool_red
+give @p const:simple_wool_white
+give @p const:simple_wool_yellow

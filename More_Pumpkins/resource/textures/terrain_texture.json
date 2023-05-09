@@ -1,0 +1,638 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "minecraft:pumpkin_side": {
+            "textures": "textures/blocks/pumpkin_side.png"
+        },
+        "minecraft:pumpkin_top": {
+            "textures": "textures/blocks/pumpkin_top.png"
+        },
+        "morepumpkin:creeper_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/creeper_carved_pumpkin.png"
+        },
+        "morepumpkin:flower_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/flower_carved_pumpkin.png"
+        },
+        "morepumpkin:ghast_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/ghast_carved_pumpkin.png"
+        },
+        "morepumpkin:globe_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/globe_carved_pumpkin.png"
+        },
+        "morepumpkin:observer_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/observer_carved_pumpkin.png"
+        },
+        "morepumpkin:skeleton_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/skeleton_carved_pumpkin.png"
+        },
+        "morepumpkin:snout_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/snout_carved_pumpkin.png"
+        },
+        "morepumpkin:zero_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/zero_carved_pumpkin.png"
+        },
+        "morepumpkin:one_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/one_carved_pumpkin.png"
+        },
+        "morepumpkin:two_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/two_carved_pumpkin.png"
+        },
+        "morepumpkin:three_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/three_carved_pumpkin.png"
+        },
+        "morepumpkin:four_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/four_carved_pumpkin.png"
+        },
+        "morepumpkin:five_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/five_carved_pumpkin.png"
+        },
+        "morepumpkin:six_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/six_carved_pumpkin.png"
+        },
+        "morepumpkin:seven_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/seven_carved_pumpkin.png"
+        },
+        "morepumpkin:eight_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/eight_carved_pumpkin.png"
+        },
+        "morepumpkin:nine_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/numbers/nine_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_a_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/a_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_b_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/b_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_c_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/c_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_d_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/d_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_e_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/e_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_f_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/f_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_g_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/g_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_h_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/h_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_i_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/i_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_j_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/j_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_k_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/k_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_l_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/l_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_m_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/m_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_n_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/n_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_o_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/o_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_p_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/p_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_q_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/q_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_r_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/r_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_s_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/s_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_t_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/t_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_u_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/u_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_v_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/v_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_w_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/w_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_x_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/x_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_y_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/y_carved_pumpkin.png"
+        },
+        "morepumpkin:uppercase_z_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/uppercase/z_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_a_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/a_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_b_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/b_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_c_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/c_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_d_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/d_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_e_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/e_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_f_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/f_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_g_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/g_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_h_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/h_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_i_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/i_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_j_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/j_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_k_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/k_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_l_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/l_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_m_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/m_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_n_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/n_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_o_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/o_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_p_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/p_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_q_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/q_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_r_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/r_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_s_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/s_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_t_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/t_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_u_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/u_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_v_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/v_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_w_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/w_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_x_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/x_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_y_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/y_carved_pumpkin.png"
+        },
+        "morepumpkin:lowercase_z_carved_pumpkin": {
+            "textures": "textures/morepumpkin/blocks/lowercase/z_carved_pumpkin.png"
+        },
+        "morepumpkin:creeper_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/creeper_jack_o_lantern.png"
+        },
+        "morepumpkin:flower_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/flower_jack_o_lantern.png"
+        },
+        "morepumpkin:ghast_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/ghast_jack_o_lantern.png"
+        },
+        "morepumpkin:globe_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/globe_jack_o_lantern.png"
+        },
+        "morepumpkin:observer_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/observer_jack_o_lantern.png"
+        },
+        "morepumpkin:skeleton_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/skeleton_jack_o_lantern.png"
+        },
+        "morepumpkin:snout_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/snout_jack_o_lantern.png"
+        },
+        "morepumpkin:zero_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/zero_jack_o_lantern.png"
+        },
+        "morepumpkin:one_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/one_jack_o_lantern.png"
+        },
+        "morepumpkin:two_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/two_jack_o_lantern.png"
+        },
+        "morepumpkin:three_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/three_jack_o_lantern.png"
+        },
+        "morepumpkin:four_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/four_jack_o_lantern.png"
+        },
+        "morepumpkin:five_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/five_jack_o_lantern.png"
+        },
+        "morepumpkin:six_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/six_jack_o_lantern.png"
+        },
+        "morepumpkin:seven_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/seven_jack_o_lantern.png"
+        },
+        "morepumpkin:eight_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/eight_jack_o_lantern.png"
+        },
+        "morepumpkin:nine_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/nine_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_a_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/a_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_b_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/b_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_c_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/c_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_d_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/d_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_e_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/e_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_f_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/f_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_g_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/g_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_h_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/h_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_i_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/i_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_j_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/j_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_k_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/k_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_l_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/l_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_m_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/m_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_n_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/n_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_o_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/o_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_p_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/p_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_q_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/q_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_r_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/r_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_s_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/s_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_t_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/t_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_u_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/u_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_v_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/v_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_w_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/w_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_x_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/x_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_y_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/y_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_z_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/z_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_a_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/a_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_b_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/b_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_c_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/c_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_d_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/d_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_e_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/e_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_f_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/f_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_g_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/g_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_h_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/h_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_i_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/i_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_j_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/j_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_k_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/k_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_l_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/l_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_m_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/m_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_n_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/n_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_o_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/o_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_p_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/p_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_q_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/q_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_r_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/r_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_s_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/s_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_t_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/t_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_u_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/u_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_v_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/v_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_w_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/w_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_x_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/x_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_y_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/y_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_z_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/z_jack_o_lantern.png"
+        },
+        "morepumpkin:soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/soul_jack_o_lantern.png"
+        },
+        "morepumpkin:creeper_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/creeper_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:flower_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/flower_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:ghast_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/ghast_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:globe_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/globe_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:observer_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/observer_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:skeleton_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/skeleton_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:snout_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/snout_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:zero_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/zero_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:one_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/one_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:two_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/two_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:three_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/three_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:four_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/four_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:five_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/five_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:six_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/six_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:seven_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/seven_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:eight_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/eight_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:nine_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/numbers/nine_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_a_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/a_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_b_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/b_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_c_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/c_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_d_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/d_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_e_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/e_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_f_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/f_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_g_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/g_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_h_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/h_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_i_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/i_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_j_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/j_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_k_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/k_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_l_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/l_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_m_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/m_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_n_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/n_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_o_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/o_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_p_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/p_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_q_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/q_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_r_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/r_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_s_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/s_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_t_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/t_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_u_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/u_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_v_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/v_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_w_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/w_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_x_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/x_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_y_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/y_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:uppercase_z_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/uppercase/z_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_a_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/a_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_b_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/b_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_c_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/c_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_d_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/d_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_e_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/e_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_f_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/f_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_g_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/g_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_h_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/h_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_i_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/i_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_j_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/j_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_k_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/k_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_l_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/l_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_m_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/m_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_n_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/n_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_o_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/o_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_p_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/p_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_q_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/q_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_r_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/r_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_s_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/s_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_t_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/t_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_u_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/u_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_v_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/v_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_w_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/w_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_x_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/x_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_y_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/y_soul_jack_o_lantern.png"
+        },
+        "morepumpkin:lowercase_z_soul_jack_o_lantern": {
+            "textures": "textures/morepumpkin/blocks/lowercase/z_soul_jack_o_lantern.png"
+        }
+    }
+}

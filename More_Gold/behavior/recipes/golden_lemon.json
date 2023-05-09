@@ -1,0 +1,29 @@
+{
+    "format_version": "1.18",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "moregold:golden_lemon"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#P#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_ingot"
+            },
+            "P": {
+                "item": "morefood:lemon"
+            }
+        },
+        "result": [
+            {
+                "item": "moregold:golden_lemon"
+            }
+        ]
+    }
+}

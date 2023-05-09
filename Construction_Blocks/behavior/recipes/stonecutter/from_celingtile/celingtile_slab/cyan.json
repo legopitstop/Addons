@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:cyan_celingtile_slab_from_cyan_celingtile"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:celingtile_cyan"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:cyan_celingtile_slab",
+                "count": 2
+            }
+        ]
+    }
+}

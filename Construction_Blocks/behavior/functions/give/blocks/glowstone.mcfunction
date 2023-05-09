@@ -1,0 +1,16 @@
+give @p const:glowstone_black
+give @p const:glowstone_blue
+give @p const:glowstone_brown
+give @p const:glowstone_cyan
+give @p const:glowstone_gray
+give @p const:glowstone_green
+give @p const:glowstone_light_blue
+give @p const:glowstone_light_gray
+give @p const:glowstone_lime
+give @p const:glowstone_magenta
+give @p const:glowstone_orange
+give @p const:glowstone_pink
+give @p const:glowstone_purple
+give @p const:glowstone_red
+give @p const:glowstone_white
+give @p const:glowstone_yellow

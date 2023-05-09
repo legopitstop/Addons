@@ -1,0 +1,15 @@
+give @s xmas:red_nether_brick_eighth_block
+give @s xmas:red_sandstone_eighth_block
+give @s xmas:sandstone_eighth_block
+give @s xmas:smooth_quartz_eighth_block
+give @s xmas:smooth_red_sandstone_eighth_block
+give @s xmas:smooth_sandstone_eighth_block
+give @s xmas:smooth_stone_eighth_block
+give @s xmas:spruce_eighth_block
+give @s xmas:stone_brick_eighth_block
+give @s xmas:warped_eighth_block
+give @s xmas:waxed_cut_copper_eighth_block
+give @s xmas:waxed_exposed_cut_copper_eighth_block
+give @s xmas:waxed_oxidized_cut_copper_eighth_block
+give @s xmas:waxed_weathered_cut_copper_eighth_block
+give @s xmas:weathered_cut_copper_eighth_block

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:pink_concrete_slab_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 0,
+        "ingredients": [
+            {
+                "item": "minecraft:concrete",
+                "data": 6
+            }
+        ],
+        "result": {
+            "item": "more_ss:pink_concrete_slab",
+            "count": 2
+        }
+    }
+}

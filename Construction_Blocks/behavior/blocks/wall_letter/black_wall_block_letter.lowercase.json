@@ -1,0 +1,770 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:black_wall_block_letter.lowercase",
+            "register_to_creative_menu": false,
+            "properties": {
+                "const:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "const:letter1": [
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "e",
+                    "f",
+                    "g",
+                    "h",
+                    "i",
+                    "j",
+                    "k",
+                    "l",
+                    "m",
+                    "n",
+                    "o",
+                    "none"
+                ],
+                "const:letter2": [
+                    "none",
+                    "p",
+                    "q",
+                    "r",
+                    "s",
+                    "t",
+                    "u",
+                    "v",
+                    "w",
+                    "x",
+                    "y",
+                    "z"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/black_wall_letter.json",
+            "minecraft:geometry": "geometry.block.wall_letter",
+            "minecraft:entity_collision": false,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:on_player_placing": {
+                "event": "const:place_block"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_sneaking",
+                "event": "const:change_letter"
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    6
+                ],
+                "size": [
+                    16,
+                    16,
+                    2
+                ]
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "north",
+                            "south",
+                            "west",
+                            "east"
+                        ]
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'a'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.a",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'b'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.b",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'c'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.c",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'd'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.d",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'e'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.e",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'f'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.f",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'g'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.g",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'h'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.h",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'i'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.i",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'j'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.j",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'k'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.k",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'l'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.l",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'm'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.m",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'n'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.n",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter1') == 'o'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.o",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'p'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.p",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'q'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.q",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'r'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.r",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 's'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.s",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 't'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.t",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'u'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.u",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'v'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.v",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'w'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.w",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'x'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.x",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'y'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.y",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:letter2') == 'z'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.z",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "const:place_block": {
+                "set_block_property": {
+                    "const:direction": "(q.cardinal_block_face_placed_on)"
+                }
+            },
+            "const:change_letter": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:letter2') == 'z'",
+                        "set_block_property": {
+                            "const:letter1": "'a'",
+                            "const:letter2": "'none'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar Reset back to 'a'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'y'",
+                        "set_block_property": {
+                            "const:letter2": "'z'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 26: 'z'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'x'",
+                        "set_block_property": {
+                            "const:letter2": "'y'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 25: 'y'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'w'",
+                        "set_block_property": {
+                            "const:letter2": "'x'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 24: 'x'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'v'",
+                        "set_block_property": {
+                            "const:letter2": "'w'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 23: 'w'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'u'",
+                        "set_block_property": {
+                            "const:letter2": "'v'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 22: 'v'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 't'",
+                        "set_block_property": {
+                            "const:letter2": "'u'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 21: 'u'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 's'",
+                        "set_block_property": {
+                            "const:letter2": "'t'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 20: 't'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'r'",
+                        "set_block_property": {
+                            "const:letter2": "'s'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 19: 's'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'q'",
+                        "set_block_property": {
+                            "const:letter2": "'r'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 18: 'r'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter2') == 'p'",
+                        "set_block_property": {
+                            "const:letter2": "'q'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 17: 'q'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'o'",
+                        "set_block_property": {
+                            "const:letter1": "'none'",
+                            "const:letter2": "'p'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 16: 'p'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'n'",
+                        "set_block_property": {
+                            "const:letter1": "'o'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 15: 'o'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'm'",
+                        "set_block_property": {
+                            "const:letter1": "'n'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 14: 'n'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'l'",
+                        "set_block_property": {
+                            "const:letter1": "'m'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 13: 'm'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'k'",
+                        "set_block_property": {
+                            "const:letter1": "'l'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 12: 'l'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'j'",
+                        "set_block_property": {
+                            "const:letter1": "'k'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 11: 'k'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'i'",
+                        "set_block_property": {
+                            "const:letter1": "'j'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 10: 'j'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'h'",
+                        "set_block_property": {
+                            "const:letter1": "'i'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 9: 'i'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'g'",
+                        "set_block_property": {
+                            "const:letter1": "'h'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 8: 'h'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'f'",
+                        "set_block_property": {
+                            "const:letter1": "'g'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 7: 'g'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'e'",
+                        "set_block_property": {
+                            "const:letter1": "'f'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 6: 'f'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'd'",
+                        "set_block_property": {
+                            "const:letter1": "'e'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 5: 'e'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'c'",
+                        "set_block_property": {
+                            "const:letter1": "'d'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 4: 'd'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'b'",
+                        "set_block_property": {
+                            "const:letter1": "'c'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 3: 'c'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:letter1') == 'a'",
+                        "set_block_property": {
+                            "const:letter1": "'b'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 2: 'b'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

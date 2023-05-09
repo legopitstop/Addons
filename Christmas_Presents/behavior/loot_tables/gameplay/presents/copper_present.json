@@ -1,0 +1,20 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 40,
+                    "type": "loot_table",
+                    "name": "loot_tables/gameplay/presents/good_present.json"
+                },
+                {
+                    "weight": 60,
+                    "type": "loot_table",
+                    "name": "loot_tables/gameplay/presents/bad_present.json"
+                }
+            ]
+        }
+    ]
+}

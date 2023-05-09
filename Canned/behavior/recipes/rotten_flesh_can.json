@@ -1,0 +1,41 @@
+{
+    "format_version": "1.19.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "canned:rotten_flesh_can"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "canned:empty_can"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            }
+        ],
+        "result": "canned:rotten_flesh_can"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "breaker:gold_breaker_upgrade"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#I#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_ingot"
+            },
+            "I": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "result": "breaker:gold_breaker_upgrade"
+    }
+}

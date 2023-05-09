@@ -1,0 +1,16 @@
+give @p const:black_redstone_lamp
+give @p const:blue_redstone_lamp
+give @p const:brown_redstone_lamp
+give @p const:cyan_redstone_lamp
+give @p const:gray_redstone_lamp
+give @p const:green_redstone_lamp
+give @p const:light_blue_redstone_lamp
+give @p const:light_gray_redstone_lamp
+give @p const:lime_redstone_lamp
+give @p const:magenta_redstone_lamp
+give @p const:orange_redstone_lamp
+give @p const:pink_redstone_lamp
+give @p const:purple_redstone_lamp
+give @p const:red_redstone_lamp
+give @p const:white_redstone_lamp
+give @p const:yellow_redstone_lamp

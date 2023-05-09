@@ -1,0 +1,275 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.block.woodcutter_test",
+                "texture_width": 32,
+                "texture_height": 48,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "bone",
+                    "pivot": [
+                        8,
+                        0,
+                        -8
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                -8
+                            ],
+                            "size": [
+                                16,
+                                9,
+                                16
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        32,
+                                        48
+                                    ],
+                                    "uv_size": [
+                                        -32,
+                                        -48
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        32,
+                                        48
+                                    ],
+                                    "uv_size": [
+                                        -32,
+                                        -48
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "origin": [
+                                -7,
+                                9,
+                                0
+                            ],
+                            "size": [
+                                14,
+                                7,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        16,
+                                        9
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        16,
+                                        9
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.block.woodcutter",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "bone",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "name": "bottom cube",
+                            "origin": [
+                                -8,
+                                0,
+                                -8
+                            ],
+                            "size": [
+                                16,
+                                9,
+                                16
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        0,
+                                        7
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        9
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        16,
+                                        16
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        -16
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        16,
+                                        16
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        -16
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "saw cube",
+                            "origin": [
+                                -7,
+                                9,
+                                0
+                            ],
+                            "size": [
+                                14,
+                                7,
+                                0
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        1,
+                                        9
+                                    ],
+                                    "uv_size": [
+                                        14,
+                                        7
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        1,
+                                        9
+                                    ],
+                                    "uv_size": [
+                                        14,
+                                        7
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

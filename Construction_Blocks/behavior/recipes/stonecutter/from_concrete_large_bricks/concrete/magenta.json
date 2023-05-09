@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_magenta_concrete"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:magenta_concrete_large_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:concrete",
+                "data": 2
+            }
+        ]
+    }
+}

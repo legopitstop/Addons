@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:nugget_emerald",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:icon": {
+                "texture": "const:nugget",
+                "frame": 1
+            }
+        }
+    }
+}

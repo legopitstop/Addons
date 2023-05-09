@@ -1,0 +1,57 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "\u00c2\u00a77More gold foods! \u00c2\u00a76Legopitstop",
+        "name": "Lot's More Gold Food",
+        "uuid": "8878bd80-768e-4b36-acee-5271216c02e7",
+        "version": [
+            1,
+            2,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            1
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "\u00c2\u00a77More gold foods! \u00c2\u00a76Legopitstop",
+            "type": "data",
+            "uuid": "2afda408-1c21-42c0-8ed6-dba502923004",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "description": "resourcepack",
+            "uuid": "ebe601a9-616a-4d6e-9150-2c918c7c96f4",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        },
+        {
+            "description": "Lot's More Food",
+            "uuid": "4e098d16-f6b4-11e9-802a-5aa538984bd8",
+            "version": [
+                1,
+                6,
+                3
+            ]
+        }
+    ]
+}

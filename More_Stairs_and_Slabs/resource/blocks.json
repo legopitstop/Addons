@@ -1,0 +1,756 @@
+{
+    "format_version": "1.16.1",
+    "more_ss:honeycomb_block_slab": {
+        "sound": "coral"
+    },
+    "more_ss:clay_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:sea_lantern_slab": {
+        "sound": "glass"
+    },
+    "more_ss:nether_wart_block_slab": {
+        "sound": "nether_wart"
+    },
+    "more_ss:warped_wart_block_slab": {
+        "sound": "nether_wart"
+    },
+    "more_ss:grass_block_slab": {
+        "sound": "grass"
+    },
+    "more_ss:gravel_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:ice_slab": {
+        "sound": "glass"
+    },
+    "more_ss:packed_ice_slab": {
+        "sound": "glass"
+    },
+    "more_ss:blue_ice_slab": {
+        "sound": "glass"
+    },
+    "more_ss:sponge_slab": {
+        "sound": "grass"
+    },
+    "more_ss:wet_sponge_slab": {
+        "sound": "grass"
+    },
+    "more_ss:slime_block_slab": {
+        "sound": "slime"
+    },
+    "more_ss:honey_block_slab": {
+        "sound": "honey_block"
+    },
+    "more_ss:crafting_table_slab": {
+        "sound": "wood"
+    },
+    "more_ss:shroomlight_slab": {
+        "sound": "shroomlight"
+    },
+    "more_ss:redstone_lamp_slab": {
+        "sound": "glass"
+    },
+    "more_ss:glowstone_slab": {
+        "sound": "glass"
+    },
+    "more_ss:tnt_slab": {
+        "sound": "grass"
+    },
+    "more_ss:farmland_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:grass_path_slab": {
+        "sound": "grass"
+    },
+    "more_ss:stripped_oak_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_acacia_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_birch_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_dark_oak_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_jungle_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_spruce_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_warped_hyphae_slab": {
+        "sound": "stem"
+    },
+    "more_ss:stripped_crimson_hyphae_slab": {
+        "sound": "stem"
+    },
+    "more_ss:oak_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:acacia_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:birch_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:dark_oak_slab": {
+        "sound": "wood"
+    },
+    "more_ss:jungle_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:spruce_wood_slab": {
+        "sound": "wood"
+    },
+    "more_ss:warped_hyphae_slab": {
+        "sound": "stem"
+    },
+    "more_ss:crimson_hyphae_slab": {
+        "sound": "stem"
+    },
+    "more_ss:dirt_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:coarse_dirt_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:crimson_nylium_slab": {
+        "sound": "nylium"
+    },
+    "more_ss:warped_nylium_slab": {
+        "sound": "nylium"
+    },
+    "more_ss:podzol_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:mycelium_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:netherrack_slab": {
+        "sound": "netherrack"
+    },
+    "more_ss:red_sand_slab": {
+        "sound": "sand"
+    },
+    "more_ss:sand_slab": {
+        "sound": "sand"
+    },
+    "more_ss:snow_slab": {
+        "sound": "snow"
+    },
+    "more_ss:soul_sand_slab": {
+        "sound": "soul_sand"
+    },
+    "more_ss:soul_soil_slab": {
+        "sound": "soul_soil"
+    },
+    "more_ss:oak_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:white_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:orange_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:magenta_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:light_blue_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:yellow_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:lime_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:pink_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:gray_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:light_gray_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:cyan_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:purple_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:blue_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:brown_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:green_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:red_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:black_wool_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:tinted_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:black_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:blue_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:brown_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:cyan_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:gray_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:green_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:light_blue_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:light_gray_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:lime_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:magenta_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:orange_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:pink_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:purple_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:red_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:white_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:yellow_stained_glass_slab": {
+        "sound": "glass"
+    },
+    "more_ss:honeycomb_stairs": {
+        "sound": "coral"
+    },
+    "more_ss:clay_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:sea_lantern_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:nether_wart_block_stairs": {
+        "sound": "nether_wart"
+    },
+    "more_ss:warped_wart_block_stairs": {
+        "sound": "nether_wart"
+    },
+    "more_ss:grass_block_stairs": {
+        "sound": "grass"
+    },
+    "more_ss:gravel_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:ice_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:packed_ice_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:blue_ice_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:sponge_stairs": {
+        "sound": "grass"
+    },
+    "more_ss:wet_sponge_stairs": {
+        "sound": "grass"
+    },
+    "more_ss:slime_block_stairs": {
+        "sound": "slime"
+    },
+    "more_ss:honey_block_stairs": {
+        "sound": "honey_block"
+    },
+    "more_ss:crafting_table_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:shroomlight_stairs": {
+        "sound": "shroomlight"
+    },
+    "more_ss:redstone_lamp_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:glowstone_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:tnt_stairs": {
+        "sound": "grass"
+    },
+    "more_ss:farmland_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:grass_path_stairs": {
+        "sound": "grass"
+    },
+    "more_ss:stripped_oak_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_acacia_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_birch_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_dark_oak_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_jungle_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_spruce_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_warped_hyphae_stairs": {
+        "sound": "stem"
+    },
+    "more_ss:stripped_crimson_hyphae_stairs": {
+        "sound": "stem"
+    },
+    "more_ss:oak_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:acacia_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:birch_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:dark_oak_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:jungle_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:spruce_wood_stairs": {
+        "sound": "wood"
+    },
+    "more_ss:warped_hyphae_stairs": {
+        "sound": "stem"
+    },
+    "more_ss:crimson_hyphae_stairs": {
+        "sound": "stem"
+    },
+    "more_ss:dirt_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:coarse_dirt_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:crimson_nylium_stairs": {
+        "sound": "nylium"
+    },
+    "more_ss:warped_nylium_stairs": {
+        "sound": "nylium"
+    },
+    "more_ss:podzol_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:mycelium_stairs": {
+        "sound": "gravel"
+    },
+    "more_ss:netherrack_stairs": {
+        "sound": "netherrack"
+    },
+    "more_ss:red_sand_stairs": {
+        "sound": "sand"
+    },
+    "more_ss:sand_stairs": {
+        "sound": "sand"
+    },
+    "more_ss:snow_stairs": {
+        "sound": "snow"
+    },
+    "more_ss:soul_sand_stairs": {
+        "sound": "soul_sand"
+    },
+    "more_ss:soul_soil_stairs": {
+        "sound": "soul_soil"
+    },
+    "more_ss:white_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:orange_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:magenta_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:light_blue_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:yellow_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:lime_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:pink_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:gray_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:light_gray_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:cyan_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:purple_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:blue_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:brown_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:green_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:red_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:black_wool_stairs": {
+        "sound": "cloth"
+    },
+    "more_ss:glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:tinted_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:black_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:blue_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:brown_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:cyan_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:gray_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:green_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:light_blue_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:light_gray_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:lime_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:magenta_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:orange_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:pink_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:purple_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:red_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:white_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:yellow_stained_glass_stairs": {
+        "sound": "glass"
+    },
+    "more_ss:honeycomb_block_vertical_slab": {
+        "sound": "coral"
+    },
+    "more_ss:clay_block_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:sea_lantern_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:nether_wart_block_vertical_slab": {
+        "sound": "nether_wart"
+    },
+    "more_ss:warped_wart_block_vertical_slab": {
+        "sound": "nether_wart"
+    },
+    "more_ss:grass_block_vertical_slab": {
+        "sound": "grass"
+    },
+    "more_ss:gravel_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:ice_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:packed_ice_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:blue_ice_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:sponge_vertical_slab": {
+        "sound": "grass"
+    },
+    "more_ss:wet_sponge_vertical_slab": {
+        "sound": "grass"
+    },
+    "more_ss:slime_block_vertical_slab": {
+        "sound": "slime"
+    },
+    "more_ss:honey_block_vertical_slab": {
+        "sound": "honey_block"
+    },
+    "more_ss:crafting_table_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:shroomlight_vertical_slab": {
+        "sound": "shroomlight"
+    },
+    "more_ss:redstone_lamp_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:glowstone_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:tnt_vertical_slab": {
+        "sound": "grass"
+    },
+    "more_ss:farmland_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:grass_path_vertical_slab": {
+        "sound": "grass"
+    },
+    "more_ss:stripped_oak_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_acacia_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_birch_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_dark_oak_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_jungle_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_spruce_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:stripped_warped_hyphae_vertical_slab": {
+        "sound": "stem"
+    },
+    "more_ss:stripped_crimson_hyphae_vertical_slab": {
+        "sound": "stem"
+    },
+    "more_ss:oak_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:acacia_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:birch_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:dark_oak_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:jungle_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:spruce_wood_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:warped_hyphae_vertical_slab": {
+        "sound": "stem"
+    },
+    "more_ss:crimson_hyphae_vertical_slab": {
+        "sound": "stem"
+    },
+    "more_ss:dirt_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:coarse_dirt_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:crimson_nylium_vertical_slab": {
+        "sound": "nylium"
+    },
+    "more_ss:warped_nylium_vertical_slab": {
+        "sound": "nylium"
+    },
+    "more_ss:podzol_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:mycelium_vertical_slab": {
+        "sound": "gravel"
+    },
+    "more_ss:netherrack_vertical_slab": {
+        "sound": "netherrack"
+    },
+    "more_ss:red_sand_vertical_slab": {
+        "sound": "sand"
+    },
+    "more_ss:sand_vertical_slab": {
+        "sound": "sand"
+    },
+    "more_ss:snow_vertical_slab": {
+        "sound": "snow"
+    },
+    "more_ss:soul_sand_vertical_slab": {
+        "sound": "soul_sand"
+    },
+    "more_ss:soul_soil_vertical_slab": {
+        "sound": "soul_soil"
+    },
+    "more_ss:oak_vertical_vertical_slab": {
+        "sound": "wood"
+    },
+    "more_ss:white_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:orange_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:magenta_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:light_blue_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:yellow_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:lime_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:pink_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:gray_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:light_gray_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:cyan_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:purple_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:blue_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:brown_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:green_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:red_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:black_wool_vertical_slab": {
+        "sound": "cloth"
+    },
+    "more_ss:glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:tinted_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:black_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:blue_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:brown_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:cyan_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:gray_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:green_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:light_blue_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:light_gray_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:lime_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:magenta_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:orange_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:pink_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:purple_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:red_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:white_stained_glass_vertical_slab": {
+        "sound": "glass"
+    },
+    "more_ss:yellow_stained_glass_vertical_slab": {
+        "sound": "glass"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.221",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "magnet:netherite_magnet_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "magnet:netherite_magnet"
+            }
+        },
+        "result": "magnet:netherite_magnet_block"
+    }
+}

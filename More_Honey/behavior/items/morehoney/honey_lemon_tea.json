@@ -1,0 +1,36 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:item": {
+        "description": {
+            "identifier": "morehoney:honey_lemon_tea",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.miscFood"
+            },
+            "minecraft:icon": {
+                "texture": "morehoney:honey_lemon_tea"
+            },
+            "minecraft:use_animation": "drink",
+            "minecraft:use_duration": 1.61,
+            "minecraft:max_stack_size": 16,
+            "minecraft:food": {
+                "nutrition": 9,
+                "saturation_modifier": "normal",
+                "using_converts_to": "morefood:hot_beverage_cup",
+                "on_consume": {
+                    "event": "lps:remove_poison"
+                }
+            }
+        },
+        "events": {
+            "lps:remove_poison": {
+                "run_command": {
+                    "target": "player",
+                    "command": "effect @s clear"
+                }
+            }
+        }
+    }
+}

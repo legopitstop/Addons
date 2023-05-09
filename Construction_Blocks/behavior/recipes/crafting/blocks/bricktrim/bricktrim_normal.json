@@ -1,0 +1,27 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:craft/block/bricktrim_normal_white"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:brick_block"
+            }
+        },
+        "result": [
+            {
+                "item": "const:bricktrim_normal_white",
+                "count": 9
+            }
+        ]
+    }
+}

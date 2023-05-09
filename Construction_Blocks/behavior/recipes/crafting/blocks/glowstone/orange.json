@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:glowstone_orange"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "glowstone",
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "const:orange_glowstone_dust"
+            }
+        },
+        "result": {
+            "item": "const:glowstone_orange"
+        }
+    }
+}

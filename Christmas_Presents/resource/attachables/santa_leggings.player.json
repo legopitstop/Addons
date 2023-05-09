@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "presents:santa_leggings.player",
+            "item": {
+                "presents:santa_leggings": "query.owner_identifier == 'minecraft:player'"
+            },
+            "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+            },
+            "textures": {
+                "default": "textures/models/armor/santa_2",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.player.armor.leggings"
+            },
+            "scripts": {
+                "parent_setup": "variable.leg_layer_visible = 0.0;"
+            },
+            "render_controllers": [
+                "controller.render.armor"
+            ]
+        }
+    }
+}

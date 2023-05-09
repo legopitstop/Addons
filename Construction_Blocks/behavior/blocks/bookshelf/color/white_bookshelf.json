@@ -1,0 +1,40 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:white_bookshelf"
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/white_bookshelf.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "const:white_bookshelf"
+                },
+                "south": {
+                    "texture": "const:white_bookshelf"
+                },
+                "west": {
+                    "texture": "const:white_bookshelf"
+                },
+                "east": {
+                    "texture": "const:white_bookshelf"
+                },
+                "up": {
+                    "texture": "const:white_planks"
+                },
+                "down": {
+                    "texture": "const:white_planks"
+                }
+            }
+        }
+    }
+}

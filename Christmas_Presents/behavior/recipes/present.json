@@ -1,0 +1,28 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "format_version": "1.16.200",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "presents:present"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "crafting_table": [
+            "PPP",
+            "PCP",
+            "PPP"
+        ],
+        "key": {
+            "P": {
+                "item": "minecraft:paper"
+            },
+            "C": {
+                "item": "minecraft:chest"
+            }
+        },
+        "result": {
+            "item": "presents:wood_present"
+        }
+    }
+}

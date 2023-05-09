@@ -1,0 +1,43 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:black_wall_letter.lowercase",
+            "category": "Construction"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:display_name": {
+                "value": "item.const:black_wall_letter.name"
+            },
+            "minecraft:icon": {
+                "texture": "const:black_wall_letters",
+                "frame": 1
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "condition": "query.is_sneaking",
+                    "event": "const:item_use"
+                }
+            },
+            "minecraft:block_placer": {
+                "block": "const:black_wall_block_letter.lowercase"
+            }
+        },
+        "events": {
+            "const:item_use": {
+                "run_command": {
+                    "target": "player",
+                    "command": [
+                        "playsound random.click @p",
+                        "title @p actionbar Mode: Number",
+                        "replaceitem entity @p slot.weapon.mainhand 0 const:black_wall_letter.number"
+                    ]
+                }
+            }
+        }
+    }
+}

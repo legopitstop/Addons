@@ -1,0 +1,112 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:concrete_pillar_lime",
+            "properties": {
+                "const:pillar_block": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/lime_concrete_pillar.json",
+            "minecraft:destroy_time": 1.25,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:unit_cube": {},
+            "minecraft:on_player_placing": {
+                "event": "const:rotational"
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "const:lime_concrete_pillar_top",
+                    "render_method": "blend"
+                },
+                "down": {
+                    "texture": "const:lime_concrete_pillar_top",
+                    "render_method": "blend"
+                },
+                "*": {
+                    "texture": "const:lime_concrete_pillar_side",
+                    "render_method": "blend"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:pillar_block') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:rotational": {
+                "set_block_property": {
+                    "const:pillar_block": "(q.cardinal_block_face_placed_on)"
+                }
+            }
+        }
+    }
+}

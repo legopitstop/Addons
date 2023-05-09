@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:light_blue_plank_button",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

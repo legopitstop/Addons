@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:tnt_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "concrete_slab",
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:tnt"
+            }
+        },
+        "result": {
+            "item": "more_ss:tnt_slab",
+            "count": 6
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:smooth_jungle_planks",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/jungle_smooth_planks.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:map_color": "#000000",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:smooth_jungle_planks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

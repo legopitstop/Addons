@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:cracked_nether_brick_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:cracked_nether_bricks"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:cracked_nether_brick_layer",
+            "count": 8
+        }
+    }
+}

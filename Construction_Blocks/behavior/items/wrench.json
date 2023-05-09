@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:wrench",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:stacked_by_data": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": false,
+            "minecraft:use_duration": 1,
+            "minecraft:max_stack_size": 1,
+            "minecraft:durability": {
+                "damage_chance": 1.0,
+                "max_durability": 241
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:iron_ingot"
+                        ],
+                        "repair_amount": "0.25"
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "texture": "const:wrench"
+            }
+        }
+    }
+}

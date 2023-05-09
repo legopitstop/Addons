@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:orange_concrete_large_bricks",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:destroy_time": 1.8,
+            "minecraft:explosion_resistance": 1.8,
+            "minecraft:map_color": "#ec6d0c",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:orange_concrete_large_bricks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

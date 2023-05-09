@@ -1,0 +1,17 @@
+give @p const:paint_roller
+give @p const:paint_roller_black
+give @p const:paint_roller_blue
+give @p const:paint_roller_brown
+give @p const:paint_roller_cyan
+give @p const:paint_roller_gray
+give @p const:paint_roller_green
+give @p const:paint_roller_light_blue
+give @p const:paint_roller_light_gray
+give @p const:paint_roller_lime
+give @p const:paint_roller_magenta
+give @p const:paint_roller_orange
+give @p const:paint_roller_pink
+give @p const:paint_roller_purple
+give @p const:paint_roller_red
+give @p const:paint_roller_white
+give @p const:paint_roller_yellow

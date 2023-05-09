@@ -1,0 +1,17 @@
+give @p const:black_framed_glass
+give @p const:blue_framed_glass
+give @p const:brown_framed_glass
+give @p const:cyan_framed_glass
+give @p const:gray_framed_glass
+give @p const:green_framed_glass
+give @p const:light_blue_framed_glass
+give @p const:light_gray_framed_glass
+give @p const:lime_framed_glass
+give @p const:magenta_framed_glass
+give @p const:orange_framed_glass
+give @p const:pink_framed_glass
+give @p const:purple_framed_glass
+give @p const:red_framed_glass
+give @p const:white_framed_glass
+give @p const:yellow_framed_glass
+give @p const:tinted_framed_glass

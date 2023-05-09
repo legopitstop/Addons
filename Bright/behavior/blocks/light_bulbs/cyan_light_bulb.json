@@ -1,0 +1,197 @@
+{
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "bright:cyan_light_bulb",
+            "properties": {
+                "bright:facing": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "bright:lit": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/cyan_light_bulb.json",
+            "tag:non_solid": {},
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            },
+            "minecraft:destroy_time": 0.5,
+            "minecraft:explosion_resistance": 0.5,
+            "minecraft:block_light_filter": 0,
+            "minecraft:geometry": "geometry.light_bulb",
+            "minecraft:on_player_placing": {
+                "event": "bright:facing"
+            },
+            "minecraft:aim_collision": {
+                "origin": [
+                    -2,
+                    0,
+                    -2
+                ],
+                "size": [
+                    4,
+                    5,
+                    4
+                ]
+            },
+            "minecraft:block_collision": {
+                "origin": [
+                    -2,
+                    0,
+                    -2
+                ],
+                "size": [
+                    4,
+                    5,
+                    4
+                ]
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('non_solid')"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('bright:facing') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        180
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        -90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        -90,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:lit') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:cyan_concrete"
+                        },
+                        "base": {
+                            "texture": "minecraft:cyan_concrete"
+                        },
+                        "light": {
+                            "texture": "bright:cyan_light"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "bright:lit_true"
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('bright:lit') == true",
+                "components": {
+                    "minecraft:block_light_emission": 0.5,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:cyan_concrete"
+                        },
+                        "base": {
+                            "texture": "minecraft:cyan_concrete"
+                        },
+                        "light": {
+                            "texture": "bright:cyan_light_lit"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "bright:lit_false"
+                    }
+                }
+            }
+        ],
+        "events": {
+            "bright:facing": {
+                "set_block_property": {
+                    "bright:facing": "q.cardinal_block_face_placed_on"
+                }
+            },
+            "bright:lit_false": {
+                "set_block_property": {
+                    "bright:lit": "false"
+                },
+                "run_command": {
+                    "command": "playsound random.click @p ~ ~ ~ 0.5"
+                }
+            },
+            "bright:lit_true": {
+                "set_block_property": {
+                    "bright:lit": "true"
+                },
+                "run_command": {
+                    "command": "playsound random.click @p ~ ~ ~ 0.5"
+                }
+            }
+        }
+    }
+}

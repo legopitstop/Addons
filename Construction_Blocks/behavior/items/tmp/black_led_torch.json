@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:item.black_led_torch",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "item.const:black_led_torch"
+            },
+            "minecraft:block_placer": {
+                "block": "const:black_led_torch"
+            },
+            "minecraft:icon": {
+                "texture": "const:black_led_torch"
+            }
+        }
+    }
+}

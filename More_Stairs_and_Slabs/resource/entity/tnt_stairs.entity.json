@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "more_ss:tnt_stairs",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/tnt_stairs.png"
+            },
+            "geometry": {
+                "default": "geometry.entity.tnt_stairs"
+            },
+            "render_controllers": [
+                "controller.render.tnt_block"
+            ]
+        }
+    }
+}

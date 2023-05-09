@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:white_bricks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "bricks",
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "const:white_brick"
+            }
+        },
+        "result": {
+            "item": "const:white_bricks"
+        }
+    }
+}

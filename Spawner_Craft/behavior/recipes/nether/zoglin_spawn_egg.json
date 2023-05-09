@@ -1,0 +1,26 @@
+{
+    "format_version": "1.18.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "spawnercraft:zoglin_spawn_egg"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "nether",
+        "ingredients": [
+            {
+                "item": "minecraft:hoglin_spawn_egg"
+            },
+            {
+                "item": "minecraft:zombie_spawn_egg"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:zoglin_spawn_egg",
+                "count": 2
+            }
+        ]
+    }
+}

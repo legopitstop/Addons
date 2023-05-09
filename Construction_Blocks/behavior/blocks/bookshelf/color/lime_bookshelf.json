@@ -1,0 +1,40 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:lime_bookshelf"
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/lime_bookshelf.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "const:lime_bookshelf"
+                },
+                "south": {
+                    "texture": "const:lime_bookshelf"
+                },
+                "west": {
+                    "texture": "const:lime_bookshelf"
+                },
+                "east": {
+                    "texture": "const:lime_bookshelf"
+                },
+                "up": {
+                    "texture": "const:lime_planks"
+                },
+                "down": {
+                    "texture": "const:lime_planks"
+                }
+            }
+        }
+    }
+}

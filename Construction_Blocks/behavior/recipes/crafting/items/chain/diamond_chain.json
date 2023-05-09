@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:diamond_chain_item"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "/",
+            "#",
+            "/"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:diamond"
+            },
+            "/": {
+                "item": "const:nugget_diamond"
+            }
+        },
+        "result": [
+            {
+                "item": "const:diamond_chain_item"
+            }
+        ]
+    }
+}

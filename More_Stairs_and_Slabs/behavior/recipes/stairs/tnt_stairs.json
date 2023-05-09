@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:tnt_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "concrete_stairs",
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:tnt"
+            }
+        },
+        "result": {
+            "item": "more_ss:tnt_stairs",
+            "count": 4
+        }
+    }
+}

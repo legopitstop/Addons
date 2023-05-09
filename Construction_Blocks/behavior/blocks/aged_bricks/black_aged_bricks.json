@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:black_aged_bricks"
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/black_aged_bricks.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:black_aged_bricks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

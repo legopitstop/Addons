@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:gray_concrete_large_brick_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "const:gray_concrete_large_bricks"
+            }
+        },
+        "result": {
+            "item": "const:gray_concrete_large_brick_vertical_slab",
+            "count": 6
+        }
+    }
+}

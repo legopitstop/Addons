@@ -1,0 +1,16 @@
+give @p const:black_aged_brick_stairs
+give @p const:blue_aged_brick_stairs
+give @p const:brown_aged_brick_stairs
+give @p const:cyan_aged_brick_stairs
+give @p const:gray_aged_brick_stairs
+give @p const:green_aged_brick_stairs
+give @p const:light_blue_aged_brick_stairs
+give @p const:light_gray_aged_brick_stairs
+give @p const:lime_aged_brick_stairs
+give @p const:magenta_aged_brick_stairs
+give @p const:orange_aged_brick_stairs
+give @p const:pink_aged_brick_stairs
+give @p const:purple_aged_brick_stairs
+give @p const:red_aged_brick_stairs
+give @p const:white_aged_brick_stairs
+give @p const:yellow_aged_brick_stairs

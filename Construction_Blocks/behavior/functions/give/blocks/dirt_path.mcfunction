@@ -1,0 +1,16 @@
+give @p const:black_dirt_path
+give @p const:blue_dirt_path
+give @p const:brown_dirt_path
+give @p const:cyan_dirt_path
+give @p const:gray_dirt_path
+give @p const:green_dirt_path
+give @p const:light_blue_dirt_path
+give @p const:light_gray_dirt_path
+give @p const:lime_dirt_path
+give @p const:magenta_dirt_path
+give @p const:orange_dirt_path
+give @p const:pink_dirt_path
+give @p const:purple_dirt_path
+give @p const:red_dirt_path
+give @p const:white_dirt_path
+give @p const:yellow_dirt_path

@@ -1,0 +1,39 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "morehoney:honey_lemon_tea"
+        },
+        "tags": [
+            "honey_press"
+        ],
+        "pattern": [
+            "#",
+            "P",
+            "X"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:bucket",
+                "data": 8
+            },
+            "P": {
+                "item": "minecraft:honey_bottle"
+            },
+            "X": {
+                "item": "morefood:hot_beverage_cup"
+            }
+        },
+        "result": [
+            {
+                "item": "morehoney:honey_lemon_tea"
+            },
+            {
+                "item": "minecraft:glass_bottle"
+            },
+            {
+                "item": "minecraft:bucket"
+            }
+        ]
+    }
+}

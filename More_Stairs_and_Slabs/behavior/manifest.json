@@ -1,0 +1,59 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "More Stairs and Slabs! \u00c2\u00a78Pack by:\u00c2\u00a76 Lego\u00c2\u00a7epit\u00c2\u00a7rstop",
+        "name": "More Stairs and Slabs BP",
+        "uuid": "bfd091d1-2d3a-4e42-8856-cb546696262e",
+        "version": [
+            1,
+            4,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            3
+        ]
+    },
+    "modules": [
+        {
+            "description": "More Stairs and Slabs! \u00c2\u00a78Pack by:\u00c2\u00a76 Lego\u00c2\u00a7epit\u00c2\u00a7rstop",
+            "type": "data",
+            "uuid": "041746e6-c9a2-420d-a5a6-79dfc0bbb80f",
+            "version": [
+                1,
+                4,
+                0
+            ]
+        }
+    ],
+    "metadata": {
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com",
+        "authors": [
+            "legopitstop"
+        ]
+    },
+    "dependencies": [
+        {
+            "uuid": "f27ad127-cb0a-4185-96c3-483e1ba7142b",
+            "version": [
+                1,
+                4,
+                0
+            ]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "pack",
+            "memory_tier": 1,
+            "name": "Vertical Slabs: \u00c2\u00a74OFF"
+        },
+        {
+            "folder_name": "vertical_slab",
+            "memory_tier": 2,
+            "name": "Vertical Slabs: \u00c2\u00a72ON"
+        }
+    ]
+}

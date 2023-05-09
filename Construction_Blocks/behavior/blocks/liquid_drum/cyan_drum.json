@@ -1,0 +1,772 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:cyan_drum",
+            "properties": {
+                "const:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "const:level": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                ],
+                "const:full": [
+                    "false",
+                    "true"
+                ],
+                "const:liquid_type": [
+                    "none",
+                    "water",
+                    "lava",
+                    "milk"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "tag:non_full": {},
+            "minecraft:loot": "loot_tables/const/blocks/cyan_drum.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:geometry": "geometry.block.drum",
+            "minecraft:on_player_placing": {
+                "event": "const:place_block"
+            },
+            "minecraft:on_interact": {
+                "event": "const:on_interact"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:cyan_drum",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -7,
+                    0,
+                    -7
+                ],
+                "size": [
+                    14,
+                    15,
+                    14
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -7,
+                    0,
+                    -7
+                ],
+                "size": [
+                    14,
+                    15,
+                    14
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:place_block": {
+                "set_block_property": {
+                    "const:direction": "(q.cardinal_facing_2d)",
+                    "const:level": "0"
+                }
+            },
+            "const:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name =='water_bucket' && q.block_property('const:liquid_type') == 'none'",
+                        "trigger": {
+                            "event": "const:set_liquid_type"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='lava_bucket' && q.block_property('const:liquid_type') == 'none'",
+                        "trigger": {
+                            "event": "const:set_liquid_type"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='milk_bucket' && q.block_property('const:liquid_type') == 'none'",
+                        "trigger": {
+                            "event": "const:set_liquid_type"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='bucket'",
+                        "trigger": {
+                            "event": "const:give_item"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='water_bucket' && q.block_property('const:liquid_type') == 'water' && q.block_property('const:full') == 'false'",
+                        "trigger": {
+                            "event": "const:fill_level"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='lava_bucket' && q.block_property('const:liquid_type') == 'lava' && q.block_property('const:full') == 'false'",
+                        "trigger": {
+                            "event": "const:fill_level"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='milk_bucket' && q.block_property('const:liquid_type') == 'milk' && q.block_property('const:full') == 'false'",
+                        "trigger": {
+                            "event": "const:fill_level"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "const:info_level"
+                        }
+                    }
+                ]
+            },
+            "const:info_level": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:level') == 0 && q.block_property('const:liquid_type') == 'none'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.drum_empty\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 0 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.drum_empty\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 1 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.1\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 2 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.2\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 3 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.3\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 4 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.4\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 5 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.5\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 6 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.6\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 7 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.7\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 8 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.8\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 9 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.9\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 10 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.10\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 11 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.11\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 12 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.12\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 13 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.13\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 14 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.14\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 15 && q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.water_drum.15\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 0 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.drum_empty\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 1 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.1\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 2 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.2\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 3 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.3\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 4 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.4\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 5 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.5\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 6 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.6\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 7 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.7\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 8 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.8\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 9 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.9\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 10 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.10\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 11 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.11\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 12 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.12\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 13 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.13\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 14 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.14\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 15 && q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.lava_drum.15\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 0 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.drum_empty\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 1 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.1\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 2 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.2\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 3 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.3\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 4 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.4\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 5 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.5\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 6 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.6\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 7 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.7\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 8 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.8\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 9 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.9\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 10 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.10\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 11 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.11\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 12 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.12\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 13 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.13\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 14 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.14\"}]}"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 15 && q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "titleraw @p actionbar {\"rawtext\":[{\"translate\":\"container.milk_drum.15\"}]}"
+                        }
+                    }
+                ]
+            },
+            "const:give_item": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": [
+                                "playsound bucket.fill_water @p",
+                                "give @p water_bucket"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": [
+                                "playsound bucket.fill_lava @p",
+                                "give @p lava_bucket"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": [
+                                "playsound mob.cow.milk @p",
+                                "give @p milk_bucket"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:liquid_type') != 'none'",
+                        "decrement_stack": {},
+                        "trigger": {
+                            "event": "const:remove_level"
+                        }
+                    }
+                ]
+            },
+            "const:set_liquid_type": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name =='water_bucket'",
+                        "set_block_property": {
+                            "const:liquid_type": "'water'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='lava_bucket'",
+                        "set_block_property": {
+                            "const:liquid_type": "'lava'"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name =='milk_bucket'",
+                        "set_block_property": {
+                            "const:liquid_type": "'milk'"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "const:fill_level"
+                        }
+                    }
+                ]
+            },
+            "const:fill_level": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:level') == 14",
+                        "set_block_property": {
+                            "const:level": "15",
+                            "const:full": "'true'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 13",
+                        "set_block_property": {
+                            "const:level": "14"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 12",
+                        "set_block_property": {
+                            "const:level": "13"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 11",
+                        "set_block_property": {
+                            "const:level": "12"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 10",
+                        "set_block_property": {
+                            "const:level": "11"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 9",
+                        "set_block_property": {
+                            "const:level": "10"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 8",
+                        "set_block_property": {
+                            "const:level": "9"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 7",
+                        "set_block_property": {
+                            "const:level": "8"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 6",
+                        "set_block_property": {
+                            "const:level": "7"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 5",
+                        "set_block_property": {
+                            "const:level": "6"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 4",
+                        "set_block_property": {
+                            "const:level": "5"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 3",
+                        "set_block_property": {
+                            "const:level": "4"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 2",
+                        "set_block_property": {
+                            "const:level": "3"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 1",
+                        "set_block_property": {
+                            "const:level": "2"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 0",
+                        "set_block_property": {
+                            "const:level": "1"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') != '0'",
+                        "decrement_stack": {},
+                        "run_command": {
+                            "target": "player",
+                            "command": "give @p bucket"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:liquid_type') == 'water'",
+                        "run_command": {
+                            "command": "playsound bucket.empty_water @p"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:liquid_type') == 'lava'",
+                        "run_command": {
+                            "command": "playsound bucket.empty_lava @p"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:liquid_type') == 'milk'",
+                        "run_command": {
+                            "command": "playsound mob.cow.milk @p"
+                        }
+                    }
+                ]
+            },
+            "const:remove_level": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:level') == 15",
+                        "set_block_property": {
+                            "const:level": "14",
+                            "const:full": "'false'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 14",
+                        "set_block_property": {
+                            "const:level": "13"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 13",
+                        "set_block_property": {
+                            "const:level": "12"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 12",
+                        "set_block_property": {
+                            "const:level": "11"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 11",
+                        "set_block_property": {
+                            "const:level": "10"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 10",
+                        "set_block_property": {
+                            "const:level": "9"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 9",
+                        "set_block_property": {
+                            "const:level": "8"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 8",
+                        "set_block_property": {
+                            "const:level": "7"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 7",
+                        "set_block_property": {
+                            "const:level": "6"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 6",
+                        "set_block_property": {
+                            "const:level": "5"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 5",
+                        "set_block_property": {
+                            "const:level": "4"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 4",
+                        "set_block_property": {
+                            "const:level": "3"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 3",
+                        "set_block_property": {
+                            "const:level": "2"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 2",
+                        "set_block_property": {
+                            "const:level": "1"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:level') == 1",
+                        "set_block_property": {
+                            "const:level": "0",
+                            "const:liquid_type": "'none'"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

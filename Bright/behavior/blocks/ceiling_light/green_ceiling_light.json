@@ -1,0 +1,123 @@
+{
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "bright:green_ceiling_light",
+            "properties": {
+                "bright:lit": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/green_ceiling_light.json",
+            "tag:non_solid": {},
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:block_light_filter": 0,
+            "minecraft:geometry": "geometry.ceiling_light",
+            "minecraft:aim_collision": {
+                "origin": [
+                    -2,
+                    13,
+                    -2
+                ],
+                "size": [
+                    4,
+                    3,
+                    4
+                ]
+            },
+            "minecraft:block_collision": {
+                "origin": [
+                    -2,
+                    13,
+                    -2
+                ],
+                "size": [
+                    4,
+                    3,
+                    4
+                ]
+            },
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "down"
+                        ],
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('non_solid')"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('bright:lit') == true",
+                "components": {
+                    "minecraft:block_light_emission": 1.0,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:green_concrete"
+                        },
+                        "base": {
+                            "texture": "minecraft:green_concrete"
+                        },
+                        "light": {
+                            "texture": "bright:green_light_lit"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "bright:lit_false"
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('bright:lit') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:green_concrete"
+                        },
+                        "base": {
+                            "texture": "minecraft:green_concrete"
+                        },
+                        "light": {
+                            "texture": "bright:green_light"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "bright:lit_true"
+                    }
+                }
+            }
+        ],
+        "events": {
+            "bright:lit_true": {
+                "set_block_property": {
+                    "bright:lit": "true"
+                },
+                "run_command": {
+                    "command": "playsound random.click @p ~ ~ ~ 0.5"
+                }
+            },
+            "bright:lit_false": {
+                "set_block_property": {
+                    "bright:lit": "false"
+                },
+                "run_command": {
+                    "command": "playsound random.click @p ~ ~ ~ 0.5"
+                }
+            }
+        }
+    }
+}

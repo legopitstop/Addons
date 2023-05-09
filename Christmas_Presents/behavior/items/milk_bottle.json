@@ -1,0 +1,36 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "presents:milk_bottle",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:use_duration": 1.61,
+            "minecraft:max_stack_size": 16,
+            "minecraft:use_animation": "eat",
+            "minecraft:icon": {
+                "texture": "presents:milk_bottle",
+                "frame": 0
+            },
+            "minecraft:food": {
+                "nutrition": 2,
+                "saturation_modifier": "poor",
+                "can_always_eat": true,
+                "using_converts_to": "glass_bottle",
+                "on_consume": {
+                    "event": "event_remove_mob_effect"
+                }
+            }
+        },
+        "events": {
+            "event_remove_mob_effect": {
+                "remove_mob_effect": {
+                    "effect": "all",
+                    "target": "self"
+                }
+            }
+        }
+    }
+}

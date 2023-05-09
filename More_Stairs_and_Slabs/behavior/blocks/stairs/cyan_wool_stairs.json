@@ -1,0 +1,224 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas#info",
+    "format_version": "1.17.3",
+    "minecraft:block": {
+        "description": {
+            "identifier": "more_ss:cyan_wool_stairs",
+            "properties": {
+                "lps:facing": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "lps:shape": [
+                    "straight",
+                    "inner",
+                    "outer"
+                ],
+                "lps:half": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stairs"
+            },
+            "minecraft:loot": "loot_tables/more_ss/blocks/cyan_wool_stairs.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 1.8,
+            "minecraft:explosion_resistance": 1.8,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "minecraft:cyan_wool",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    8,
+                    16
+                ]
+            },
+            "minecraft:on_interact": {
+                "condition": "query.is_sneaking",
+                "event": "lps:change_shape"
+            },
+            "minecraft:on_player_placing": {
+                "event": "lps:place_block"
+            }
+        },
+        "permutations": [
+            {
+                "name": "facing=north half=bottom",
+                "condition": "query.block_property('lps:facing') == 2 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=south half=bottom",
+                "condition": "query.block_property('lps:facing') == 3 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=west half=bottom",
+                "condition": "query.block_property('lps:facing') == 4 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=east half=bottom",
+                "condition": "query.block_property('lps:facing') == 5 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=north half=top",
+                "condition": "query.block_property('lps:facing') == 2 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=south half=top",
+                "condition": "query.block_property('lps:facing') == 3 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=west half=top",
+                "condition": "query.block_property('lps:facing') == 4 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=east half=top",
+                "condition": "query.block_property('lps:facing') == 5 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "shape=straight",
+                "condition": "query.block_property('lps:shape') == 'straight'",
+                "components": {
+                    "minecraft:geometry": "geometry.stair_block"
+                }
+            },
+            {
+                "name": "shape=inner",
+                "condition": "query.block_property('lps:shape') == 'inner'",
+                "components": {
+                    "minecraft:geometry": "geometry.inner_stair_block"
+                }
+            },
+            {
+                "name": "shape=outer",
+                "condition": "query.block_property('lps:shape') == 'outer'",
+                "components": {
+                    "minecraft:geometry": "geometry.outer_stair_block"
+                }
+            }
+        ],
+        "events": {
+            "lps:change_shape": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('lps:shape') == 'outer'",
+                        "set_block_property": {
+                            "lps:shape": "'straight'"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('lps:shape') == 'inner'",
+                        "set_block_property": {
+                            "lps:shape": "'outer'"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('lps:shape') == 'straight'",
+                        "set_block_property": {
+                            "lps:shape": "'inner'"
+                        }
+                    }
+                ]
+            },
+            "lps:place_block": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "lps:facing": "(query.cardinal_facing_2d)"
+                        }
+                    },
+                    {
+                        "condition": "query.target_x_rotation <= 4",
+                        "set_block_property": {
+                            "lps:half": "'top'"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:pink_plank_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:pink_planks"
+            }
+        },
+        "result": {
+            "item": "const:pink_plank_slab",
+            "count": 6
+        }
+    }
+}

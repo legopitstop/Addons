@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:black_celingtile_vertical_slab_from_black_celingtiles"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:celingtile_black"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:black_celingtile_vertical_slab",
+                "count": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:black_globe_stained_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "globe_stained_glass",
+        "pattern": [
+            "###",
+            "#B#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:stained_glass",
+                "data": 15
+            },
+            "B": {
+                "item": "const:globe_banner_pattern"
+            }
+        },
+        "result": [
+            {
+                "item": "const:black_globe_stained_glass",
+                "count": 8
+            },
+            {
+                "item": "const:globe_banner_pattern"
+            }
+        ]
+    }
+}

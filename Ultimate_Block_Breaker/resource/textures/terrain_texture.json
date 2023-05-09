@@ -1,0 +1,103 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "breaker:block_breaker_bottom": {
+            "textures": [
+                "textures/breaker/blocks/block_breaker_bottom.png"
+            ]
+        },
+        "breaker:netherite_block_breaker_top": {
+            "textures": [
+                "textures/breaker/blocks/netherite_block_breaker_top.png"
+            ]
+        },
+        "breaker:netherite_block_breaker_top_on": {
+            "textures": [
+                "textures/breaker/blocks/netherite_block_breaker_top_on.png"
+            ]
+        },
+        "breaker:netherite_block_breaker_side": {
+            "textures": [
+                "textures/breaker/blocks/netherite_block_breaker_side.png"
+            ]
+        },
+        "breaker:diamond_block_breaker_top": {
+            "textures": [
+                "textures/breaker/blocks/diamond_block_breaker_top.png"
+            ]
+        },
+        "breaker:diamond_block_breaker_top_on": {
+            "textures": [
+                "textures/breaker/blocks/diamond_block_breaker_top_on.png"
+            ]
+        },
+        "breaker:diamond_block_breaker_side": {
+            "textures": [
+                "textures/breaker/blocks/diamond_block_breaker_side.png"
+            ]
+        },
+        "breaker:gold_block_breaker_top": {
+            "textures": [
+                "textures/breaker/blocks/gold_block_breaker_top.png"
+            ]
+        },
+        "breaker:gold_block_breaker_top_on": {
+            "textures": [
+                "textures/breaker/blocks/gold_block_breaker_top_on.png"
+            ]
+        },
+        "breaker:gold_block_breaker_side": {
+            "textures": [
+                "textures/breaker/blocks/gold_block_breaker_side.png"
+            ]
+        },
+        "breaker:iron_block_breaker_top": {
+            "textures": [
+                "textures/breaker/blocks/iron_block_breaker_top.png"
+            ]
+        },
+        "breaker:iron_block_breaker_top_on": {
+            "textures": [
+                "textures/breaker/blocks/iron_block_breaker_top_on.png"
+            ]
+        },
+        "breaker:iron_block_breaker_side": {
+            "textures": [
+                "textures/breaker/blocks/iron_block_breaker_side.png"
+            ]
+        },
+        "breaker:stone_block_breaker_top": {
+            "textures": [
+                "textures/breaker/blocks/stone_block_breaker_top.png"
+            ]
+        },
+        "breaker:stone_block_breaker_top_on": {
+            "textures": [
+                "textures/breaker/blocks/stone_block_breaker_top_on.png"
+            ]
+        },
+        "breaker:stone_block_breaker_side": {
+            "textures": [
+                "textures/breaker/blocks/stone_block_breaker_side.png"
+            ]
+        },
+        "breaker:wooden_block_breaker_top": {
+            "textures": [
+                "textures/breaker/blocks/wooden_block_breaker_top.png"
+            ]
+        },
+        "breaker:wooden_block_breaker_top_on": {
+            "textures": [
+                "textures/breaker/blocks/wooden_block_breaker_top_on.png"
+            ]
+        },
+        "breaker:wooden_block_breaker_side": {
+            "textures": [
+                "textures/breaker/blocks/wooden_block_breaker_side.png"
+            ]
+        }
+    }
+}

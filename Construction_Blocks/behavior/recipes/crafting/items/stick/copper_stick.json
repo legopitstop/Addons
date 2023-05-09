@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:copper_stick"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            "#S#",
+            " # "
+        ],
+        "key": {
+            "#": {
+                "item": "const:copper_nugget"
+            },
+            "S": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": [
+            {
+                "item": "const:copper_stick"
+            }
+        ]
+    }
+}

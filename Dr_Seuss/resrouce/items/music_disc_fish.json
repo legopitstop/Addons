@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "seuss:music_disc_fish",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:icon": "music_disc_fish",
+            "minecraft:use_animation": "eat",
+            "minecraft:render_offsets": "apple"
+        }
+    }
+}

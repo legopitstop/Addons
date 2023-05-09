@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.200",
+    "presents:wood_present": {
+        "presents:wood_present": "wood"
+    },
+    "presents:stone_present": {
+        "presents:wood_present": "stone"
+    },
+    "presents:iron_present": {
+        "presents:wood_present": "metal"
+    },
+    "presents:copper_present": {
+        "presents:wood_present": "metal"
+    },
+    "presents:gold_present": {
+        "presents:wood_present": "metal"
+    },
+    "presents:diamond_present": {
+        "presents:wood_present": "metal"
+    },
+    "presents:emerald_present": {
+        "presents:wood_present": "metal"
+    },
+    "presents:netherite_present": {
+        "presents:wood_present": "netherite"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "credit": "By Legopitstop",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "more_ss:magenta_stained_glass_vertical_slab",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

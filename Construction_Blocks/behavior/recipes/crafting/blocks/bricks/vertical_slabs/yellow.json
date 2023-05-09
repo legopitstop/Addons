@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:yellow_brick_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "const:yellow_brick_vertical_slab"
+            }
+        },
+        "result": {
+            "item": "const:yellow_bricks",
+            "count": 6
+        }
+    }
+}

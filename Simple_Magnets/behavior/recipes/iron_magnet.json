@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.221",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "magnet:iron_magnet"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "B R",
+            "I I",
+            "III"
+        ],
+        "key": {
+            "B": {
+                "item": "minecraft:blue_dye"
+            },
+            "R": {
+                "item": "minecraft:red_dye"
+            },
+            "I": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "result": "magnet:iron_magnet"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:lime_skull_stained_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "skull_stained_glass",
+        "pattern": [
+            "###",
+            "#B#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:stained_glass",
+                "data": 5
+            },
+            "B": {
+                "item": "minecraft:skull_banner_pattern"
+            }
+        },
+        "result": [
+            {
+                "item": "const:lime_skull_stained_glass",
+                "count": 8
+            },
+            {
+                "item": "minecraft:skull_banner_pattern"
+            }
+        ]
+    }
+}

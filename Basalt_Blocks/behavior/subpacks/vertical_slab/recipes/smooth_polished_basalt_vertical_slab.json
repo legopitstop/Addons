@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "basaltblocks:smooth_polished_basalt_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "basaltblocks:smooth_polished_basalt"
+            }
+        },
+        "result": [
+            {
+                "item": "basaltblocks:smooth_polished_basalt_vertical_slab",
+                "count": 6
+            }
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "format_version": "1.18.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "spawnercraft:strider_spawn_egg"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " T ",
+            "SES",
+            " G "
+        ],
+        "group": "nether",
+        "key": {
+            "E": {
+                "item": "minecraft:egg"
+            },
+            "G": {
+                "item": "minecraft:gold_ingot"
+            },
+            "S": {
+                "item": "minecraft:string"
+            },
+            "T": {
+                "item": "minecraft:lava_bucket"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:strider_spawn_egg",
+                "count": 1
+            },
+            {
+                "item": "minecraft:bucket",
+                "count": 1
+            }
+        ]
+    }
+}

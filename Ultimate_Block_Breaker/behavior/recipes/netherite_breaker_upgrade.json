@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "breaker:netherite_breaker_upgrade"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#N#",
+            "ODO",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:glass"
+            },
+            "N": {
+                "item": "minecraft:netherite_ingot"
+            },
+            "O": {
+                "item": "minecraft:obsidian"
+            },
+            "D": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": "breaker:netherite_breaker_upgrade"
+    }
+}

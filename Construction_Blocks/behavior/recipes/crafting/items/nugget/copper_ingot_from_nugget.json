@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:copper_ingot_from_nugget"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:copper_nugget"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:copper_ingot"
+            }
+        ]
+    }
+}

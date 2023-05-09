@@ -1,0 +1,89 @@
+# Planning To Add
+
+**Note:** These are mostly just ideas, so don't expect them coming any time soon, plus bedrock modding is limited on what is possable (like slab, stairs, walls, etc)
+
+## Ideas
+- Cut Metal blocks
+    - blocks that look like cut copper (has line in middle.)
+- Iron Grates
+    - Mobs will not walk on it.
+- Quilted Wool
+    - Has bottom shulker texture with wool.
+- Vertical planks
+    - Plank textures are up facing.
+- More Glass designs
+    - same patterns as banner patterns
+- 16 colored doors
+    - Planks
+- 16 colored trapdoors
+    - Planks
+- 16 colored paths
+- 16 colored logs
+    - Can be stripped with axe
+    - regular and stripped
+- 16 colored composters
+    - Can be filled with seeds
+    - Supports `Lots More Food Addon` seeds
+- vertical slabs
+    - planks
+    - terracotta large bricks
+    - terracotta small bricks
+    - concrete large bircks
+    - concrete small bricks
+    - celingtile
+- 50 Gallon Drum
+    - in all colors
+    - holds water, lava, and milk
+    - add support for `Lots More Food addon` liquid buckets
+- hard hat
+- vest
+- Plastic Pellets 
+    - Recipe: raw plastic pellets + dye/ink?
+    - all 16 colors
+- Plastic block
+    - all 16 colors
+    - recipe: 2x2 of colored pellets
+- Raw plastic
+    - found underground, smelted into raw plastic pellets
+- Crafting Station
+    - works like reguler crafting tabke but looks like a table
+- Levers
+- Asphalt concrete 
+    - Reipe: concrete + slime
+    - possable make you walk faster
+    - make a new item that you can use to paint lines.
+- Road line painter
+    - Places diffrent line blocks on `Asphalt Concrete`. 
+    - Can break the block if you made mistake
+    - The block has not drop.
+    - Toggle the lines it creates by shift-clicking the item. it will tell you the line via actionbar "Type: center-line"
+- Concrete sidewalk
+    - new vareient of a block (like stairs, and slabs)
+    - has special blocks, like `truncated domes` that has bumps, makes rough sound when walked over.
+- Grate 
+    - like trapdoor
+- Printed Carpet
+- colored inks
+    - all 16 colors
+- colored LED torches
+    - all 16 colors
+    - dosent give off any particles
+    - toggleable on/off
+- colored changing LED torches
+    - color changes to all 16 colors
+    - or make it where you can combine any amount of colors to make it color change, ie; red + white + blue = color changing LED that changes to red, white, and blue colors.
+- quilted wool
+    - all 16 colors
+- Concrete tile
+    - all 16 colors
+- Terracotta tiles
+    - all 16 colors + normal
+- Chiseled Concrete
+    - all 16 colors
+- Chiseled Terracotta
+    - all 16 colors + normal
+## May not be added, super complex
+- Schematic table 
+    - will generate structures??
+- schematic blue prints 
+    - diffrent blue prints of diffrent structures

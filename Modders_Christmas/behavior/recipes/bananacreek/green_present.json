@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "xmas:green_present"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "WWW",
+            "WPW",
+            "WWW"
+        ],
+        "key": {
+            "W": {
+                "item": "minecraft:wool",
+                "data": 13
+            },
+            "P": {
+                "item": "minecraft:planks"
+            }
+        },
+        "result": "xmas:green_present"
+    }
+}

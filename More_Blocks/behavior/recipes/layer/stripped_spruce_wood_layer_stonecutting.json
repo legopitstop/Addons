@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:stripped_spruce_wood_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:wood",
+                "data": 9
+            }
+        ],
+        "result": {
+            "item": "moreblocks:stripped_spruce_wood_layer",
+            "count": 8
+        }
+    }
+}

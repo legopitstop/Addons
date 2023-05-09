@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:wet_sponge_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:sponge",
+                "data": 1
+            }
+        },
+        "result": {
+            "item": "more_ss:wet_sponge_slab",
+            "count": 6
+        }
+    }
+}

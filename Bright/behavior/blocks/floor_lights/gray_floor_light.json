@@ -1,0 +1,175 @@
+{
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "bright:gray_floor_light",
+            "properties": {
+                "bright:facing": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "bright:lit": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/gray_floor_light.json",
+            "tag:non_solid": {},
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:geometry": "geometry.floor_light",
+            "minecraft:block_light_filter": 0,
+            "minecraft:block_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    6
+                ],
+                "size": [
+                    16,
+                    2,
+                    2
+                ]
+            },
+            "minecraft:aim_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    6
+                ],
+                "size": [
+                    16,
+                    2,
+                    2
+                ]
+            },
+            "minecraft:on_player_placing": {
+                "event": "bright:facing"
+            },
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('non_solid')"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('bright:facing') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:facing') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('bright:lit') == true",
+                "components": {
+                    "minecraft:block_light_emission": 0.5,
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:gray_concrete"
+                        },
+                        "base": {
+                            "texture": "minecraft:gray_concrete"
+                        },
+                        "light": {
+                            "texture": "bright:gray_light_lit"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "bright:lit_false"
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('bright:lit') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:gray_concrete"
+                        },
+                        "base": {
+                            "texture": "minecraft:gray_concrete"
+                        },
+                        "light": {
+                            "texture": "bright:gray_light"
+                        }
+                    },
+                    "minecraft:on_interact": {
+                        "event": "bright:lit_true"
+                    }
+                }
+            }
+        ],
+        "events": {
+            "bright:facing": {
+                "set_block_property": {
+                    "bright:facing": "q.cardinal_facing_2d"
+                }
+            },
+            "bright:lit_true": {
+                "set_block_property": {
+                    "bright:lit": "true"
+                },
+                "run_command": {
+                    "command": "playsound random.click @p ~ ~ ~ 0.5"
+                }
+            },
+            "bright:lit_false": {
+                "set_block_property": {
+                    "bright:lit": "false"
+                },
+                "run_command": {
+                    "command": "playsound random.click @p ~ ~ ~ 0.5"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_dark_oak_trapdoor1"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:planks",
+                "data": 5
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:dark_oak_trapdoor",
+                "count": 1
+            }
+        ]
+    }
+}

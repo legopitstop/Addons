@@ -1,0 +1,93 @@
+[
+    {
+        "flipbook_texture": "textures/xmas/blocks/white_ornament",
+        "atlas_tile": "xmas:white_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/orange_ornament",
+        "atlas_tile": "xmas:orange_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/magenta_ornament",
+        "atlas_tile": "xmas:magenta_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/light_blue_ornament",
+        "atlas_tile": "xmas:light_blue_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/yellow_ornament",
+        "atlas_tile": "xmas:yellow_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/lime_ornament",
+        "atlas_tile": "xmas:lime_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/pink_ornament",
+        "atlas_tile": "xmas:pink_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/light_gray_ornament",
+        "atlas_tile": "xmas:light_gray_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/gray_ornament",
+        "atlas_tile": "xmas:gray_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/cyan_ornament",
+        "atlas_tile": "xmas:cyan_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/purple_ornament",
+        "atlas_tile": "xmas:purple_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/blue_ornament",
+        "atlas_tile": "xmas:blue_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/brown_ornament",
+        "atlas_tile": "xmas:brown_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/green_ornament",
+        "atlas_tile": "xmas:green_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/red_ornament",
+        "atlas_tile": "xmas:red_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/black_ornament",
+        "atlas_tile": "xmas:black_ornament",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/star",
+        "atlas_tile": "xmas:star",
+        "ticks_per_frame": 5
+    },
+    {
+        "flipbook_texture": "textures/xmas/blocks/snow_falling",
+        "atlas_tile": "xmas:snow_falling",
+        "ticks_per_frame": 3,
+        "blend_frames": false
+    }
+]

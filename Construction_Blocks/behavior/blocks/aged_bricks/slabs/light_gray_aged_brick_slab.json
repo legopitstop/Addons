@@ -1,0 +1,157 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:light_gray_aged_brick_slab",
+            "properties": {
+                "const:slab_block": [
+                    "bottom",
+                    "top",
+                    "double"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1.0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:light_gray_aged_bricks",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "condition": "q.target_x_rotation <= 0",
+                "event": "top"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:slab_block') == 'top'",
+                "components": {
+                    "minecraft:loot": "loot_tables/const/blocks/light_gray_aged_brick_slab.json",
+                    "minecraft:geometry": "geometry.slab_top",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name =='light_gray_aged_brick_slab' && q.block_property('const:slab_block') != 'double'",
+                        "event": "double"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:slab_block') == 'bottom'",
+                "components": {
+                    "minecraft:loot": "loot_tables/const/blocks/light_gray_aged_brick_slab.json",
+                    "minecraft:geometry": "geometry.slab_bottom",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name =='light_gray_aged_brick_slab' && q.block_property('const:slab_block') != 'double'",
+                        "event": "double"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:slab_block') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/const/blocks/light_gray_aged_brick_double_slab.json",
+                    "minecraft:block_light_absorption": 1,
+                    "minecraft:unit_cube": {},
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "double": {
+                "decrement_stack": {},
+                "set_block_property": {
+                    "const:slab_block": "'double'"
+                },
+                "run_command": {
+                    "target": "player",
+                    "command": "playsound use.stone @p"
+                }
+            },
+            "bottom": {
+                "set_block_property": {
+                    "const:slab_block": "'bottom'"
+                }
+            },
+            "top": {
+                "set_block_property": {
+                    "const:slab_block": "'top'"
+                }
+            }
+        }
+    }
+}

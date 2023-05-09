@@ -1,0 +1,42 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:hammer_golden",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:stacked_by_data": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": false,
+            "minecraft:use_duration": 1,
+            "minecraft:max_stack_size": 1,
+            "minecraft:durability": {
+                "max_durability": 23
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:gold_ingot"
+                        ],
+                        "repair_amount": "0.25"
+                    },
+                    {
+                        "items": [
+                            "const:hammer_golden"
+                        ],
+                        "repair_amount": "0.12"
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "texture": "const:hammer",
+                "frame": 1
+            }
+        }
+    }
+}

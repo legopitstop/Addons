@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:soul_soil_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:soul_soil"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:soul_soil_layer",
+            "count": 8
+        }
+    }
+}

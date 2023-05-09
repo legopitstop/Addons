@@ -1,0 +1,255 @@
+{
+    "format_version": "1.19.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "canned:cooked_porkchop_can.tile",
+            "properties": {
+                "canned:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "canned:cans": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ]
+            }
+        },
+        "components": {
+            "minecraft:block_light_filter": 0,
+            "minecraft:destroy_time": 0.5,
+            "minecraft:explosion_resistance": 0.5,
+            "minecraft:on_player_placing": {
+                "event": "event:place"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_item_name_any('slot.weapon.mainhand','canned:cooked_porkchop_can') && q.block_property('canned:cans') != 8",
+                "event": "event:increase_cans"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "canned:cooked_porkchop_can",
+                    "render_method": "alpha_test"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('canned:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('canned:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('canned:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('canned:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 1",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/one_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.one_can",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -4,
+                            0,
+                            -4
+                        ],
+                        "size": [
+                            8,
+                            9,
+                            8
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -4,
+                            0,
+                            -4
+                        ],
+                        "size": [
+                            8,
+                            9,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 2",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/two_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.two_can",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -7,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            15,
+                            9,
+                            12
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            15,
+                            9,
+                            12
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 3",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/three_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.three_can",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 4",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/four_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.four_can",
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 5",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/five_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.five_can"
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 6",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/six_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.six_can"
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 7",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/seven_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.seven_can"
+                }
+            },
+            {
+                "condition": "q.block_property('canned:cans') == 8",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/eight_cooked_porkchop_can.json",
+                    "minecraft:geometry": "geometry.eight_can"
+                }
+            }
+        ],
+        "events": {
+            "event:place": {
+                "set_block_property": {
+                    "canned:direction": "math.random_integer(2, 5)"
+                }
+            },
+            "event:increase_cans": {
+                "decrement_stack": {},
+                "set_block_property": {
+                    "canned:cans": "q.block_property('canned:cans') + 1"
+                },
+                "run_command": {
+                    "command": "playsound block.lantern.step @a[r=17] ~ ~ ~"
+                }
+            }
+        }
+    }
+}

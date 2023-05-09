@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "breaker:upgrade": {
+            "textures": [
+                "textures/breaker/items/stone_breaker_upgrade.png",
+                "textures/breaker/items/iron_breaker_upgrade.png",
+                "textures/breaker/items/gold_breaker_upgrade.png",
+                "textures/breaker/items/diamond_breaker_upgrade.png",
+                "textures/breaker/items/netherite_breaker_upgrade.png"
+            ]
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.18",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "moregold:enchanted_golden_grape"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#P#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_block"
+            },
+            "P": {
+                "item": "morefood:grape"
+            }
+        },
+        "result": [
+            {
+                "item": "moregold:enchanted_golden_grape"
+            }
+        ]
+    }
+}

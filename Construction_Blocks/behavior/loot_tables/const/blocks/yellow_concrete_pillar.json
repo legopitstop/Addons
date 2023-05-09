@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:concrete_pillar_yellow",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:smooth_stone_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:smooth_stone"
+            }
+        },
+        "result": {
+            "item": "more_ss:smooth_stone_stairs",
+            "count": 4
+        }
+    }
+}

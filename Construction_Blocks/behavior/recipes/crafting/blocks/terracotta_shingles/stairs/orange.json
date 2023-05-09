@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:orange_terracotta_shingle_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "##",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:orange_terracotta_shingles"
+            }
+        },
+        "result": {
+            "item": "const:orange_terracotta_shingle_stairs",
+            "count": 4
+        }
+    }
+}

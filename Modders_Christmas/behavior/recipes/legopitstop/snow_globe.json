@@ -1,0 +1,28 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "xmas:snow_globe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "GGG",
+            "GSG",
+            "PPP"
+        ],
+        "key": {
+            "G": {
+                "item": "minecraft:glass"
+            },
+            "S": {
+                "item": "minecraft:snowball"
+            },
+            "P": {
+                "item": "minecraft:planks"
+            }
+        },
+        "result": "xmas:snow_globe"
+    }
+}

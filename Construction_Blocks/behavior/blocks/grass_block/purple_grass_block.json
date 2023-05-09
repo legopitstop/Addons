@@ -1,0 +1,74 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:purple_grass_block",
+            "properties": {
+                "const:snowy": [
+                    "false",
+                    "true"
+                ]
+            }
+        },
+        "components": {
+            "tag:grass": {},
+            "tag:dirt": {},
+            "minecraft:loot": "loot_tables/const/blocks/purple_grass_block.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:map_color": "#ffffff",
+            "minecraft:on_interact": {
+                "condition": "q.get_equipped_item_name == 'wooden_shovel' || q.get_equipped_item_name == 'stone_shovel' || q.get_equipped_item_name == 'iron_shovel' || q.get_equipped_item_name == 'golden_shovel' || q.get_equipped_item_name == 'diamond_shovel' || q.get_equipped_item_name == 'netherite_shovel' || q.get_equipped_item_name == 'wooden_hoe' || q.get_equipped_item_name == 'stone_hoe' || q.get_equipped_item_name == 'iron_hoe' || q.get_equipped_item_name == 'golden_hoe' || q.get_equipped_item_name == 'diamond_hoe' || q.get_equipped_item_name == 'netherite_hoe'",
+                "event": "const:on_interact"
+            },
+            "minecraft:unit_cube": {}
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:snowy') == 'false'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:purple_grass_block_side",
+                            "render_method": "opaque"
+                        },
+                        "up": {
+                            "texture": "const:purple_grass_block_top",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "dirt",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "const:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name == 'wooden_shovel' || q.get_equipped_item_name == 'stone_shovel' || q.get_equipped_item_name == 'iron_shovel' || q.get_equipped_item_name == 'golden_shovel' || q.get_equipped_item_name == 'diamond_shovel' || q.get_equipped_item_name == 'netherite_shovel'",
+                        "set_block": {
+                            "block_type": "const:purple_dirt_path"
+                        },
+                        "run_command": {
+                            "target": "block",
+                            "command": "playsound step.grass @p"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'wooden_hoe' || q.get_equipped_item_name == 'stone_hoe' || q.get_equipped_item_name == 'iron_hoe' || q.get_equipped_item_name == 'golden_hoe' || q.get_equipped_item_name == 'diamond_hoe' || q.get_equipped_item_name == 'netherite_hoe'",
+                        "set_block": {
+                            "block_type": "minecraft:farmland"
+                        },
+                        "run_command": {
+                            "target": "block",
+                            "command": "playsound step.grass @p"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

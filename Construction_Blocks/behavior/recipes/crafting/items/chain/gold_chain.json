@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:gold_chain_item"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "/",
+            "#",
+            "/"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_ingot"
+            },
+            "/": {
+                "item": "minecraft:gold_nugget"
+            }
+        },
+        "result": [
+            {
+                "item": "const:gold_chain_item"
+            }
+        ]
+    }
+}

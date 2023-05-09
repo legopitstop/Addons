@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:structure_template_feature": {
+        "description": {
+            "identifier": "moregold:golden_fruit_tree_structure"
+        },
+        "structure_name": "moregold:golden_fruit_tree",
+        "adjustment_radius": 8,
+        "facing_direction": "random",
+        "constraints": {
+            "grounded": {}
+        }
+    }
+}

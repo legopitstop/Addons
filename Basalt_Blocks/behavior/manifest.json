@@ -1,0 +1,68 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "More Basalt! \u00c2\u00a78Pack by:\u00c2\u00a76 Lego\u00c2\u00a7epit\u00c2\u00a7rstop",
+        "name": "Basalt Blocks Behavior Pack",
+        "uuid": "d627db6d-5e48-425f-88d5-40f0ff30427f",
+        "version": [
+            1,
+            2,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            0
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "More Basalt! \u00c2\u00a78Pack by:\u00c2\u00a76 Lego\u00c2\u00a7epit\u00c2\u00a7rstop",
+            "type": "data",
+            "uuid": "74eb9428-6eb2-4324-bd27-7187c4f346cb",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "2660f6c8-4130-4745-a6f9-75366d9c1c11",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        },
+        {
+            "description": "Assets Plus RP v1.2.0",
+            "uuid": "c86dd7d9-e84e-456f-a84f-1993e353da4c",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "pack",
+            "memory_tier": 2,
+            "name": "Vertical Slabs: \u00c2\u00a74OFF"
+        },
+        {
+            "folder_name": "vertical_slab",
+            "memory_tier": 1,
+            "name": "Vertical Slabs: \u00c2\u00a72ON"
+        }
+    ]
+}

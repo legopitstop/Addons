@@ -1,0 +1,36 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "morehoney:honey_cooked_beef": {
+            "textures": "textures/morehoney/items/honey_cooked_beef.png"
+        },
+        "morehoney:honey_cooked_chicken": {
+            "textures": "textures/morehoney/items/honey_cooked_chicken.png"
+        },
+        "morehoney:honey_cooked_mutton": {
+            "textures": "textures/morehoney/items/honey_cooked_mutton.png"
+        },
+        "morehoney:honey_cooked_porkchop": {
+            "textures": "textures/morehoney/items/honey_cooked_porkchop.png"
+        },
+        "morehoney:honey_cookie": {
+            "textures": "textures/morehoney/items/honey_cookie.png"
+        },
+        "morehoney:honey_lemon_tea": {
+            "textures": "textures/morehoney/items/honey_lemon_tea.png"
+        },
+        "morehoney:honey_pancakes": {
+            "textures": "textures/morehoney/items/honey_pancakes.png"
+        },
+        "morehoney:honey_sandwich": {
+            "textures": "textures/morehoney/items/honey_sandwich.png"
+        },
+        "morehoney:honey_toastie": {
+            "textures": "textures/morehoney/items/honey_toastie.png"
+        },
+        "morehoney:honey_waffle": {
+            "textures": "textures/morehoney/items/honey_waffle.png"
+        }
+    }
+}

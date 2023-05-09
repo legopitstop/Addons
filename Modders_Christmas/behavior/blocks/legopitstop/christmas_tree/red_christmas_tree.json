@@ -1,0 +1,710 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:block": {
+        "description": {
+            "identifier": "xmas:red_christmas_tree",
+            "properties": {
+                "xmas:star": [
+                    false,
+                    true
+                ],
+                "xmas:color": [
+                    "red",
+                    "white",
+                    "orange",
+                    "magenta",
+                    "light_blue",
+                    "yellow",
+                    "lime",
+                    "pink",
+                    "light_gray",
+                    "gray",
+                    "cyan",
+                    "purple",
+                    "blue",
+                    "brown",
+                    "green",
+                    "black"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/red_christmas_tree.json",
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:flammable": {
+                "burn_odds": 1,
+                "flame_odds": 1
+            },
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.get_equipped_item_name == 'white_dye'||q.get_equipped_item_name == 'orange_dye'||q.get_equipped_item_name == 'magenta_dye'||q.get_equipped_item_name == 'light_blue_dye'||q.get_equipped_item_name == 'yellow_dye'||q.get_equipped_item_name == 'lime_dye'||q.get_equipped_item_name == 'pink_dye'||q.get_equipped_item_name == 'light_gray_dye'||q.get_equipped_item_name == 'gray_dye'||q.get_equipped_item_name == 'cyan_dye'||q.get_equipped_item_name == 'purple_dye'||q.get_equipped_item_name == 'blue_dye'||q.get_equipped_item_name == 'brown_dye'||q.get_equipped_item_name == 'green_dye'||q.get_equipped_item_name == 'red_dye'||q.get_equipped_item_name == 'black_dye'||(q.block_property('xmas:star') == false && q.get_equipped_item_name == 'gold_ingot')",
+                "event": "event:color"
+            },
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.5,
+            "minecraft:entity_collision": {
+                "origin": [
+                    -7,
+                    0,
+                    -7
+                ],
+                "size": [
+                    14,
+                    16,
+                    14
+                ]
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -7,
+                    0,
+                    -7
+                ],
+                "size": [
+                    14,
+                    16,
+                    14
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('xmas:color') == 'white'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:white_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'orange'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:orange_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'magenta'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:magenta_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'light_blue'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:light_blue_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'yellow'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:yellow_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'lime'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:lime_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'pink'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:pink_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'light_gray'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:light_gray_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'gray'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:gray_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'cyan'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:cyan_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'purple'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:purple_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'blue'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:blue_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'brown'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:brown_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'green'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:green_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'red'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:color') == 'black'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "log": {
+                            "texture": "minecraft:spruce_log",
+                            "render_method": "alpha_test"
+                        },
+                        "leaves": {
+                            "texture": "xmas:christmas_tree_leaves",
+                            "render_method": "alpha_test"
+                        },
+                        "light1": {
+                            "texture": "xmas:red_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "light2": {
+                            "texture": "xmas:black_ornament",
+                            "render_method": "alpha_test"
+                        },
+                        "star": {
+                            "texture": "xmas:star",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:star') == true",
+                "components": {
+                    "minecraft:geometry": "geometry.christmas_tree_star"
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:star') == false",
+                "components": {
+                    "minecraft:geometry": "geometry.christmas_tree"
+                }
+            }
+        ],
+        "events": {
+            "event:color": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('xmas:star') == false && q.get_equipped_item_name == 'gold_ingot'",
+                        "set_block_property": {
+                            "xmas:star": "true"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'white_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'white'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'orange_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'orange'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'magenta_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'magenta'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'light_blue_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'light_blue'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'yellow_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'yellow'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'lime_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'lime'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'pink_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'pink'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'light_gray_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'light_gray'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'gray_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'gray'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'cyan_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'cyan'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'purple_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'purple'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'blue_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'blue'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'brown_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'brown'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'green_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'green'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'red_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'red'"
+                        },
+                        "decrement_stack": {}
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name == 'black_dye'",
+                        "set_block_property": {
+                            "xmas:color": "'black'"
+                        },
+                        "decrement_stack": {}
+                    }
+                ]
+            }
+        }
+    }
+}

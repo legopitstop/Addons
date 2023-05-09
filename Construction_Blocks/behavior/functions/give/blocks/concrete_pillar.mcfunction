@@ -1,0 +1,16 @@
+give @p const:concrete_pillar_black
+give @p const:concrete_pillar_blue
+give @p const:concrete_pillar_brown
+give @p const:concrete_pillar_cyan
+give @p const:concrete_pillar_gray
+give @p const:concrete_pillar_green
+give @p const:concrete_pillar_light_blue
+give @p const:concrete_pillar_light_gray
+give @p const:concrete_pillar_lime
+give @p const:concrete_pillar_magenta
+give @p const:concrete_pillar_orange
+give @p const:concrete_pillar_pink
+give @p const:concrete_pillar_purple
+give @p const:concrete_pillar_red
+give @p const:concrete_pillar_white
+give @p const:concrete_pillar_yellow

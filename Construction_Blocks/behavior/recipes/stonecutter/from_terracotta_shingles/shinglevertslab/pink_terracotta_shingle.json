@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_pink_terracotta_shingle_vertical_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:pink_terracotta_shingles"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:pink_terracotta_shingle_vertical_slab",
+                "count": 2
+            }
+        ]
+    }
+}

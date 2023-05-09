@@ -1,0 +1,16 @@
+give @s bright:white_light_fixture
+give @s bright:orange_light_fixture
+give @s bright:magenta_light_fixture
+give @s bright:light_blue_light_fixture
+give @s bright:yellow_light_fixture
+give @s bright:lime_light_fixture
+give @s bright:pink_light_fixture
+give @s bright:light_gray_light_fixture
+give @s bright:gray_light_fixture
+give @s bright:cyan_light_fixture
+give @s bright:purple_light_fixture
+give @s bright:blue_light_fixture
+give @s bright:brown_light_fixture
+give @s bright:green_light_fixture
+give @s bright:red_light_fixture
+give @s bright:black_light_fixture

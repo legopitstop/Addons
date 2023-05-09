@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:packed_ice_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:packed_ice"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:packed_ice_layer",
+            "count": 8
+        }
+    }
+}

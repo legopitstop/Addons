@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_large_bricks_gold"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:gold_block"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:large_bricks_gold",
+                "count": 1
+            }
+        ]
+    }
+}

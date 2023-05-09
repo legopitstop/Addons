@@ -1,0 +1,16 @@
+give @s xmas:white_wool_quarter_block_horz
+give @s xmas:orange_wool_quarter_block_horz
+give @s xmas:magenta_wool_quarter_block_horz
+give @s xmas:light_blue_wool_quarter_block_horz
+give @s xmas:yellow_wool_quarter_block_horz
+give @s xmas:lime_wool_quarter_block_horz
+give @s xmas:pink_wool_quarter_block_horz
+give @s xmas:light_gray_wool_quarter_block_horz
+give @s xmas:gray_wool_quarter_block_horz
+give @s xmas:cyan_wool_quarter_block_horz
+give @s xmas:purple_wool_quarter_block_horz
+give @s xmas:blue_wool_quarter_block_horz
+give @s xmas:brown_wool_quarter_block_horz
+give @s xmas:green_wool_quarter_block_horz
+give @s xmas:red_wool_quarter_block_horz
+give @s xmas:black_wool_quarter_block_horz

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:bookshelf_warped",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/warped_bookshelf.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "warped_planks"
+                },
+                "down": {
+                    "texture": "warped_planks"
+                },
+                "*": {
+                    "texture": "const:warped_bookshelf"
+                }
+            }
+        }
+    }
+}

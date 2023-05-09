@@ -1,0 +1,17 @@
+[
+    "textures/magnet/items/iron_magnet.png",
+    "textures/magnet/items/gold_magnet.png",
+    "textures/magnet/items/copper_magnet.png",
+    "textures/magnet/items/diamond_magnet.png",
+    "textures/magnet/items/netherite_magnet.png",
+    "textures/magnet/blocks/iron_magnet_top.png",
+    "textures/magnet/blocks/iron_magnet_side.png",
+    "textures/magnet/blocks/gold_magnet_top.png",
+    "textures/magnet/blocks/gold_magnet_side.png",
+    "textures/magnet/blocks/copper_magnet_top.png",
+    "textures/magnet/blocks/copper_magnet_side.png",
+    "textures/magnet/blocks/diamond_magnet_top.png",
+    "textures/magnet/blocks/diamond_magnet_side.png",
+    "textures/magnet/blocks/netherite_magnet_top.png",
+    "textures/magnet/blocks/netherite_magnet_side.png"
+]

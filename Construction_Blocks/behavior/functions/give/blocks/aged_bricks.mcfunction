@@ -1,0 +1,16 @@
+give @p const:black_aged_bricks
+give @p const:blue_aged_bricks
+give @p const:brown_aged_bricks
+give @p const:cyan_aged_bricks
+give @p const:gray_aged_bricks
+give @p const:green_aged_bricks
+give @p const:light_blue_aged_bricks
+give @p const:light_gray_aged_bricks
+give @p const:lime_aged_bricks
+give @p const:magenta_aged_bricks
+give @p const:orange_aged_bricks
+give @p const:pink_aged_bricks
+give @p const:purple_aged_bricks
+give @p const:red_aged_bricks
+give @p const:white_aged_bricks
+give @p const:yellow_aged_bricks

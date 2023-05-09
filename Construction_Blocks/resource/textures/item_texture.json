@@ -1,0 +1,265 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "const:black_led_torch": {
+            "textures": [
+                "textures/const/blocks/led_torch/black_led_torch.png"
+            ]
+        },
+        "const:air": {
+            "textures": [
+                "textures/const/air.png"
+            ]
+        },
+        "const:colored_chain": {
+            "textures": [
+                "textures/const/items/black_chain.png",
+                "textures/const/items/blue_chain.png",
+                "textures/const/items/brown_chain.png",
+                "textures/const/items/cyan_chain.png",
+                "textures/const/items/gray_chain.png",
+                "textures/const/items/green_chain.png",
+                "textures/const/items/light_blue_chain.png",
+                "textures/const/items/light_gray_chain.png",
+                "textures/const/items/lime_chain.png",
+                "textures/const/items/magenta_chain.png",
+                "textures/const/items/orange_chain.png",
+                "textures/const/items/pink_chain.png",
+                "textures/const/items/purple_chain.png",
+                "textures/const/items/red_chain.png",
+                "textures/const/items/white_chain.png",
+                "textures/const/items/yellow_chain.png"
+            ]
+        },
+        "const:wood_chain": {
+            "textures": [
+                "textures/const/items/acacia_chain.png",
+                "textures/const/items/birch_chain.png",
+                "textures/const/items/crimson_chain.png",
+                "textures/const/items/jungle_chain.png",
+                "textures/const/items/oak_chain.png",
+                "textures/const/items/spruce_chain.png",
+                "textures/const/items/warped_chain.png",
+                "textures/const/items/dark_oak_chain.png"
+            ]
+        },
+        "const:metal_chain": {
+            "textures": [
+                "textures/const/items/copper_chain.png",
+                "textures/const/items/exposed_copper_chain.png",
+                "textures/const/items/weathered_copper_chain.png",
+                "textures/const/items/oxidized_copper_chain.png",
+                "textures/const/items/diamond_chain.png",
+                "textures/const/items/emerald_chain.png",
+                "textures/const/items/gold_chain.png",
+                "textures/const/items/iron_chain.png",
+                "textures/const/items/netherite_chain.png"
+            ]
+        },
+        "const:paint_bucket": {
+            "textures": [
+                "textures/const/items/paint_bucket.png"
+            ]
+        },
+        "const:black_wall_letters": {
+            "textures": [
+                "textures/const/blocks/wall_letters/black_uppercase/a.png",
+                "textures/const/blocks/wall_letters/black_lowercase/a.png",
+                "textures/const/blocks/wall_letters/black_one.png",
+                "textures/const/blocks/wall_letters/black_and_mark.png"
+            ]
+        },
+        "const:traffic_divider": {
+            "textures": [
+                "textures/const/items/traffic_divider.png"
+            ]
+        },
+        "const:pallet_norm": {
+            "textures": [
+                "textures/const/items/pallet_norm.png"
+            ]
+        },
+        "const:jackhammer": {
+            "textures": [
+                "textures/const/items/jackhammer.png"
+            ]
+        },
+        "const:cone_barrel": {
+            "textures": [
+                "textures/const/items/cone_barrel.png"
+            ]
+        },
+        "const:cone_post": {
+            "textures": [
+                "textures/const/items/cone_post.png"
+            ]
+        },
+        "const:wall_outlet_item": {
+            "textures": [
+                "textures/const/items/wall_outlet_item.png"
+            ]
+        },
+        "const:wall_outlet_item2": {
+            "textures": [
+                "textures/const/items/wall_outlet_item2.png"
+            ]
+        },
+        "const:wall_switch_item": {
+            "textures": [
+                "textures/const/items/wall_switch_item.png"
+            ]
+        },
+        "const:sandpaper": {
+            "textures": [
+                "textures/const/items/sandpaper.png"
+            ]
+        },
+        "const:wet_sandpaper": {
+            "textures": [
+                "textures/const/items/wet_sandpaper.png"
+            ]
+        },
+        "const:modern_lamp_bottom": {
+            "textures": [
+                "textures/const/items/modern_lamp_bottom.png"
+            ]
+        },
+        "const:modern_lamp_top": {
+            "textures": [
+                "textures/const/items/modern_lamp_top.png"
+            ]
+        },
+        "const:nail": {
+            "textures": [
+                "textures/const/items/nail.png"
+            ]
+        },
+        "const:wrench": {
+            "textures": [
+                "textures/const/items/wrench.png"
+            ]
+        },
+        "const:gypsum_dust": {
+            "textures": [
+                "textures/const/items/gypsum_dust.png"
+            ]
+        },
+        "const:sheetrock_panel": {
+            "textures": [
+                "textures/const/items/sheetrock_panel.png"
+            ]
+        },
+        "const:glowstone_dust": {
+            "textures": [
+                "textures/const/items/black_glowstone_dust.png",
+                "textures/const/items/blue_glowstone_dust.png",
+                "textures/const/items/brown_glowstone_dust.png",
+                "textures/const/items/cyan_glowstone_dust.png",
+                "textures/const/items/gray_glowstone_dust.png",
+                "textures/const/items/green_glowstone_dust.png",
+                "textures/const/items/light_blue_glowstone_dust.png",
+                "textures/const/items/light_gray_glowstone_dust.png",
+                "textures/const/items/lime_glowstone_dust.png",
+                "textures/const/items/magenta_glowstone_dust.png",
+                "textures/const/items/orange_glowstone_dust.png",
+                "textures/const/items/pink_glowstone_dust.png",
+                "textures/const/items/purple_glowstone_dust.png",
+                "textures/const/items/red_glowstone_dust.png",
+                "textures/const/items/white_glowstone_dust.png",
+                "textures/const/items/yellow_glowstone_dust.png"
+            ]
+        },
+        "const:brick": {
+            "textures": [
+                "textures/const/items/black_brick.png",
+                "textures/const/items/blue_brick.png",
+                "textures/const/items/brown_brick.png",
+                "textures/const/items/cyan_brick.png",
+                "textures/const/items/gray_brick.png",
+                "textures/const/items/green_brick.png",
+                "textures/const/items/light_blue_brick.png",
+                "textures/const/items/light_gray_brick.png",
+                "textures/const/items/lime_brick.png",
+                "textures/const/items/magenta_brick.png",
+                "textures/const/items/orange_brick.png",
+                "textures/const/items/pink_brick.png",
+                "textures/const/items/purple_brick.png",
+                "textures/const/items/red_brick.png",
+                "textures/const/items/white_brick.png",
+                "textures/const/items/yellow_brick.png"
+            ]
+        },
+        "const:dyed_paper": {
+            "textures": [
+                "textures/const/items/black_paper.png",
+                "textures/const/items/blue_paper.png",
+                "textures/const/items/brown_paper.png",
+                "textures/const/items/cyan_paper.png",
+                "textures/const/items/gray_paper.png",
+                "textures/const/items/green_paper.png",
+                "textures/const/items/light_blue_paper.png",
+                "textures/const/items/light_gray_paper.png",
+                "textures/const/items/lime_paper.png",
+                "textures/const/items/magenta_paper.png",
+                "textures/const/items/orange_paper.png",
+                "textures/const/items/pink_paper.png",
+                "textures/const/items/purple_paper.png",
+                "textures/const/items/red_paper.png",
+                "textures/const/items/white_paper.png",
+                "textures/const/items/yellow_paper.png"
+            ]
+        },
+        "const:hammer": {
+            "textures": [
+                "textures/const/items/diamond_hammer.png",
+                "textures/const/items/golden_hammer.png",
+                "textures/const/items/iron_hammer.png",
+                "textures/const/items/netherite_hammer.png",
+                "textures/const/items/stone_hammer.png",
+                "textures/const/items/wooden_hammer.png"
+            ]
+        },
+        "const:nugget": {
+            "textures": [
+                "textures/const/items/diamond_nugget.png",
+                "textures/const/items/emerald_nugget.png",
+                "textures/const/items/netherite_nugget.png",
+                "textures/const/items/ruby_nugget.png",
+                "textures/const/items/copper_nugget.png"
+            ]
+        },
+        "const:stick": {
+            "textures": [
+                "textures/const/items/diamond_stick.png",
+                "textures/const/items/emerald_stick.png",
+                "textures/const/items/gold_stick.png",
+                "textures/const/items/iron_stick.png",
+                "textures/const/items/netherite_stick.png",
+                "textures/const/items/ruby_stick.png",
+                "textures/const/items/copper_stick.png"
+            ]
+        },
+        "const:paint_roller": {
+            "textures": [
+                "textures/const/items/paint_roller.png",
+                "textures/const/items/black_paint_roller.png",
+                "textures/const/items/blue_paint_roller.png",
+                "textures/const/items/brown_paint_roller.png",
+                "textures/const/items/cyan_paint_roller.png",
+                "textures/const/items/gray_paint_roller.png",
+                "textures/const/items/green_paint_roller.png",
+                "textures/const/items/light_blue_paint_roller.png",
+                "textures/const/items/light_gray_paint_roller.png",
+                "textures/const/items/lime_paint_roller.png",
+                "textures/const/items/magenta_paint_roller.png",
+                "textures/const/items/orange_paint_roller.png",
+                "textures/const/items/pink_paint_roller.png",
+                "textures/const/items/purple_paint_roller.png",
+                "textures/const/items/red_paint_roller.png",
+                "textures/const/items/white_paint_roller.png",
+                "textures/const/items/yellow_paint_roller.png"
+            ]
+        }
+    }
+}

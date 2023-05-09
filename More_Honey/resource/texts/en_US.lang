@@ -1,0 +1,14 @@
+﻿# Items
+item.morehoney:honey_cooked_beef=Honey Cooked Beef §7(#morehoney)
+item.morehoney:honey_cooked_chicken=Honey Cooked Chicken §7(#morehoney)
+item.morehoney:honey_cooked_mutton=Honey Cooked Mutton §7(#morehoney)
+item.morehoney:honey_cooked_porkchop=Honey Cooked Porkchop §7(#morehoney)
+item.morehoney:honey_cookie=Honey Cookie §7(#morehoney)
+item.morehoney:honey_lemon_tea=Honey Lemon Tea §7(#morehoney)
+item.morehoney:honey_pancakes=Honey Pancakes §7(#morehoney)
+item.morehoney:honey_sandwich=Honey Sandwich §7(#morehoney)
+item.morehoney:honey_toastie=Honey Toastie §7(#morehoney)
+item.morehoney:honey_waffle=Honey Waffle §7(#morehoney)
+# Blocks
+tile.morehoney:honey_press.name=Honey Press §7(#morehoney)
+container.honey_press=Honey Press

@@ -1,0 +1,18 @@
+[
+    "textures/models/armor/santa_hat",
+    "textures/models/armor/santa_suit1",
+    "textures/models/armor/santa_suit2",
+    "textures/items/santa_hat.png",
+    "textures/items/santa_chestplate.png",
+    "textures/items/santa_leggings.png",
+    "textures/items/santa_boots.png",
+    "textures/items/milk_bottle.png",
+    "textures/blocks/wood_present.png",
+    "textures/blocks/stone_present.png",
+    "textures/blocks/iron_present.png",
+    "textures/blocks/copper_present.png",
+    "textures/blocks/gold_present.png",
+    "textures/blocks/diamond_present.png",
+    "textures/blocks/emerald_present.png",
+    "textures/blocks/netherite_present.png"
+]

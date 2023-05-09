@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:lime_terracotta_large_brick_stairs_from_lime_terracotta_large_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:lime_terracotta_large_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:lime_terracotta_large_brick_stairs"
+            }
+        ]
+    }
+}

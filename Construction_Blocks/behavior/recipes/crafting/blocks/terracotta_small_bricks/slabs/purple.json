@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:purple_terracotta_small_brick_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:purple_terracotta_small_bricks"
+            }
+        },
+        "result": {
+            "item": "const:purple_terracotta_small_brick_slab",
+            "count": 6
+        }
+    }
+}

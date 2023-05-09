@@ -1,0 +1,16 @@
+give @p const:black_glowstone_dust
+give @p const:blue_glowstone_dust
+give @p const:brown_glowstone_dust
+give @p const:cyan_glowstone_dust
+give @p const:gray_glowstone_dust
+give @p const:green_glowstone_dust
+give @p const:light_blue_glowstone_dust
+give @p const:light_gray_glowstone_dust
+give @p const:lime_glowstone_dust
+give @p const:magenta_glowstone_dust
+give @p const:orange_glowstone_dust
+give @p const:pink_glowstone_dust
+give @p const:purple_glowstone_dust
+give @p const:red_glowstone_dust
+give @p const:white_glowstone_dust
+give @p const:yellow_glowstone_dust

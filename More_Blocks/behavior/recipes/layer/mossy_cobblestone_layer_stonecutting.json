@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:mossy_cobblestone_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:mossy_cobblestone"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:mossy_cobblestone_layer",
+            "count": 8
+        }
+    }
+}

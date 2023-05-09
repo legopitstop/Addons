@@ -1,0 +1,91 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:block": {
+        "description": {
+            "identifier": "morepumpkin:skeleton_carved_pumpkin",
+            "properties": {
+                "lps:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/skeleton_carved_pumpkin.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:geometry": "geometry.template_pumpkin",
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.search"
+            },
+            "minecraft:on_player_placing": {
+                "event": "lps:place"
+            },
+            "minecraft:material_instances": {
+                "front": {
+                    "texture": "morepumpkin:skeleton_carved_pumpkin"
+                },
+                "side": {
+                    "texture": "minecraft:pumpkin_side"
+                },
+                "*": {
+                    "texture": "minecraft:pumpkin_top"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "lps:place": {
+                "set_block_property": {
+                    "lps:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        }
+    }
+}

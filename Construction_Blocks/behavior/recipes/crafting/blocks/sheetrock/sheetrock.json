@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:craft/block/sheetrock"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A#A",
+            "###",
+            "A#A"
+        ],
+        "key": {
+            "#": {
+                "item": "const:sheetrock_panel"
+            },
+            "A": {
+                "item": "const:nail"
+            }
+        },
+        "result": [
+            {
+                "item": "const:sheetrock"
+            }
+        ]
+    }
+}

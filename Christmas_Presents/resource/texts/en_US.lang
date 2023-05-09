@@ -1,0 +1,20 @@
+﻿#############################################################################
+#		   Christmas Presents Addon by Legopitstop			                #
+#                 default langugage                                         #
+#############################################################################
+
+# Blocks
+tile.presents:wood_present.name=Present
+tile.presents:stone_present.name=Present
+tile.presents:iron_present.name=Present
+tile.presents:copper_present.name=Present
+tile.presents:gold_present.name=Present
+tile.presents:diamond_present.name=Present
+tile.presents:emerald_present.name=Present
+tile.presents:netherite_present.name=Present
+# Items
+item.presents:milk_bottle=Milk Bottle
+item.presents:santa_hat=Santa Hat
+item.presents:santa_chestplate=Santa Chestplate
+item.presents:santa_leggings=Santa Leggings
+item.presents:santa_boots=Santa Boots

@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:red_brick",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:icon": {
+                "texture": "const:brick",
+                "frame": 13
+            }
+        }
+    }
+}

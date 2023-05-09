@@ -1,0 +1,17 @@
+give @p const:black_mojang_stained_glass
+give @p const:blue_mojang_stained_glass
+give @p const:brown_mojang_stained_glass
+give @p const:cyan_mojang_stained_glass
+give @p const:gray_mojang_stained_glass
+give @p const:green_mojang_stained_glass
+give @p const:light_blue_mojang_stained_glass
+give @p const:light_gray_mojang_stained_glass
+give @p const:lime_mojang_stained_glass
+give @p const:magenta_mojang_stained_glass
+give @p const:orange_mojang_stained_glass
+give @p const:pink_mojang_stained_glass
+give @p const:purple_mojang_stained_glass
+give @p const:red_mojang_stained_glass
+give @p const:white_mojang_stained_glass
+give @p const:yellow_mojang_stained_glass
+give @p const:tinted_mojang_glass

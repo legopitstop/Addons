@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_acacia_slab2"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:smooth_acacia_planks"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:wooden_slab",
+                "data": 4,
+                "count": 2
+            }
+        ]
+    }
+}

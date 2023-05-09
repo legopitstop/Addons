@@ -1,0 +1,168 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:block": {
+        "description": {
+            "identifier": "xmas:blue_wool_quarter_block_horz",
+            "properties": {
+                "xmas:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "xmas:half": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/blue_wool_quarter_block_horz.json",
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:on_player_placing": {
+                "event": "event:direction"
+            },
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
+            },
+            "minecraft:geometry": "geometry.quarter_block_horz",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "minecraft:blue_wool"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    8,
+                    8
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    8,
+                    8
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('xmas:direction') == 2 && q.block_property('xmas:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 3 && q.block_property('xmas:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 4 && q.block_property('xmas:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 5 && q.block_property('xmas:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 2 && q.block_property('xmas:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        180
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 3 && q.block_property('xmas:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        180
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 4 && q.block_property('xmas:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        180
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 5 && q.block_property('xmas:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        180
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "event:direction": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "xmas:direction": "q.cardinal_facing_2d"
+                        }
+                    },
+                    {
+                        "condition": "query.target_x_rotation <= 0",
+                        "trigger": {
+                            "event": "event:top"
+                        }
+                    }
+                ]
+            },
+            "event:top": {
+                "set_block_property": {
+                    "xmas:half": "'top'"
+                }
+            }
+        }
+    }
+}

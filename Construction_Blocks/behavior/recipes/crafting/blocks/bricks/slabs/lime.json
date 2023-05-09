@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:lime_brick_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:lime_bricks"
+            }
+        },
+        "result": {
+            "item": "const:lime_brick_slab",
+            "count": 6
+        }
+    }
+}

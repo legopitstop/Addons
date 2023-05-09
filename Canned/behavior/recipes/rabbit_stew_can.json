@@ -1,0 +1,41 @@
+{
+    "format_version": "1.19.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "canned:rabbit_stew_can"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "canned:empty_can"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            },
+            {
+                "item": "minecraft:rabbit_stew"
+            }
+        ],
+        "result": "canned:rabbit_stew_can"
+    }
+}

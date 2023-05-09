@@ -1,0 +1,12 @@
+﻿item.magnet:iron_magnet=Iron Magnet §7(#magnet)
+item.magnet:gold_magnet=Gold Magnet §7(#magnet)
+item.magnet:copper_magnet=Copper Magnet §7(#magnet)
+item.magnet:diamond_magnet=Diamond Magnet §7(#magnet)
+item.magnet:netherite_magnet=Netherite Magnet §7(#magnet)
+tile.magnet:iron_magnet_block.name=Iron Magnet Block §7(#magnet)
+tile.magnet:gold_magnet_block.name=Gold Magnet Block §7(#magnet)
+tile.magnet:copper_magnet_block.name=Copper Magnet Block §7(#magnet)
+tile.magnet:diamond_magnet_block.name=Diamond Magnet Block §7(#magnet)
+tile.magnet:netherite_magnet_block.name=Netherite Magnet Block §7(#magnet)
+gui.magnet_on=Magnet: §2ON
+gui.magnet_off=Magnet: §4OFF

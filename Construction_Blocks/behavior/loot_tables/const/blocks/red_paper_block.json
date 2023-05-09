@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:paper_block_red",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

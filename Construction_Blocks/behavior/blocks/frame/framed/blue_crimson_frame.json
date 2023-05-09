@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.201",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:blue_crimson_frame"
+        },
+        "components": {
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#000000",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:blue_crimson_frame",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

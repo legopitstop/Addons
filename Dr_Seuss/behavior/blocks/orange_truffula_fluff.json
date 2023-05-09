@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "seuss:orange_truffula_fluff",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": {
+                "value": 0.2
+            },
+            "minecraft:explosion_resistance": {
+                "value": 0
+            },
+            "minecraft:map_color": {
+                "color": "#000000"
+            }
+        }
+    }
+}

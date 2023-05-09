@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:mud_brick_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:mud_bricks"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:mud_brick_layer",
+            "count": 8
+        }
+    }
+}

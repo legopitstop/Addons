@@ -1,0 +1,41 @@
+{
+    "format_version": "1.19.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "canned:chorus_fruit_can"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "canned:empty_can"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            },
+            {
+                "item": "minecraft:chorus_fruit"
+            }
+        ],
+        "result": "canned:chorus_fruit_can"
+    }
+}

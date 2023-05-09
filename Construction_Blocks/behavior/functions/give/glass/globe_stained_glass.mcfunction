@@ -1,0 +1,17 @@
+give @p const:black_globe_stained_glass
+give @p const:blue_globe_stained_glass
+give @p const:brown_globe_stained_glass
+give @p const:cyan_globe_stained_glass
+give @p const:gray_globe_stained_glass
+give @p const:green_globe_stained_glass
+give @p const:light_blue_globe_stained_glass
+give @p const:light_gray_globe_stained_glass
+give @p const:lime_globe_stained_glass
+give @p const:magenta_globe_stained_glass
+give @p const:orange_globe_stained_glass
+give @p const:pink_globe_stained_glass
+give @p const:purple_globe_stained_glass
+give @p const:red_globe_stained_glass
+give @p const:white_globe_stained_glass
+give @p const:yellow_globe_stained_glass
+give @p const:tinted_globe_glass

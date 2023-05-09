@@ -1,0 +1,16 @@
+give @s xmas:white_christmas_tree
+give @s xmas:orange_christmas_tree
+give @s xmas:magenta_christmas_tree
+give @s xmas:light_blue_christmas_tree
+give @s xmas:yellow_christmas_tree
+give @s xmas:lime_christmas_tree
+give @s xmas:pink_christmas_tree
+give @s xmas:light_gray_christmas_tree
+give @s xmas:gray_christmas_tree
+give @s xmas:cyan_christmas_tree
+give @s xmas:purple_christmas_tree
+give @s xmas:blue_christmas_tree
+give @s xmas:brown_christmas_tree
+give @s xmas:green_christmas_tree
+give @s xmas:red_christmas_tree
+give @s xmas:black_christmas_tree

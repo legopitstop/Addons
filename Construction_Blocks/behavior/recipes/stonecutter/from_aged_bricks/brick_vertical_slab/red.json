@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:red_brick_vertical_slab_from_red_aged_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:red_aged_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:red_brick_vertical_slab",
+                "count": 2
+            }
+        ]
+    }
+}

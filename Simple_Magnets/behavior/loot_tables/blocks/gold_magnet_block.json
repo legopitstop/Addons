@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "magnet:gold_magnet_block",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

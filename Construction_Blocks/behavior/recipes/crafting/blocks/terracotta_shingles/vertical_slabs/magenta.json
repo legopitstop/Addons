@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:magenta_terracotta_shingle_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "const:magenta_terracotta_shingles"
+            }
+        },
+        "result": {
+            "item": "const:magenta_terracotta_shingle_vertical_slab",
+            "count": 6
+        }
+    }
+}

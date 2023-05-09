@@ -1,0 +1,16 @@
+give @p const:black_grass_block
+give @p const:blue_grass_block
+give @p const:brown_grass_block
+give @p const:cyan_grass_block
+give @p const:gray_grass_block
+give @p const:green_grass_block
+give @p const:light_blue_grass_block
+give @p const:light_gray_grass_block
+give @p const:lime_grass_block
+give @p const:magenta_grass_block
+give @p const:orange_grass_block
+give @p const:pink_grass_block
+give @p const:purple_grass_block
+give @p const:red_grass_block
+give @p const:white_grass_block
+give @p const:yellow_grass_block

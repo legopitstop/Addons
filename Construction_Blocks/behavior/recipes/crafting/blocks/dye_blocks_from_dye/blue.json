@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:dye_block_blue"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:dye",
+                "data": 18
+            }
+        },
+        "result": {
+            "item": "const:dye_block_blue"
+        }
+    }
+}

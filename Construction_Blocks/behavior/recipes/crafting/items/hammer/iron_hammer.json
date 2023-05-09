@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:iron_hammer"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#S ",
+            " S "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:iron_ingot"
+            },
+            "S": {
+                "item": "const:stick_iron"
+            }
+        },
+        "result": [
+            {
+                "item": "const:hammer_iron"
+            }
+        ]
+    }
+}

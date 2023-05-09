@@ -1,0 +1,15 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:wet_sandpaper",
+            "category": "Items"
+        },
+        "components": {
+            "tag:const:sandpaper": {},
+            "minecraft:icon": {
+                "texture": "const:wet_sandpaper"
+            }
+        }
+    }
+}

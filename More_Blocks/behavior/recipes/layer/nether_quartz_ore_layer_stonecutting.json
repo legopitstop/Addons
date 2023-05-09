@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:nether_quartz_ore_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:quartz_ore"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:nether_quartz_ore_layer",
+            "count": 8
+        }
+    }
+}

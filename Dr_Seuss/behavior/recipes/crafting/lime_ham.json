@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "seuss:craft/lime_ham"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:dye",
+                "data": 10
+            },
+            {
+                "item": "seuss:ham"
+            }
+        ],
+        "result": [
+            {
+                "item": "seuss:green_ham"
+            }
+        ]
+    }
+}

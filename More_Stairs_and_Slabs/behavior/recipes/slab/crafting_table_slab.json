@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:crafting_table_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:crafting_table"
+            }
+        },
+        "result": {
+            "item": "more_ss:crafting_table_slab",
+            "count": 6
+        }
+    }
+}

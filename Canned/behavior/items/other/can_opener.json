@@ -1,0 +1,363 @@
+{
+    "format_version": "1.19.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "canned:can_opener",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:icon": {
+                "texture": "canned:can_opener"
+            },
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "event:damage"
+                }
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:use_duration": 1.26,
+            "minecraft:durability": {
+                "max_durability": 59
+            },
+            "minecraft:chargeable": {
+                "on_complete": {
+                    "condition": "q.equipped_item_all_tags('slot.weapon.offhand','can_open')",
+                    "event": "event:open_can"
+                }
+            }
+        },
+        "events": {
+            "event:damage": {
+                "damage": {
+                    "amount": 1,
+                    "type": "durability",
+                    "target": "self"
+                }
+            },
+            "event:open_can": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "give @s canned:empty_can"
+                        },
+                        "trigger": {
+                            "event": "event:damage"
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:apple_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:apple 8",
+                                "clear @s canned:apple_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:baked_potato_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:baked_potato 8",
+                                "clear @s canned:baked_potato_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:beetroot_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:beetroot 8",
+                                "clear @s canned:beetroot_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:beetroot_soup_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:beetroot_soup 8",
+                                "clear @s canned:beetroot_soup_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:bread_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:bread 8",
+                                "clear @s canned:bread_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cake_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cake 8",
+                                "clear @s canned:cake_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:carrot_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:carrot 8",
+                                "clear @s canned:carrot_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:chorus_fruit_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:chorus_fruit 8",
+                                "clear @s canned:chorus_fruit_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_chicken_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_chicken 8",
+                                "clear @s canned:cooked_chicken_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_cod_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_cod 8",
+                                "clear @s canned:cooked_cod_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_mutton_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_mutton 8",
+                                "clear @s canned:cooked_mutton_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_porkchop_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_porkchop 8",
+                                "clear @s canned:cooked_porkchop_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_rabbit_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_rabbit 8",
+                                "clear @s canned:cooked_rabbit_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_salmon_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_salmon 8",
+                                "clear @s canned:cooked_salmon_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cooked_beef_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cooked_beef 8",
+                                "clear @s canned:cooked_beef_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:cookie_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:cookie 8",
+                                "clear @s canned:cookie_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:dried_kelp_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:dried_kelp 8",
+                                "clear @s canned:dried_kelp_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:enchanted_golden_apple_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:enchanted_golden_apple 8",
+                                "clear @s canned:enchanted_golden_apple_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:golden_apple_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:golden_apple 8",
+                                "clear @s canned:golden_apple_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:glow_berries_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:glow_berries 8",
+                                "clear @s canned:glow_berries_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:golden_carrot_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:golden_carrot 8",
+                                "clear @s canned:golden_carrot_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:honey_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:honey_bottle 8",
+                                "clear @s canned:honey_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:melon_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:melon_slice 8",
+                                "clear @s canned:melon_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:mushroom_stew_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:mushroom_stew 8",
+                                "clear @s canned:mushroom_stew_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:poisonous_potato_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:poisonous_potato 8",
+                                "clear @s canned:poisonous_potato_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:potato_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:potato 8",
+                                "clear @s canned:potato_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:pufferfish_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:pufferfish 8",
+                                "clear @s canned:pufferfish_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:pumpkin_pie_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:pumpkin_pie 8",
+                                "clear @s canned:pumpkin_pie_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:rabbit_stew_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:rabbit_stew 8",
+                                "clear @s canned:rabbit_stew_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:rotten_flesh_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:rotten_flesh 8",
+                                "clear @s canned:rotten_flesh_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:spider_eye_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:spider_eye 8",
+                                "clear @s canned:spider_eye_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:suspicious_stew_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:suspicious_stew 8",
+                                "clear @s canned:suspicious_stew_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:sweet_berries_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:sweet_berries 8",
+                                "clear @s canned:sweet_berries_can 0 1"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.is_item_name_any('slot.weapon.offhand','canned:tropical_fish_can')",
+                        "run_command": {
+                            "command": [
+                                "give @s minecraft:tropical_fish 8",
+                                "clear @s canned:tropical_fish_can 0 1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

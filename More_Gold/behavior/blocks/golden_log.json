@@ -1,0 +1,111 @@
+{
+    "format_version": "1.18",
+    "minecraft:block": {
+        "description": {
+            "identifier": "moregold:golden_log",
+            "properties": {
+                "moregold:rotation": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.log"
+            },
+            "minecraft:destroy_time": 1.25,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:unit_cube": {},
+            "minecraft:on_player_placing": {
+                "event": "moregold:rotational"
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "moregold:golden_log_top"
+                },
+                "down": {
+                    "texture": "moregold:golden_log_top"
+                },
+                "*": {
+                    "texture": "moregold:golden_log"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('moregold:rotation') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('moregold:rotation') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('moregold:rotation') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('moregold:rotation') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('moregold:rotation') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('moregold:rotation') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "moregold:rotational": {
+                "set_block_property": {
+                    "moregold:rotation": "q.cardinal_block_face_placed_on"
+                }
+            }
+        }
+    }
+}

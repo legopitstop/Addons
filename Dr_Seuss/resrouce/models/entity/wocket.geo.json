@@ -1,0 +1,209 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.wocket",
+                "texture_width": 32,
+                "texture_height": 32,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 1,
+                "visible_bounds_offset": [
+                    0,
+                    0.5,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "head",
+                    "pivot": [
+                        0,
+                        11,
+                        0.5
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -1.5,
+                                11,
+                                -1
+                            ],
+                            "size": [
+                                3,
+                                3,
+                                3
+                            ],
+                            "uv": [
+                                0,
+                                8
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "torso",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -2.5,
+                                5,
+                                -0.5
+                            ],
+                            "size": [
+                                5,
+                                6,
+                                2
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftleg",
+                    "pivot": [
+                        -1.5,
+                        5,
+                        0.5
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -2,
+                                0,
+                                -1
+                            ],
+                            "size": [
+                                1,
+                                1,
+                                2
+                            ],
+                            "uv": [
+                                13,
+                                6
+                            ]
+                        },
+                        {
+                            "origin": [
+                                -2,
+                                1,
+                                0
+                            ],
+                            "size": [
+                                1,
+                                4,
+                                1
+                            ],
+                            "uv": [
+                                8,
+                                14
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightleg",
+                    "pivot": [
+                        1.5,
+                        5,
+                        0.5
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                1,
+                                0,
+                                -1
+                            ],
+                            "size": [
+                                1,
+                                1,
+                                2
+                            ],
+                            "uv": [
+                                9,
+                                8
+                            ]
+                        },
+                        {
+                            "origin": [
+                                1,
+                                1,
+                                0
+                            ],
+                            "size": [
+                                1,
+                                4,
+                                1
+                            ],
+                            "uv": [
+                                4,
+                                14
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftarm",
+                    "pivot": [
+                        -2.5,
+                        10,
+                        0.5
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -3.5,
+                                6,
+                                0
+                            ],
+                            "size": [
+                                1,
+                                5,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                14
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightarm",
+                    "pivot": [
+                        2.5,
+                        10,
+                        0.5
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                2.5,
+                                6,
+                                0
+                            ],
+                            "size": [
+                                1,
+                                5,
+                                1
+                            ],
+                            "uv": [
+                                12,
+                                12
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

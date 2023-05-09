@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_orange_terracotta"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:orange_terracotta_large_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 1
+            }
+        ]
+    }
+}

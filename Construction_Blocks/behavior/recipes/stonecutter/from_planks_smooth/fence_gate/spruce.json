@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_spruce_fence_gate2"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:smooth_spruce_planks"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:spruce_fence_gate",
+                "count": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:gray_wool_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "wool_stairs",
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:wool",
+                "data": 7
+            }
+        },
+        "result": {
+            "item": "more_ss:gray_wool_stairs",
+            "count": 4
+        }
+    }
+}

@@ -1,0 +1,17 @@
+give @p more_ss:terracotta_stairs
+give @p more_ss:white_terracotta_stairs
+give @p more_ss:orange_terracotta_stairs
+give @p more_ss:magenta_terracotta_stairs
+give @p more_ss:light_blue_terracotta_stairs
+give @p more_ss:yellow_terracotta_stairs
+give @p more_ss:lime_terracotta_stairs
+give @p more_ss:pink_terracotta_stairs
+give @p more_ss:gray_terracotta_stairs
+give @p more_ss:light_gray_terracotta_stairs
+give @p more_ss:cyan_terracotta_stairs
+give @p more_ss:purple_terracotta_stairs
+give @p more_ss:blue_terracotta_stairs
+give @p more_ss:brown_terracotta_stairs
+give @p more_ss:green_terracotta_stairs
+give @p more_ss:red_terracotta_stairs
+give @p more_ss:black_terracotta_stairs

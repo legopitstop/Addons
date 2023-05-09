@@ -1,0 +1,21 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "magnet:iron_magnet": {
+            "textures": "textures/magnet/items/iron_magnet.png"
+        },
+        "magnet:gold_magnet": {
+            "textures": "textures/magnet/items/gold_magnet.png"
+        },
+        "magnet:copper_magnet": {
+            "textures": "textures/magnet/items/copper_magnet.png"
+        },
+        "magnet:diamond_magnet": {
+            "textures": "textures/magnet/items/diamond_magnet.png"
+        },
+        "magnet:netherite_magnet": {
+            "textures": "textures/magnet/items/netherite_magnet.png"
+        }
+    }
+}

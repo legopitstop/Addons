@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:cracked_polished_blackstone_brick_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "concrete_stairs",
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:cracked_polished_blackstone_bricks"
+            }
+        },
+        "result": {
+            "item": "more_ss:cracked_polished_blackstone_brick_stairs",
+            "count": 4
+        }
+    }
+}

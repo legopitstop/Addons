@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:globe_banner_pattern",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.banner_pattern"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": {
+                "texture": "banner_pattern"
+            }
+        }
+    }
+}

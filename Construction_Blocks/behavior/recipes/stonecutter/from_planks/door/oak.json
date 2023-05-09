@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_wooden_door1"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:planks",
+                "data": 0
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:wooden_door",
+                "count": 1
+            }
+        ]
+    }
+}

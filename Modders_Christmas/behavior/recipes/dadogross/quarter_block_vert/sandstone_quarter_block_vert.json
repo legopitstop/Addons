@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:sandstone_quarter_block_vert"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:sandstone",
+                "data": 0
+            }
+        ],
+        "result": {
+            "item": "xmas:sandstone_quarter_block_vert",
+            "count": 4
+        }
+    }
+}

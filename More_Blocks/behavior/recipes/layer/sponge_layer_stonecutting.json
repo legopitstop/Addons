@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:sponge_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:sponge",
+                "data": 0
+            }
+        ],
+        "result": {
+            "item": "moreblocks:sponge_layer",
+            "count": 8
+        }
+    }
+}

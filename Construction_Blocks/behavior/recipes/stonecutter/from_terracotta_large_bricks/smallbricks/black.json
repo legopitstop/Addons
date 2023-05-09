@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_black_terracotta_small_bricks2"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:black_terracotta_large_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:black_terracotta_small_bricks"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:sponge_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:sponge",
+                "data": 0
+            }
+        },
+        "result": {
+            "item": "more_ss:sponge_vertical_slab",
+            "count": 6
+        }
+    }
+}

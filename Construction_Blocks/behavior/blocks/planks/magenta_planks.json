@@ -1,0 +1,28 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:magenta_planks",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/magenta_planks.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#b742b4",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:magenta_planks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

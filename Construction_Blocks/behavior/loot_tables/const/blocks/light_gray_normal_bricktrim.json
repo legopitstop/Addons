@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:bricktrim_normal_light_gray",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

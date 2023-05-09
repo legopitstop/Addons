@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:dirt_path_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:grass_path"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:dirt_path_layer",
+            "count": 8
+        }
+    }
+}

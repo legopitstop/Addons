@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:red_celingtile_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "##",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:celingtile_red"
+            }
+        },
+        "result": {
+            "item": "const:red_celingtile_stairs",
+            "count": 4
+        }
+    }
+}

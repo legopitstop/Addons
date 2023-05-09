@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:clay_block_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:clay"
+            }
+        },
+        "result": {
+            "item": "more_ss:clay_block_slab",
+            "count": 6
+        }
+    }
+}

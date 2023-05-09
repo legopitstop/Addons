@@ -1,0 +1,36 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Happy Halloween! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "More Pumpkins RP",
+        "uuid": "fc1059e6-366e-4fde-9b49-8be5b1434b3d",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            3
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "5e6b0fc0-897a-4afa-9198-d511dd9bc640",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

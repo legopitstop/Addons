@@ -1,0 +1,25 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:dye_block_black2"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "const:dye_block_black"
+            }
+        },
+        "result": {
+            "item": "minecraft:dye",
+            "data": 16,
+            "count": 9
+        }
+    }
+}

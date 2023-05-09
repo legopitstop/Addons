@@ -1,0 +1,15 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "seuss:furnace/fried_green_egg"
+        },
+        "tags": [
+            "furnace",
+            "smoker",
+            "campfire"
+        ],
+        "input": "seuss:green_egg",
+        "output": "seuss:fried_green_egg"
+    }
+}

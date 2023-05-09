@@ -1,0 +1,193 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:brown_brick_stairs",
+            "properties": {
+                "const:facing": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "const:shape": [
+                    "straight",
+                    "inner",
+                    "outer"
+                ],
+                "const:half": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/const/blocks/brown_brick_stairs.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1.0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:brown_bricks",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    8,
+                    16
+                ]
+            },
+            "minecraft:on_player_placing": {
+                "event": "const:place_block"
+            }
+        },
+        "permutations": [
+            {
+                "name": "facing=north half=bottom",
+                "condition": "q.block_property('const:facing') == 2 && q.block_property('const:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=south half=bottom",
+                "condition": "q.block_property('const:facing') == 3 && q.block_property('const:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=west half=bottom",
+                "condition": "q.block_property('const:facing') == 4 && q.block_property('const:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=east half=bottom",
+                "condition": "q.block_property('const:facing') == 5 && q.block_property('const:half') == 'bottom'",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=north half=top",
+                "condition": "q.block_property('const:facing') == 2 && q.block_property('const:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=south half=top",
+                "condition": "q.block_property('const:facing') == 3 && q.block_property('const:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=west half=top",
+                "condition": "q.block_property('const:facing') == 4 && q.block_property('const:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "facing=east half=top",
+                "condition": "q.block_property('const:facing') == 5 && q.block_property('const:half') == 'top'",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "name": "shape=straight",
+                "condition": "q.block_property('const:shape') == 'straight'",
+                "components": {
+                    "minecraft:geometry": "geometry.stair_block"
+                }
+            },
+            {
+                "name": "shape=inner, unused atm",
+                "condition": "q.block_property('const:shape') == 'inner'",
+                "components": {
+                    "minecraft:geometry": "geometry.inner_stair_block"
+                }
+            },
+            {
+                "name": "shape=outer unused atm",
+                "condition": "q.block_property('const:shape') == 'outer'",
+                "components": {
+                    "minecraft:geometry": "geometry.outer_stair_block"
+                }
+            }
+        ],
+        "events": {
+            "const:place_block": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "const:facing": "(q.cardinal_facing_2d)"
+                        }
+                    },
+                    {
+                        "condition": "q.target_x_rotation <= 4",
+                        "set_block_property": {
+                            "const:half": "'top'"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:craft/block/caution_block1"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#A#",
+            "A#A",
+            "#A#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:concrete",
+                "data": 15
+            },
+            "A": {
+                "item": "minecraft:concrete",
+                "data": 4
+            }
+        },
+        "result": [
+            {
+                "item": "const:caution_block"
+            }
+        ]
+    }
+}

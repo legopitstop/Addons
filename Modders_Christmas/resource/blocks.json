@@ -1,0 +1,324 @@
+{
+    "format_version": "1.17.3",
+    "xmas:snow_globe": {
+        "sound": "glass"
+    },
+    "xmas:white_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:orange_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:magenta_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:light_blue_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:yellow_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:lime_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:pink_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:light_gray_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:gray_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:cyan_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:purple_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:blue_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:brown_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:green_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:red_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:black_christmas_tree": {
+        "sound": "wood"
+    },
+    "xmas:crimson_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:warped_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:acacia_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:birch_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:dark_oak_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:jungle_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:oak_quarter_block_horz": {
+        "sound": "wood"
+    },
+    "xmas:crimson_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:warped_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:acacia_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:birch_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:dark_oak_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:jungle_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:oak_quarter_block_vert": {
+        "sound": "wood"
+    },
+    "xmas:crimson_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:warped_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:acacia_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:birch_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:dark_oak_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:jungle_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:oak_eighth_block": {
+        "sound": "wood"
+    },
+    "xmas:cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:exposed_cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:weathered_cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:oxidized_cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:waxed_cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:waxed_exposed_cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:waxed_weathered_cut_copper_quarter_block_horz": {
+        "sound": "copper"
+    },
+    "xmas:cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:exposed_cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:weathered_cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:oxidized_cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:waxed_cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:waxed_exposed_cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:waxed_weathered_cut_copper_quarter_block_vert": {
+        "sound": "copper"
+    },
+    "xmas:cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:exposed_cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:weathered_cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:oxidized_cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:waxed_cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:waxed_exposed_cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:waxed_weathered_cut_copper_eighth_block": {
+        "sound": "copper"
+    },
+    "xmas:white_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:orange_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:magenta_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:light_blue_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:yellow_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:lime_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:pink_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:light_gray_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:gray_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:cyan_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:purple_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:blue_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:brown_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:green_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:red_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:black_wool_quarter_block_horz": {
+        "sound": "cloth"
+    },
+    "xmas:white_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:orange_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:magenta_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:light_blue_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:yellow_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:lime_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:pink_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:light_gray_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:gray_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:cyan_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:purple_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:blue_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:brown_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:green_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:red_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:black_wool_quarter_block_vert": {
+        "sound": "cloth"
+    },
+    "xmas:white_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:orange_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:magenta_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:light_blue_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:yellow_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:lime_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:pink_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:light_gray_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:gray_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:cyan_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:purple_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:blue_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:brown_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:green_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:red_wool_eighth_block": {
+        "sound": "cloth"
+    },
+    "xmas:black_wool_eighth_block": {
+        "sound": "cloth"
+    }
+}

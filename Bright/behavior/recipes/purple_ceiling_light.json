@@ -1,0 +1,25 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "bright:purple_ceiling_light"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "CC",
+            "GG"
+        ],
+        "key": {
+            "C": {
+                "item": "minecraft:concrete",
+                "data": 10
+            },
+            "G": {
+                "item": "minecraft:glowstone_dust"
+            }
+        },
+        "result": "bright:purple_ceiling_light"
+    }
+}

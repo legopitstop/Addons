@@ -1,0 +1,16 @@
+give @p const:black_plank_stairs
+give @p const:blue_plank_stairs
+give @p const:brown_plank_stairs
+give @p const:cyan_plank_stairs
+give @p const:gray_plank_stairs
+give @p const:green_plank_stairs
+give @p const:light_blue_plank_stairs
+give @p const:light_gray_plank_stairs
+give @p const:lime_plank_stairs
+give @p const:magenta_plank_stairs
+give @p const:orange_plank_stairs
+give @p const:pink_plank_stairs
+give @p const:purple_plank_stairs
+give @p const:red_plank_stairs
+give @p const:white_plank_stairs
+give @p const:yellow_plank_stairs

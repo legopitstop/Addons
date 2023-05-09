@@ -1,0 +1,265 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:black_wall_block_letter.symbol",
+            "register_to_creative_menu": false,
+            "properties": {
+                "const:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "const:symbol": [
+                    "and_mark",
+                    "at_mark",
+                    "dollar_mark",
+                    "exclamation_mark",
+                    "percent_mark",
+                    "question_mark",
+                    "none"
+                ]
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/black_wall_letter.json",
+            "minecraft:geometry": "geometry.block.wall_letter",
+            "minecraft:entity_collision": false,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:on_player_placing": {
+                "event": "const:place_block"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_sneaking",
+                "event": "const:change_letter"
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    6
+                ],
+                "size": [
+                    16,
+                    16,
+                    2
+                ]
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "north",
+                            "south",
+                            "west",
+                            "east"
+                        ]
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:symbol') == 'and_mark'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.and_mark",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:symbol') == 'at_mark'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.at_mark",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:symbol') == 'dollar_mark'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.dollar_mark",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:symbol') == 'exclamation_mark'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.exclamation_mark",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:symbol') == 'percent_mark'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.percent_mark",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:symbol') == 'question_mark'",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "const:black_wall_letters.question_mark",
+                            "render_method": "blend"
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "const:place_block": {
+                "set_block_property": {
+                    "const:direction": "(q.cardinal_block_face_placed_on)"
+                }
+            },
+            "const:change_letter": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:symbol') == 'question_mark'",
+                        "set_block_property": {
+                            "const:symbol": "'and_mark'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar Reset back to '&'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:symbol') == 'percent_mark'",
+                        "set_block_property": {
+                            "const:symbol": "'question_mark'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 6: '?'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:symbol') == 'exclamation_mark'",
+                        "set_block_property": {
+                            "const:symbol": "'percent_mark'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 5: '%'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:symbol') == 'dollar_mark'",
+                        "set_block_property": {
+                            "const:symbol": "'exclamation_mark'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 4: '!'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:symbol') == 'at_mark'",
+                        "set_block_property": {
+                            "const:symbol": "'dollar_mark'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 3: '$'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:symbol') == 'and_mark'",
+                        "set_block_property": {
+                            "const:symbol": "'at_mark'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": [
+                                "title @p actionbar 2: '@'",
+                                "playsound random.click @p"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

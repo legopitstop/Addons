@@ -1,0 +1,31 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "morehoney:honey_cooked_porkchop"
+        },
+        "tags": [
+            "honey_press"
+        ],
+        "pattern": [
+            "#",
+            "P"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:honey_bottle"
+            },
+            "P": {
+                "item": "minecraft:cooked_porkchop"
+            }
+        },
+        "result": [
+            {
+                "item": "morehoney:honey_cooked_porkchop"
+            },
+            {
+                "item": "minecraft:glass_bottle"
+            }
+        ]
+    }
+}

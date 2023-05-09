@@ -1,0 +1,13 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "xmas:polished_deepslate_quarter_block_horz"
+                }
+            ]
+        }
+    ]
+}

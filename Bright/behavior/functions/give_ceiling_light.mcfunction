@@ -1,0 +1,16 @@
+give @s bright:white_ceiling_light
+give @s bright:orange_ceiling_light
+give @s bright:magenta_ceiling_light
+give @s bright:light_blue_ceiling_light
+give @s bright:yellow_ceiling_light
+give @s bright:lime_ceiling_light
+give @s bright:pink_ceiling_light
+give @s bright:light_gray_ceiling_light
+give @s bright:gray_ceiling_light
+give @s bright:cyan_ceiling_light
+give @s bright:purple_ceiling_light
+give @s bright:blue_ceiling_light
+give @s bright:brown_ceiling_light
+give @s bright:green_ceiling_light
+give @s bright:red_ceiling_light
+give @s bright:black_ceiling_light

@@ -1,0 +1,16 @@
+give @p const:black_plank_pressure_plate
+give @p const:blue_plank_pressure_plate
+give @p const:brown_plank_pressure_plate
+give @p const:cyan_plank_pressure_plate
+give @p const:gray_plank_pressure_plate
+give @p const:green_plank_pressure_plate
+give @p const:light_blue_plank_pressure_plate
+give @p const:light_gray_plank_pressure_plate
+give @p const:lime_plank_pressure_plate
+give @p const:magenta_plank_pressure_plate
+give @p const:orange_plank_pressure_plate
+give @p const:pink_plank_pressure_plate
+give @p const:purple_plank_pressure_plate
+give @p const:red_plank_pressure_plate
+give @p const:white_plank_pressure_plate
+give @p const:yellow_plank_pressure_plate

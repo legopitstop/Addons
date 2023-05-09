@@ -1,0 +1,17 @@
+give @s bright:iron_candle_stick
+give @s bright:iron_white_candle_stick
+give @s bright:iron_orange_candle_stick
+give @s bright:iron_magenta_candle_stick
+give @s bright:iron_light_blue_candle_stick
+give @s bright:iron_yellow_candle_stick
+give @s bright:iron_lime_candle_stick
+give @s bright:iron_pink_candle_stick
+give @s bright:iron_light_gray_candle_stick
+give @s bright:iron_gray_candle_stick
+give @s bright:iron_cyan_candle_stick
+give @s bright:iron_purple_candle_stick
+give @s bright:iron_blue_candle_stick
+give @s bright:iron_brown_candle_stick
+give @s bright:iron_green_candle_stick
+give @s bright:iron_red_candle_stick
+give @s bright:iron_black_candle_stick

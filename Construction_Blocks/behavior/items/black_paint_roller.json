@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:paint_roller_black",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:hand_equipped": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand": true,
+            "minecraft:mirrored_art": true,
+            "tag:const:paint_roller": {},
+            "tag:minecraft:is_tool": {},
+            "minecraft:durability": {
+                "max_durability": 250
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:iron_ingot"
+                        ],
+                        "repair_amount": "0.25"
+                    }
+                ]
+            },
+            "minecraft:icon": {
+                "texture": "const:paint_roller",
+                "frame": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:oxidized_copper_beam_block_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:oxidized_copper"
+            }
+        ],
+        "result": "const:oxidized_copper_beam_block"
+    }
+}

@@ -1,0 +1,205 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.block.top_farmland_slab",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "top",
+                    "pivot": [
+                        -1,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                8,
+                                -8
+                            ],
+                            "size": [
+                                16,
+                                7,
+                                16
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        16,
+                                        16
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        -16
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        16,
+                                        16
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        -16
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.block.bottom_farmland_slab",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "bottom",
+                    "pivot": [
+                        -1,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                0,
+                                -8
+                            ],
+                            "size": [
+                                16,
+                                7,
+                                16
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "west": {
+                                    "uv": [
+                                        0,
+                                        1
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        7
+                                    ]
+                                },
+                                "up": {
+                                    "uv": [
+                                        16,
+                                        16
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        -16
+                                    ]
+                                },
+                                "down": {
+                                    "uv": [
+                                        16,
+                                        16
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        -16
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Lot's More Blocks! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "More Blocks BP",
+        "uuid": "bf24499d-0163-4ccb-a485-2c091c51317b",
+        "version": [
+            1,
+            2,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            0
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "Lot's More Blocks",
+            "type": "data",
+            "uuid": "55ceba31-af5d-4716-90f7-e5bfbd17c6ec",
+            "version": [
+                1,
+                2,
+                1
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "4791d53e-88de-49f6-846b-a2cbe7508032",
+            "version": [
+                1,
+                2,
+                1
+            ]
+        },
+        {
+            "description": "Assets Plus RP v1.2.0",
+            "uuid": "c86dd7d9-e84e-456f-a84f-1993e353da4c",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "seuss:music_disc_cat_hat",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:icon": "music_disc_cat_hat",
+            "minecraft:use_animation": "eat",
+            "minecraft:render_offsets": "apple"
+        }
+    }
+}

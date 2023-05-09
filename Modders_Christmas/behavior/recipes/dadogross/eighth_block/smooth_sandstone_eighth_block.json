@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:smooth_sandstone_eighth_block"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:sandstone",
+                "data": 3
+            }
+        ],
+        "result": {
+            "item": "xmas:smooth_sandstone_eighth_block",
+            "count": 8
+        }
+    }
+}

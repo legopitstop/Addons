@@ -1,0 +1,129 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:anvil_beam_block",
+            "properties": {
+                "const:beam_block": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "minecraft:loot": "loot_tables/const/blocks/anvil_beam_block.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:geometry": "geometry.beam_block",
+            "minecraft:destroy_time": 1.25,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "anvil_base",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "const:rotational"
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -6,
+                    0,
+                    -8
+                ],
+                "size": [
+                    12,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -6,
+                    0,
+                    -8
+                ],
+                "size": [
+                    12,
+                    16,
+                    16
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:beam_block') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:rotational": {
+                "set_block_property": {
+                    "const:beam_block": "(q.cardinal_player_facing)"
+                }
+            }
+        }
+    }
+}

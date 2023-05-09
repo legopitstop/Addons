@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:glass_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:glass"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:glass_layer",
+            "count": 8
+        }
+    }
+}

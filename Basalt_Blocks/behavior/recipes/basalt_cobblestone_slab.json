@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "basaltblocks:basalt_cobblestone_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "basaltblocks:basalt_cobblestone"
+            }
+        },
+        "result": [
+            {
+                "item": "basaltblocks:basalt_cobblestone_slab",
+                "count": 6
+            }
+        ]
+    }
+}

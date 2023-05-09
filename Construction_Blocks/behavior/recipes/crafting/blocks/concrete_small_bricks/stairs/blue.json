@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:blue_concrete_small_brick_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "dye_block",
+        "pattern": [
+            "#",
+            "##",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "const:blue_concrete_small_bricks"
+            }
+        },
+        "result": {
+            "item": "const:blue_concrete_small_brick_stairs",
+            "count": 4
+        }
+    }
+}

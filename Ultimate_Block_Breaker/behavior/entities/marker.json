@@ -1,0 +1,27 @@
+{
+    "format_version": "1.17",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "breaker:marker",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:physics": {
+                "has_collision": false
+            },
+            "minecraft:conditional_bandwidth_optimization": {},
+            "minecraft:despawn": {
+                "filters": {
+                    "any_of": [
+                        {
+                            "test": "has_tag",
+                            "value": "immediate_despawn"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.18",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "moregold:golden_log_to_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "moregold:golden_log"
+            }
+        },
+        "result": [
+            {
+                "item": "minecraft:planks",
+                "count": 6,
+                "data": 5
+            }
+        ]
+    }
+}

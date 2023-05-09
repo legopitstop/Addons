@@ -1,0 +1,208 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:nail_block",
+            "properties": {
+                "const:blockstates": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "minecraft:loot": "loot_tables/const/blocks/nail_block.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1.0,
+            "minecraft:entity_collision": false,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "iron_block",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "const:rotational"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:blockstates') == 0",
+                "components": {
+                    "minecraft:geometry": "geometry.nail_block",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name == 'hammer_wooden' || q.get_equipped_item_name == 'hammer_stone' || q.get_equipped_item_name == 'hammer_iron' || q.get_equipped_item_name == 'hammer_golden' || q.get_equipped_item_name == 'hammer_diamond' || q.get_equipped_item_name == 'hammer_netherite'",
+                        "event": "nailedSound"
+                    },
+                    "minecraft:rotation": [
+                        -90,
+                        0,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -2,
+                            7,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:blockstates') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.nail_block",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name == 'hammer_wooden' || q.get_equipped_item_name == 'hammer_stone' || q.get_equipped_item_name == 'hammer_iron' || q.get_equipped_item_name == 'hammer_golden' || q.get_equipped_item_name == 'hammer_diamond' || q.get_equipped_item_name == 'hammer_netherite'",
+                        "event": "nailedSound"
+                    },
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -2,
+                            7,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:blockstates') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.nail_block",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name == 'hammer_wooden' || q.get_equipped_item_name == 'hammer_stone' || q.get_equipped_item_name == 'hammer_iron' || q.get_equipped_item_name == 'hammer_golden' || q.get_equipped_item_name == 'hammer_diamond' || q.get_equipped_item_name == 'hammer_netherite'",
+                        "event": "nailedSound"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -2,
+                            7,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:blockstates') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.nail_block",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name == 'hammer_wooden' || q.get_equipped_item_name == 'hammer_stone' || q.get_equipped_item_name == 'hammer_iron' || q.get_equipped_item_name == 'hammer_golden' || q.get_equipped_item_name == 'hammer_diamond' || q.get_equipped_item_name == 'hammer_netherite'",
+                        "event": "nailedSound"
+                    },
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -2,
+                            7,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:blockstates') == 4",
+                "components": {
+                    "minecraft:geometry": "geometry.nail_block",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name == 'hammer_wooden' || q.get_equipped_item_name == 'hammer_stone' || q.get_equipped_item_name == 'hammer_iron' || q.get_equipped_item_name == 'hammer_golden' || q.get_equipped_item_name == 'hammer_diamond' || q.get_equipped_item_name == 'hammer_netherite'",
+                        "event": "nailedSound"
+                    },
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -2,
+                            7,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('const:blockstates') == 5",
+                "components": {
+                    "minecraft:geometry": "geometry.nail_block",
+                    "minecraft:on_interact": {
+                        "condition": "q.get_equipped_item_name == 'hammer_wooden' || q.get_equipped_item_name == 'hammer_stone' || q.get_equipped_item_name == 'hammer_iron' || q.get_equipped_item_name == 'hammer_golden' || q.get_equipped_item_name == 'hammer_diamond' || q.get_equipped_item_name == 'hammer_netherite'",
+                        "event": "nailedSound"
+                    },
+                    "minecraft:rotation": [
+                        0,
+                        270,
+                        0
+                    ],
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -2,
+                            7,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            4,
+                            4
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "const:rotational": {
+                "set_block_property": {
+                    "const:blockstates": "(q.cardinal_player_facing)"
+                }
+            },
+            "nailedSound": {
+                "play_sound": {
+                    "sound": "smithing_table.use",
+                    "target": "self"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas",
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "presents:milk_bottle": {
+            "textures": "textures/items/milk_bottle.png"
+        },
+        "presents:santa_hat": {
+            "textures": "textures/items/santa_hat.png"
+        },
+        "presents:santa_chestplate": {
+            "textures": "textures/items/santa_chestplate.png"
+        },
+        "presents:santa_leggings": {
+            "textures": "textures/items/santa_leggings.png"
+        },
+        "presents:santa_boots": {
+            "textures": "textures/items/santa_boots.png"
+        }
+    }
+}

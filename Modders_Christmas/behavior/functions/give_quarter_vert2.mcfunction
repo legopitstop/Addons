@@ -1,0 +1,15 @@
+give @s xmas:red_nether_brick_quarter_block_vert
+give @s xmas:red_sandstone_quarter_block_vert
+give @s xmas:sandstone_quarter_block_vert
+give @s xmas:smooth_quartz_quarter_block_vert
+give @s xmas:smooth_red_sandstone_quarter_block_vert
+give @s xmas:smooth_sandstone_quarter_block_vert
+give @s xmas:smooth_stone_quarter_block_vert
+give @s xmas:spruce_quarter_block_vert
+give @s xmas:stone_brick_quarter_block_vert
+give @s xmas:warped_quarter_block_vert
+give @s xmas:waxed_cut_copper_quarter_block_vert
+give @s xmas:waxed_exposed_cut_copper_quarter_block_vert
+give @s xmas:waxed_oxidized_cut_copper_quarter_block_vert
+give @s xmas:waxed_weathered_cut_copper_quarter_block_vert
+give @s xmas:weathered_cut_copper_quarter_block_vert

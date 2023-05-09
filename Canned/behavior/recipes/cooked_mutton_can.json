@@ -1,0 +1,41 @@
+{
+    "format_version": "1.19.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "canned:cooked_mutton_can"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "canned:empty_can"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            },
+            {
+                "item": "minecraft:cooked_mutton"
+            }
+        ],
+        "result": "canned:cooked_mutton_can"
+    }
+}

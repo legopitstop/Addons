@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "seuss:fried_green_egg",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:icon": "fried_green_egg",
+            "minecraft:use_animation": "eat",
+            "minecraft:render_offsets": "apple"
+        }
+    }
+}

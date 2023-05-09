@@ -1,0 +1,247 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:block": {
+        "description": {
+            "identifier": "xmas:snow_globe",
+            "properties": {
+                "xmas:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "xmas:broken": [
+                    false,
+                    true
+                ],
+                "xmas:snowing": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/snow_globe.json",
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0.3,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.5,
+            "minecraft:breakonpush": true,
+            "minecraft:on_fall_on": {
+                "condition": "q.block_property('xmas:broken') == false",
+                "min_fall_distance": 1,
+                "event": "event:break"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:on_player_placing": {
+                "event": "event:direction"
+            },
+            "minecraft:creative_category": {
+                "category": "items",
+                "group": "itemGroup.search"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.block_property('xmas:snowing') == false && q.block_property('xmas:broken') == false",
+                "event": "event:snowing_true"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('xmas:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:snowing') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:dark_oak_planks",
+                            "render_method": "alpha_test"
+                        },
+                        "snow_globe": {
+                            "texture": "xmas:snow_globe",
+                            "render_method": "alpha_test"
+                        },
+                        "snow": {
+                            "texture": "xmas:snow_falling",
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:ticking": {
+                        "looping": true,
+                        "range": [
+                            20,
+                            20
+                        ],
+                        "on_tick": {
+                            "event": "event:snowing_false"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:snowing') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "minecraft:dark_oak_planks",
+                            "render_method": "alpha_test"
+                        },
+                        "snow_globe": {
+                            "texture": "xmas:snow_globe",
+                            "render_method": "alpha_test"
+                        },
+                        "snow": {
+                            "texture": "xmas:empty",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:broken') == true",
+                "components": {
+                    "minecraft:geometry": "geometry.snow_globe_broken",
+                    "minecraft:on_step_on": {
+                        "event": "event:damage"
+                    },
+                    "minecraft:on_step_off": {
+                        "event": "event:damage"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7
+                        ],
+                        "size": [
+                            14,
+                            4,
+                            14
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7
+                        ],
+                        "size": [
+                            14,
+                            4,
+                            14
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('xmas:broken') == false",
+                "components": {
+                    "minecraft:geometry": "geometry.snow_globe",
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7
+                        ],
+                        "size": [
+                            14,
+                            15,
+                            14
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7
+                        ],
+                        "size": [
+                            14,
+                            15,
+                            14
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "event:break": {
+                "set_block_property": {
+                    "xmas:broken": "true",
+                    "xmas:snowing": "false"
+                },
+                "run_command": {
+                    "command": "playsound random.glass @p ~ ~ ~"
+                }
+            },
+            "event:direction": {
+                "set_block_property": {
+                    "xmas:direction": "q.cardinal_facing_2d"
+                }
+            },
+            "event:snowing_true": {
+                "set_block_property": {
+                    "xmas:snowing": "true"
+                }
+            },
+            "event:snowing_false": {
+                "set_block_property": {
+                    "xmas:snowing": "false"
+                }
+            },
+            "event:damage": {
+                "damage": {
+                    "amount": 2,
+                    "type": "contact",
+                    "target": "self"
+                }
+            }
+        }
+    }
+}

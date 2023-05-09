@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:green_terracotta_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "stained_hardened_clay_slab",
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:stained_hardened_clay",
+                "data": 13
+            }
+        },
+        "result": {
+            "item": "more_ss:green_terracotta_slab",
+            "count": 6
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_damaged_anvil_block"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:anvil",
+                "data": 8
+            }
+        ],
+        "result": [
+            {
+                "item": "const:anvil_block",
+                "count": 1
+            }
+        ]
+    }
+}

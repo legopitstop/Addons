@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:light_blue_brick_vertical_slab_from_light_blue_aged_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:light_blue_aged_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:light_blue_brick_vertical_slab",
+                "count": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "one.one7.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "morepumpkin:one_jack_o_lantern"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "P",
+            "T"
+        ],
+        "key": {
+            "P": {
+                "item": "morepumpkin:one_carved_pumpkin"
+            },
+            "T": {
+                "item": "minecraft:torch"
+            }
+        },
+        "result": {
+            "item": "morepumpkin:one_jack_o_lantern"
+        }
+    }
+}

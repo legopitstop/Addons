@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:gravel_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gravel"
+            }
+        },
+        "result": {
+            "item": "more_ss:gravel_stairs",
+            "count": 4
+        }
+    }
+}

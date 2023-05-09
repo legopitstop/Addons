@@ -1,0 +1,29 @@
+{
+    "format_version": "1.18",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "moregold:golden_fruit_seeds"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#P#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_ingot"
+            },
+            "P": {
+                "item": "minecraft:wheat_seeds"
+            }
+        },
+        "result": [
+            {
+                "item": "moregold:golden_fruit_seeds"
+            }
+        ]
+    }
+}

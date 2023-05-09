@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:black_terracotta_shingles"
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/black_terracotta_shingles.json",
+            "minecraft:unit_cube": {},
+            "minecraft:destroy_time": 1.8,
+            "minecraft:explosion_resistance": 1.8,
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:black_terracotta_shingles",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

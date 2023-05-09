@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:netherite_beam"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "III",
+            " I ",
+            "III"
+        ],
+        "key": {
+            "I": {
+                "item": "minecraft:netherite_ingot"
+            }
+        },
+        "result": "const:netherite_beam_block"
+    }
+}

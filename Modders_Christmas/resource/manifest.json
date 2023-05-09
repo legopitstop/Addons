@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "\u00c2\u00a74M\u00c2\u00a72e\u00c2\u00a74r\u00c2\u00a72r\u00c2\u00a74y\u00c2\u00a72 C\u00c2\u00a74h\u00c2\u00a72r\u00c2\u00a74i\u00c2\u00a72s\u00c2\u00a74t\u00c2\u00a72m\u00c2\u00a74a\u00c2\u00a72s\u00c2\u00a74! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "Modders Christmas 2021",
+        "uuid": "2797755a-87a9-4885-86e0-05e182df1c41",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            3
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "RP",
+            "type": "resources",
+            "uuid": "bb2b0e69-c925-44aa-9dd2-0ef0ff65cdc8",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

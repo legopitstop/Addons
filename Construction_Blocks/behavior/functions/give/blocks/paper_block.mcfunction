@@ -1,0 +1,16 @@
+give @p const:paper_block_black
+give @p const:paper_block_blue
+give @p const:paper_block_brown
+give @p const:paper_block_cyan
+give @p const:paper_block_gray
+give @p const:paper_block_green
+give @p const:paper_block_light_blue
+give @p const:paper_block_light_gray
+give @p const:paper_block_lime
+give @p const:paper_block_magenta
+give @p const:paper_block_orange
+give @p const:paper_block_pink
+give @p const:paper_block_purple
+give @p const:paper_block_red
+give @p const:paper_block_white
+give @p const:paper_block_yellow

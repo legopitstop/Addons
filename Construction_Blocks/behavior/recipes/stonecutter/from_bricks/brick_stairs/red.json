@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:red_brick_stairs_from_red_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:red_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:red_brick_stairs"
+            }
+        ]
+    }
+}

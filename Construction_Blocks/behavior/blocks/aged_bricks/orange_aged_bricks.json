@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:orange_aged_bricks"
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/orange_aged_bricks.json",
+            "minecraft:destroy_time": 3.0,
+            "minecraft:explosion_resistance": 45.0,
+            "minecraft:map_color": "#ec6d0c",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:orange_aged_bricks",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+  "format_version": "1.17.1",
+  "minecraft:block": {
+    "description": {
+      "identifier": "const:jungle_scaffolding",
+      "properties": {
+        "const:blockstates": [
+          "stable=true","stable=false"
+        ]
+      }
+    },
+    "components": {
+			"tag:wood": {},
+      "minecraft:loot": "loot_tables/const/blocks/jungle_scaffolding.json",
+      "minecraft:flammable": {
+        "flame_odds": 1,
+        "burn_odds": 1
+      },
+      "minecraft:block_light_absorption": 0,
+      "minecraft:destroy_time": 0.2,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:map_color": "#000000",
+      "minecraft:on_player_placing": {
+        "event": "stable=true"
+      },
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "const:jungle_scaffolding_top",
+          "render_method": "alpha_test"
+        },
+        "down": {
+          "texture": "const:jungle_scaffolding_bottom",
+          "render_method": "alpha_test"
+        },
+        "*": {
+          "texture": "const:jungle_scaffolding_side",
+          "render_method": "alpha_test"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_property('const:blockstates') == 'stable=true'",
+        "components": {
+          //"minecraft:geometry": "geometry.scaffolding_unstable",
+          "minecraft:entity_collision": true,
+          "minecraft:on_step_on": {
+            "event": "const:floor"
+          }
+        }
+      },
+      {
+        "condition": "q.block_property('const:blockstates') == 'stable=false'",
+        "components": {
+          //"minecraft:geometry": "geometry.scaffolding_stable",
+          "minecraft:entity_collision": false,
+          "minecraft:on_step_on": {
+            "event": "const:floor"
+          }
+        }
+      }
+    ],
+    "events": {
+      "stable=true": {
+        "set_block_property": {
+          "const:blockstates": "'stable=true'"
+        }
+      },
+      "stable=false": {
+        "set_block_property": {
+          "const:blockstates": "'stable=false'"
+        }
+      }
+    }
+  }
+}

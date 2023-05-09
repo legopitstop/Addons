@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:yellow_paper_from_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "paper",
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "const:paper_block_yellow"
+            }
+        },
+        "result": {
+            "item": "const:paper_yellow",
+            "count": 4
+        }
+    }
+}

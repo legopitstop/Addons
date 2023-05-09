@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:acacia_chain_item",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:display_name": {
+                "value": "item.const:acacia_chain"
+            },
+            "minecraft:block_placer": {
+                "block": "const:acacia_chain"
+            },
+            "minecraft:icon": {
+                "texture": "const:wood_chain",
+                "frame": 0
+            }
+        }
+    }
+}

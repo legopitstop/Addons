@@ -1,0 +1,201 @@
+{
+    "credit": "Thanks to Legopitstop for creating the schema. https://github.com/legopitstop/JSON-Schemas#info",
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "more_ss:mycelium_slab",
+            "properties": {
+                "lps:type": [
+                    "bottom",
+                    "top",
+                    "double"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 1.8,
+            "minecraft:explosion_resistance": 1.8,
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "minecraft:mycelium_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "minecraft:dirt",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "minecraft:mycelium_side",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "condition": "query.target_x_rotation <= 0",
+                "event": "lps:top"
+            },
+            "minecraft:on_interact": {
+                "event": "lps:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:type') == 'top'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/mycelium_slab.json",
+                    "minecraft:geometry": "geometry.grass_slab_top",
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:type') == 'bottom'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/mycelium_slab.json",
+                    "minecraft:geometry": "geometry.grass_slab_bottom",
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/more_ss/blocks/mycelium_double_slab.json",
+                    "minecraft:block_light_absorption": 1,
+                    "minecraft:unit_cube": {},
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "lps:flatten": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('lps:type') == 'bottom'",
+                        "run_command": {
+                            "command": "structure load more_ss:dirt_path_slab_bottom ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('lps:type') == 'top'",
+                        "run_command": {
+                            "command": "structure load more_ss:dirt_path_slab_top ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('lps:type') == 'double'",
+                        "run_command": {
+                            "command": "structure load more_ss:dirt_path_slab_double ~ ~ ~"
+                        }
+                    }
+                ]
+            },
+            "lps:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "query.get_equipped_item_name =='mycelium_slab' && query.block_property('lps:type') != 'double'",
+                        "decrement_stack": {},
+                        "set_block_property": {
+                            "lps:type": "'double'"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": "playsound use.gravel @p"
+                        }
+                    },
+                    {
+                        "condition": "query.get_equipped_item_name =='wooden_shovel' || query.get_equipped_item_name =='stone_shovel' || query.get_equipped_item_name =='iron_shovel' || query.get_equipped_item_name =='gold_shovel' || query.get_equipped_item_name =='diamond_shovel' || query.get_equipped_item_name =='netherite_shovel'",
+                        "trigger": {
+                            "event": "lps:flatten"
+                        },
+                        "run_command": {
+                            "target": "player",
+                            "command": "playsound use.grass @p"
+                        }
+                    }
+                ]
+            },
+            "lps:bottom": {
+                "set_block_property": {
+                    "lps:type": "'bottom'"
+                }
+            },
+            "lps:top": {
+                "set_block_property": {
+                    "lps:type": "'top'"
+                }
+            }
+        }
+    }
+}

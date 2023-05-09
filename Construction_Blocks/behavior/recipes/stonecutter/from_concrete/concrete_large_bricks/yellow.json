@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_yellow_concrete_large_bricks1"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:concrete",
+                "data": 4
+            }
+        ],
+        "result": [
+            {
+                "item": "const:yellow_concrete_large_bricks"
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:dark_prismarine_quarter_block_vert"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:prismarine",
+                "data": 1
+            }
+        ],
+        "result": {
+            "item": "xmas:dark_prismarine_quarter_block_vert",
+            "count": 4
+        }
+    }
+}

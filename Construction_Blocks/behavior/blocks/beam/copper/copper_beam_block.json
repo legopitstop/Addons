@@ -1,0 +1,174 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:copper_beam_block",
+            "properties": {
+                "const:beam_block": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "minecraft:loot": "loot_tables/const/blocks/copper_beam_block.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:geometry": "geometry.beam_block",
+            "minecraft:destroy_time": 1.25,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:on_interact": {
+                "condition": "q.get_equipped_item_name == 'honeycomb'",
+                "event": "const:on_interact"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "minecraft:copper_block",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:ticking": {
+                "looping": false,
+                "range": [
+                    24000,
+                    24000
+                ],
+                "on_tick": {
+                    "event": "const:oxidize"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "const:rotational"
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -6,
+                    0,
+                    -8
+                ],
+                "size": [
+                    12,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -6,
+                    0,
+                    -8
+                ],
+                "size": [
+                    12,
+                    16,
+                    16
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:beam_block') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:beam_block') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:rotational": {
+                "set_block_property": {
+                    "const:beam_block": "(q.cardinal_facing_2d)"
+                }
+            },
+            "const:oxidize": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('const:beam_block') == 2 || q.block_property('const:beam_block') == 3",
+                        "run_command": {
+                            "command": [
+                                "structure load const:exposed_copper_beam_block_z ~ ~ ~"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:beam_block') == 4 || q.block_property('const:beam_block') == 5",
+                        "run_command": {
+                            "command": [
+                                "structure load const:exposed_copper_beam_block_x ~ ~ ~"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "const:on_interact": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name =='honeycomb'",
+                        "trigger": {
+                            "event": "const:wax_on"
+                        }
+                    }
+                ]
+            },
+            "const:wax_on": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "playsound copper.wax.on @p ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:beam_block') == 2 || q.block_property('const:beam_block') == 3",
+                        "decrement_stack": {},
+                        "run_command": {
+                            "command": "structure load const:waxed_copper_beam_block_z ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:beam_block') == 4 || q.block_property('const:beam_block') == 5",
+                        "decrement_stack": {},
+                        "run_command": {
+                            "command": "structure load const:waxed_copper_beam_block_x ~ ~ ~"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

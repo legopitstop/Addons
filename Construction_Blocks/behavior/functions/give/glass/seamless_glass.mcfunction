@@ -1,0 +1,17 @@
+give @p const:black_seamless_stained_glass
+give @p const:blue_seamless_stained_glass
+give @p const:brown_seamless_stained_glass
+give @p const:cyan_seamless_stained_glass
+give @p const:gray_seamless_stained_glass
+give @p const:green_seamless_stained_glass
+give @p const:light_blue_seamless_stained_glass
+give @p const:light_gray_seamless_stained_glass
+give @p const:lime_seamless_stained_glass
+give @p const:magenta_seamless_stained_glass
+give @p const:orange_seamless_stained_glass
+give @p const:pink_seamless_stained_glass
+give @p const:purple_seamless_stained_glass
+give @p const:red_seamless_stained_glass
+give @p const:white_seamless_stained_glass
+give @p const:yellow_seamless_stained_glass
+give @p const:seamless_tinted_glass

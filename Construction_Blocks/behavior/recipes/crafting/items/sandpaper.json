@@ -1,0 +1,45 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:sandpaper"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:sand"
+            },
+            {
+                "item": "minecraft:dye",
+                "data": 17
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:paper"
+            }
+        ],
+        "result": {
+            "item": "const:sandpaper",
+            "count": 7
+        }
+    }
+}

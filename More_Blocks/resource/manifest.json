@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Lot's More Blocks! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "More Blocks RP",
+        "uuid": "4791d53e-88de-49f6-846b-a2cbe7508032",
+        "version": [
+            1,
+            2,
+            1
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            0
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "Lot's More Blocks",
+            "type": "resources",
+            "uuid": "2b8803db-9f65-4129-9798-b5da4b74d9b5",
+            "version": [
+                1,
+                2,
+                1
+            ]
+        }
+    ]
+}

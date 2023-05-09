@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:warped_nylium_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:warped_nylium"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:warped_nylium_layer",
+            "count": 8
+        }
+    }
+}

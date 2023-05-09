@@ -1,0 +1,109 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.wall_switch",
+                "texture_width": 32,
+                "texture_height": 48,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 1,
+                "visible_bounds_offset": [
+                    0,
+                    0.5,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "cover",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                3,
+                                7
+                            ],
+                            "size": [
+                                8,
+                                12,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "box",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                3,
+                                8
+                            ],
+                            "size": [
+                                8,
+                                12,
+                                6
+                            ],
+                            "uv": [
+                                0,
+                                13
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "stwitch",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -1,
+                                9.5,
+                                4
+                            ],
+                            "size": [
+                                2,
+                                1,
+                                4
+                            ],
+                            "pivot": [
+                                1,
+                                10,
+                                8
+                            ],
+                            "rotation": [
+                                -40,
+                                0,
+                                0
+                            ],
+                            "uv": [
+                                20,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

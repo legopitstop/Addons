@@ -1,0 +1,14 @@
+give @p const:anvil_beam_block
+give @p const:diamond_beam_block
+give @p const:emerald_beam_block
+give @p const:gold_beam_block
+give @p const:iron_beam_block
+give @p const:netherite_beam_block
+give @p const:rusty_iron_beam_block
+give @p const:copper_beam_block
+give @p const:exposed_copper_beam_block
+give @p const:oxidized_copper_beam_block
+give @p const:waxed_copper_beam_block
+give @p const:waxed_exposed_copper_beam_block
+give @p const:waxed_weathered_copper_beam_block
+give @p const:weathered_copper_beam_block

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:magenta_concrete_large_brick_slab_from_magenta_concrete_large_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:magenta_concrete_large_bricks"
+            }
+        ],
+        "result": [
+            {
+                "item": "const:magenta_concrete_large_brick_slab",
+                "count": 2
+            }
+        ]
+    }
+}

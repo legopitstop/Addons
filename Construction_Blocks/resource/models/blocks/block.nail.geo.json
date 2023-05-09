@@ -1,0 +1,267 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.nail_block",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "Nail",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -0.5,
+                                8.5,
+                                -8
+                            ],
+                            "size": [
+                                1,
+                                1,
+                                3
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -0.62132,
+                                7.5,
+                                -5
+                            ],
+                            "size": [
+                                1.24264,
+                                3,
+                                1
+                            ],
+                            "pivot": [
+                                0,
+                                9,
+                                -4.5
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                -45
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -0.62132,
+                                7.5,
+                                -5
+                            ],
+                            "size": [
+                                1.24264,
+                                3,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -1.5,
+                                8.37868,
+                                -5
+                            ],
+                            "size": [
+                                3,
+                                1.24264,
+                                1
+                            ],
+                            "pivot": [
+                                0,
+                                9,
+                                -4.5
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                -45
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -1.5,
+                                8.37868,
+                                -5
+                            ],
+                            "size": [
+                                3,
+                                1.24264,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.nailed_block",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "Nailed",
+                    "pivot": [
+                        0,
+                        0,
+                        3
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -0.5,
+                                8.5,
+                                -11
+                            ],
+                            "size": [
+                                1,
+                                1,
+                                3
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -0.62132,
+                                7.5,
+                                -8
+                            ],
+                            "size": [
+                                1.24264,
+                                3,
+                                1
+                            ],
+                            "pivot": [
+                                0,
+                                9,
+                                -7.5
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                -45
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -0.62132,
+                                7.5,
+                                -8
+                            ],
+                            "size": [
+                                1.24264,
+                                3,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -1.5,
+                                8.37868,
+                                -8
+                            ],
+                            "size": [
+                                3,
+                                1.24264,
+                                1
+                            ],
+                            "pivot": [
+                                0,
+                                9,
+                                -7.5
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                -45
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [
+                                -1.5,
+                                8.37868,
+                                -8
+                            ],
+                            "size": [
+                                3,
+                                1.24264,
+                                1
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ],
+                            "mirror": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

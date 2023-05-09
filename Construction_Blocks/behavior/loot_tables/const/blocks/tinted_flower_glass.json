@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:tinted_flower_glass",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

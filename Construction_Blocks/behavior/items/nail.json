@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:nail",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:block_placer": {
+                "block": "const:nail_block"
+            },
+            "minecraft:icon": {
+                "texture": "const:nail"
+            }
+        }
+    }
+}

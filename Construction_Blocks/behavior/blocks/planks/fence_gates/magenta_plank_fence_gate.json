@@ -1,0 +1,338 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:magenta_plank_fence_gate",
+            "properties": {
+                "blockstate:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "blockstate:open": [
+                    "false",
+                    "true"
+                ]
+            }
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/magenta_plank_fence_gate.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 1.0,
+            "minecraft:flammable": {
+                "burn_odds": 0,
+                "flame_odds": 0
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:magenta_planks",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "place_fence_gate"
+            }
+        },
+        "permutations": [
+            {
+                "name": "Blockstates: direction=north open=false",
+                "condition": "q.block_property('blockstate:direction') == 2 && q.block_property('blockstate:open') == 'false'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate",
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ],
+                    "minecraft:unwalkable": true,
+                    "minecraft:on_interact": {
+                        "event": "open_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=south open=false",
+                "condition": "q.block_property('blockstate:direction') == 3 && q.block_property('blockstate:open') == 'false'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate",
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "minecraft:unwalkable": true,
+                    "minecraft:on_interact": {
+                        "event": "open_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=west open=false",
+                "condition": "q.block_property('blockstate:direction') == 4 && q.block_property('blockstate:open') == 'false'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate",
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ],
+                    "minecraft:unwalkable": true,
+                    "minecraft:on_interact": {
+                        "event": "open_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=east open=false",
+                "condition": "q.block_property('blockstate:direction') == 5 && q.block_property('blockstate:open') == 'false'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate",
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:unwalkable": true,
+                    "minecraft:on_interact": {
+                        "event": "open_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=north open=true",
+                "condition": "q.block_property('blockstate:direction') == 2 && q.block_property('blockstate:open') == 'true'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate_open",
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ],
+                    "minecraft:entity_collision": false,
+                    "minecraft:on_interact": {
+                        "event": "close_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=south open=true",
+                "condition": "q.block_property('blockstate:direction') == 3 && q.block_property('blockstate:open') == 'true'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate_open",
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "minecraft:entity_collision": false,
+                    "minecraft:on_interact": {
+                        "event": "close_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=west open=true",
+                "condition": "q.block_property('blockstate:direction') == 4 && q.block_property('blockstate:open') == 'true'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate_open",
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ],
+                    "minecraft:entity_collision": false,
+                    "minecraft:on_interact": {
+                        "event": "close_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Blockstates: direction=east open=true",
+                "condition": "q.block_property('blockstate:direction') == 5 && q.block_property('blockstate:open') == 'true'",
+                "components": {
+                    "minecraft:geometry": "geometry.fence_gate_open",
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:entity_collision": false,
+                    "minecraft:on_interact": {
+                        "event": "close_fence_gate"
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "place_fence_gate": {
+                "set_block_property": {
+                    "blockstate:direction": "(q.cardinal_facing_2d)"
+                }
+            },
+            "open_fence_gate": {
+                "run_command": {
+                    "command": "playsound random.door_open @p"
+                },
+                "set_block_property": {
+                    "blockstate:open": "'true'"
+                }
+            },
+            "close_fence_gate": {
+                "run_command": {
+                    "command": "playsound random.door_close @p"
+                },
+                "set_block_property": {
+                    "blockstate:open": "'false'"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:bricktrim_normal_brown",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/const/blocks/brown_normal_bricktrim.json",
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#623d20",
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "const:bricktrim_normal_brown",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "const:bricktrim_top_brown",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "brick",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

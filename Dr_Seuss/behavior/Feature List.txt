@@ -1,0 +1,59 @@
+New items
+	green egg
+	green ham
+	fried green egg
+	ham
+	cat hat
+	socks
+	4 new music discs (WIP)
+	one fish
+	two fish
+	red fish
+	blue fish
+	cooked one fish
+	cooked two fish
+	cooked red fish
+	cooked blue fish
+
+New blocks
+	orange truffula fluff
+	pink truffula fluff
+	purple truffula fluff
+	yellow truffula fluff
+	truffula log
+	stripped truffula log
+
+New mobs
+	lorax
+	wocket
+	one fish
+	two fish
+	red fish
+	blue fish
+-----------------------------------------------------------------------------
+Recipes:
+
+shapeless:
+
+bone + porkchop = ham
+ham + lime/green dye = green ham
+egg + lime/green dye = green egg
+
+shaped:
+[R] [W] [R]
+[W] [L] [W] [O]
+[R] [W] [R]
+R=red dye W=white dye L=leather helmet O=Cat Hat
+
+[B] [B] [B]
+[B] [L] [B] [O]
+[B] [B] [B]
+B=blue dye L=leather boots O=socks
+----------------------------------------------------------------
+Furance/smoker/campfire:
+
+one fish = cooked one fish
+two fish = cooked two fish
+red fish = cooked red fish
+blue fish = cooked blue fish
+green egg = fried green egg

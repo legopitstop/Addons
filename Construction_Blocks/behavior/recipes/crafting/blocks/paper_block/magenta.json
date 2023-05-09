@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:paper_block_magenta"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "paper_block",
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "const:paper_magenta"
+            }
+        },
+        "result": {
+            "item": "const:paper_block_magenta"
+        }
+    }
+}

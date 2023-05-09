@@ -1,0 +1,47 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Block breaker! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "Ultimate Block Breaker BP",
+        "uuid": "7fda5795-39b2-40bb-8996-e20901af09ca",
+        "version": [
+            1,
+            2,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            1
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "Desc! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+            "type": "data",
+            "uuid": "35d35295-883a-483b-8c31-e17e4481166c",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "fab6b726-c1f9-4fff-889b-27010898272a",
+            "version": [
+                1,
+                2,
+                0
+            ]
+        }
+    ]
+}

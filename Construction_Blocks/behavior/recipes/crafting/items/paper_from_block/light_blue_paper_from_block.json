@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:light_blue_paper_from_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "paper",
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "const:paper_block_light_blue"
+            }
+        },
+        "result": {
+            "item": "const:paper_light_blue",
+            "count": 4
+        }
+    }
+}

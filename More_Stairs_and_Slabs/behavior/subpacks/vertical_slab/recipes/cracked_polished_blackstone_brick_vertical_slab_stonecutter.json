@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:cracked_polished_blackstone_brick_vertical_slab_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 0,
+        "ingredients": [
+            {
+                "item": "minecraft:cracked_polished_blackstone_bricks"
+            }
+        ],
+        "result": {
+            "item": "more_ss:cracked_polished_blackstone_brick_vertical_slab",
+            "count": 2
+        }
+    }
+}

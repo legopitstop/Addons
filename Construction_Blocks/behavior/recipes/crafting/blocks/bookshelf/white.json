@@ -1,0 +1,25 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:white_bookshelf"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "PPP",
+            "BBB",
+            "PPP"
+        ],
+        "key": {
+            "P": {
+                "item": "const:white_planks"
+            },
+            "B": {
+                "item": "minecraft:book"
+            }
+        },
+        "result": "const:white_bookshelf"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:black_crafting_table"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "crafting_table",
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "const:black_planks"
+            }
+        },
+        "result": {
+            "item": "const:black_crafting_table"
+        }
+    }
+}

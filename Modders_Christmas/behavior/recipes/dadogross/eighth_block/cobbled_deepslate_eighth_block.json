@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:cobbled_deepslate_eighth_block"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:cobbled_deepslate"
+            }
+        ],
+        "result": {
+            "item": "xmas:cobbled_deepslate_eighth_block",
+            "count": 8
+        }
+    }
+}

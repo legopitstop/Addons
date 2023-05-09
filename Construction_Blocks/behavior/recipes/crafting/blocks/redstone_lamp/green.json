@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:craft/block/green_redstone_lamp"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " R ",
+            "RGR",
+            " R "
+        ],
+        "key": {
+            "G": {
+                "item": "const:glowstone_green"
+            },
+            "R": {
+                "item": "minecraft:redstone"
+            }
+        },
+        "result": [
+            {
+                "item": "const:green_redstone_lamp"
+            }
+        ]
+    }
+}

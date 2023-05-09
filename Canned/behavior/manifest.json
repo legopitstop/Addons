@@ -1,0 +1,46 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "\u00c2\u00a77Canned goods? \u00c2\u00a76Legopitstop",
+        "name": "Canned BP",
+        "uuid": "7f7c8a3b-ca5a-41c5-885f-24ce7c6219ab",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            10
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "666ec828-7581-47c5-926c-8d0013965e2d",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "7bcddacb-acea-4d89-a348-c5c358b0c143",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

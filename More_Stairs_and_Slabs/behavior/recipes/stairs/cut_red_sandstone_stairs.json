@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "more_ss:cut_red_sandstone_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "concrete_stairs",
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:red_sandstone",
+                "data": 2
+            }
+        },
+        "result": {
+            "item": "more_ss:cut_red_sandstone_stairs",
+            "count": 4
+        }
+    }
+}

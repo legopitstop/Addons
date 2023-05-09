@@ -1,0 +1,14 @@
+{
+    "format_version": "1.18",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "moregold:golden_log_to_gold_ingot"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "moregold:golden_log",
+        "output": "minecraft:gold_ingot"
+    }
+}

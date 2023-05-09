@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "more_ss:quartz_brick_stairs_stonecutter"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 0,
+        "ingredients": [
+            {
+                "item": "minecraft:quartz_bricks"
+            }
+        ],
+        "result": {
+            "item": "more_ss:quartz_brick_slab",
+            "count": 1
+        }
+    }
+}

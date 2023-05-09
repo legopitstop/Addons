@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:acacia_wood_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:wood",
+                "data": 4
+            }
+        ],
+        "result": {
+            "item": "moreblocks:acacia_wood_layer",
+            "count": 8
+        }
+    }
+}

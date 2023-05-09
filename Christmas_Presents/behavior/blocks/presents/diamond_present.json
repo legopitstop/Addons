@@ -1,0 +1,100 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "format_version": "1.16.200",
+    "minecraft:block": {
+        "description": {
+            "identifier": "presents:diamond_present"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:breakonpush": true,
+            "minecraft:destroy_time": 0.3,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:geometry": "geometry.block.present_one",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "presents:diamond_present",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -4.5,
+                    0,
+                    -4.5
+                ],
+                "size": [
+                    9,
+                    8.5,
+                    9
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    -4.5,
+                    0,
+                    -4.5
+                ],
+                "size": [
+                    9,
+                    8.5,
+                    9
+                ]
+            },
+            "minecraft:on_interact": {
+                "condition": "query.get_equipped_item_name == 'emerald'",
+                "event": "upgrade_present"
+            },
+            "minecraft:on_player_destroyed": {
+                "event": "open_present"
+            },
+            "minecraft:on_fall_on": {
+                "min_fall_distance": 2,
+                "event": "break_present"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ]
+                    }
+                ]
+            }
+        },
+        "events": {
+            "break_present": {
+                "run_command": {
+                    "command": [
+                        "playsound random.break @p",
+                        "playsound item.present.open @p"
+                    ]
+                },
+                "set_block": {
+                    "block_type": "air"
+                },
+                "spawn_loot": {
+                    "table": "loot_tables/gameplay/presents/diamond_present.json"
+                }
+            },
+            "open_present": {
+                "run_command": {
+                    "command": "playsound item.present.open @p"
+                },
+                "set_block": {
+                    "block_type": "air"
+                },
+                "spawn_loot": {
+                    "table": "loot_tables/gameplay/presents/diamond_present.json"
+                }
+            },
+            "upgrade_present": {
+                "decrement_stack": {},
+                "set_block": {
+                    "block_type": "present:emerald_present"
+                }
+            }
+        }
+    }
+}

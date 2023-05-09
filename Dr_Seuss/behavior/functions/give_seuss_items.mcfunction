@@ -1,0 +1,19 @@
+say You can find the spawn eggs in the creative inv
+give @p seuss:blue_fish
+give @p seuss:cat_hat
+give @p seuss:cooked_blue_fish
+give @p seuss:cooked_one_fish
+give @p seuss:cooked_red_fish
+give @p seuss:cooked_two_fish
+give @p seuss:fried_green_egg
+give @p seuss:green_egg
+give @p seuss:green_ham
+give @p seuss:ham
+give @p seuss:music_disc_cat_hat
+give @p seuss:music_disc_fish
+give @p seuss:music_disc_green_eggs
+give @p seuss:music_disc_the_lorax
+give @p seuss:one_fish
+give @p seuss:red_fish
+give @p seuss:socks
+give @p seuss:two_fish

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:flowering_azalea_leaves_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:azalea_leaves_flowered"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:flowering_azalea_leaves_layer",
+            "count": 8
+        }
+    }
+}

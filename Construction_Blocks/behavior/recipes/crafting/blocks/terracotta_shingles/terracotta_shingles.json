@@ -1,0 +1,26 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:terracotta_shingles"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "terracotta_shingles",
+        "pattern": [
+            "###",
+            "###",
+            " # "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:hardened_clay"
+            }
+        },
+        "result": {
+            "item": "const:terracotta_shingles",
+            "count": 7
+        }
+    }
+}

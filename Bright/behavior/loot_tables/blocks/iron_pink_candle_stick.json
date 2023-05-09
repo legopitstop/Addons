@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bright:iron_pink_candle_stick",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

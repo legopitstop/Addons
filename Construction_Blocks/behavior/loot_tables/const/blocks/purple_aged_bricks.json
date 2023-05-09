@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:purple_aged_bricks",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

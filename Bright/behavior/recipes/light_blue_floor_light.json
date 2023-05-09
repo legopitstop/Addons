@@ -1,0 +1,24 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "bright:light_blue_floor_light"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "CGC"
+        ],
+        "key": {
+            "C": {
+                "item": "minecraft:concrete",
+                "data": 3
+            },
+            "G": {
+                "item": "minecraft:glowstone_dust"
+            }
+        },
+        "result": "bright:light_blue_floor_light"
+    }
+}

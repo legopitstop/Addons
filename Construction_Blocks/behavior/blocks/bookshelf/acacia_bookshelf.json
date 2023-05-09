@@ -1,0 +1,32 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:bookshelf_acacia",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/acacia_bookshelf.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "acacia_planks"
+                },
+                "down": {
+                    "texture": "acacia_planks"
+                },
+                "*": {
+                    "texture": "const:acacia_bookshelf"
+                }
+            }
+        }
+    }
+}

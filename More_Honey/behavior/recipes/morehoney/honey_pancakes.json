@@ -1,0 +1,35 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "morehoney:honey_pancakes"
+        },
+        "tags": [
+            "honey_press"
+        ],
+        "pattern": [
+            "X",
+            "#",
+            "P"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:honey_bottle"
+            },
+            "P": {
+                "item": "morefood:pancakes"
+            },
+            "X": {
+                "item": "morefood:butter"
+            }
+        },
+        "result": [
+            {
+                "item": "morehoney:honey_pancakes"
+            },
+            {
+                "item": "minecraft:glass_bottle"
+            }
+        ]
+    }
+}

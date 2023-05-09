@@ -1,0 +1,29 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "const:gold_wrench"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            " ##",
+            "/  "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:gold_ingot"
+            },
+            "/": {
+                "item": "const:stick_golden"
+            }
+        },
+        "result": [
+            {
+                "item": "const:wrench"
+            }
+        ]
+    }
+}

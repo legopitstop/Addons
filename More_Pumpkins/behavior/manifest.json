@@ -1,0 +1,47 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Happy Halloween! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "More Pumpkins BP",
+        "uuid": "4e1db273-4d60-4728-a674-7e5b3648f180",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            3
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "Desc",
+            "type": "data",
+            "uuid": "c2ecdc36-955c-4e22-9b69-3aea371005a6",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "fc1059e6-366e-4fde-9b49-8be5b1434b3d",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

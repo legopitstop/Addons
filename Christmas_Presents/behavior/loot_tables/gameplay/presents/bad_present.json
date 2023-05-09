@@ -1,0 +1,112 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "weight": 5,
+                    "type": "item",
+                    "name": "minecraft:leather_helmet",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "type": "uniform",
+                                "damage": 0.0,
+                                "max": 0.25
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "weight": 5,
+                    "type": "item",
+                    "name": "minecraft:leather_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "type": "uniform",
+                                "damage": 0.0,
+                                "max": 0.25
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "weight": 5,
+                    "type": "item",
+                    "name": "minecraft:leather_leggings",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "type": "uniform",
+                                "damage": 0.0,
+                                "max": 0.25
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "weight": 5,
+                    "type": "item",
+                    "name": "minecraft:leather_boots",
+                    "functions": [
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "type": "uniform",
+                                "damage": 0.0,
+                                "max": 0.25
+                            },
+                            "add": false
+                        }
+                    ]
+                },
+                {
+                    "weight": 6,
+                    "type": "item",
+                    "name": "minecraft:coal_block"
+                },
+                {
+                    "weight": 10,
+                    "type": "item",
+                    "name": "minecraft:coal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "add": false,
+                            "count": {
+                                "type": "uniform",
+                                "damage": 1.0,
+                                "max": 3.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 10,
+                    "type": "item",
+                    "name": "minecraft:stick",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "add": false,
+                            "count": {
+                                "type": "uniform",
+                                "damage": 1.0,
+                                "max": 3.0
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Easly pickup items from far away! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+        "name": "Simple Magnets BP",
+        "uuid": "c626559c-6a9e-4851-9b97-0213a2650294",
+        "version": [
+            1,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            20
+        ]
+    },
+    "metadata": {
+        "authors": [
+            "legopitstop"
+        ],
+        "license": "Legopitstop's Common License",
+        "url": "https://legopitstop.weebly.com"
+    },
+    "modules": [
+        {
+            "description": "Easly pickup items from far away! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+            "type": "data",
+            "uuid": "a01d4625-ab34-4649-a0fd-ece3684d908e",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "16a46bd0-f937-4f63-88f3-c70280f6ffac",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        }
+    ]
+}

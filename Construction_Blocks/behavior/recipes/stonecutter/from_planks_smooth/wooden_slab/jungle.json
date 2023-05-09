@@ -1,0 +1,23 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_jungle_slab2"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "const:smooth_jungle_planks"
+            }
+        ],
+        "result": [
+            {
+                "item": "minecraft:wooden_slab",
+                "data": 3,
+                "count": 2
+            }
+        ]
+    }
+}

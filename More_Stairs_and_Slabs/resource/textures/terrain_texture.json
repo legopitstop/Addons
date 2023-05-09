@@ -1,0 +1,1148 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "minecraft:redstone_lamp": {
+            "textures": "textures/blocks/redstone_lamp_off.png"
+        },
+        "minecraft:shroomlight": {
+            "textures": "textures/blocks/shroomlight.png"
+        },
+        "minecraft:redstone_lamp_lit": {
+            "textures": "textures/blocks/redstone_lamp_on.png"
+        },
+        "minecraft:dirt": {
+            "textures": "textures/blocks/dirt.png"
+        },
+        "minecraft:coarse_dirt": {
+            "textures": "textures/blocks/coarse_dirt.png"
+        },
+        "minecraft:oak_log_top": {
+            "textures": "textures/blocks/log_oak_top.png"
+        },
+        "minecraft:spruce_log_top": {
+            "textures": "textures/blocks/log_spruce_top.png"
+        },
+        "minecraft:birch_log_top": {
+            "textures": "textures/blocks/log_birch_top.png"
+        },
+        "minecraft:jungle_log_top": {
+            "textures": "textures/blocks/log_jungle_top.png"
+        },
+        "minecraft:acacia_log_top": {
+            "textures": "textures/blocks/log_acacia_top.png"
+        },
+        "minecraft:dark_oak_log_top": {
+            "textures": "textures/blocks/log_big_oak_top.png"
+        },
+        "minecraft:oak_log": {
+            "textures": "textures/blocks/log_oak.png"
+        },
+        "minecraft:spruce_log": {
+            "textures": "textures/blocks/log_spruce.png"
+        },
+        "minecraft:birch_log": {
+            "textures": "textures/blocks/log_birch.png"
+        },
+        "minecraft:jungle_log": {
+            "textures": "textures/blocks/log_jungle.png"
+        },
+        "minecraft:acacia_log": {
+            "textures": "textures/blocks/log_acacia.png"
+        },
+        "minecraft:dark_oak_log": {
+            "textures": "textures/blocks/log_big_oak.png"
+        },
+        "minecraft:stripped_acacia_log": {
+            "textures": "textures/blocks/stripped_acacia_log.png"
+        },
+        "minecraft:stripped_acacia_log_top": {
+            "textures": "textures/blocks/stripped_acacia_log_top.png"
+        },
+        "minecraft:stripped_birch_log": {
+            "textures": "textures/blocks/stripped_birch_log.png"
+        },
+        "minecraft:stripped_birch_log_top": {
+            "textures": "textures/blocks/stripped_birch_log_top.png"
+        },
+        "minecraft:stripped_crimson_stem": {
+            "textures": "textures/blocks/huge_fungus/stripped_crimson_stem_side.png"
+        },
+        "minecraft:stripped_crimson_stem_top": {
+            "textures": "textures/blocks/huge_fungus/stripped_crimson_stem_top.png"
+        },
+        "minecraft:stripped_dark_oak_log": {
+            "textures": "textures/blocks/stripped_dark_oak_log.png"
+        },
+        "minecraft:stripped_dark_oak_log_top": {
+            "textures": "textures/blocks/stripped_dark_oak_log_top.png"
+        },
+        "minecraft:stripped_jungle_log": {
+            "textures": "textures/blocks/stripped_jungle_log.png"
+        },
+        "minecraft:stripped_jungle_log_top": {
+            "textures": "textures/blocks/stripped_jungle_log_top.png"
+        },
+        "minecraft:stripped_oak_log": {
+            "textures": "textures/blocks/stripped_oak_log.png"
+        },
+        "minecraft:stripped_oak_log_top": {
+            "textures": "textures/blocks/stripped_oak_log_top.png"
+        },
+        "minecraft:stripped_spruce_log": {
+            "textures": "textures/blocks/stripped_spruce_log.png"
+        },
+        "minecraft:stripped_spruce_log_top": {
+            "textures": "textures/blocks/stripped_spruce_log_top.png"
+        },
+        "minecraft:stripped_warped_stem": {
+            "textures": "textures/blocks/huge_fungus/stripped_warped_stem_side.png"
+        },
+        "minecraft:stripped_warped_stem_top": {
+            "textures": "textures/blocks/huge_fungus/stripped_warped_stem_top.png"
+        },
+        "minecraft:crimson_stem": {
+            "textures": "textures/blocks/huge_fungus/crimson_log_side.png"
+        },
+        "minecraft:crimson_stem_top": {
+            "textures": "textures/blocks/huge_fungus/crimson_log_top.png"
+        },
+        "minecraft:warped_stem": {
+            "textures": "textures/blocks/huge_fungus/warped_stem_side.png"
+        },
+        "minecraft:warped_stem_top": {
+            "textures": "textures/blocks/huge_fungus/warped_stem_top.png"
+        },
+        "minecraft:mycelium_side": {
+            "textures": "textures/blocks/mycelium_side.png"
+        },
+        "minecraft:mycelium_top": {
+            "textures": "textures/blocks/mycelium_top.png"
+        },
+        "minecraft:podzol_side": {
+            "textures": "textures/blocks/dirt_podzol_side.png"
+        },
+        "minecraft:podzol_top": {
+            "textures": "textures/blocks/dirt_podzol_top.png"
+        },
+        "minecraft:sand": {
+            "textures": "textures/blocks/sand.png"
+        },
+        "minecraft:red_sand": {
+            "textures": "textures/blocks/red_sand.png"
+        },
+        "minecraft:snow": {
+            "textures": "textures/blocks/snow.png"
+        },
+        "minecraft:powder_snow": {
+            "textures": "textures/blocks/powder_snow.png"
+        },
+        "minecraft:warped_nylium_side": {
+            "textures": "textures/blocks/warped_nylium_side.png"
+        },
+        "minecraft:warped_nylium_top": {
+            "textures": "textures/blocks/warped_nylium_top.png"
+        },
+        "minecraft:crimson_nylium_side": {
+            "textures": "textures/blocks/crimson_nylium_side.png"
+        },
+        "minecraft:crimson_nylium_top": {
+            "textures": "textures/blocks/crimson_nylium_top.png"
+        },
+        "minecraft:farmland": {
+            "textures": "textures/blocks/farmland_dry.png"
+        },
+        "minecraft:farmland_wet": {
+            "textures": "textures/blocks/farmland_wet.png"
+        },
+        "minecraft:dirt_path_side": {
+            "textures": "textures/blocks/grass_path_side.png"
+        },
+        "minecraft:dirt_path_top": {
+            "textures": "textures/blocks/grass_path_top.png"
+        },
+        "minecraft:tnt_bottom": {
+            "textures": "textures/blocks/tnt_bottom.png"
+        },
+        "minecraft:tnt_side": {
+            "textures": "textures/blocks/tnt_side.png"
+        },
+        "minecraft:tnt_top": {
+            "textures": "textures/blocks/tnt_top.png"
+        },
+        "minecraft:glowstone": {
+            "textures": "textures/blocks/glowstone.png"
+        },
+        "minecraft:crafting_table_bottom": {
+            "textures": "textures/blocks/planks_oak"
+        },
+        "minecraft:crafting_table_front": {
+            "textures": "textures/blocks/crafting_table_front.png"
+        },
+        "minecraft:crafting_table_side": {
+            "textures": "textures/blocks/crafting_table_side.png"
+        },
+        "minecraft:crafting_table_top": {
+            "textures": "textures/blocks/crafting_table_top.png"
+        },
+        "minecraft:sea_lantern": {
+            "textures": "textures/blocks/sea_lantern.png"
+        },
+        "minecraft:warped_wart_block": {
+            "textures": "textures/blocks/warped_wart_block.png"
+        },
+        "minecraft:nether_wart_block": {
+            "textures": "textures/blocks/nether_wart_block.png"
+        },
+        "minecraft:grass_block_side": {
+            "textures": {
+                "overlay_color": "#79c05a",
+                "path": "textures/blocks/grass_side.tga"
+            }
+        },
+        "minecraft:grass_block_top": {
+            "textures": {
+                "overlay_color": "#79c05a",
+                "path": "textures/blocks/grass_top.png"
+            }
+        },
+        "minecraft:gravel": {
+            "textures": "textures/blocks/gravel.png"
+        },
+        "minecraft:ice": {
+            "textures": "textures/blocks/ice.png"
+        },
+        "minecraft:packed_ice": {
+            "textures": "textures/blocks/ice_packed.png"
+        },
+        "minecraft:blue_ice": {
+            "textures": "textures/blocks/blue_ice.png"
+        },
+        "minecraft:sponge": {
+            "textures": "textures/blocks/sponge.png"
+        },
+        "minecraft:wet_sponge": {
+            "textures": "textures/blocks/sponge_wet.png"
+        },
+        "minecraft:slime_block": {
+            "textures": "textures/blocks/slime.png"
+        },
+        "minecraft:honey_bottom": {
+            "textures": "textures/blocks/honey_bottom.png"
+        },
+        "minecraft:honey_side": {
+            "textures": "textures/blocks/honey_side.png"
+        },
+        "minecraft:honey_top": {
+            "textures": "textures/blocks/honey_top.png"
+        },
+        "minecraft:coal_block": {
+            "textures": "textures/blocks/coal_block.png"
+        },
+        "minecraft:diamond_block": {
+            "textures": "textures/blocks/diamond_block.png"
+        },
+        "minecraft:gold_block": {
+            "textures": "textures/blocks/gold_block.png"
+        },
+        "minecraft:iron_block": {
+            "textures": "textures/blocks/iron_block.png"
+        },
+        "minecraft:emerald_block": {
+            "textures": "textures/blocks/emerald_block.png"
+        },
+        "minecraft:netherite_block": {
+            "textures": "textures/blocks/netherite_block.png"
+        },
+        "minecraft:redstone_block": {
+            "textures": "textures/blocks/redstone_block.png"
+        },
+        "minecraft:smooth_basalt": {
+            "textures": "textures/blocks/smooth_basalt.png"
+        },
+        "minecraft:amethyst_block": {
+            "textures": "textures/blocks/amethyst_block.png"
+        },
+        "minecraft:dripstone_block": {
+            "textures": "textures/blocks/dripstone_block.png"
+        },
+        "minecraft:end_stone": {
+            "textures": "textures/blocks/end_stone.png"
+        },
+        "minecraft:magma_block": {
+            "textures": "textures/blocks/magma.png"
+        },
+        "minecraft:netherrack": {
+            "textures": "textures/blocks/netherrack.png"
+        },
+        "minecraft:soul_sand": {
+            "textures": "textures/blocks/soul_sand.png"
+        },
+        "minecraft:bedrock": {
+            "textures": "textures/blocks/bedrock.png"
+        },
+        "minecraft:crying_obsidian": {
+            "textures": "textures/blocks/crying_obsidian.png"
+        },
+        "minecraft:obsidian": {
+            "textures": "textures/blocks/obsidian.png"
+        },
+        "minecraft:tuff": {
+            "textures": "textures/blocks/tuff.png"
+        },
+        "minecraft:calcite": {
+            "textures": "textures/blocks/calcite.png"
+        },
+        "minecraft:soul_soil": {
+            "textures": "textures/blocks/soul_soil.png"
+        },
+        "minecraft:copper_block": {
+            "textures": "textures/blocks/copper_block.png"
+        },
+        "minecraft:exposed_copper": {
+            "textures": "textures/blocks/exposed_copper.png"
+        },
+        "minecraft:weathered_copper": {
+            "textures": "textures/blocks/weathered_copper.png"
+        },
+        "minecraft:oxidized_copper": {
+            "textures": "textures/blocks/oxidized_copper.png"
+        },
+        "minecraft:waxed_copper_block": {
+            "textures": "textures/blocks/copper_block.png"
+        },
+        "minecraft:waxed_exposed_copper": {
+            "textures": "textures/blocks/exposed_copper.png"
+        },
+        "minecraft:waxed_weathered_copper": {
+            "textures": "textures/blocks/weathered_copper.png"
+        },
+        "minecraft:waxed_oxidized_copper": {
+            "textures": "textures/blocks/oxidized_copper.png"
+        },
+        "minecraft:cut_copper": {
+            "textures": "textures/blocks/cut_copper.png"
+        },
+        "minecraft:exposed_cut_copper": {
+            "textures": "textures/blocks/exposed_cut_copper.png"
+        },
+        "minecraft:weathered_cut_copper": {
+            "textures": "textures/blocks/weathered_cut_copper.png"
+        },
+        "minecraft:oxidized_cut_copper": {
+            "textures": "textures/blocks/oxidized_cut_copper.png"
+        },
+        "minecraft:waxed_cut_copper": {
+            "textures": "textures/blocks/cut_copper.png"
+        },
+        "minecraft:waxed_exposed_cut_copper": {
+            "textures": "textures/blocks/exposed_cut_copper.png"
+        },
+        "minecraft:waxed_weathered_cut_copper": {
+            "textures": "textures/blocks/weathered_cut_copper.png"
+        },
+        "minecraft:waxed_oxidized_cut_copper": {
+            "textures": "textures/blocks/oxidized_cut_copper.png"
+        },
+        "minecraft:raw_copper_block": {
+            "textures": "textures/blocks/raw_copper_block.png"
+        },
+        "minecraft:raw_gold_block": {
+            "textures": "textures/blocks/raw_gold_block.png"
+        },
+        "minecraft:raw_iron_block": {
+            "textures": "textures/blocks/raw_iron_block.png"
+        },
+        "minecraft:acacia_planks": {
+            "textures": "textures/blocks/planks_acacia.png"
+        },
+        "minecraft:andesite": {
+            "textures": "textures/blocks/stone_andesite.png"
+        },
+        "minecraft:birch_planks": {
+            "textures": "textures/blocks/planks_birch.png"
+        },
+        "minecraft:black_concrete": {
+            "textures": "textures/blocks/concrete_black.png"
+        },
+        "minecraft:black_stained_glass": {
+            "textures": "textures/blocks/glass_black.png"
+        },
+        "minecraft:black_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_black.png"
+        },
+        "minecraft:black_wool": {
+            "textures": "textures/blocks/wool_colored_black.png"
+        },
+        "minecraft:blackstone": {
+            "textures": "textures/blocks/blackstone.png"
+        },
+        "minecraft:blue_concrete": {
+            "textures": "textures/blocks/concrete_blue.png"
+        },
+        "minecraft:blue_stained_glass": {
+            "textures": "textures/blocks/glass_blue.png"
+        },
+        "minecraft:blue_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_blue.png"
+        },
+        "minecraft:blue_wool": {
+            "textures": "textures/blocks/wool_colored_blue.png"
+        },
+        "minecraft:brick_block": {
+            "textures": "textures/blocks/brick.png"
+        },
+        "minecraft:brown_concrete": {
+            "textures": "textures/blocks/concrete_brown.png"
+        },
+        "minecraft:brown_stained_glass": {
+            "textures": "textures/blocks/glass_brown.png"
+        },
+        "minecraft:brown_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_brown.png"
+        },
+        "minecraft:brown_wool": {
+            "textures": "textures/blocks/wool_colored_brown.png"
+        },
+        "minecraft:clay_block": {
+            "textures": "textures/blocks/clay.png"
+        },
+        "minecraft:cobbled_deepslate": {
+            "textures": "textures/blocks/deepslate/cobbled_deepslate.png"
+        },
+        "minecraft:cobblestone": {
+            "textures": "textures/blocks/cobblestone.png"
+        },
+        "minecraft:cracked_deepslate_bricks": {
+            "textures": "textures/blocks/deepslate/cracked_deepslate_bricks.png"
+        },
+        "minecraft:cracked_deepslate_tiles": {
+            "textures": "textures/blocks/deepslate/cracked_deepslate_tiles.png"
+        },
+        "minecraft:cracked_nether_bricks": {
+            "textures": "textures/blocks/cracked_nether_bricks.png"
+        },
+        "minecraft:cracked_polished_blackstone_bricks": {
+            "textures": "textures/blocks/cracked_polished_blackstone_bricks.png"
+        },
+        "minecraft:cracked_stone_bricks": {
+            "textures": "textures/blocks/stonebrick_cracked.png"
+        },
+        "minecraft:crimson_planks": {
+            "textures": "textures/blocks/huge_fungus/crimson_planks.png"
+        },
+        "minecraft:cut_red_sandstone": {
+            "textures": "textures/blocks/red_sandstone_smooth.png"
+        },
+        "minecraft:cut_sandstone": {
+            "textures": "textures/blocks/sandstone_smooth.png"
+        },
+        "minecraft:cyan_concrete": {
+            "textures": "textures/blocks/concrete_cyan.png"
+        },
+        "minecraft:cyan_stained_glass": {
+            "textures": "textures/blocks/glass_cyan.png"
+        },
+        "minecraft:cyan_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_cyan.png"
+        },
+        "minecraft:cyan_wool": {
+            "textures": "textures/blocks/wool_colored_cyan.png"
+        },
+        "minecraft:dark_oak_planks": {
+            "textures": "textures/blocks/planks_big_oak.png"
+        },
+        "minecraft:dark_prismarine": {
+            "textures": "textures/blocks/prismarine_dark.png"
+        },
+        "minecraft:deepslate": {
+            "textures": "textures/blocks/deepslate/deepslate.png"
+        },
+        "minecraft:deepslate_bricks": {
+            "textures": "textures/blocks/deepslate/deepslate_bricks.png"
+        },
+        "minecraft:deepslate_tiles": {
+            "textures": "textures/blocks/deepslate/deepslate_tiles.png"
+        },
+        "minecraft:deepslate_top": {
+            "textures": "textures/blocks/deepslate/deepslate_top.png"
+        },
+        "minecraft:diorite": {
+            "textures": "textures/blocks/stone_diorite.png"
+        },
+        "minecraft:end_stone_bricks": {
+            "textures": "textures/blocks/end_bricks.png"
+        },
+        "minecraft:gilded_blackstone": {
+            "textures": "textures/blocks/gilded_blackstone.png"
+        },
+        "minecraft:glass": {
+            "textures": "textures/blocks/glass.png"
+        },
+        "minecraft:granite": {
+            "textures": "textures/blocks/stone_granite.png"
+        },
+        "minecraft:gray_concrete": {
+            "textures": "textures/blocks/concrete_gray.png"
+        },
+        "minecraft:gray_stained_glass": {
+            "textures": "textures/blocks/glass_gray.png"
+        },
+        "minecraft:gray_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_gray.png"
+        },
+        "minecraft:gray_wool": {
+            "textures": "textures/blocks/wool_colored_gray.png"
+        },
+        "minecraft:green_concrete": {
+            "textures": "textures/blocks/concrete_green.png"
+        },
+        "minecraft:green_stained_glass": {
+            "textures": "textures/blocks/glass_green.png"
+        },
+        "minecraft:green_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_green.png"
+        },
+        "minecraft:green_wool": {
+            "textures": "textures/blocks/wool_colored_green.png"
+        },
+        "minecraft:honeycomb_block": {
+            "textures": "textures/blocks/honeycomb.png"
+        },
+        "minecraft:jungle_planks": {
+            "textures": "textures/blocks/planks_jungle.png"
+        },
+        "minecraft:light_blue_concrete": {
+            "textures": "textures/blocks/concrete_light_blue.png"
+        },
+        "minecraft:light_blue_stained_glass": {
+            "textures": "textures/blocks/glass_light_blue.png"
+        },
+        "minecraft:light_blue_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_light_blue.png"
+        },
+        "minecraft:light_blue_wool": {
+            "textures": "textures/blocks/wool_colored_light_blue.png"
+        },
+        "minecraft:light_gray_concrete": {
+            "textures": "textures/blocks/concrete_silver.png"
+        },
+        "minecraft:light_gray_stained_glass": {
+            "textures": "textures/blocks/glass_silver.png"
+        },
+        "minecraft:light_gray_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_silver.png"
+        },
+        "minecraft:light_gray_wool": {
+            "textures": "textures/blocks/wool_colored_silver.png"
+        },
+        "minecraft:lime_concrete": {
+            "textures": "textures/blocks/concrete_lime.png"
+        },
+        "minecraft:lime_stained_glass": {
+            "textures": "textures/blocks/glass_lime.png"
+        },
+        "minecraft:lime_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_lime.png"
+        },
+        "minecraft:lime_wool": {
+            "textures": "textures/blocks/wool_colored_lime.png"
+        },
+        "minecraft:magenta_concrete": {
+            "textures": "textures/blocks/concrete_magenta.png"
+        },
+        "minecraft:magenta_stained_glass": {
+            "textures": "textures/blocks/glass_magenta.png"
+        },
+        "minecraft:magenta_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_magenta.png"
+        },
+        "minecraft:magenta_wool": {
+            "textures": "textures/blocks/wool_colored_magenta.png"
+        },
+        "minecraft:mossy_cobblestone": {
+            "textures": "textures/blocks/cobblestone_mossy.png"
+        },
+        "minecraft:mossy_stone_bricks": {
+            "textures": "textures/blocks/stonebrick_mossy.png"
+        },
+        "minecraft:nether_brick_block": {
+            "textures": "textures/blocks/nether_brick.png"
+        },
+        "minecraft:oak_planks": {
+            "textures": "textures/blocks/planks_oak.png"
+        },
+        "minecraft:orange_concrete": {
+            "textures": "textures/blocks/concrete_orange.png"
+        },
+        "minecraft:orange_stained_glass": {
+            "textures": "textures/blocks/glass_orange.png"
+        },
+        "minecraft:orange_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_orange.png"
+        },
+        "minecraft:orange_wool": {
+            "textures": "textures/blocks/wool_colored_orange.png"
+        },
+        "minecraft:pink_concrete": {
+            "textures": "textures/blocks/concrete_pink.png"
+        },
+        "minecraft:pink_stained_glass": {
+            "textures": "textures/blocks/glass_pink.png"
+        },
+        "minecraft:pink_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_pink.png"
+        },
+        "minecraft:pink_wool": {
+            "textures": "textures/blocks/wool_colored_pink.png"
+        },
+        "minecraft:polished_andesite": {
+            "textures": "textures/blocks/stone_andesite_smooth.png"
+        },
+        "minecraft:polished_blackstone": {
+            "textures": "textures/blocks/polished_blackstone.png"
+        },
+        "minecraft:polished_blackstone_bricks": {
+            "textures": "textures/blocks/polished_blackstone_bricks.png"
+        },
+        "minecraft:polished_deepslate": {
+            "textures": "textures/blocks/deepslate/polished_deepslate.png"
+        },
+        "minecraft:polished_diorite": {
+            "textures": "textures/blocks/stone_diorite_smooth.png"
+        },
+        "minecraft:polished_granite": {
+            "textures": "textures/blocks/stone_granite_smooth.png"
+        },
+        "minecraft:prismarine": {
+            "textures": "textures/blocks/prismarine_rough.png"
+        },
+        "minecraft:prismarine_bricks": {
+            "textures": "textures/blocks/prismarine_bricks.png"
+        },
+        "minecraft:purple_concrete": {
+            "textures": "textures/blocks/concrete_purple.png"
+        },
+        "minecraft:purple_stained_glass": {
+            "textures": "textures/blocks/glass_purple.png"
+        },
+        "minecraft:purple_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_purple.png"
+        },
+        "minecraft:purple_wool": {
+            "textures": "textures/blocks/wool_colored_purple.png"
+        },
+        "minecraft:purpur_block": {
+            "textures": "textures/blocks/purpur_block.png"
+        },
+        "minecraft:quartz_block_top": {
+            "textures": "textures/blocks/quartz_block_top.png"
+        },
+        "minecraft:quartz_block_bottom": {
+            "textures": "textures/blocks/quartz_block_bottom.png"
+        },
+        "minecraft:quartz_block_side": {
+            "textures": "textures/blocks/quartz_block_side.png"
+        },
+        "minecraft:quartz_bricks": {
+            "textures": "textures/blocks/quartz_bricks.png"
+        },
+        "minecraft:red_concrete": {
+            "textures": "textures/blocks/concrete_red.png"
+        },
+        "minecraft:red_nether_bricks": {
+            "textures": "textures/blocks/red_nether_brick.png"
+        },
+        "minecraft:red_sandstone_bottom": {
+            "textures": "textures/blocks/red_sandstone_bottom.png"
+        },
+        "minecraft:red_sandstone_side": {
+            "textures": "textures/blocks/red_sandstone_normal.png"
+        },
+        "minecraft:red_sandstone_top": {
+            "textures": "textures/blocks/red_sandstone_top.png"
+        },
+        "minecraft:red_stained_glass": {
+            "textures": "textures/blocks/glass_red.png"
+        },
+        "minecraft:red_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_red.png"
+        },
+        "minecraft:red_wool": {
+            "textures": "textures/blocks/wool_colored_red.png"
+        },
+        "minecraft:sandstone_bottom": {
+            "textures": "textures/blocks/sandstone_bottom.png"
+        },
+        "minecraft:sandstone_side": {
+            "textures": "textures/blocks/sandstone_normal.png"
+        },
+        "minecraft:sandstone_top": {
+            "textures": "textures/blocks/sandstone_top.png"
+        },
+        "minecraft:smooth_quartz_block": {
+            "textures": "textures/blocks/quartz_block_bottom.png"
+        },
+        "minecraft:smooth_red_sandstone": {
+            "textures": "textures/blocks/red_sandstone_top.png"
+        },
+        "minecraft:smooth_sandstone": {
+            "textures": "textures/blocks/sandstone_top.png"
+        },
+        "minecraft:smooth_stone": {
+            "textures": "textures/blocks/stone_slab_top.png"
+        },
+        "minecraft:spruce_planks": {
+            "textures": "textures/blocks/planks_spruce.png"
+        },
+        "minecraft:stone": {
+            "textures": "textures/blocks/stone.png"
+        },
+        "minecraft:stone_bricks": {
+            "textures": "textures/blocks/stonebrick.png"
+        },
+        "minecraft:terracotta": {
+            "textures": "textures/blocks/hardened_clay.png"
+        },
+        "minecraft:tinted_glass": {
+            "textures": "textures/blocks/tinted_glass.png"
+        },
+        "minecraft:warped_planks": {
+            "textures": "textures/blocks/huge_fungus/warped_planks.png"
+        },
+        "minecraft:white_concrete": {
+            "textures": "textures/blocks/concrete_white.png"
+        },
+        "minecraft:white_stained_glass": {
+            "textures": "textures/blocks/glass_white.png"
+        },
+        "minecraft:white_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_white.png"
+        },
+        "minecraft:white_wool": {
+            "textures": "textures/blocks/wool_colored_white.png"
+        },
+        "minecraft:yellow_concrete": {
+            "textures": "textures/blocks/concrete_yellow.png"
+        },
+        "minecraft:yellow_stained_glass": {
+            "textures": "textures/blocks/glass_yellow.png"
+        },
+        "minecraft:yellow_terracotta": {
+            "textures": "textures/blocks/hardened_clay_stained_yellow.png"
+        },
+        "minecraft:yellow_wool": {
+            "textures": "textures/blocks/wool_colored_yellow.png"
+        },
+        "more_ss:grass_block_inner_stairs": {
+            "textures": "textures/blocks/more_ss/grass_block_inner_stairs.png"
+        },
+        "more_ss:grass_block_outer_stairs": {
+            "textures": "textures/blocks/more_ss/grass_block_outer_stairs.png"
+        },
+        "more_ss:grass_block_stairs": {
+            "textures": "textures/blocks/more_ss/grass_block_stairs.png"
+        },
+        "more_ss:grass_block_snow_inner_stairs": {
+            "textures": "textures/blocks/more_ss/grass_block_snow_inner_stairs.png"
+        },
+        "more_ss:grass_block_snow_outer_stairs": {
+            "textures": "textures/blocks/more_ss/grass_block_snow_outer_stairs.png"
+        },
+        "more_ss:grass_block_snow_stairs": {
+            "textures": "textures/blocks/more_ss/grass_block_snow_stairs.png"
+        },
+        "more_ss:farmland_inner_stairs": {
+            "textures": "textures/blocks/more_ss/farmland_inner_stairs.png"
+        },
+        "more_ss:farmland_outer_stairs": {
+            "textures": "textures/blocks/more_ss/farmland_outer_stairs.png"
+        },
+        "more_ss:farmland_stairs": {
+            "textures": "textures/blocks/more_ss/farmland_stairs.png"
+        },
+        "more_ss:farmland_wet_inner_stairs": {
+            "textures": "textures/blocks/more_ss/farmland_wet_inner_stairs.png"
+        },
+        "more_ss:farmland_wet_outer_stairs": {
+            "textures": "textures/blocks/more_ss/farmland_wet_outer_stairs.png"
+        },
+        "more_ss:farmland_wet_stairs": {
+            "textures": "textures/blocks/more_ss/farmland_wet_stairs.png"
+        },
+        "more_ss:grass_path_inner_stairs": {
+            "textures": "textures/blocks/more_ss/grass_path_inner_stairs.png"
+        },
+        "more_ss:grass_path_outer_stairs": {
+            "textures": "textures/blocks/more_ss/grass_path_outer_stairs.png"
+        },
+        "more_ss:grass_path_stairs": {
+            "textures": "textures/blocks/more_ss/grass_path_stairs.png"
+        },
+        "more_ss:crimson_nylium_inner_stairs": {
+            "textures": "textures/blocks/more_ss/crimson_nylium_inner_stairs.png"
+        },
+        "more_ss:crimson_nylium_outer_stairs": {
+            "textures": "textures/blocks/more_ss/crimson_nylium_outer_stairs.png"
+        },
+        "more_ss:crimson_nylium_stairs": {
+            "textures": "textures/blocks/more_ss/crimson_nylium_stairs.png"
+        },
+        "more_ss:warped_nylium_inner_stairs": {
+            "textures": "textures/blocks/more_ss/warped_nylium_inner_stairs.png"
+        },
+        "more_ss:warped_nylium_outer_stairs": {
+            "textures": "textures/blocks/more_ss/warped_nylium_outer_stairs.png"
+        },
+        "more_ss:warped_nylium_stairs": {
+            "textures": "textures/blocks/more_ss/warped_nylium_stairs.png"
+        },
+        "more_ss:podzol_inner_stairs": {
+            "textures": "textures/blocks/more_ss/podzol_inner_stairs.png"
+        },
+        "more_ss:podzol_outer_stairs": {
+            "textures": "textures/blocks/more_ss/podzol_outer_stairs.png"
+        },
+        "more_ss:podzol_stairs": {
+            "textures": "textures/blocks/more_ss/podzol_stairs.png"
+        },
+        "more_ss:mycelium_inner_stairs": {
+            "textures": "textures/blocks/more_ss/mycelium_inner_stairs.png"
+        },
+        "more_ss:mycelium_outer_stairs": {
+            "textures": "textures/blocks/more_ss/mycelium_outer_stairs.png"
+        },
+        "more_ss:mycelium_stairs": {
+            "textures": "textures/blocks/more_ss/mycelium_stairs.png"
+        },
+        "more_ss:redstone_lamp_inner_stairs_off": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_inner_stairs_off.png"
+        },
+        "more_ss:redstone_lamp_outer_stairs_off": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_outer_stairs_off.png"
+        },
+        "more_ss:redstone_lamp_stairs_off": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_stairs_off.png"
+        },
+        "more_ss:redstone_lamp_inner_stairs_on": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_inner_stairs_on.png"
+        },
+        "more_ss:redstone_lamp_outer_stairs_on": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_outer_stairs_on.png"
+        },
+        "more_ss:redstone_lamp_stairs_on": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_stairs_on.png"
+        },
+        "more_ss:sea_lantern_inner_stairs": {
+            "textures": "textures/blocks/more_ss/sea_lantern_inner_stairs.png"
+        },
+        "more_ss:sea_lantern_outer_stairs": {
+            "textures": "textures/blocks/more_ss/sea_lantern_outer_stairs.png"
+        },
+        "more_ss:sea_lantern_stairs": {
+            "textures": "textures/blocks/more_ss/sea_lantern_stairs.png"
+        },
+        "more_ss:smooth_stone_inner_stairs": {
+            "textures": "textures/blocks/more_ss/smooth_stone_inner_stairs.png"
+        },
+        "more_ss:smooth_stone_outer_stairs": {
+            "textures": "textures/blocks/more_ss/smooth_stone_outer_stairs.png"
+        },
+        "more_ss:smooth_stone_stairs": {
+            "textures": "textures/blocks/more_ss/smooth_stone_stairs.png"
+        },
+        "more_ss:glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/glass_inner_stairs.png"
+        },
+        "more_ss:glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/glass_outer_stairs.png"
+        },
+        "more_ss:glass_stairs": {
+            "textures": "textures/blocks/more_ss/glass_stairs.png"
+        },
+        "more_ss:tinted_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/tinted_glass_inner_stairs.png"
+        },
+        "more_ss:tinted_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/tinted_glass_outer_stairs.png"
+        },
+        "more_ss:tinted_glass_stairs": {
+            "textures": "textures/blocks/more_ss/tinted_glass_stairs.png"
+        },
+        "more_ss:black_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/black_stained_glass_inner_stairs.png"
+        },
+        "more_ss:black_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/black_stained_glass_outer_stairs.png"
+        },
+        "more_ss:black_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/black_stained_glass_stairs.png"
+        },
+        "more_ss:blue_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/blue_stained_glass_inner_stairs.png"
+        },
+        "more_ss:blue_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/blue_stained_glass_outer_stairs.png"
+        },
+        "more_ss:blue_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/blue_stained_glass_stairs.png"
+        },
+        "more_ss:brown_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/brown_stained_glass_inner_stairs.png"
+        },
+        "more_ss:brown_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/brown_stained_glass_outer_stairs.png"
+        },
+        "more_ss:brown_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/brown_stained_glass_stairs.png"
+        },
+        "more_ss:cyan_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/cyan_stained_glass_inner_stairs.png"
+        },
+        "more_ss:cyan_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/cyan_stained_glass_outer_stairs.png"
+        },
+        "more_ss:cyan_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/cyan_stained_glass_stairs.png"
+        },
+        "more_ss:gray_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/gray_stained_glass_inner_stairs.png"
+        },
+        "more_ss:gray_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/gray_stained_glass_outer_stairs.png"
+        },
+        "more_ss:gray_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/gray_stained_glass_stairs.png"
+        },
+        "more_ss:green_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/green_stained_glass_inner_stairs.png"
+        },
+        "more_ss:green_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/green_stained_glass_outer_stairs.png"
+        },
+        "more_ss:green_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/green_stained_glass_stairs.png"
+        },
+        "more_ss:light_blue_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/light_blue_stained_glass_inner_stairs.png"
+        },
+        "more_ss:light_blue_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/light_blue_stained_glass_outer_stairs.png"
+        },
+        "more_ss:light_blue_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/light_blue_stained_glass_stairs.png"
+        },
+        "more_ss:light_gray_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/light_gray_stained_glass_inner_stairs.png"
+        },
+        "more_ss:light_gray_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/light_gray_stained_glass_outer_stairs.png"
+        },
+        "more_ss:light_gray_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/light_gray_stained_glass_stairs.png"
+        },
+        "more_ss:magenta_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/magenta_stained_glass_inner_stairs.png"
+        },
+        "more_ss:magenta_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/magenta_stained_glass_outer_stairs.png"
+        },
+        "more_ss:magenta_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/magenta_stained_glass_stairs.png"
+        },
+        "more_ss:orange_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/orange_stained_glass_inner_stairs.png"
+        },
+        "more_ss:orange_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/orange_stained_glass_outer_stairs.png"
+        },
+        "more_ss:orange_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/orange_stained_glass_stairs.png"
+        },
+        "more_ss:pink_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/pink_stained_glass_inner_stairs.png"
+        },
+        "more_ss:pink_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/pink_stained_glass_outer_stairs.png"
+        },
+        "more_ss:pink_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/pink_stained_glass_stairs.png"
+        },
+        "more_ss:purple_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/purple_stained_glass_inner_stairs.png"
+        },
+        "more_ss:purple_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/purple_stained_glass_outer_stairs.png"
+        },
+        "more_ss:purple_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/purple_stained_glass_stairs.png"
+        },
+        "more_ss:red_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/red_stained_glass_inner_stairs.png"
+        },
+        "more_ss:red_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/red_stained_glass_outer_stairs.png"
+        },
+        "more_ss:red_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/red_stained_glass_stairs.png"
+        },
+        "more_ss:white_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/white_stained_glass_inner_stairs.png"
+        },
+        "more_ss:white_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/white_stained_glass_outer_stairs.png"
+        },
+        "more_ss:white_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/white_stained_glass_stairs.png"
+        },
+        "more_ss:yellow_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/yellow_stained_glass_inner_stairs.png"
+        },
+        "more_ss:yellow_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/yellow_stained_glass_outer_stairs.png"
+        },
+        "more_ss:yellow_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/yellow_stained_glass_stairs.png"
+        },
+        "more_ss:lime_stained_glass_inner_stairs": {
+            "textures": "textures/blocks/more_ss/lime_stained_glass_inner_stairs.png"
+        },
+        "more_ss:lime_stained_glass_outer_stairs": {
+            "textures": "textures/blocks/more_ss/lime_stained_glass_outer_stairs.png"
+        },
+        "more_ss:lime_stained_glass_stairs": {
+            "textures": "textures/blocks/more_ss/lime_stained_glass_stairs.png"
+        },
+        "more_ss:redstone_lamp_half_on": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_half_on.png"
+        },
+        "more_ss:redstone_lamp_half_vertical_on": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_half_vertical_on.png"
+        },
+        "more_ss:redstone_lamp_half_off": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_half_off.png"
+        },
+        "more_ss:redstone_lamp_half_vertical_off": {
+            "textures": "textures/blocks/more_ss/redstone_lamp_half_vertical_off.png"
+        },
+        "more_ss:sea_lantern_half": {
+            "textures": "textures/blocks/more_ss/sea_lantern_half.png"
+        },
+        "more_ss:sea_lantern_half_vertical": {
+            "textures": "textures/blocks/more_ss/sea_lantern_half_vertical.png"
+        },
+        "more_ss:smooth_stone_half_vertical": {
+            "textures": "textures/blocks/more_ss/smooth_stone_half_vertical.png"
+        },
+        "more_ss:glass_half": {
+            "textures": "textures/blocks/more_ss/glass_half.png"
+        },
+        "more_ss:tinted_glass_half": {
+            "textures": "textures/blocks/more_ss/tinted_glass_half.png"
+        },
+        "more_ss:black_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/black_stained_glass_half.png"
+        },
+        "more_ss:blue_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/blue_stained_glass_half.png"
+        },
+        "more_ss:brown_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/brown_stained_glass_half.png"
+        },
+        "more_ss:cyan_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/cyan_stained_glass_half.png"
+        },
+        "more_ss:gray_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/gray_stained_glass_half.png"
+        },
+        "more_ss:green_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/green_stained_glass_half.png"
+        },
+        "more_ss:light_blue_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/light_blue_stained_glass_half.png"
+        },
+        "more_ss:light_gray_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/light_gray_stained_glass_half.png"
+        },
+        "more_ss:magenta_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/magenta_stained_glass_half.png"
+        },
+        "more_ss:orange_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/orange_stained_glass_half.png"
+        },
+        "more_ss:pink_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/pink_stained_glass_half.png"
+        },
+        "more_ss:purple_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/purple_stained_glass_half.png"
+        },
+        "more_ss:red_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/red_stained_glass_half.png"
+        },
+        "more_ss:white_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/white_stained_glass_half.png"
+        },
+        "more_ss:yellow_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/yellow_stained_glass_half.png"
+        },
+        "more_ss:lime_stained_glass_half": {
+            "textures": "textures/blocks/more_ss/lime_stained_glass_half.png"
+        },
+        "more_ss:glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/glass_half_vertical.png"
+        },
+        "more_ss:tinted_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/tinted_glass_half_vertical.png"
+        },
+        "more_ss:black_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/black_stained_glass_half_vertical.png"
+        },
+        "more_ss:blue_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/blue_stained_glass_half_vertical.png"
+        },
+        "more_ss:brown_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/brown_stained_glass_half_vertical.png"
+        },
+        "more_ss:cyan_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/cyan_stained_glass_half_vertical.png"
+        },
+        "more_ss:gray_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/gray_stained_glass_half_vertical.png"
+        },
+        "more_ss:green_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/green_stained_glass_half_vertical.png"
+        },
+        "more_ss:light_blue_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/light_blue_stained_glass_half_vertical.png"
+        },
+        "more_ss:light_gray_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/light_gray_stained_glass_half_vertical.png"
+        },
+        "more_ss:magenta_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/magenta_stained_glass_half_vertical.png"
+        },
+        "more_ss:orange_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/orange_stained_glass_half_vertical.png"
+        },
+        "more_ss:pink_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/pink_stained_glass_half_vertical.png"
+        },
+        "more_ss:purple_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/purple_stained_glass_half_vertical.png"
+        },
+        "more_ss:red_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/red_stained_glass_half_vertical.png"
+        },
+        "more_ss:white_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/white_stained_glass_half_vertical.png"
+        },
+        "more_ss:yellow_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/yellow_stained_glass_half_vertical.png"
+        },
+        "more_ss:lime_stained_glass_half_vertical": {
+            "textures": "textures/blocks/more_ss/lime_stained_glass_half_vertical.png"
+        }
+    }
+}

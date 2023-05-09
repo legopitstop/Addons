@@ -1,0 +1,15 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:oak_crafting_station"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": {
+            "item": "minecraft:crafting_table"
+        },
+        "result": "const:oak_crafting_station"
+    }
+}

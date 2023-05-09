@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "\u00c2\u00a77Craft spawn eggs & spawners! \u00c2\u00a76Legopitstop",
+        "name": "Spawner Craft",
+        "uuid": "52e6666c-5423-4c0b-bf8c-12f75f3b0d3c",
+        "version": [
+            1,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "\u00c2\u00a77Craft spawn eggs & spawners! \u00c2\u00a76Legopitstop",
+            "type": "data",
+            "uuid": "09b258fc-96b1-4d7c-a1fa-e414f66cfb40",
+            "version": [
+                1,
+                1,
+                0
+            ]
+        }
+    ]
+}

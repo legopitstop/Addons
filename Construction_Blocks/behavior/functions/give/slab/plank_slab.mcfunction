@@ -1,0 +1,16 @@
+give @p const:black_plank_slab
+give @p const:blue_plank_slab
+give @p const:brown_plank_slab
+give @p const:cyan_plank_slab
+give @p const:gray_plank_slab
+give @p const:green_plank_slab
+give @p const:light_blue_plank_slab
+give @p const:light_gray_plank_slab
+give @p const:lime_plank_slab
+give @p const:magenta_plank_slab
+give @p const:orange_plank_slab
+give @p const:pink_plank_slab
+give @p const:purple_plank_slab
+give @p const:red_plank_slab
+give @p const:white_plank_slab
+give @p const:yellow_plank_slab

@@ -1,0 +1,17 @@
+give @p const:celingtile
+give @p const:celingtile_black
+give @p const:celingtile_blue
+give @p const:celingtile_brown
+give @p const:celingtile_cyan
+give @p const:celingtile_gray
+give @p const:celingtile_green
+give @p const:celingtile_light_blue
+give @p const:celingtile_light_gray
+give @p const:celingtile_lime
+give @p const:celingtile_magenta
+give @p const:celingtile_orange
+give @p const:celingtile_pink
+give @p const:celingtile_purple
+give @p const:celingtile_red
+give @p const:celingtile_white
+give @p const:celingtile_yellow

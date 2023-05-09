@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "const:white_terracotta_shingles",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "note": "Encoded to prevent copy cats, If you want help with your addon consider joining Legopitstop's Discord Server: https://discord.io/legopitstop",
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "presents:santa_leggings",
+            "category": "Equipment"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.leggings"
+            },
+            "minecraft:icon": {
+                "texture": "presents:santa_leggings",
+                "frame": 0
+            },
+            "minecraft:armor": {
+                "protection": 2
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.legs"
+            }
+        }
+    }
+}

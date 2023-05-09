@@ -1,0 +1,49 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "record.cat_hat": {
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/records/cat_hat",
+                    "stream": true,
+                    "volume": 0.5,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "record.fish": {
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/records/fish",
+                    "stream": true,
+                    "volume": 0.5,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "record.green_eggs": {
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/records/green_eggs",
+                    "stream": true,
+                    "volume": 0.5,
+                    "load_on_low_memory": true
+                }
+            ]
+        },
+        "record.the_lorax": {
+            "max_distance": 64.0,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/records/the_lorax",
+                    "stream": true,
+                    "volume": 0.5,
+                    "load_on_low_memory": true
+                }
+            ]
+        }
+    }
+}

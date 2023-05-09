@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "const:netherite_chain_item",
+            "category": "Items"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.search"
+            },
+            "minecraft:display_name": {
+                "value": "item.const:netherite_chain"
+            },
+            "minecraft:block_placer": {
+                "block": "const:netherite_chain"
+            },
+            "minecraft:icon": {
+                "texture": "const:metal_chain",
+                "frame": 8
+            }
+        }
+    }
+}

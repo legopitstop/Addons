@@ -1,0 +1,16 @@
+give @p more_ss:white_wool_stairs
+give @p more_ss:orange_wool_stairs
+give @p more_ss:magenta_wool_stairs
+give @p more_ss:light_blue_wool_stairs
+give @p more_ss:yellow_wool_stairs
+give @p more_ss:lime_wool_stairs
+give @p more_ss:pink_wool_stairs
+give @p more_ss:gray_wool_stairs
+give @p more_ss:light_gray_wool_stairs
+give @p more_ss:cyan_wool_stairs
+give @p more_ss:purple_wool_stairs
+give @p more_ss:blue_wool_stairs
+give @p more_ss:brown_wool_stairs
+give @p more_ss:green_wool_stairs
+give @p more_ss:red_wool_stairs
+give @p more_ss:black_wool_stairs

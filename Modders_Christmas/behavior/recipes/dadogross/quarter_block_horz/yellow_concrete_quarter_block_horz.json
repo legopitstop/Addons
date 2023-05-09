@@ -1,0 +1,21 @@
+{
+    "format_version": "1.17.3",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "xmas:yellow_concrete_quarter_block_horz"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:concrete",
+                "data": 4
+            }
+        ],
+        "result": {
+            "item": "xmas:yellow_concrete_quarter_block_horz",
+            "count": 4
+        }
+    }
+}

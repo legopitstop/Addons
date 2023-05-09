@@ -1,0 +1,40 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:pink_bookshelf"
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/pink_bookshelf.json",
+            "minecraft:flammable": {
+                "flame_odds": 1,
+                "burn_odds": 1
+            },
+            "minecraft:destroy_time": 0.2,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:unit_cube": {},
+            "minecraft:map_color": "#0c0d12",
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "const:pink_bookshelf"
+                },
+                "south": {
+                    "texture": "const:pink_bookshelf"
+                },
+                "west": {
+                    "texture": "const:pink_bookshelf"
+                },
+                "east": {
+                    "texture": "const:pink_bookshelf"
+                },
+                "up": {
+                    "texture": "const:pink_planks"
+                },
+                "down": {
+                    "texture": "const:pink_planks"
+                }
+            }
+        }
+    }
+}

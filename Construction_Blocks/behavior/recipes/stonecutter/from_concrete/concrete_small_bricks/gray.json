@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "const:stonecutter_gray_concrete_small_bricks1"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:concrete",
+                "data": 7
+            }
+        ],
+        "result": [
+            {
+                "item": "const:gray_concrete_small_bricks"
+            }
+        ]
+    }
+}

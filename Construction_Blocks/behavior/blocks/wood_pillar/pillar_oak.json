@@ -1,0 +1,143 @@
+{
+    "format_version": "1.17.1",
+    "minecraft:block": {
+        "description": {
+            "identifier": "const:pillar_oak",
+            "properties": {
+                "const:pillar_block": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "tag:wood": {},
+            "minecraft:loot": "loot_tables/const/blocks/oak_pillar.json",
+            "minecraft:destroy_time": 1.25,
+            "minecraft:explosion_resistance": 4.2,
+            "minecraft:unit_cube": {},
+            "minecraft:on_player_placing": {
+                "event": "const:rotational"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.get_equipped_item_name == 'wooden_axe' || q.get_equipped_item_name == 'stone_axe' || q.get_equipped_item_name == 'iron_axe' || q.get_equipped_item_name == 'golden_axe' || q.get_equipped_item_name == 'diamond_axe' || q.get_equipped_item_name == 'netherite_axe'",
+                "event": "stripping"
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "const:oak_pillar_top",
+                    "render_method": "blend"
+                },
+                "down": {
+                    "texture": "const:oak_pillar_top",
+                    "render_method": "blend"
+                },
+                "*": {
+                    "texture": "const:oak_pillar_side",
+                    "render_method": "blend"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('const:pillar_block') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('const:pillar_block') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        90
+                    ]
+                }
+            }
+        ],
+        "events": {
+            "const:rotational": {
+                "set_block_property": {
+                    "const:pillar_block": "(q.cardinal_block_face_placed_on)"
+                }
+            },
+            "stripping": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "playsound strip @p ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:pillar_block') == 0 || q.block_property('const:pillar_block') == 1",
+                        "run_command": {
+                            "command": "structure load const:stripped_oak_pillar_y ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:pillar_block') == 2 || q.block_property('const:pillar_block') == 3",
+                        "run_command": {
+                            "command": "structure load const:stripped_oak_pillar_z ~ ~ ~"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('const:pillar_block') == 4 || q.block_property('const:pillar_block') == 5",
+                        "run_command": {
+                            "command": "structure load const:stripped_oak_pillar_x ~ ~ ~"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

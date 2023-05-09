@@ -1,0 +1,15 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "seuss:furnace/cooked_blue_fish"
+        },
+        "tags": [
+            "furnace",
+            "smoker",
+            "campfire"
+        ],
+        "input": "seuss:blue_fish",
+        "output": "seuss:cooked_blue_fish"
+    }
+}
