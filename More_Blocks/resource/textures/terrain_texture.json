@@ -1,440 +1,144 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.terrain",
-    "padding": 8,
-    "num_mip_levels": 4,
-    "texture_data": {
-        "moreblocks:grass_side": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/blocks/grass_side"
-            }
-        },
-        "moreblocks:grass_top": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/grass_top"
-            }
-        },
-        "moreblocks:acacia_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/acacia_leaves"
-            }
-        },
-        "moreblocks:birch_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/birch_leaves"
-            }
-        },
-        "moreblocks:dark_oak_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/dark_oak_leaves"
-            }
-        },
-        "moreblocks:jungle_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/jungle_leaves"
-            }
-        },
-        "moreblocks:oak_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/oak_leaves2"
-            }
-        },
-        "moreblocks:spruce_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/spruce_leaves"
-            }
-        },
-        "moreblocks:mangrove_leaves": {
-            "textures": {
-                "overlay_color": "#79c05a",
-                "path": "textures/moreblocks/blocks/mangrove_leaves"
-            }
-        },
-        "moreblocks:glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side1.png"
-        },
-        "moreblocks:glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side2.png"
-        },
-        "moreblocks:glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side3.png"
-        },
-        "moreblocks:glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side4.png"
-        },
-        "moreblocks:glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side5.png"
-        },
-        "moreblocks:glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side6.png"
-        },
-        "moreblocks:glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/glass_layer_side7.png"
-        },
-        "moreblocks:tinted_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side1.png"
-        },
-        "moreblocks:tinted_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side2.png"
-        },
-        "moreblocks:tinted_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side3.png"
-        },
-        "moreblocks:tinted_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side4.png"
-        },
-        "moreblocks:tinted_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side5.png"
-        },
-        "moreblocks:tinted_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side6.png"
-        },
-        "moreblocks:tinted_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side7.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side1.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side2.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side3.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side4.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side5.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side6.png"
-        },
-        "moreblocks:blue_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side7.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side1.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side2.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side3.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side4.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side5.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side6.png"
-        },
-        "moreblocks:light_gray_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side7.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side1.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side2.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side3.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side4.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side5.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side6.png"
-        },
-        "moreblocks:lime_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side7.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side1.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side2.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side3.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side4.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side5.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side6.png"
-        },
-        "moreblocks:magenta_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side7.png"
-        },
-        "moreblocks:white_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side1.png"
-        },
-        "moreblocks:white_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side2.png"
-        },
-        "moreblocks:white_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side3.png"
-        },
-        "moreblocks:white_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side4.png"
-        },
-        "moreblocks:white_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side5.png"
-        },
-        "moreblocks:white_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side6.png"
-        },
-        "moreblocks:white_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side7.png"
-        },
-        "moreblocks:black_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side1.png"
-        },
-        "moreblocks:black_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side2.png"
-        },
-        "moreblocks:black_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side3.png"
-        },
-        "moreblocks:black_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side4.png"
-        },
-        "moreblocks:black_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side5.png"
-        },
-        "moreblocks:black_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side6.png"
-        },
-        "moreblocks:black_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side7.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side1.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side2.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side3.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side4.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side5.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side6.png"
-        },
-        "moreblocks:brown_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side7.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side1.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side2.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side3.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side4.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side5.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side6.png"
-        },
-        "moreblocks:cyan_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side7.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side1.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side2.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side3.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side4.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side5.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side6.png"
-        },
-        "moreblocks:gray_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side7.png"
-        },
-        "moreblocks:green_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side1.png"
-        },
-        "moreblocks:green_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side2.png"
-        },
-        "moreblocks:green_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side3.png"
-        },
-        "moreblocks:green_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side4.png"
-        },
-        "moreblocks:green_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side5.png"
-        },
-        "moreblocks:green_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side6.png"
-        },
-        "moreblocks:green_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side7.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side1.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side2.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side3.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side4.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side5.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side6.png"
-        },
-        "moreblocks:light_blue_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side7.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side1.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side2.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side3.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side4.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side5.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side6.png"
-        },
-        "moreblocks:orange_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side7.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side1.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side2.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side3.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side4.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side5.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side6.png"
-        },
-        "moreblocks:pink_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side7.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side1.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side2.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side3.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side4.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side5.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side6.png"
-        },
-        "moreblocks:purple_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side7.png"
-        },
-        "moreblocks:red_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side1.png"
-        },
-        "moreblocks:red_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side2.png"
-        },
-        "moreblocks:red_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side3.png"
-        },
-        "moreblocks:red_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side4.png"
-        },
-        "moreblocks:red_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side5.png"
-        },
-        "moreblocks:red_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side6.png"
-        },
-        "moreblocks:red_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side7.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side1": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side1.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side2": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side2.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side3": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side3.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side4": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side4.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side5": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side5.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side6": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side6.png"
-        },
-        "moreblocks:yellow_stained_glass_layer_side7": {
-            "textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side7.png"
-        }
-    }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "moreblocks:grass_side": {"textures": {"overlay_color": "#79c05a","path":"textures/blocks/grass_side"}},
+    "moreblocks:grass_top": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/grass_top"}},
+    "moreblocks:acacia_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/acacia_leaves"}},
+    "moreblocks:birch_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/birch_leaves"}},
+    "moreblocks:dark_oak_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/dark_oak_leaves"}},
+    "moreblocks:jungle_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/jungle_leaves"}},
+    "moreblocks:oak_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/oak_leaves2"}},
+    "moreblocks:spruce_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/spruce_leaves"}},
+    "moreblocks:mangrove_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/mangrove_leaves"}},
+
+    "moreblocks:glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side1.png"},
+    "moreblocks:glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side2.png"},
+    "moreblocks:glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side3.png"},
+    "moreblocks:glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side4.png"},
+    "moreblocks:glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side5.png"},
+    "moreblocks:glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side6.png"},
+    "moreblocks:glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side7.png"},
+    "moreblocks:tinted_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side1.png"},
+    "moreblocks:tinted_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side2.png"},
+    "moreblocks:tinted_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side3.png"},
+    "moreblocks:tinted_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side4.png"},
+    "moreblocks:tinted_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side5.png"},
+    "moreblocks:tinted_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side6.png"},
+    "moreblocks:tinted_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/tinted_glass_layer_side7.png"},
+    "moreblocks:blue_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side1.png"},
+    "moreblocks:blue_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side2.png"},
+    "moreblocks:blue_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side3.png"},
+    "moreblocks:blue_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side4.png"},
+    "moreblocks:blue_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side5.png"},
+    "moreblocks:blue_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side6.png"},
+    "moreblocks:blue_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/blue_stained_glass_layer_side7.png"},
+    "moreblocks:light_gray_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side1.png"},
+    "moreblocks:light_gray_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side2.png"},
+    "moreblocks:light_gray_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side3.png"},
+    "moreblocks:light_gray_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side4.png"},
+    "moreblocks:light_gray_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side5.png"},
+    "moreblocks:light_gray_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side6.png"},
+    "moreblocks:light_gray_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/light_gray_stained_glass_layer_side7.png"},
+    "moreblocks:lime_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side1.png"},
+    "moreblocks:lime_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side2.png"},
+    "moreblocks:lime_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side3.png"},
+    "moreblocks:lime_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side4.png"},
+    "moreblocks:lime_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side5.png"},
+    "moreblocks:lime_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side6.png"},
+    "moreblocks:lime_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/lime_stained_glass_layer_side7.png"},
+    "moreblocks:magenta_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side1.png"},
+    "moreblocks:magenta_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side2.png"},
+    "moreblocks:magenta_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side3.png"},
+    "moreblocks:magenta_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side4.png"},
+    "moreblocks:magenta_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side5.png"},
+    "moreblocks:magenta_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side6.png"},
+    "moreblocks:magenta_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/magenta_stained_glass_layer_side7.png"},
+    "moreblocks:white_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side1.png"},
+    "moreblocks:white_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side2.png"},
+    "moreblocks:white_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side3.png"},
+    "moreblocks:white_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side4.png"},
+    "moreblocks:white_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side5.png"},
+    "moreblocks:white_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side6.png"},
+    "moreblocks:white_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/white_stained_glass_layer_side7.png"},
+    "moreblocks:black_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side1.png"},
+    "moreblocks:black_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side2.png"},
+    "moreblocks:black_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side3.png"},
+    "moreblocks:black_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side4.png"},
+    "moreblocks:black_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side5.png"},
+    "moreblocks:black_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side6.png"},
+    "moreblocks:black_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/black_stained_glass_layer_side7.png"},
+    "moreblocks:brown_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side1.png"},
+    "moreblocks:brown_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side2.png"},
+    "moreblocks:brown_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side3.png"},
+    "moreblocks:brown_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side4.png"},
+    "moreblocks:brown_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side5.png"},
+    "moreblocks:brown_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side6.png"},
+    "moreblocks:brown_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/brown_stained_glass_layer_side7.png"},
+    "moreblocks:cyan_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side1.png"},
+    "moreblocks:cyan_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side2.png"},
+    "moreblocks:cyan_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side3.png"},
+    "moreblocks:cyan_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side4.png"},
+    "moreblocks:cyan_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side5.png"},
+    "moreblocks:cyan_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side6.png"},
+    "moreblocks:cyan_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/cyan_stained_glass_layer_side7.png"},
+    "moreblocks:gray_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side1.png"},
+    "moreblocks:gray_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side2.png"},
+    "moreblocks:gray_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side3.png"},
+    "moreblocks:gray_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side4.png"},
+    "moreblocks:gray_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side5.png"},
+    "moreblocks:gray_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side6.png"},
+    "moreblocks:gray_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/gray_stained_glass_layer_side7.png"},
+    "moreblocks:green_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side1.png"},
+    "moreblocks:green_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side2.png"},
+    "moreblocks:green_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side3.png"},
+    "moreblocks:green_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side4.png"},
+    "moreblocks:green_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side5.png"},
+    "moreblocks:green_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side6.png"},
+    "moreblocks:green_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/green_stained_glass_layer_side7.png"},
+    "moreblocks:light_blue_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side1.png"},
+    "moreblocks:light_blue_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side2.png"},
+    "moreblocks:light_blue_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side3.png"},
+    "moreblocks:light_blue_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side4.png"},
+    "moreblocks:light_blue_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side5.png"},
+    "moreblocks:light_blue_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side6.png"},
+    "moreblocks:light_blue_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/light_blue_stained_glass_layer_side7.png"},
+    "moreblocks:orange_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side1.png"},
+    "moreblocks:orange_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side2.png"},
+    "moreblocks:orange_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side3.png"},
+    "moreblocks:orange_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side4.png"},
+    "moreblocks:orange_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side5.png"},
+    "moreblocks:orange_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side6.png"},
+    "moreblocks:orange_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/orange_stained_glass_layer_side7.png"},
+    "moreblocks:pink_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side1.png"},
+    "moreblocks:pink_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side2.png"},
+    "moreblocks:pink_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side3.png"},
+    "moreblocks:pink_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side4.png"},
+    "moreblocks:pink_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side5.png"},
+    "moreblocks:pink_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side6.png"},
+    "moreblocks:pink_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/pink_stained_glass_layer_side7.png"},
+    "moreblocks:purple_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side1.png"},
+    "moreblocks:purple_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side2.png"},
+    "moreblocks:purple_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side3.png"},
+    "moreblocks:purple_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side4.png"},
+    "moreblocks:purple_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side5.png"},
+    "moreblocks:purple_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side6.png"},
+    "moreblocks:purple_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/purple_stained_glass_layer_side7.png"},
+    "moreblocks:red_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side1.png"},
+    "moreblocks:red_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side2.png"},
+    "moreblocks:red_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side3.png"},
+    "moreblocks:red_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side4.png"},
+    "moreblocks:red_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side5.png"},
+    "moreblocks:red_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side6.png"},
+    "moreblocks:red_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/red_stained_glass_layer_side7.png"},
+    "moreblocks:yellow_stained_glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side1.png"},
+    "moreblocks:yellow_stained_glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side2.png"},
+    "moreblocks:yellow_stained_glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side3.png"},
+    "moreblocks:yellow_stained_glass_layer_side4": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side4.png"},
+    "moreblocks:yellow_stained_glass_layer_side5": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side5.png"},
+    "moreblocks:yellow_stained_glass_layer_side6": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side6.png"},
+    "moreblocks:yellow_stained_glass_layer_side7": {"textures": "textures/moreblocks/blocks/layers/yellow_stained_glass_layer_side7.png"}
+  }
 }

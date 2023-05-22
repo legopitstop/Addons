@@ -1,28 +1,29 @@
 {
     "$credit": "Thanks to Legopitstop for creating this useful asset",
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "basaltblocks:chiseled_polished_basalt",
-            "is_experimental": false,
-            "register_to_creative_menu": true
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
+            }
         },
         "components": {
             "tag:stone": {},
             "minecraft:loot": "loot_tables/basaltblocks/blocks/chiseled_polished_basalt.json",
-            "minecraft:destroy_time": 0.15,
-            "minecraft:explosion_resistance": 4.2,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
             "minecraft:map_color": "#191919",
             "minecraft:unit_cube": {},
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "basaltblocks:chiseled_polished_basalt",
-                    "render_method": "alpha_test"
+                    "texture": "basaltblocks:chiseled_polished_basalt"
                 }
-            },
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.search"
             }
         }
     }

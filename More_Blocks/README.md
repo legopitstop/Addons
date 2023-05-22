@@ -10,13 +10,13 @@ Lot's More Blocks!
 |--------------------|----------|
 | supported          | `yes` |
 | namespace          | `moreblocks` |
-| version            | `1.2.1 ` |
+| version            | `1.3.0 ` |
 | resource UUID            | `4791d53e-88de-49f6-846b-a2cbe7508032` |
 | behavior UUID            | `bf24499d-0163-4ccb-a485-2c091c51317b` |
-| mc_version         | `?` |
+| mc_version         | `1.19.80` |
 | multiplayer_tested | `no`     |
 | has_config         | `no`     |
-| dependency         | `null`   |
+| dependency         | `Assets Plus v1.4.0`   |
 
 ## LINKS
 - [Download](https://mcpedl.com/more-blocks-add-on/)

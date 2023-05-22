@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "moreblocks:light_gray_stained_glass_layer",
@@ -18,17 +18,21 @@
                     "bottom",
                     "top"
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "tag:stone": {},
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.search"
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.2
             },
-            "minecraft:block_light_filter": 0,
-            "minecraft:destroy_time": 1.2,
-            "minecraft:explosion_resistance": 1.2,
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1.2
+            },
             "minecraft:on_interact": {
                 "condition": "q.block_property('moreblocks:layers') != 8 && q.is_item_name_any('slot.weapon.mainhand','moreblocks:light_gray_stained_glass_layer')",
                 "event": "event:increase_layers"
@@ -54,7 +58,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -66,7 +70,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -99,7 +103,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -111,7 +115,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -144,7 +148,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -156,7 +160,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -189,7 +193,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -201,7 +205,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -234,7 +238,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -246,7 +250,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -279,7 +283,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -291,7 +295,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -324,7 +328,7 @@
                             "render_method": "blend"
                         }
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -336,7 +340,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,

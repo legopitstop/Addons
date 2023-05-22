@@ -1,14 +1,1 @@
-{
-    "pools": [
-        {
-            "rolls": 1.0,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "morehoney:honey_press",
-                    "weight": 1
-                }
-            ]
-        }
-    ]
-}
+{"pools":[{"rolls":1.0,"entries":[{"type":"item","name":"morehoney:honey_press","weight":1}]}]}

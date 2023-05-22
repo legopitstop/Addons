@@ -1,22 +1,22 @@
 {
-    "format_version": "1.19.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "canned:baked_potato_can",
-            "category": "items"
-        },
-        "components": {
-            "tag:can_open": {},
-            "minecraft:allow_off_hand": true,
-            "minecraft:creative_category": {
-                "parent": "itemGroup.search"
-            },
-            "minecraft:icon": {
-                "texture": "canned:baked_potato_can"
-            },
-            "minecraft:block_placer": {
-                "block": "canned:baked_potato_can.tile"
-            }
-        }
+  "format_version": "1.19.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "canned:baked_potato_can",
+      "category": "items"
+    },
+    "components": {
+      "tag:can_open": {},
+      "minecraft:allow_off_hand": true,
+      "minecraft:creative_category": {
+        "parent": "itemGroup.search"
+      },
+      "minecraft:icon": {
+        "texture": "canned:baked_potato_can"
+      },
+      "minecraft:block_placer": {
+        "block": "canned:baked_potato_can.tile"
+      }
     }
+  }
 }

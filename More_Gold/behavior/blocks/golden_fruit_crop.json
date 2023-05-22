@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "moregold:golden_fruit_crop",
@@ -19,26 +19,25 @@
         "components": {
             "tag:non_full": {},
             "tag:plant": {},
+            "tag:minecraft:crop": {},
             "minecraft:loot": "loot_tables/moregold/blocks/golden_fruit.json",
-            "minecraft:block_light_filter": 0,
-            "minecraft:block_light_emission": 0,
-            "minecraft:destroy_time": 0,
-            "minecraft:explosion_resistance": 0,
+            "minecraft:light_dampening": 0,
+            "minecraft:light_emission": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0
+            },
             "minecraft:geometry": "geometry.template_crop",
-            "minecraft:block_collision": false,
-            "minecraft:breakonpush": true,
+            "minecraft:collision_box": false,
             "minecraft:on_interact": {
-                "condition": "query.get_equipped_item_name == 'bone_meal' && query.block_property('moregold:stage') != 7",
+                "condition": "q.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal') && q.block_property('moregold:stage') != 7",
                 "event": "event:bone_meal_growth"
             },
-            "minecraft:ticking": {
-                "looping": true,
-                "range": [
-                    840,
-                    840
-                ],
+            "minecraft:random_ticking": {
                 "on_tick": {
-                    "condition": "query.block_property('moregold:stage') != 37",
+                    "condition": "q.block_property('moregold:stage') != 7",
                     "event": "event:increase_stage"
                 }
             },
@@ -48,7 +47,7 @@
                         "block_filter": [
                             "minecraft:farmland",
                             {
-                                "tags": "query.any_tag('farmland') && !query.any_tag('non_full')"
+                                "tags": "q.any_tag('farmland') && !q.any_tag('non_full')"
                             }
                         ],
                         "allowed_faces": [
@@ -60,9 +59,9 @@
         },
         "permutations": [
             {
-                "condition": "query.block_property('moregold:stage') == 0",
+                "condition": "q.block_property('moregold:stage') == 0",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -83,9 +82,9 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 1",
+                "condition": "q.block_property('moregold:stage') == 1",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -106,9 +105,9 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 2",
+                "condition": "q.block_property('moregold:stage') == 2",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -129,9 +128,9 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 3",
+                "condition": "q.block_property('moregold:stage') == 3",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -139,7 +138,7 @@
                         ],
                         "size": [
                             16,
-                            8,
+                            2,
                             16
                         ]
                     },
@@ -152,9 +151,9 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 4",
+                "condition": "q.block_property('moregold:stage') == 4",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -162,7 +161,7 @@
                         ],
                         "size": [
                             16,
-                            8,
+                            6,
                             16
                         ]
                     },
@@ -175,9 +174,9 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 5",
+                "condition": "q.block_property('moregold:stage') == 5",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -185,7 +184,7 @@
                         ],
                         "size": [
                             16,
-                            16,
+                            6,
                             16
                         ]
                     },
@@ -198,9 +197,9 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 6",
+                "condition": "q.block_property('moregold:stage') == 6",
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -208,7 +207,7 @@
                         ],
                         "size": [
                             16,
-                            16,
+                            6,
                             16
                         ]
                     },
@@ -221,10 +220,10 @@
                 }
             },
             {
-                "condition": "query.block_property('moregold:stage') == 7",
+                "condition": "q.block_property('moregold:stage') == 7",
                 "components": {
                     "minecraft:loot": "loot_tables/moregold/blocks/mature_golden_fruit.json",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -232,7 +231,7 @@
                         ],
                         "size": [
                             16,
-                            16,
+                            11,
                             16
                         ]
                     },
@@ -259,50 +258,10 @@
                 }
             },
             "event:increase_stage": {
-                "sequence": [
-                    {
-                        "condition": "query.block_property('moregold:stage') == 6",
-                        "set_block_property": {
-                            "moregold:stage": "7"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('moregold:stage') == 5",
-                        "set_block_property": {
-                            "moregold:stage": "6"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('moregold:stage') == 4",
-                        "set_block_property": {
-                            "moregold:stage": "5"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('moregold:stage') == 3",
-                        "set_block_property": {
-                            "moregold:stage": "4"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('moregold:stage') == 2",
-                        "set_block_property": {
-                            "moregold:stage": "3"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('moregold:stage') == 1",
-                        "set_block_property": {
-                            "moregold:stage": "2"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('moregold:stage') == 0",
-                        "set_block_property": {
-                            "moregold:stage": "1"
-                        }
-                    }
-                ]
+                "condition": "q.block_property('moregold:stage')!=7",
+                "set_block_property": {
+                    "moregold:stage": "q.block_property('moregold:stage')+1"
+                }
             }
         }
     }

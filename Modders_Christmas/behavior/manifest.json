@@ -1,18 +1,18 @@
 {
     "format_version": 2,
     "header": {
-        "description": "\u00c2\u00a74M\u00c2\u00a72e\u00c2\u00a74r\u00c2\u00a72r\u00c2\u00a74y\u00c2\u00a72 C\u00c2\u00a74h\u00c2\u00a72r\u00c2\u00a74i\u00c2\u00a72s\u00c2\u00a74t\u00c2\u00a72m\u00c2\u00a74a\u00c2\u00a72s\u00c2\u00a74! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
-        "name": "Modders Christmas 2021",
+        "description": "pack.description",
+        "name": "pack.name",
         "uuid": "738ff94a-dc4e-41d9-acce-3dadbebbc346",
         "version": [
             1,
-            0,
+            1,
             0
         ],
         "min_engine_version": [
             1,
-            17,
-            3
+            19,
+            80
         ]
     },
     "metadata": {
@@ -24,12 +24,12 @@
     },
     "modules": [
         {
-            "description": "BP",
+            "description": "pack.description",
             "type": "data",
             "uuid": "7f436f08-3d18-4649-86e7-e317373f1c35",
             "version": [
                 1,
-                0,
+                1,
                 0
             ]
         }
@@ -39,15 +39,16 @@
             "uuid": "2797755a-87a9-4885-86e0-05e182df1c41",
             "version": [
                 1,
-                0,
+                1,
                 0
             ]
         },
         {
+            "description": "Assets Plus",
             "uuid": "c86dd7d9-e84e-456f-a84f-1993e353da4c",
             "version": [
                 1,
-                1,
+                4,
                 0
             ]
         }

@@ -1,6 +1,6 @@
 {
     "$credit": "Thanks to Legopitstop for creating this useful asset",
-    "format_version": "1.16.100",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "basaltblocks:cracked_polished_basalt_brick_vertical_slab",
@@ -16,24 +16,27 @@
                     "single",
                     "double"
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stairs"
             }
         },
         "components": {
             "tag:stone": {},
             "minecraft:map_color": "#000000",
-            "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0,
-            "minecraft:destroy_time": 0.15,
-            "minecraft:explosion_resistance": 4.2,
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "basaltblocks:cracked_polished_basalt_bricks",
                     "render_method": "opaque"
                 }
-            },
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.slab"
             },
             "minecraft:on_player_placing": {
                 "event": "lps:place_block"
@@ -54,7 +57,7 @@
                         -180,
                         0
                     ],
-                    "minecraft:pick_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -66,7 +69,7 @@
                             8
                         ]
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -90,7 +93,7 @@
                         0,
                         0
                     ],
-                    "minecraft:pick_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -102,7 +105,7 @@
                             8
                         ]
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -126,7 +129,7 @@
                         -90,
                         0
                     ],
-                    "minecraft:pick_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -138,7 +141,7 @@
                             8
                         ]
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -162,7 +165,7 @@
                         90,
                         0
                     ],
-                    "minecraft:pick_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -174,7 +177,7 @@
                             8
                         ]
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,

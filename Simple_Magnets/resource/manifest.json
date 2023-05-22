@@ -1,18 +1,18 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Easly pickup items from far away! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
-        "name": "Simple Magnets RP",
+        "description": "pack.description",
+        "name": "pack.name",
         "uuid": "16a46bd0-f937-4f63-88f3-c70280f6ffac",
         "version": [
             1,
-            1,
+            2,
             0
         ],
         "min_engine_version": [
             1,
             19,
-            20
+            80
         ]
     },
     "metadata": {
@@ -24,12 +24,12 @@
     },
     "modules": [
         {
-            "description": "Easly pickup items from far away! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
+            "description": "pack.description",
             "type": "resources",
             "uuid": "e7c093ec-fe51-469f-81a9-6b97bb13277c",
             "version": [
                 1,
-                1,
+                2,
                 0
             ]
         }

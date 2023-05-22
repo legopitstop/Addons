@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:item": {
         "description": {
             "identifier": "moregold:golden_fruit_sapling",
@@ -13,7 +13,13 @@
                 "texture": "moregold:golden_fruit_sapling"
             },
             "minecraft:block_placer": {
-                "block": "moregold:golden_fruit_sapling_block"
+                "block": "moregold:golden_fruit_sapling_block",
+                "on_use": [
+                    "minecraft:grass",
+                    "minecraft:dirt",
+                    "minecraft:podzol",
+                    "minecraft:dirt_with_roots"
+                ]
             }
         }
     }

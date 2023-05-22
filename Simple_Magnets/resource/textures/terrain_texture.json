@@ -1,44 +1,44 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.terrain",
-    "padding": 8,
-    "num_mip_levels": 4,
-    "texture_data": {
-        "magnet:magnet_bottom": {
-            "textures": "textures/magnet/blocks/magnet_bottom.png"
-        },
-        "magnet:magnet_bottom_on": {
-            "textures": "textures/magnet/blocks/magnet_bottom_on.png"
-        },
-        "magnet:iron_magnet_top": {
-            "textures": "textures/magnet/blocks/iron_magnet_top.png"
-        },
-        "magnet:iron_magnet_side": {
-            "textures": "textures/magnet/blocks/iron_magnet_side.png"
-        },
-        "magnet:gold_magnet_top": {
-            "textures": "textures/magnet/blocks/gold_magnet_top.png"
-        },
-        "magnet:gold_magnet_side": {
-            "textures": "textures/magnet/blocks/gold_magnet_side.png"
-        },
-        "magnet:copper_magnet_top": {
-            "textures": "textures/magnet/blocks/copper_magnet_top.png"
-        },
-        "magnet:copper_magnet_side": {
-            "textures": "textures/magnet/blocks/copper_magnet_side.png"
-        },
-        "magnet:diamond_magnet_top": {
-            "textures": "textures/magnet/blocks/diamond_magnet_top.png"
-        },
-        "magnet:diamond_magnet_side": {
-            "textures": "textures/magnet/blocks/diamond_magnet_side.png"
-        },
-        "magnet:netherite_magnet_top": {
-            "textures": "textures/magnet/blocks/netherite_magnet_top.png"
-        },
-        "magnet:netherite_magnet_side": {
-            "textures": "textures/magnet/blocks/netherite_magnet_side.png"
-        }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "magnet:magnet_bottom": {
+      "textures": "textures/magnet/blocks/magnet_bottom.png"
+    },
+    "magnet:magnet_bottom_on": {
+      "textures": "textures/magnet/blocks/magnet_bottom_on.png"
+    },
+    "magnet:iron_magnet_top": {
+      "textures": "textures/magnet/blocks/iron_magnet_top.png"
+    },
+    "magnet:iron_magnet_side": {
+      "textures": "textures/magnet/blocks/iron_magnet_side.png"
+    },
+    "magnet:gold_magnet_top": {
+      "textures": "textures/magnet/blocks/gold_magnet_top.png"
+    },
+    "magnet:gold_magnet_side": {
+      "textures": "textures/magnet/blocks/gold_magnet_side.png"
+    },
+    "magnet:copper_magnet_top": {
+      "textures": "textures/magnet/blocks/copper_magnet_top.png"
+    },
+    "magnet:copper_magnet_side": {
+      "textures": "textures/magnet/blocks/copper_magnet_side.png"
+    },
+    "magnet:diamond_magnet_top": {
+      "textures": "textures/magnet/blocks/diamond_magnet_top.png"
+    },
+    "magnet:diamond_magnet_side": {
+      "textures": "textures/magnet/blocks/diamond_magnet_side.png"
+    },
+    "magnet:netherite_magnet_top": {
+      "textures": "textures/magnet/blocks/netherite_magnet_top.png"
+    },
+    "magnet:netherite_magnet_side": {
+      "textures": "textures/magnet/blocks/netherite_magnet_side.png"
     }
+  }
 }

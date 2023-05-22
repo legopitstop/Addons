@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "description": "MoreHoney Texture Pack by \u00a76Legopitstop and Co",
-        "name": "MoreHoney Resource Pack",
+        "description": "pack.description",
+        "name": "pack.name",
         "uuid": "788d3513-74d0-4e70-ac83-2df10359cd13",
         "version": [
             1,
@@ -11,13 +11,13 @@
         ],
         "min_engine_version": [
             1,
-            17,
-            3
+            19,
+            80
         ]
     },
     "modules": [
         {
-            "description": "MoreHoney Texture Pack by \u00a76Legopitstop and Co",
+            "description": "pack.description",
             "type": "resources",
             "uuid": "88a0b76d-3424-4070-9d98-eb98e1fc6b39",
             "version": [

@@ -1,4 +1,7 @@
-﻿tile.morepumpkin:creeper_carved_pumpkin.name=Creeper Carved Pumpkin §7(#morepumpkin)
+﻿pack.name=More Pumpkins RP
+pack.description=Happy Halloween! §8Developer: §6Legopitstop
+
+tile.morepumpkin:creeper_carved_pumpkin.name=Creeper Carved Pumpkin §7(#morepumpkin)
 tile.morepumpkin:flower_carved_pumpkin.name=Flower Carved Pumpkin §7(#morepumpkin)
 tile.morepumpkin:ghast_carved_pumpkin.name=Ghast Carved Pumpkin §7(#morepumpkin)
 tile.morepumpkin:globe_carved_pumpkin.name=Globe Carved Pumpkin §7(#morepumpkin)
@@ -67,7 +70,6 @@ tile.morepumpkin:lowercase_w_carved_pumpkin.name=w Carved Pumpkin §7(#morepumpk
 tile.morepumpkin:lowercase_x_carved_pumpkin.name=x Carved Pumpkin §7(#morepumpkin)
 tile.morepumpkin:lowercase_y_carved_pumpkin.name=y Carved Pumpkin §7(#morepumpkin)
 tile.morepumpkin:lowercase_z_carved_pumpkin.name=z Carved Pumpkin §7(#morepumpkin)
-
 tile.morepumpkin:creeper_jack_o_lantern.name=Creeper Jack O'Lantern §7(#morepumpkin)
 tile.morepumpkin:flower_jack_o_lantern.name=Flower Jack O'Lantern §7(#morepumpkin)
 tile.morepumpkin:ghast_jack_o_lantern.name=Ghast Jack O'Lantern §7(#morepumpkin)
@@ -137,7 +139,6 @@ tile.morepumpkin:lowercase_w_jack_o_lantern.name=w Jack O'Lantern §7(#morepumpk
 tile.morepumpkin:lowercase_x_jack_o_lantern.name=x Jack O'Lantern §7(#morepumpkin)
 tile.morepumpkin:lowercase_y_jack_o_lantern.name=y Jack O'Lantern §7(#morepumpkin)
 tile.morepumpkin:lowercase_z_jack_o_lantern.name=z Jack O'Lantern §7(#morepumpkin)
-
 tile.morepumpkin:soul_jack_o_lantern.name=Soul Jack O'Lantern §7(#morepumpkin)
 tile.morepumpkin:creeper_soul_jack_o_lantern.name=Creeper Soul Jack O'Lantern §7(#morepumpkin)
 tile.morepumpkin:flower_soul_jack_o_lantern.name=Flower Soul Jack O'Lantern §7(#morepumpkin)

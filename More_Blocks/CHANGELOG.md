@@ -1,10 +1,21 @@
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v1.2.1] 2022-7-?
+## [v1.3.0] - 5-22-2023
+
+### General
+- Updated for 1.19.80
+- Requres Assets Plus v1.4.0
+
+### New
+- Added all 1.20 blocks
+
+### Fixes
+- You can now use a Stone Axe to unwax, and deoxidize copper
+
+## [v1.2.1] - 7-11-2022
 
 ### Fixes
 
@@ -13,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
-## [v1.2.0] 2022-7-1
+## [v1.2.0] 1-7-2022
 
 ### Changes
 
@@ -35,7 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
-## [v1.1.0] 2022-6-14
+## [v1.1.0] 6-14-2022
 
 ### General
 

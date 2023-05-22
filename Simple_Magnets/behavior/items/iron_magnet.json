@@ -29,15 +29,11 @@
             "minecraft:repairable": {
                 "repair_items": [
                     {
-                        "items": [
-                            "magnet:iron_magnet"
-                        ],
+                        "items": ["magnet:iron_magnet"],
                         "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
                     },
                     {
-                        "items": [
-                            "minecraft:iron_ingot"
-                        ],
+                        "items": ["minecraft:iron_ingot"],
                         "repair_amount": "q.remaining_durability + 0.05"
                     }
                 ]
@@ -47,7 +43,7 @@
             "event:teleport_item": {
                 "run_command": {
                     "target": "self",
-                    "command": "tp @e[type=item,r=3.425] ~ ~ ~"
+                    "command": "function zzz/iron"
                 },
                 "damage": {
                     "amount": 1,

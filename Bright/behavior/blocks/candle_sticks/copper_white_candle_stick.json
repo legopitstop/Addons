@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "bright:copper_white_candle_stick",
@@ -15,18 +15,15 @@
                     false,
                     true
                 ]
+            },
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.name.candles"
             }
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/copper_white_candle_stick.json",
-            "minecraft:creative_category": {
-                "category": "items",
-                "group": "itemGroup.name.candles"
-            },
             "tag:non_solid": {},
-            "minecraft:destroy_time": 0.5,
-            "minecraft:explosion_resistance": 0.5,
-            "minecraft:block_light_filter": 0,
             "minecraft:geometry": "geometry.candle_stick",
             "minecraft:placement_filter": {
                 "conditions": [
@@ -45,7 +42,10 @@
             "minecraft:on_player_placing": {
                 "event": "bright:facing"
             },
-            "minecraft:block_collision": {
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:collision_box": {
                 "origin": [
                     -3,
                     0,
@@ -57,7 +57,7 @@
                     6
                 ]
             },
-            "minecraft:aim_collision": {
+            "minecraft:selection_box": {
                 "origin": [
                     -3,
                     0,
@@ -68,13 +68,16 @@
                     7,
                     6
                 ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.5
             }
         },
         "permutations": [
             {
                 "condition": "q.block_property('bright:lit') == true",
                 "components": {
-                    "minecraft:block_light_emission": 0.5,
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "minecraft:white_candle_lit",
@@ -93,15 +96,16 @@
                         "condition": "!q.is_item_equipped(0)",
                         "event": "bright:lit_false"
                     },
-                    "minecraft:ticking": {
+                    "minecraft:light_emission": 5,
+                    "minecraft:queued_ticking": {
                         "looping": true,
-                        "range": [
-                            5,
-                            5
-                        ],
                         "on_tick": {
                             "event": "bright:flame"
-                        }
+                        },
+                        "interval_range": [
+                            60,
+                            60
+                        ]
                     }
                 }
             },

@@ -1,20 +1,20 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.terrain",
-    "padding": 8,
-    "num_mip_levels": 0,
-    "texture_data": {
-        "morehoney:honey_press_bottom": {
-            "textures": "textures/morehoney/blocks/honey_press_bottom.png"
-        },
-        "morehoney:honey_press_front": {
-            "textures": "textures/morehoney/blocks/honey_press_front.png"
-        },
-        "morehoney:honey_press_side": {
-            "textures": "textures/morehoney/blocks/honey_press_side.png"
-        },
-        "morehoney:honey_press_top": {
-            "textures": "textures/morehoney/blocks/honey_press_top.png"
-        }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 0,
+  "texture_data": {
+    "morehoney:honey_press_bottom": {
+      "textures": "textures/morehoney/blocks/honey_press_bottom.png"
+    },
+    "morehoney:honey_press_front": {
+      "textures": "textures/morehoney/blocks/honey_press_front.png"
+    },
+    "morehoney:honey_press_side": {
+      "textures": "textures/morehoney/blocks/honey_press_side.png"
+    },
+    "morehoney:honey_press_top": {
+      "textures": "textures/morehoney/blocks/honey_press_top.png"
     }
+  }
 }

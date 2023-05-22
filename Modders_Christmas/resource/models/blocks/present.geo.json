@@ -1,732 +1,158 @@
 {
-    "format_version": "1.12.0",
-    "minecraft:geometry": [
-        {
-            "description": {
-                "identifier": "geometry.present",
-                "texture_width": 16,
-                "texture_height": 16,
-                "visible_bounds_width": 2,
-                "visible_bounds_height": 2.5,
-                "visible_bounds_offset": [
-                    0,
-                    0.75,
-                    0
-                ]
-            },
-            "bones": [
-                {
-                    "name": "base_top",
-                    "pivot": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "cubes": [
-                        {
-                            "origin": [
-                                1,
-                                13,
-                                1
-                            ],
-                            "size": [
-                                7,
-                                3,
-                                7
-                            ],
-                            "uv": {
-                                "south": {
-                                    "uv": [
-                                        0,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "west": {
-                                    "uv": [
-                                        7,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "up": {
-                                    "uv": [
-                                        13,
-                                        10
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        -7
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        6,
-                                        10
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        -7
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                1,
-                                13,
-                                -8
-                            ],
-                            "size": [
-                                7,
-                                3,
-                                7
-                            ],
-                            "uv": {
-                                "north": {
-                                    "uv": [
-                                        7,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "west": {
-                                    "uv": [
-                                        0,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "up": {
-                                    "uv": [
-                                        13,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        7
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        6,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        7
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -8,
-                                13,
-                                -8
-                            ],
-                            "size": [
-                                7,
-                                3,
-                                7
-                            ],
-                            "uv": {
-                                "north": {
-                                    "uv": [
-                                        0,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "east": {
-                                    "uv": [
-                                        7,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "up": {
-                                    "uv": [
-                                        6,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        7
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        13,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        7
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -8,
-                                13,
-                                -1
-                            ],
-                            "size": [
-                                16,
-                                3,
-                                2
-                            ],
-                            "uv": {
-                                "east": {
-                                    "uv": [
-                                        12,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        3
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "west": {
-                                    "uv": [
-                                        12,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        3
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "up": {
-                                    "uv": [
-                                        16,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        -16,
-                                        -2
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "down": {
-                                    "uv": [
-                                        16,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        -16,
-                                        -2
-                                    ],
-                                    "material_instance": "ribbon"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -1,
-                                13,
-                                1
-                            ],
-                            "size": [
-                                2,
-                                3,
-                                7
-                            ],
-                            "uv": {
-                                "south": {
-                                    "uv": [
-                                        12,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        3
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "up": {
-                                    "uv": [
-                                        16,
-                                        9
-                                    ],
-                                    "uv_size": [
-                                        -2,
-                                        -7
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "down": {
-                                    "uv": [
-                                        16,
-                                        9
-                                    ],
-                                    "uv_size": [
-                                        -2,
-                                        -7
-                                    ],
-                                    "material_instance": "ribbon"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -1,
-                                13,
-                                -8
-                            ],
-                            "size": [
-                                2,
-                                3,
-                                7
-                            ],
-                            "uv": {
-                                "north": {
-                                    "uv": [
-                                        12,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        3
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "up": {
-                                    "uv": [
-                                        16,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        -2,
-                                        7
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "down": {
-                                    "uv": [
-                                        16,
-                                        2
-                                    ],
-                                    "uv_size": [
-                                        -2,
-                                        7
-                                    ],
-                                    "material_instance": "ribbon"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -8,
-                                13,
-                                1
-                            ],
-                            "size": [
-                                7,
-                                3,
-                                7
-                            ],
-                            "uv": {
-                                "east": {
-                                    "uv": [
-                                        0,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "south": {
-                                    "uv": [
-                                        7,
-                                        0
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        3
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "up": {
-                                    "uv": [
-                                        6,
-                                        10
-                                    ],
-                                    "uv_size": [
-                                        7,
-                                        -7
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        13,
-                                        10
-                                    ],
-                                    "uv_size": [
-                                        -7,
-                                        -7
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "base",
-                    "pivot": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "cubes": [
-                        {
-                            "origin": [
-                                -7,
-                                0,
-                                1
-                            ],
-                            "size": [
-                                6,
-                                13,
-                                6
-                            ],
-                            "uv": {
-                                "east": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "south": {
-                                    "uv": [
-                                        6,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        -6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        6,
-                                        16
-                                    ],
-                                    "uv_size": [
-                                        6,
-                                        -6
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                1,
-                                0,
-                                1
-                            ],
-                            "size": [
-                                6,
-                                13,
-                                6
-                            ],
-                            "uv": {
-                                "south": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "west": {
-                                    "uv": [
-                                        6,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        -6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        12,
-                                        16
-                                    ],
-                                    "uv_size": [
-                                        -6,
-                                        -6
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -7,
-                                0,
-                                -7
-                            ],
-                            "size": [
-                                6,
-                                13,
-                                6
-                            ],
-                            "uv": {
-                                "north": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "east": {
-                                    "uv": [
-                                        6,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        -6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        6,
-                                        10
-                                    ],
-                                    "uv_size": [
-                                        6,
-                                        6
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                1,
-                                0,
-                                -7
-                            ],
-                            "size": [
-                                6,
-                                13,
-                                6
-                            ],
-                            "uv": {
-                                "north": {
-                                    "uv": [
-                                        6,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        -6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "west": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        6,
-                                        13
-                                    ],
-                                    "material_instance": "base"
-                                },
-                                "down": {
-                                    "uv": [
-                                        12,
-                                        10
-                                    ],
-                                    "uv_size": [
-                                        -6,
-                                        6
-                                    ],
-                                    "material_instance": "base"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -7,
-                                0,
-                                -1
-                            ],
-                            "size": [
-                                14,
-                                13,
-                                2
-                            ],
-                            "uv": {
-                                "east": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        13
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "west": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        13
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "down": {
-                                    "uv": [
-                                        16,
-                                        16
-                                    ],
-                                    "uv_size": [
-                                        -14,
-                                        -2
-                                    ],
-                                    "material_instance": "ribbon"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -1,
-                                0,
-                                -7
-                            ],
-                            "size": [
-                                2,
-                                13,
-                                6
-                            ],
-                            "uv": {
-                                "north": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        13
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "down": {
-                                    "uv": [
-                                        4,
-                                        14
-                                    ],
-                                    "uv_size": [
-                                        -2,
-                                        -6
-                                    ],
-                                    "material_instance": "ribbon"
-                                }
-                            }
-                        },
-                        {
-                            "origin": [
-                                -1,
-                                0,
-                                1
-                            ],
-                            "size": [
-                                2,
-                                13,
-                                6
-                            ],
-                            "uv": {
-                                "south": {
-                                    "uv": [
-                                        0,
-                                        3
-                                    ],
-                                    "uv_size": [
-                                        2,
-                                        13
-                                    ],
-                                    "material_instance": "ribbon"
-                                },
-                                "down": {
-                                    "uv": [
-                                        4,
-                                        8
-                                    ],
-                                    "uv_size": [
-                                        -2,
-                                        6
-                                    ],
-                                    "material_instance": "ribbon"
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.present",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base_top",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [1, 13, 1],
+							"size": [7, 3, 7],
+							"uv": {
+								"south": {"uv": [0, 0], "uv_size": [7, 3], "material_instance": "base"},
+								"west": {"uv": [7, 0], "uv_size": [-7, 3], "material_instance": "base"},
+								"up": {"uv": [13, 10], "uv_size": [-7, -7], "material_instance": "base"},
+								"down": {"uv": [6, 10], "uv_size": [7, -7], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [1, 13, -8],
+							"size": [7, 3, 7],
+							"uv": {
+								"north": {"uv": [7, 0], "uv_size": [-7, 3], "material_instance": "base"},
+								"west": {"uv": [0, 0], "uv_size": [7, 3], "material_instance": "base"},
+								"up": {"uv": [13, 3], "uv_size": [-7, 7], "material_instance": "base"},
+								"down": {"uv": [6, 3], "uv_size": [7, 7], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [-8, 13, -8],
+							"size": [7, 3, 7],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [7, 3], "material_instance": "base"},
+								"east": {"uv": [7, 0], "uv_size": [-7, 3], "material_instance": "base"},
+								"up": {"uv": [6, 3], "uv_size": [7, 7], "material_instance": "base"},
+								"down": {"uv": [13, 3], "uv_size": [-7, 7], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [-8, 13, -1],
+							"size": [16, 3, 2],
+							"uv": {
+								"east": {"uv": [12, 2], "uv_size": [2, 3], "material_instance": "ribbon"},
+								"west": {"uv": [12, 2], "uv_size": [2, 3], "material_instance": "ribbon"},
+								"up": {"uv": [16, 2], "uv_size": [-16, -2], "material_instance": "ribbon"},
+								"down": {"uv": [16, 2], "uv_size": [-16, -2], "material_instance": "ribbon"}
+							}
+						},
+						{
+							"origin": [-1, 13, 1],
+							"size": [2, 3, 7],
+							"uv": {
+								"south": {"uv": [12, 2], "uv_size": [2, 3], "material_instance": "ribbon"},
+								"up": {"uv": [16, 9], "uv_size": [-2, -7], "material_instance": "ribbon"},
+								"down": {"uv": [16, 9], "uv_size": [-2, -7], "material_instance": "ribbon"}
+							}
+						},
+						{
+							"origin": [-1, 13, -8],
+							"size": [2, 3, 7],
+							"uv": {
+								"north": {"uv": [12, 2], "uv_size": [2, 3], "material_instance": "ribbon"},
+								"up": {"uv": [16, 2], "uv_size": [-2, 7], "material_instance": "ribbon"},
+								"down": {"uv": [16, 2], "uv_size": [-2, 7], "material_instance": "ribbon"}
+							}
+						},
+						{
+							"origin": [-8, 13, 1],
+							"size": [7, 3, 7],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [7, 3], "material_instance": "base"},
+								"south": {"uv": [7, 0], "uv_size": [-7, 3], "material_instance": "base"},
+								"up": {"uv": [6, 10], "uv_size": [7, -7], "material_instance": "base"},
+								"down": {"uv": [13, 10], "uv_size": [-7, -7], "material_instance": "base"}
+							}
+						}
+					]
+				},
+				{
+					"name": "base",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, 1],
+							"size": [6, 13, 6],
+							"uv": {
+								"east": {"uv": [0, 3], "uv_size": [6, 13], "material_instance": "base"},
+								"south": {"uv": [6, 3], "uv_size": [-6, 13], "material_instance": "base"},
+								"down": {"uv": [6, 16], "uv_size": [6, -6], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [1, 0, 1],
+							"size": [6, 13, 6],
+							"uv": {
+								"south": {"uv": [0, 3], "uv_size": [6, 13], "material_instance": "base"},
+								"west": {"uv": [6, 3], "uv_size": [-6, 13], "material_instance": "base"},
+								"down": {"uv": [12, 16], "uv_size": [-6, -6], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [-7, 0, -7],
+							"size": [6, 13, 6],
+							"uv": {
+								"north": {"uv": [0, 3], "uv_size": [6, 13], "material_instance": "base"},
+								"east": {"uv": [6, 3], "uv_size": [-6, 13], "material_instance": "base"},
+								"down": {"uv": [6, 10], "uv_size": [6, 6], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [1, 0, -7],
+							"size": [6, 13, 6],
+							"uv": {
+								"north": {"uv": [6, 3], "uv_size": [-6, 13], "material_instance": "base"},
+								"west": {"uv": [0, 3], "uv_size": [6, 13], "material_instance": "base"},
+								"down": {"uv": [12, 10], "uv_size": [-6, 6], "material_instance": "base"}
+							}
+						},
+						{
+							"origin": [-7, 0, -1],
+							"size": [14, 13, 2],
+							"uv": {
+								"east": {"uv": [0, 3], "uv_size": [2, 13], "material_instance": "ribbon"},
+								"west": {"uv": [0, 3], "uv_size": [2, 13], "material_instance": "ribbon"},
+								"down": {"uv": [16, 16], "uv_size": [-14, -2], "material_instance": "ribbon"}
+							}
+						},
+						{
+							"origin": [-1, 0, -7],
+							"size": [2, 13, 6],
+							"uv": {
+								"north": {"uv": [0, 3], "uv_size": [2, 13], "material_instance": "ribbon"},
+								"down": {"uv": [4, 14], "uv_size": [-2, -6], "material_instance": "ribbon"}
+							}
+						},
+						{
+							"origin": [-1, 0, 1],
+							"size": [2, 13, 6],
+							"uv": {
+								"south": {"uv": [0, 3], "uv_size": [2, 13], "material_instance": "ribbon"},
+								"down": {"uv": [4, 8], "uv_size": [-2, 6], "material_instance": "ribbon"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
 }

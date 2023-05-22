@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "morepumpkin:uppercase_b_soul_jack_o_lantern",
@@ -11,30 +11,37 @@
                     5,
                     6
                 ]
+            },
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/uppercase_b_soul_jack_o_lantern.json",
-            "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0.5,
-            "minecraft:destroy_time": 1,
-            "minecraft:explosion_resistance": 1,
-            "minecraft:geometry": "geometry.template_pumpkin",
-            "minecraft:creative_category": {
-                "category": "nature",
-                "group": "itemGroup.search"
+            "minecraft:light_dampening": 0,
+            "minecraft:light_emission": 5,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
             },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            },
+            "minecraft:unit_cube": {},
             "minecraft:on_player_placing": {
                 "event": "lps:place"
             },
             "minecraft:material_instances": {
-                "front": {
+                "south": {
                     "texture": "morepumpkin:uppercase_b_soul_jack_o_lantern"
                 },
-                "side": {
+                "*": {
                     "texture": "minecraft:pumpkin_side"
                 },
-                "*": {
+                "up": {
+                    "texture": "minecraft:pumpkin_top"
+                },
+                "down": {
                     "texture": "minecraft:pumpkin_top"
                 }
             }
@@ -84,7 +91,7 @@
         "events": {
             "lps:place": {
                 "set_block_property": {
-                    "lps:direction": "(query.cardinal_facing_2d)"
+                    "lps:direction": "q.cardinal_facing_2d"
                 }
             }
         }

@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "xmas:snow_globe",
@@ -19,15 +19,15 @@
                     false,
                     true
                 ]
+            },
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/snow_globe.json",
-            "minecraft:destroy_time": 0.3,
-            "minecraft:explosion_resistance": 0.3,
-            "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0.5,
-            "minecraft:breakonpush": true,
+            "minecraft:light_dampening": 0,
             "minecraft:on_fall_on": {
                 "condition": "q.block_property('xmas:broken') == false",
                 "min_fall_distance": 1,
@@ -45,14 +45,17 @@
             "minecraft:on_player_placing": {
                 "event": "event:direction"
             },
-            "minecraft:creative_category": {
-                "category": "items",
-                "group": "itemGroup.search"
-            },
             "minecraft:on_interact": {
                 "condition": "q.block_property('xmas:snowing') == false && q.block_property('xmas:broken') == false",
                 "event": "event:snowing_true"
-            }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            },
+            "minecraft:light_emission": 0.5
         },
         "permutations": [
             {
@@ -112,15 +115,15 @@
                             "render_method": "alpha_test"
                         }
                     },
-                    "minecraft:ticking": {
+                    "minecraft:queued_ticking": {
                         "looping": true,
-                        "range": [
-                            20,
-                            20
-                        ],
                         "on_tick": {
                             "event": "event:snowing_false"
-                        }
+                        },
+                        "interval_range": [
+                            20,
+                            20
+                        ]
                     }
                 }
             },
@@ -153,7 +156,7 @@
                     "minecraft:on_step_off": {
                         "event": "event:damage"
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -7,
                             0,
@@ -165,7 +168,7 @@
                             14
                         ]
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -7,
                             0,
@@ -183,7 +186,7 @@
                 "condition": "q.block_property('xmas:broken') == false",
                 "components": {
                     "minecraft:geometry": "geometry.snow_globe",
-                    "minecraft:pick_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -7,
                             0,
@@ -195,7 +198,7 @@
                             14
                         ]
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -7,
                             0,

@@ -1,4 +1,7 @@
-﻿tile.xmas:snow_globe.name=Snow Globe §7(xmas)
+﻿pack.name=Modders Christmas 2021 RP
+pack.description=§4M§2e§4r§2r§4y§2 C§4h§2r§4i§2s§4t§2m§4a§2s§4! §8Developer: §6Legopitstop
+
+tile.xmas:snow_globe.name=Snow Globe §7(xmas)
 
 tile.xmas:white_christmas_tree.name=White Christmas Tree §7(#xmas)
 tile.xmas:orange_christmas_tree.name=Orange Christmas Tree §7(#xmas)

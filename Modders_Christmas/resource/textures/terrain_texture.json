@@ -1,167 +1,63 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.terrain",
-    "padding": 8,
-    "num_mip_levels": 4,
-    "texture_data": {
-        "xmas:snow_globe": {
-            "textures": "textures/xmas/blocks/snow_globe.png"
-        },
-        "xmas:empty": {
-            "textures": "textures/xmas/blocks/empty.png"
-        },
-        "xmas:snow_falling": {
-            "textures": "textures/xmas/blocks/snow_falling.png"
-        },
-        "xmas:christmas_tree_leaves": {
-            "textures": "textures/xmas/blocks/christmas_tree_leaves.png"
-        },
-        "xmas:white_present_base": {
-            "textures": "textures/xmas/blocks/white_present_base.png"
-        },
-        "xmas:orange_present_base": {
-            "textures": "textures/xmas/blocks/orange_present_base.png"
-        },
-        "xmas:magenta_present_base": {
-            "textures": "textures/xmas/blocks/magenta_present_base.png"
-        },
-        "xmas:light_blue_present_base": {
-            "textures": "textures/xmas/blocks/light_blue_present_base.png"
-        },
-        "xmas:yellow_present_base": {
-            "textures": "textures/xmas/blocks/yellow_present_base.png"
-        },
-        "xmas:lime_present_base": {
-            "textures": "textures/xmas/blocks/lime_present_base.png"
-        },
-        "xmas:pink_present_base": {
-            "textures": "textures/xmas/blocks/pink_present_base.png"
-        },
-        "xmas:light_gray_present_base": {
-            "textures": "textures/xmas/blocks/light_gray_present_base.png"
-        },
-        "xmas:gray_present_base": {
-            "textures": "textures/xmas/blocks/gray_present_base.png"
-        },
-        "xmas:cyan_present_base": {
-            "textures": "textures/xmas/blocks/cyan_present_base.png"
-        },
-        "xmas:purple_present_base": {
-            "textures": "textures/xmas/blocks/purple_present_base.png"
-        },
-        "xmas:blue_present_base": {
-            "textures": "textures/xmas/blocks/blue_present_base.png"
-        },
-        "xmas:brown_present_base": {
-            "textures": "textures/xmas/blocks/brown_present_base.png"
-        },
-        "xmas:green_present_base": {
-            "textures": "textures/xmas/blocks/green_present_base.png"
-        },
-        "xmas:red_present_base": {
-            "textures": "textures/xmas/blocks/red_present_base.png"
-        },
-        "xmas:black_present_base": {
-            "textures": "textures/xmas/blocks/black_present_base.png"
-        },
-        "xmas:white_present_ribbon": {
-            "textures": "textures/xmas/blocks/white_present_ribbon.png"
-        },
-        "xmas:orange_present_ribbon": {
-            "textures": "textures/xmas/blocks/orange_present_ribbon.png"
-        },
-        "xmas:magenta_present_ribbon": {
-            "textures": "textures/xmas/blocks/magenta_present_ribbon.png"
-        },
-        "xmas:light_blue_present_ribbon": {
-            "textures": "textures/xmas/blocks/light_blue_present_ribbon.png"
-        },
-        "xmas:yellow_present_ribbon": {
-            "textures": "textures/xmas/blocks/yellow_present_ribbon.png"
-        },
-        "xmas:lime_present_ribbon": {
-            "textures": "textures/xmas/blocks/lime_present_ribbon.png"
-        },
-        "xmas:pink_present_ribbon": {
-            "textures": "textures/xmas/blocks/pink_present_ribbon.png"
-        },
-        "xmas:light_gray_present_ribbon": {
-            "textures": "textures/xmas/blocks/light_gray_present_ribbon.png"
-        },
-        "xmas:gray_present_ribbon": {
-            "textures": "textures/xmas/blocks/gray_present_ribbon.png"
-        },
-        "xmas:cyan_present_ribbon": {
-            "textures": "textures/xmas/blocks/cyan_present_ribbon.png"
-        },
-        "xmas:purple_present_ribbon": {
-            "textures": "textures/xmas/blocks/purple_present_ribbon.png"
-        },
-        "xmas:blue_present_ribbon": {
-            "textures": "textures/xmas/blocks/blue_present_ribbon.png"
-        },
-        "xmas:brown_present_ribbon": {
-            "textures": "textures/xmas/blocks/brown_present_ribbon.png"
-        },
-        "xmas:green_present_ribbon": {
-            "textures": "textures/xmas/blocks/green_present_ribbon.png"
-        },
-        "xmas:red_present_ribbon": {
-            "textures": "textures/xmas/blocks/red_present_ribbon.png"
-        },
-        "xmas:black_present_ribbon": {
-            "textures": "textures/xmas/blocks/black_present_ribbon.png"
-        },
-        "xmas:white_ornament": {
-            "textures": "textures/xmas/blocks/white_ornament.png"
-        },
-        "xmas:orange_ornament": {
-            "textures": "textures/xmas/blocks/orange_ornament.png"
-        },
-        "xmas:magenta_ornament": {
-            "textures": "textures/xmas/blocks/magenta_ornament.png"
-        },
-        "xmas:light_blue_ornament": {
-            "textures": "textures/xmas/blocks/light_blue_ornament.png"
-        },
-        "xmas:yellow_ornamentn": {
-            "textures": "textures/xmas/blocks/yellow_ornament.png"
-        },
-        "xmas:lime_ornament": {
-            "textures": "textures/xmas/blocks/lime_ornament.png"
-        },
-        "xmas:pink_ornament": {
-            "textures": "textures/xmas/blocks/pink_ornament.png"
-        },
-        "xmas:light_gray_ornament": {
-            "textures": "textures/xmas/blocks/light_gray_ornament.png"
-        },
-        "xmas:gray_ornament": {
-            "textures": "textures/xmas/blocks/gray_ornament.png"
-        },
-        "xmas:cyan_ornament": {
-            "textures": "textures/xmas/blocks/cyan_ornament.png"
-        },
-        "xmas:purple_ornament": {
-            "textures": "textures/xmas/blocks/purple_ornament.png"
-        },
-        "xmas:blue_ornament": {
-            "textures": "textures/xmas/blocks/blue_ornament.png"
-        },
-        "xmas:brown_ornament": {
-            "textures": "textures/xmas/blocks/brown_ornament.png"
-        },
-        "xmas:green_ornament": {
-            "textures": "textures/xmas/blocks/green_ornament.png"
-        },
-        "xmas:red_ornament": {
-            "textures": "textures/xmas/blocks/red_ornament.png"
-        },
-        "xmas:black_ornament": {
-            "textures": "textures/xmas/blocks/black_ornament.png"
-        },
-        "xmas:star": {
-            "textures": "textures/xmas/blocks/star.png"
-        }
-    }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "xmas:snow_globe": {"textures": "textures/xmas/blocks/snow_globe.png"},
+    "xmas:empty": {"textures": "textures/xmas/blocks/empty.png"},
+    "xmas:snow_falling": {"textures": "textures/xmas/blocks/snow_falling.png"},
+
+    "xmas:christmas_tree_leaves": {"textures": "textures/xmas/blocks/christmas_tree_leaves.png"},
+    "xmas:white_present_base": {"textures": "textures/xmas/blocks/white_present_base.png"},
+    "xmas:orange_present_base": {"textures": "textures/xmas/blocks/orange_present_base.png"},
+    "xmas:magenta_present_base": {"textures": "textures/xmas/blocks/magenta_present_base.png"},
+    "xmas:light_blue_present_base": {"textures": "textures/xmas/blocks/light_blue_present_base.png"},
+    "xmas:yellow_present_base": {"textures": "textures/xmas/blocks/yellow_present_base.png"},
+    "xmas:lime_present_base": {"textures": "textures/xmas/blocks/lime_present_base.png"},
+    "xmas:pink_present_base": {"textures": "textures/xmas/blocks/pink_present_base.png"},
+    "xmas:light_gray_present_base": {"textures": "textures/xmas/blocks/light_gray_present_base.png"},
+    "xmas:gray_present_base": {"textures": "textures/xmas/blocks/gray_present_base.png"},
+    "xmas:cyan_present_base": {"textures": "textures/xmas/blocks/cyan_present_base.png"},
+    "xmas:purple_present_base": {"textures": "textures/xmas/blocks/purple_present_base.png"},
+    "xmas:blue_present_base": {"textures": "textures/xmas/blocks/blue_present_base.png"},
+    "xmas:brown_present_base": {"textures": "textures/xmas/blocks/brown_present_base.png"},
+    "xmas:green_present_base": {"textures": "textures/xmas/blocks/green_present_base.png"},
+    "xmas:red_present_base": {"textures": "textures/xmas/blocks/red_present_base.png"},
+    "xmas:black_present_base": {"textures": "textures/xmas/blocks/black_present_base.png"},
+    "xmas:white_present_ribbon": {"textures": "textures/xmas/blocks/white_present_ribbon.png"},
+    "xmas:orange_present_ribbon": {"textures": "textures/xmas/blocks/orange_present_ribbon.png"},
+    "xmas:magenta_present_ribbon": {"textures": "textures/xmas/blocks/magenta_present_ribbon.png"},
+    "xmas:light_blue_present_ribbon": {"textures": "textures/xmas/blocks/light_blue_present_ribbon.png"},
+    "xmas:yellow_present_ribbon": {"textures": "textures/xmas/blocks/yellow_present_ribbon.png"},
+    "xmas:lime_present_ribbon": {"textures": "textures/xmas/blocks/lime_present_ribbon.png"},
+    "xmas:pink_present_ribbon": {"textures": "textures/xmas/blocks/pink_present_ribbon.png"},
+    "xmas:light_gray_present_ribbon": {"textures": "textures/xmas/blocks/light_gray_present_ribbon.png"},
+    "xmas:gray_present_ribbon": {"textures": "textures/xmas/blocks/gray_present_ribbon.png"},
+    "xmas:cyan_present_ribbon": {"textures": "textures/xmas/blocks/cyan_present_ribbon.png"},
+    "xmas:purple_present_ribbon": {"textures": "textures/xmas/blocks/purple_present_ribbon.png"},
+    "xmas:blue_present_ribbon": {"textures": "textures/xmas/blocks/blue_present_ribbon.png"},
+    "xmas:brown_present_ribbon": {"textures": "textures/xmas/blocks/brown_present_ribbon.png"},
+    "xmas:green_present_ribbon": {"textures": "textures/xmas/blocks/green_present_ribbon.png"},
+    "xmas:red_present_ribbon": {"textures": "textures/xmas/blocks/red_present_ribbon.png"},
+    "xmas:black_present_ribbon": {"textures": "textures/xmas/blocks/black_present_ribbon.png"},
+    
+    "xmas:white_ornament": {"textures": "textures/xmas/blocks/white_ornament.png"},
+    "xmas:orange_ornament": {"textures": "textures/xmas/blocks/orange_ornament.png"},
+    "xmas:magenta_ornament": {"textures": "textures/xmas/blocks/magenta_ornament.png"},
+    "xmas:light_blue_ornament": {"textures": "textures/xmas/blocks/light_blue_ornament.png"},
+    "xmas:yellow_ornamentn": {"textures": "textures/xmas/blocks/yellow_ornament.png"},
+    "xmas:lime_ornament": {"textures": "textures/xmas/blocks/lime_ornament.png"},
+    "xmas:pink_ornament": {"textures": "textures/xmas/blocks/pink_ornament.png"},
+    "xmas:light_gray_ornament": {"textures": "textures/xmas/blocks/light_gray_ornament.png"},
+    "xmas:gray_ornament": {"textures": "textures/xmas/blocks/gray_ornament.png"},
+    "xmas:cyan_ornament": {"textures": "textures/xmas/blocks/cyan_ornament.png"},
+    "xmas:purple_ornament": {"textures": "textures/xmas/blocks/purple_ornament.png"},
+    "xmas:blue_ornament": {"textures": "textures/xmas/blocks/blue_ornament.png"},
+    "xmas:brown_ornament": {"textures": "textures/xmas/blocks/brown_ornament.png"},
+    "xmas:green_ornament": {"textures": "textures/xmas/blocks/green_ornament.png"},
+    "xmas:red_ornament": {"textures": "textures/xmas/blocks/red_ornament.png"},
+    "xmas:black_ornament": {"textures": "textures/xmas/blocks/black_ornament.png"},
+    "xmas:star": {"textures": "textures/xmas/blocks/star.png"}
+  }
 }

@@ -1,6 +1,7 @@
 # Generates all the blocks from the list.txt
 import os
 import re
+import json
 
 MOD_ID = 'moreblocks'
 
@@ -29,7 +30,57 @@ for t in os.listdir(os.path.join(LOCAL, 'templates')):
 
         temp = temp.replace('{id}', id).replace('{name2}', name2).replace('{name}', name).replace('{filename}', filename)
 
-        # Save block
-        wrt = open(os.path.join(LOCAL, 'blocks', filename+'.json'),'w')
+        # make block
+        wrt = open(os.path.join(LOCAL, 'blocks', 'gen', filename+'.json'),'w')
         wrt.write(temp)
         wrt.close()
+
+        # make loot tables
+        for i in range(1, 9):
+            LOOT_TABLE = {
+                    "pools": [
+                        {
+                            "rolls": 1,
+                            "entries": [
+                                {
+                                    "type": "item",
+                                    "name": id,
+                                    "weight": 1,
+                                    "functions": [
+                                        {
+                                            "function": "set_count",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+            with open(os.path.join(LOCAL, 'loot_tables', 'blocks', filename+str(i)+'.json'), 'w') as w:
+                w.write(json.dumps(LOOT_TABLE))
+
+        # make recipes
+        STONECUTTER = {
+                "format_version": "1.17.1",
+                "minecraft:recipe_shapeless": {
+                    "description": {
+                        "identifier": id+"_stonecutting"
+                    },
+                    "tags": [
+                        "stonecutter"
+                    ],
+                    "ingredients": [
+                        {
+                            "item": "minecraft:"+name.replace('_layer', '')
+                        }
+                    ],
+                    "result": {
+                        "item": id,
+                        "count": 8
+                    }
+                }
+            }
+        with open(os.path.join(LOCAL, 'recipes', 'layer', filename+'_stonecutter.json'), 'w') as w:
+            w.write(json.dumps(STONECUTTER))

@@ -1,0 +1,166 @@
+{
+    "$credit": "Thanks to Legopitstop for creating this useful asset",
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "basaltblocks:chiseled_polished_basalt_slab",
+            "properties": {
+                "basaltblocks:slab_block": [
+                    "bottom",
+                    "top",
+                    "double"
+                ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
+            "minecraft:map_color": "#191919",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "basaltblocks:chiseled_polished_basalt"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "condition": "q.target_x_rotation <= 0",
+                "event": "top"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('basaltblocks:slab_block') == 'top'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/chiseled_basalt_slab.json",
+                    "minecraft:geometry": "geometry.template_slab.top",
+                    "minecraft:on_interact": {
+                        "condition": "q.block_property('basaltblocks:slab_block') != 'double' && q.is_item_name_any('slot.weapon.mainhand','basaltblocks:chiseled_polished_basalt_slab')",
+                        "event": "double"
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:slab_block') == 'bottom'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/chiseled_basalt_slab.json",
+                    "minecraft:geometry": "geometry.template_slab.bottom",
+                    "minecraft:on_interact": {
+                        "condition": "q.block_property('basaltblocks:slab_block') != 'double' && q.is_item_name_any('slot.weapon.mainhand','basaltblocks:chiseled_polished_basalt_slab')",
+                        "event": "double"
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('basaltblocks:slab_block') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/chiseled_basalt_double_slab.json",
+                    "minecraft:light_dampening": 1,
+                    "minecraft:unit_cube": {},
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "double": {
+                "set_block_property": {
+                    "basaltblocks:slab_block": "'double'"
+                },
+                "decrement_stack": {},
+                "run_command": {
+                    "target": "player",
+                    "command": "playsound use.basalt @p"
+                }
+            },
+            "bottom": {
+                "set_block_property": {
+                    "basaltblocks:slab_block": "'bottom'"
+                }
+            },
+            "top": {
+                "set_block_property": {
+                    "basaltblocks:slab_block": "'top'"
+                }
+            }
+        }
+    }
+}

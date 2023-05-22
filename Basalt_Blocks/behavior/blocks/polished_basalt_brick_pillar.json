@@ -1,6 +1,6 @@
 {
     "$credit": "Thanks to Legopitstop for creating this useful asset",
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "basaltblocks:polished_basalt_brick_pillar",
@@ -14,34 +14,35 @@
                     5,
                     6
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "tag:stone": {},
             "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_brick_pillar.json",
-            "minecraft:destroy_time": 0.15,
-            "minecraft:explosion_resistance": 4.2,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
             "minecraft:map_color": "#191919",
             "minecraft:unit_cube": {},
             "minecraft:on_player_placing": {
                 "event": "event:on_place"
             },
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.search"
-            },
             "minecraft:material_instances": {
                 "up": {
-                    "texture": "basaltblocks:polished_basalt_brick_pillar_top",
-                    "render_method": "alpha_test"
+                    "texture": "basaltblocks:polished_basalt_brick_pillar_top"
                 },
                 "down": {
-                    "texture": "basaltblocks:polished_basalt_brick_pillar_top",
-                    "render_method": "alpha_test"
+                    "texture": "basaltblocks:polished_basalt_brick_pillar_top"
                 },
                 "*": {
-                    "texture": "basaltblocks:polished_basalt_brick_pillar",
-                    "render_method": "alpha_test"
+                    "texture": "basaltblocks:polished_basalt_brick_pillar"
                 }
             }
         },

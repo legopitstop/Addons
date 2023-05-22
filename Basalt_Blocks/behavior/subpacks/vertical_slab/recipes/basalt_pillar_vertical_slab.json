@@ -1,0 +1,27 @@
+{
+    "format_version": "1.19.40",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "basaltblocks:polished_basalt_brick_pillar_vertical_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "basaltblocks:polished_basalt_brick_pillar"
+            }
+        },
+        "result": [
+            {
+                "item": "basaltblocks:polished_basalt_brick_pillar_vertical_slab",
+                "count": 6
+            }
+        ]
+    }
+}

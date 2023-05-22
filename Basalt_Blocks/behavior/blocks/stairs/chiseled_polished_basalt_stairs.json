@@ -1,0 +1,481 @@
+{
+    "$credit": "Thanks to Legopitstop for creating this useful asset",
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "basaltblocks:chiseled_polished_basalt_stairs",
+            "properties": {
+                "lps:facing": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "lps:shape": [
+                    "straight",
+                    "inner",
+                    "outer"
+                ],
+                "lps:half": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stairs"
+            }
+        },
+        "components": {
+            "tag:minecraft:stairs": {},
+            "minecraft:loot": "loot_tables/basaltblocks/blocks/chiseled_basalt_stairs.json",
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.5
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1.5
+            },
+            "minecraft:map_color": "#191919",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "basaltblocks:chiseled_polished_basalt"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    8,
+                    16
+                ]
+            },
+            "minecraft:on_interact": {
+                "condition": "query.is_sneaking",
+                "event": "event:change_shape"
+            },
+            "minecraft:on_player_placing": {
+                "event": "event:place_block"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:facing') == 2 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "tag:lps:facing2": {},
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 3 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "tag:lps:facing3": {},
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 4 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "tag:lps:facing4": {},
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 5 && query.block_property('lps:half') == 'bottom'",
+                "components": {
+                    "tag:lps:facing5": {},
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 2 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "tag:lps:facing2": {},
+                    "minecraft:rotation": [
+                        180,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 3 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "tag:lps:facing3": {},
+                    "minecraft:rotation": [
+                        180,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 4 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "tag:lps:facing4": {},
+                    "minecraft:rotation": [
+                        180,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:facing') == 5 && query.block_property('lps:half') == 'top'",
+                "components": {
+                    "tag:lps:facing5": {},
+                    "minecraft:rotation": [
+                        180,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('lps:shape') == 'straight'",
+                "components": {
+                    "tag:lps:shape_straight": {},
+                    "minecraft:geometry": "geometry.template_stairs"
+                }
+            },
+            {
+                "condition": "query.block_property('lps:shape') == 'inner'",
+                "components": {
+                    "tag:lps:shape_inner": {},
+                    "minecraft:geometry": "geometry.template_stairs.inner"
+                }
+            },
+            {
+                "condition": "query.block_property('lps:shape') == 'outer'",
+                "components": {
+                    "tag:lps:shape_outer": {},
+                    "minecraft:geometry": "geometry.template_stairs.outer"
+                }
+            }
+        ],
+        "events": {
+            "event:change_shape": {
+                "sequence": [
+                    {
+                        "condition": "query.block_property('lps:shape') == 'outer'",
+                        "set_block_property": {
+                            "lps:shape": "'straight'"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('lps:shape') == 'inner'",
+                        "set_block_property": {
+                            "lps:shape": "'outer'"
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('lps:shape') == 'straight'",
+                        "set_block_property": {
+                            "lps:shape": "'inner'"
+                        }
+                    }
+                ]
+            },
+            "event:place_block": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "lps:facing": "q.cardinal_facing_2d"
+                        }
+                    },
+                    {
+                        "condition": "query.target_x_rotation <= 4",
+                        "set_block_property": {
+                            "lps:half": "'top'"
+                        }
+                    }
+                ]
+            },
+            "event:update": {
+                "sequence": [
+                    {
+                        "condition": "q.block_property('lps:half') == 'bottom' && q.block_property('lps:facing') == 2 && !q.block_neighbor_has_all_tags(1,0,0,'minecraft:stairs') || !q.block_neighbor_has_all_tags(-1,0,0,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "4"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'bottom' && q.block_property('lps:facing') == 3 && !q.block_neighbor_has_all_tags(1,0,0,'minecraft:stairs') || !q.block_neighbor_has_all_tags(-1,0,0,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "5"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "5"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'bottom' && q.block_property('lps:facing') == 4 && !q.block_neighbor_has_all_tags(0,0,1,'minecraft:stairs') || !q.block_neighbor_has_all_tags(0,0,-1,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "3"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "3"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'bottom' && q.block_property('lps:facing') == 5 && !q.block_neighbor_has_all_tags(0,0,1,'minecraft:stairs') || !q.block_neighbor_has_all_tags(0,0,-1,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "2"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "2"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'top' && q.block_property('lps:facing') == 2 && !q.block_neighbor_has_all_tags(1,0,0,'minecraft:stairs') || !q.block_neighbor_has_all_tags(-1,0,0,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "5"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "5"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'top' && q.block_property('lps:facing') == 3 && !q.block_neighbor_has_all_tags(1,0,0,'minecraft:stairs') || !q.block_neighbor_has_all_tags(-1,0,0,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "4"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing4')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "4"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(0,0,-1,'lps:facing5')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'top' && q.block_property('lps:facing') == 4 && !q.block_neighbor_has_all_tags(0,0,1,'minecraft:stairs') || !q.block_neighbor_has_all_tags(0,0,-1,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "2"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "q.block_property('lps:half') == 'top' && q.block_property('lps:facing') == 5 && !q.block_neighbor_has_all_tags(0,0,1,'minecraft:stairs') || !q.block_neighbor_has_all_tags(0,0,-1,'minecraft:stairs')",
+                        "sequence": [
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing2')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'outer'",
+                                    "lps:facing": "3"
+                                }
+                            },
+                            {
+                                "condition": "q.block_neighbor_has_all_tags(-1,0,0,'lps:facing3')",
+                                "set_block_property": {
+                                    "lps:shape": "'inner'",
+                                    "lps:facing": "3"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

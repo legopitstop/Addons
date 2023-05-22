@@ -1,15 +1,21 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "breaker:upgrade": {
-            "textures": [
-                "textures/breaker/items/stone_breaker_upgrade.png",
-                "textures/breaker/items/iron_breaker_upgrade.png",
-                "textures/breaker/items/gold_breaker_upgrade.png",
-                "textures/breaker/items/diamond_breaker_upgrade.png",
-                "textures/breaker/items/netherite_breaker_upgrade.png"
-            ]
-        }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "breaker:stone_breaker_upgrade": {
+      "textures": "textures/breaker/items/stone_breaker_upgrade.png"
+    },
+    "breaker:iron_breaker_upgrade": {
+      "textures": "textures/breaker/items/iron_breaker_upgrade.png"
+    },
+    "breaker:gold_breaker_upgrade": {
+      "textures": "textures/breaker/items/gold_breaker_upgrade.png"
+    },
+    "breaker:diamond_breaker_upgrade": {
+      "textures": "textures/breaker/items/diamond_breaker_upgrade.png"
+    },
+    "breaker:netherite_breaker_upgrade": {
+      "textures": "textures/breaker/items/netherite_breaker_upgrade.png"
     }
+  }
 }

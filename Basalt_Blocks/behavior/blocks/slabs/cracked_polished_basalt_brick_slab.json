@@ -1,6 +1,6 @@
 {
     "$credit": "Thanks to Legopitstop for creating this useful asset",
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "basaltblocks:cracked_polished_basalt_brick_slab",
@@ -10,23 +10,26 @@
                     "top",
                     "double"
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
             }
         },
         "components": {
             "tag:stone": {},
-            "minecraft:block_light_filter": 0,
-            "minecraft:destroy_time": 0.15,
-            "minecraft:explosion_resistance": 4.2,
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
             "minecraft:map_color": "#191919",
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "basaltblocks:cracked_polished_basalt_bricks",
-                    "render_method": "alpha_test"
+                    "texture": "basaltblocks:cracked_polished_basalt_bricks"
                 }
-            },
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.slab"
             },
             "minecraft:on_player_placing": {
                 "condition": "q.target_x_rotation <= 0",
@@ -43,7 +46,7 @@
                         "condition": "q.block_property('basaltblocks:slab_block') != 'double' && q.is_item_name_any('slot.weapon.mainhand','basaltblocks:cracked_polished_basalt_brick_slab')",
                         "event": "double"
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             8,
@@ -55,7 +58,7 @@
                             16
                         ]
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             8,
@@ -78,7 +81,7 @@
                         "condition": "q.block_property('basaltblocks:slab_block') != 'double' && q.is_item_name_any('slot.weapon.mainhand','basaltblocks:cracked_polished_basalt_brick_slab')",
                         "event": "double"
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -90,7 +93,7 @@
                             16
                         ]
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -108,9 +111,9 @@
                 "condition": "q.block_property('basaltblocks:slab_block') == 'double'",
                 "components": {
                     "minecraft:loot": "loot_tables/basaltblocks/blocks/cracked_polished_basalt_brick_double_slab.json",
-                    "minecraft:block_light_filter": 1,
+                    "minecraft:light_dampening": 1,
                     "minecraft:unit_cube": {},
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -122,7 +125,7 @@
                             16
                         ]
                     },
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,

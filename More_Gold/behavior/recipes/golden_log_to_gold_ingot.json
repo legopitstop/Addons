@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:recipe_furnace": {
         "description": {
             "identifier": "moregold:golden_log_to_gold_ingot"

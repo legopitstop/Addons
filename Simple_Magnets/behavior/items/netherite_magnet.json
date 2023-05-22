@@ -29,15 +29,11 @@
             "minecraft:repairable": {
                 "repair_items": [
                     {
-                        "items": [
-                            "magnet:netherite_magnet"
-                        ],
+                        "items": ["magnet:netherite_magnet"],
                         "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
                     },
                     {
-                        "items": [
-                            "minecraft:netherite_ingot"
-                        ],
+                        "items": ["minecraft:netherite_ingot"],
                         "repair_amount": "q.remaining_durability + 0.05"
                     }
                 ]
@@ -47,7 +43,7 @@
             "event:teleport_item": {
                 "run_command": {
                     "target": "self",
-                    "command": "tp @e[type=item,r=11.425] ~ ~ ~"
+                    "command": "function zzz/netherite"
                 },
                 "damage": {
                     "amount": 1,

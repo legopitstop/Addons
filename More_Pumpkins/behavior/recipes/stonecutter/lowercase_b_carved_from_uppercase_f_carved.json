@@ -1,0 +1,1 @@
+{"format_version": "1.19.40", "minecraft:recipe_shapeless": {"description": {"identifier": "morepumpkin:lowercase_b_carved_from_uppercase_f_carved_stonecutting"}, "tags": ["stonecutter"], "ingredients": [{"item": "morepumpkin:lowercase_b_carved_pumpkin"}], "result": "morepumpkin:uppercase_f_carved_pumpkin"}}

@@ -10,13 +10,13 @@ Merry Christmas!
 |--------------------|----------|
 | supported          | `yes` |
 | namespace          | `xmas` |
-| version            | `1.0.0 ` |
+| version            | `1.1.0 ` |
 | resource UUID            | `2797755a-87a9-4885-86e0-05e182df1c41` |
 | behavior UUID            | `738ff94a-dc4e-41d9-acce-3dadbebbc346` |
-| mc_version         | `?` |
+| mc_version         | `1.19.80` |
 | multiplayer_tested | `no`     |
 | has_config         | `no`     |
-| dependency         | `null`   |
+| dependency         | `Assets Plus v1.4.0`   |
 
 ## LINKS
 - [Download](https://mcpedl.com/modder-s-christmas/)

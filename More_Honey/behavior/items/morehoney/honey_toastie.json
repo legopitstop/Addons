@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:item": {
         "description": {
             "identifier": "morehoney:honey_toastie",
@@ -16,7 +16,7 @@
             "minecraft:use_duration": 1.61,
             "minecraft:food": {
                 "nutrition": 5,
-                "saturation_modifier": "supernatural",
+                "saturation_modifier": 12,
                 "on_consume": {
                     "event": "lps:remove_poison"
                 }

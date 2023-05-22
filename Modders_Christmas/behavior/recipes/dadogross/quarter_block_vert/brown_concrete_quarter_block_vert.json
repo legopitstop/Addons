@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "xmas:brown_concrete_quarter_block_vert"

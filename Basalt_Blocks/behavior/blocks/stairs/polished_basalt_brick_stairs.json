@@ -1,6 +1,6 @@
 {
     "$credit": "Thanks to Legopitstop for creating this useful asset",
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "basaltblocks:polished_basalt_brick_stairs",
@@ -21,18 +21,22 @@
                     "bottom",
                     "top"
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stairs"
             }
         },
         "components": {
             "tag:minecraft:stairs": {},
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.stairs"
-            },
             "minecraft:loot": "loot_tables/basaltblocks/blocks/polished_basalt_brick_stairs.json",
-            "minecraft:block_light_filter": 0,
-            "minecraft:destroy_time": 1.5,
-            "minecraft:explosion_resistance": 1.5,
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.5
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1.5
+            },
             "minecraft:map_color": "#191919",
             "minecraft:material_instances": {
                 "*": {
@@ -40,7 +44,7 @@
                     "render_method": "opaque"
                 }
             },
-            "minecraft:aim_collision": {
+            "minecraft:selection_box": {
                 "origin": [
                     -8,
                     0,
@@ -52,7 +56,7 @@
                     16
                 ]
             },
-            "minecraft:block_collision": {
+            "minecraft:collision_box": {
                 "origin": [
                     -8,
                     0,

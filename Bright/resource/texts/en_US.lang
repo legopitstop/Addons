@@ -1,4 +1,6 @@
-﻿
+﻿pack.name=Bright! RP
+pack.description=The only light add-on you will ever need! §8Developer: §6Legopitstop
+
 tile.bright:iron_candle_stick.name=Iron Candle Stick §7(#bright)
 tile.bright:iron_white_candle_stick.name=Iron White Candle Stick §7(#bright)
 tile.bright:iron_orange_candle_stick.name=Iron Orange Candle Stick §7(#bright)

@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.1",
+    "format_version": "1.19.40",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "morehoney:honey_cookie"

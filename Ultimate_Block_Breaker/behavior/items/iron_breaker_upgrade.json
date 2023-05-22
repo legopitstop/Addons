@@ -1,16 +1,15 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.19.40",
     "minecraft:item": {
         "description": {
             "identifier": "breaker:iron_breaker_upgrade",
-            "category": "Items"
+            "category": "items"
         },
         "components": {
             "minecraft:hand_equipped": true,
             "minecraft:max_stack_size": 1,
             "minecraft:icon": {
-                "texture": "breaker:upgrade",
-                "frame": 1
+                "texture": "breaker:iron_breaker_upgrade"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.search"

@@ -29,15 +29,11 @@
             "minecraft:repairable": {
                 "repair_items": [
                     {
-                        "items": [
-                            "magnet:diamond_magnet"
-                        ],
+                        "items": ["magnet:diamond_magnet"],
                         "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
                     },
                     {
-                        "items": [
-                            "minecraft:diamond"
-                        ],
+                        "items": ["minecraft:diamond"],
                         "repair_amount": "q.remaining_durability + 0.05"
                     }
                 ]
@@ -47,7 +43,7 @@
             "event:teleport_item": {
                 "run_command": {
                     "target": "self",
-                    "command": "tp @e[type=item,r=9.425] ~ ~ ~"
+                    "command": "function zzz/diamond"
                 },
                 "damage": {
                     "amount": 1,

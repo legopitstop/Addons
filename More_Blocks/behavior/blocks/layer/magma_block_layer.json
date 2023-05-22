@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "moreblocks:magma_block_layer",
@@ -18,18 +18,22 @@
                     "bottom",
                     "top"
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "tag:stone": {},
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.search"
+            "minecraft:light_emission": 0.5,
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.2
             },
-            "minecraft:block_light_emission": 0.5,
-            "minecraft:block_light_filter": 0,
-            "minecraft:destroy_time": 1.2,
-            "minecraft:explosion_resistance": 1.2,
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1.2
+            },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "minecraft:magma",
@@ -53,7 +57,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer1.json",
                     "minecraft:geometry": "geometry.template_height0",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -65,7 +69,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -84,7 +88,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer2.json",
                     "minecraft:geometry": "geometry.template_height1",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -96,7 +100,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -115,7 +119,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer3.json",
                     "minecraft:geometry": "geometry.template_height2",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -127,7 +131,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -146,7 +150,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer4.json",
                     "minecraft:geometry": "geometry.template_height3",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -158,7 +162,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -177,7 +181,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer5.json",
                     "minecraft:geometry": "geometry.template_height4",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -189,7 +193,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -208,7 +212,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer6.json",
                     "minecraft:geometry": "geometry.template_height5",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -220,7 +224,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -239,7 +243,7 @@
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/magma_block_layer7.json",
                     "minecraft:geometry": "geometry.template_height6",
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -251,7 +255,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,

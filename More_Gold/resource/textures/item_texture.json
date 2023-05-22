@@ -1,42 +1,42 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "moregold:golden_banana": {
-            "textures": "textures/moregold/items/golden_banana.png"
-        },
-        "moregold:golden_grape": {
-            "textures": "textures/moregold/items/golden_grape.png"
-        },
-        "moregold:golden_lemon": {
-            "textures": "textures/moregold/items/golden_lemon.png"
-        },
-        "moregold:golden_orange": {
-            "textures": "textures/moregold/items/golden_orange.png"
-        },
-        "moregold:golden_strawberry": {
-            "textures": "textures/moregold/items/golden_strawberry.png"
-        },
-        "moregold:enchanted_golden_banana": {
-            "textures": "textures/moregold/items/golden_banana.png"
-        },
-        "moregold:enchanted_golden_grape": {
-            "textures": "textures/moregold/items/golden_grape.png"
-        },
-        "moregold:enchanted_golden_lemon": {
-            "textures": "textures/moregold/items/golden_lemon.png"
-        },
-        "moregold:enchanted_golden_orange": {
-            "textures": "textures/moregold/items/golden_orange.png"
-        },
-        "moregold:enchanted_golden_strawberry": {
-            "textures": "textures/moregold/items/golden_strawberry.png"
-        },
-        "moregold:golden_fruit_sapling": {
-            "textures": "textures/moregold/blocks/golden_fruit_sapling.png"
-        },
-        "moregold:golden_fruit_seeds": {
-            "textures": "textures/moregold/items/golden_fruit_seeds.png"
-        }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "moregold:golden_banana": {
+      "textures": "textures/moregold/items/golden_banana.png"
+    },
+    "moregold:golden_grape": {
+      "textures": "textures/moregold/items/golden_grape.png"
+    },
+    "moregold:golden_lemon": {
+      "textures": "textures/moregold/items/golden_lemon.png"
+    },
+    "moregold:golden_orange": {
+      "textures": "textures/moregold/items/golden_orange.png"
+    },
+    "moregold:golden_strawberry": {
+      "textures": "textures/moregold/items/golden_strawberry.png"
+    },
+    "moregold:enchanted_golden_banana": {
+      "textures": "textures/moregold/items/golden_banana.png"
+    },
+    "moregold:enchanted_golden_grape": {
+      "textures": "textures/moregold/items/golden_grape.png"
+    },
+    "moregold:enchanted_golden_lemon": {
+      "textures": "textures/moregold/items/golden_lemon.png"
+    },
+    "moregold:enchanted_golden_orange": {
+      "textures": "textures/moregold/items/golden_orange.png"
+    },
+    "moregold:enchanted_golden_strawberry": {
+      "textures": "textures/moregold/items/golden_strawberry.png"
+    },
+    "moregold:golden_fruit_sapling": {
+      "textures": "textures/moregold/blocks/golden_fruit_sapling.png"
+    },
+    "moregold:golden_fruit_seeds": {
+      "textures": "textures/moregold/items/golden_fruit_seeds.png"
     }
+  }
 }

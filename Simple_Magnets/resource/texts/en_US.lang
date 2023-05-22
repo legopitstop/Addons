@@ -1,4 +1,7 @@
-﻿item.magnet:iron_magnet=Iron Magnet §7(#magnet)
+﻿pack.name=Simple Magnets RP
+pack.description=Easly pickup items from far away! §8Developer: §6Legopitstop
+
+item.magnet:iron_magnet=Iron Magnet §7(#magnet)
 item.magnet:gold_magnet=Gold Magnet §7(#magnet)
 item.magnet:copper_magnet=Copper Magnet §7(#magnet)
 item.magnet:diamond_magnet=Diamond Magnet §7(#magnet)

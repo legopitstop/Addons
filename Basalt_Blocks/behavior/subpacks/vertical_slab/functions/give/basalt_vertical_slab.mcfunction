@@ -1,8 +1,0 @@
-
-give @s basaltblocks:cracked_polished_basalt_brick_vertical_slab
-give @s basaltblocks:basalt_vertical_slab
-give @s basaltblocks:polished_basalt_vertical_slab
-give @s basaltblocks:smooth_basalt_vertical_slab
-give @s basaltblocks:smooth_polished_basalt_vertical_slab
-give @s basaltblocks:polished_basalt_brick_vertical_slab
-give @s basaltblocks:basalt_cobblestone_vertical_slab

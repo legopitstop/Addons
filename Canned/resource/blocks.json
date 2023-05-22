@@ -1,108 +1,108 @@
 {
-    "format_version": "1.16.1",
-    "canned:empty_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:apple_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:baked_potato_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:beetroot_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:beetroot_soup_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:bread_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cake_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:carrot_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:chorus_fruit_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_chicken_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_cod_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_mutton_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_porkchop_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_rabbit_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_salmon_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cookie_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:dried_kelp_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:enchanted_golden_apple_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:golden_apple_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:glow_berries_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:golden_carrot_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:honey_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:melon_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:mushroom_stew_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:poisonous_potato_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:potato_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:pufferfish_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:pumpkin_pie_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:rabbit_stew_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:rotten_flesh_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:spider_eye_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:cooked_beef_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:suspicious_stew_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:sweet_berries_can.tile": {
-        "sound": "lantern"
-    },
-    "canned:tropical_fish_can.tile": {
-        "sound": "lantern"
-    }
+  "format_version": "1.16.1",
+  "canned:empty_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:apple_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:baked_potato_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:beetroot_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:beetroot_soup_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:bread_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cake_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:carrot_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:chorus_fruit_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_chicken_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_cod_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_mutton_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_porkchop_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_rabbit_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_salmon_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cookie_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:dried_kelp_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:enchanted_golden_apple_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:golden_apple_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:glow_berries_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:golden_carrot_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:honey_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:melon_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:mushroom_stew_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:poisonous_potato_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:potato_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:pufferfish_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:pumpkin_pie_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:rabbit_stew_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:rotten_flesh_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:spider_eye_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:cooked_beef_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:suspicious_stew_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:sweet_berries_can.tile": {
+    "sound": "lantern"
+  },
+  "canned:tropical_fish_can.tile": {
+    "sound": "lantern"
+  }
 }

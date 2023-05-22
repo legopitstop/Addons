@@ -1,18 +1,18 @@
 {
     "format_version": 2,
     "header": {
-        "description": "The only light add-on you will ever need! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
-        "name": "Bright! RP",
+        "description": "pack.description",
+        "name": "pack.name",
         "uuid": "a9667f51-351b-47b6-bf2b-cedaa45cd884",
         "version": [
             1,
-            1,
+            2,
             0
         ],
         "min_engine_version": [
             1,
             19,
-            0
+            80
         ]
     },
     "metadata": {
@@ -24,12 +24,12 @@
     },
     "modules": [
         {
-            "description": "Resources",
+            "description": "pack.description",
             "type": "resources",
             "uuid": "e28ecee9-cefc-42b5-bd42-e4b6c03ad1ed",
             "version": [
                 1,
-                1,
+                2,
                 0
             ]
         }

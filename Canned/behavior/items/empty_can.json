@@ -1,20 +1,20 @@
 {
-    "format_version": "1.19.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "canned:empty_can",
-            "category": "items"
-        },
-        "components": {
-            "minecraft:creative_category": {
-                "parent": "itemGroup.search"
-            },
-            "minecraft:icon": {
-                "texture": "canned:empty_can"
-            },
-            "minecraft:block_placer": {
-                "block": "canned:empty_can.tile"
-            }
-        }
+  "format_version": "1.19.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "canned:empty_can",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.search"
+      },
+      "minecraft:icon": {
+        "texture": "canned:empty_can"
+      },
+      "minecraft:block_placer": {
+        "block": "canned:empty_can.tile"
+      }
     }
+  }
 }

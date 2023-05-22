@@ -1,18 +1,18 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Lot's More Blocks! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
-        "name": "More Blocks BP",
+        "description": "pack.description",
+        "name": "pack.name",
         "uuid": "bf24499d-0163-4ccb-a485-2c091c51317b",
         "version": [
             1,
-            2,
-            1
+            3,
+            0
         ],
         "min_engine_version": [
             1,
             19,
-            0
+            80
         ]
     },
     "metadata": {
@@ -24,13 +24,13 @@
     },
     "modules": [
         {
-            "description": "Lot's More Blocks",
+            "description": "pack.description",
             "type": "data",
             "uuid": "55ceba31-af5d-4716-90f7-e5bfbd17c6ec",
             "version": [
                 1,
-                2,
-                1
+                3,
+                0
             ]
         }
     ],
@@ -39,16 +39,16 @@
             "uuid": "4791d53e-88de-49f6-846b-a2cbe7508032",
             "version": [
                 1,
-                2,
-                1
+                3,
+                0
             ]
         },
         {
-            "description": "Assets Plus RP v1.2.0",
+            "description": "Assets Plus RP v1.4.0",
             "uuid": "c86dd7d9-e84e-456f-a84f-1993e353da4c",
             "version": [
                 1,
-                2,
+                4,
                 0
             ]
         }

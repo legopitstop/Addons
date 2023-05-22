@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "xmas:white_terracotta_quarter_block_vert",
@@ -11,19 +11,17 @@
                     5,
                     6
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/white_terracotta_quarter_block_vert.json",
-            "minecraft:destroy_time": 0.3,
-            "minecraft:explosion_resistance": 0.3,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:light_dampening": 0,
             "minecraft:on_player_placing": {
                 "event": "event:direction"
-            },
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.search"
             },
             "minecraft:geometry": "geometry.quarter_block_vert",
             "minecraft:material_instances": {
@@ -31,7 +29,7 @@
                     "texture": "minecraft:white_terracotta"
                 }
             },
-            "minecraft:pick_collision": {
+            "minecraft:selection_box": {
                 "origin": [
                     -8,
                     0,
@@ -43,7 +41,7 @@
                     8
                 ]
             },
-            "minecraft:entity_collision": {
+            "minecraft:collision_box": {
                 "origin": [
                     -8,
                     0,
@@ -54,6 +52,12 @@
                     16,
                     8
                 ]
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
             }
         },
         "permutations": [

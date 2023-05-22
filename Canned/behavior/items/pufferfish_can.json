@@ -1,22 +1,22 @@
 {
-    "format_version": "1.19.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "canned:pufferfish_can",
-            "category": "items"
-        },
-        "components": {
-            "tag:can_open": {},
-            "minecraft:allow_off_hand": true,
-            "minecraft:creative_category": {
-                "parent": "itemGroup.search"
-            },
-            "minecraft:icon": {
-                "texture": "canned:pufferfish_can"
-            },
-            "minecraft:block_placer": {
-                "block": "canned:pufferfish_can.tile"
-            }
-        }
+  "format_version": "1.19.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "canned:pufferfish_can",
+      "category": "items"
+    },
+    "components": {
+      "tag:can_open": {},
+      "minecraft:allow_off_hand": true,
+      "minecraft:creative_category": {
+        "parent": "itemGroup.search"
+      },
+      "minecraft:icon": {
+        "texture": "canned:pufferfish_can"
+      },
+      "minecraft:block_placer": {
+        "block": "canned:pufferfish_can.tile"
+      }
     }
+  }
 }

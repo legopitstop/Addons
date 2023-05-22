@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:item": {
         "description": {
             "identifier": "morehoney:honey_lemon_tea",
@@ -17,7 +17,7 @@
             "minecraft:max_stack_size": 16,
             "minecraft:food": {
                 "nutrition": 9,
-                "saturation_modifier": "normal",
+                "saturation_modifier": 0.6,
                 "using_converts_to": "morefood:hot_beverage_cup",
                 "on_consume": {
                     "event": "lps:remove_poison"

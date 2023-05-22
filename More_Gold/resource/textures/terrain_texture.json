@@ -1,63 +1,73 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.terrain",
-    "padding": 8,
-    "num_mip_levels": 4,
-    "texture_data": {
-        "moregold:golden_log": {
-            "textures": [
-                "textures/moregold/blocks/golden_log"
-            ]
-        },
-        "moregold:golden_log_top": {
-            "textures": [
-                "textures/moregold/blocks/golden_log_top"
-            ]
-        },
-        "moregold:golden_fruit_sapling": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_sapling"
-            ]
-        },
-        "moregold:golden_fruit_stage0": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage0"
-            ]
-        },
-        "moregold:golden_fruit_stage1": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage1"
-            ]
-        },
-        "moregold:golden_fruit_stage2": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage2"
-            ]
-        },
-        "moregold:golden_fruit_stage3": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage3"
-            ]
-        },
-        "moregold:golden_fruit_stage4": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage4"
-            ]
-        },
-        "moregold:golden_fruit_stage5": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage5"
-            ]
-        },
-        "moregold:golden_fruit_stage6": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage6"
-            ]
-        },
-        "moregold:golden_fruit_stage7": {
-            "textures": [
-                "textures/moregold/blocks/golden_fruit_stage7"
-            ]
-        }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "moregold:stripped_golden_log": {
+      "textures": [
+        "textures/moregold/blocks/stripped_golden_log"
+      ]
+    },
+    "moregold:stripped_golden_log_top": {
+      "textures": [
+        "textures/moregold/blocks/stripped_golden_log_top"
+      ]
+    },
+    "moregold:golden_log": {
+      "textures": [
+        "textures/moregold/blocks/golden_log"
+      ]
+    },
+    "moregold:golden_log_top": {
+      "textures": [
+        "textures/moregold/blocks/golden_log_top"
+      ]
+    },
+    "moregold:golden_fruit_sapling": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_sapling"
+      ]
+    },
+    "moregold:golden_fruit_stage0": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage0"
+      ]
+    },
+    "moregold:golden_fruit_stage1": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage1"
+      ]
+    },
+    "moregold:golden_fruit_stage2": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage2"
+      ]
+    },
+    "moregold:golden_fruit_stage3": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage3"
+      ]
+    },
+    "moregold:golden_fruit_stage4": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage4"
+      ]
+    },
+    "moregold:golden_fruit_stage5": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage5"
+      ]
+    },
+    "moregold:golden_fruit_stage6": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage6"
+      ]
+    },
+    "moregold:golden_fruit_stage7": {
+      "textures": [
+        "textures/moregold/blocks/golden_fruit_stage7"
+      ]
     }
+  }
 }

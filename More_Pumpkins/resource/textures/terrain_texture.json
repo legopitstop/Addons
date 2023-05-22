@@ -4,12 +4,6 @@
     "padding": 8,
     "num_mip_levels": 4,
     "texture_data": {
-        "minecraft:pumpkin_side": {
-            "textures": "textures/blocks/pumpkin_side.png"
-        },
-        "minecraft:pumpkin_top": {
-            "textures": "textures/blocks/pumpkin_top.png"
-        },
         "morepumpkin:creeper_carved_pumpkin": {
             "textures": "textures/morepumpkin/blocks/creeper_carved_pumpkin.png"
         },

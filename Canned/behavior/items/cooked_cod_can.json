@@ -1,22 +1,22 @@
 {
-    "format_version": "1.19.10",
-    "minecraft:item": {
-        "description": {
-            "identifier": "canned:cooked_cod_can",
-            "category": "items"
-        },
-        "components": {
-            "tag:can_open": {},
-            "minecraft:allow_off_hand": true,
-            "minecraft:creative_category": {
-                "parent": "itemGroup.search"
-            },
-            "minecraft:icon": {
-                "texture": "canned:cooked_cod_can"
-            },
-            "minecraft:block_placer": {
-                "block": "canned:cooked_cod_can.tile"
-            }
-        }
+  "format_version": "1.19.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "canned:cooked_cod_can",
+      "category": "items"
+    },
+    "components": {
+      "tag:can_open": {},
+      "minecraft:allow_off_hand": true,
+      "minecraft:creative_category": {
+        "parent": "itemGroup.search"
+      },
+      "minecraft:icon": {
+        "texture": "canned:cooked_cod_can"
+      },
+      "minecraft:block_placer": {
+        "block": "canned:cooked_cod_can.tile"
+      }
     }
+  }
 }

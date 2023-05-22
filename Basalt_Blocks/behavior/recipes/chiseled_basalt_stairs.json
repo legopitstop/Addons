@@ -1,0 +1,27 @@
+{
+    "format_version": "1.19.40",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "basaltblocks:chiseled_polished_basalt_stairs"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#  ",
+            "## ",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "basaltblocks:chiseled_polished_basalt"
+            }
+        },
+        "result": [
+            {
+                "item": "basaltblocks:chiseled_polished_basalt_stairs",
+                "count": 4
+            }
+        ]
+    }
+}

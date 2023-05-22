@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "xmas:magenta_christmas_tree",
@@ -26,27 +26,24 @@
                     "red",
                     "black"
                 ]
+            },
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/magenta_christmas_tree.json",
-            "minecraft:destroy_time": 0.3,
-            "minecraft:explosion_resistance": 0.3,
             "minecraft:flammable": {
                 "burn_odds": 1,
                 "flame_odds": 1
             },
-            "minecraft:creative_category": {
-                "category": "items",
-                "group": "itemGroup.search"
-            },
             "minecraft:on_interact": {
-                "condition": "q.get_equipped_item_name == 'white_dye'||q.get_equipped_item_name == 'orange_dye'||q.get_equipped_item_name == 'magenta_dye'||q.get_equipped_item_name == 'light_blue_dye'||q.get_equipped_item_name == 'yellow_dye'||q.get_equipped_item_name == 'lime_dye'||q.get_equipped_item_name == 'pink_dye'||q.get_equipped_item_name == 'light_gray_dye'||q.get_equipped_item_name == 'gray_dye'||q.get_equipped_item_name == 'cyan_dye'||q.get_equipped_item_name == 'purple_dye'||q.get_equipped_item_name == 'blue_dye'||q.get_equipped_item_name == 'brown_dye'||q.get_equipped_item_name == 'green_dye'||q.get_equipped_item_name == 'red_dye'||q.get_equipped_item_name == 'black_dye'||(q.block_property('xmas:star') == false && q.get_equipped_item_name == 'gold_ingot')",
+                "condition": "q.is_item_name_any('slot.weapon.mainhand','minecraft:gold_ingot','minecraft:white_dye','minecraft:orange_dye','minecraft:magenta_dye','minecraft:light_blue_dye','minecraft:yellow_dye','minecraft:lime_dye','minecraft:pink_dye','minecraft:gray_dye','minecraft:light_gray_dye','minecraft:cyan_dye','minecraft:purple_dye','minecraft:blue_dye','minecraft:brown_dye','minecraft:green_dye','minecraft:red_dye','minecraft:black_dye')",
                 "event": "event:color"
             },
-            "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0.5,
-            "minecraft:entity_collision": {
+            "minecraft:light_dampening": 0,
+            "minecraft:collision_box": {
                 "origin": [
                     -7,
                     0,
@@ -58,7 +55,7 @@
                     14
                 ]
             },
-            "minecraft:pick_collision": {
+            "minecraft:selection_box": {
                 "origin": [
                     -7,
                     0,
@@ -69,7 +66,14 @@
                     16,
                     14
                 ]
-            }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            },
+            "minecraft:light_emission": 0.5
         },
         "permutations": [
             {
@@ -585,119 +589,119 @@
             "event:color": {
                 "sequence": [
                     {
-                        "condition": "q.block_property('xmas:star') == false && q.get_equipped_item_name == 'gold_ingot'",
+                        "condition": "q.block_property('xmas:star') == false && q.is_item_name_any('slot.weapon.mainhand', 'minecraft:gold_ingot')",
                         "set_block_property": {
                             "xmas:star": "true"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'white_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:white_dye')",
                         "set_block_property": {
                             "xmas:color": "'white'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'orange_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:orange_dye')",
                         "set_block_property": {
                             "xmas:color": "'orange'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'magenta_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:magenta_dye')",
                         "set_block_property": {
                             "xmas:color": "'magenta'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'light_blue_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_blue_dye')",
                         "set_block_property": {
                             "xmas:color": "'light_blue'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'yellow_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:yellow_dye')",
                         "set_block_property": {
                             "xmas:color": "'yellow'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'lime_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:lime_dye')",
                         "set_block_property": {
                             "xmas:color": "'lime'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'pink_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:pink_dye')",
                         "set_block_property": {
                             "xmas:color": "'pink'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'light_gray_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:light_gray_dye')",
                         "set_block_property": {
                             "xmas:color": "'light_gray'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'gray_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:gray_dye')",
                         "set_block_property": {
                             "xmas:color": "'gray'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'cyan_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:cyan_dye')",
                         "set_block_property": {
                             "xmas:color": "'cyan'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'purple_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:purple_dye')",
                         "set_block_property": {
                             "xmas:color": "'purple'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'blue_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:blue_dye')",
                         "set_block_property": {
                             "xmas:color": "'blue'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'brown_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:brown_dye')",
                         "set_block_property": {
                             "xmas:color": "'brown'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'green_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:green_dye')",
                         "set_block_property": {
                             "xmas:color": "'green'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'red_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:red_dye')",
                         "set_block_property": {
                             "xmas:color": "'red'"
                         },
                         "decrement_stack": {}
                     },
                     {
-                        "condition": "q.get_equipped_item_name == 'black_dye'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'minecraft:black_dye')",
                         "set_block_property": {
                             "xmas:color": "'black'"
                         },

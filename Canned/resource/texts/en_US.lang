@@ -1,4 +1,7 @@
-﻿item.canned:can_opener=Can Opener §7(#canned)
+﻿pack.name=Canned RP
+pack.description=Canned goods? §8Developer: §6Legopitstop
+
+item.canned:can_opener=Can Opener §7(#canned)
 item.canned:empty_can=Empty Can §7(#canned)
 item.canned:apple_can=Can of Apple §7(#canned)
 item.canned:baked_potato_can=Can of Baked Potato §7(#canned)

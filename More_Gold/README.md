@@ -10,13 +10,13 @@ Lot's More Gold Food
 |--------------------|----------|
 | supported          | `yes` |
 | namespace          | `moregold` |
-| version            | `1.2.0 ` |
+| version            | `1.3.0 ` |
 | resource UUID            | `ebe601a9-616a-4d6e-9150-2c918c7c96f4` |
 | behavior UUID            | `8878bd80-768e-4b36-acee-5271216c02e7` |
-| mc_version         | `?` |
+| mc_version         | `1.19.80` |
 | multiplayer_tested | `no`     |
 | has_config         | `no`     |
-| dependency         | `null`   |
+| dependency         | `Assets Plus v1.4.0`   |
 
 ## LINKS
 - [Download](https://mcpedl.com/more-gold-bedrock-add-on/)

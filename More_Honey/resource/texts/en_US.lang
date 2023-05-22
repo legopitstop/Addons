@@ -1,4 +1,6 @@
-﻿# Items
+﻿pack.name=More Honey RP
+pack.description=Honey foods! §8Developer: §6Legopitstop
+
 item.morehoney:honey_cooked_beef=Honey Cooked Beef §7(#morehoney)
 item.morehoney:honey_cooked_chicken=Honey Cooked Chicken §7(#morehoney)
 item.morehoney:honey_cooked_mutton=Honey Cooked Mutton §7(#morehoney)
@@ -9,6 +11,5 @@ item.morehoney:honey_pancakes=Honey Pancakes §7(#morehoney)
 item.morehoney:honey_sandwich=Honey Sandwich §7(#morehoney)
 item.morehoney:honey_toastie=Honey Toastie §7(#morehoney)
 item.morehoney:honey_waffle=Honey Waffle §7(#morehoney)
-# Blocks
 tile.morehoney:honey_press.name=Honey Press §7(#morehoney)
 container.honey_press=Honey Press

@@ -1,21 +1,21 @@
 {
-    "format_version": "1.16.220",
-    "breaker:wooden_block_breaker": {
-        "sound": "stone"
-    },
-    "breaker:stone_block_breaker": {
-        "sound": "stone"
-    },
-    "breaker:iron_block_breaker": {
-        "sound": "stone"
-    },
-    "breaker:gold_block_breaker": {
-        "sound": "stone"
-    },
-    "breaker:diamond_block_breaker": {
-        "sound": "stone"
-    },
-    "breaker:netherite_block_breaker": {
-        "sound": "stone"
-    }
+  "format_version": "1.16.220",
+  "breaker:wooden_block_breaker": {
+    "sound": "stone"
+  },
+  "breaker:stone_block_breaker": {
+    "sound": "stone"
+  },
+  "breaker:iron_block_breaker": {
+    "sound": "stone"
+  },
+  "breaker:gold_block_breaker": {
+    "sound": "stone"
+  },
+  "breaker:diamond_block_breaker": {
+    "sound": "stone"
+  },
+  "breaker:netherite_block_breaker": {
+    "sound": "stone"
+  }
 }

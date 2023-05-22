@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "bright:lime_ceiling_light",
@@ -8,43 +8,16 @@
                     false,
                     true
                 ]
+            },
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.search"
             }
         },
         "components": {
             "minecraft:loot": "loot_tables/blocks/lime_ceiling_light.json",
             "tag:non_solid": {},
-            "minecraft:destroy_time": 0.3,
-            "minecraft:explosion_resistance": 0.3,
-            "minecraft:block_light_filter": 0,
             "minecraft:geometry": "geometry.ceiling_light",
-            "minecraft:aim_collision": {
-                "origin": [
-                    -2,
-                    13,
-                    -2
-                ],
-                "size": [
-                    4,
-                    3,
-                    4
-                ]
-            },
-            "minecraft:block_collision": {
-                "origin": [
-                    -2,
-                    13,
-                    -2
-                ],
-                "size": [
-                    4,
-                    3,
-                    4
-                ]
-            },
-            "minecraft:creative_category": {
-                "category": "items",
-                "group": "itemGroup.search"
-            },
             "minecraft:placement_filter": {
                 "conditions": [
                     {
@@ -58,13 +31,43 @@
                         ]
                     }
                 ]
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -2,
+                    13,
+                    -2
+                ],
+                "size": [
+                    4,
+                    3,
+                    4
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -2,
+                    13,
+                    -2
+                ],
+                "size": [
+                    4,
+                    3,
+                    4
+                ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
             }
         },
         "permutations": [
             {
                 "condition": "q.block_property('bright:lit') == true",
                 "components": {
-                    "minecraft:block_light_emission": 1.0,
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "minecraft:lime_concrete"
@@ -78,7 +81,8 @@
                     },
                     "minecraft:on_interact": {
                         "event": "bright:lit_false"
-                    }
+                    },
+                    "minecraft:light_emission": 10
                 }
             },
             {

@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "moregold:golden_log",
@@ -13,29 +13,38 @@
                     5,
                     6
                 ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.log"
             }
         },
         "components": {
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.log"
+            "minecraft:loot": "loot_tables/moregold/blocks/golden_log.json",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.25
             },
-            "minecraft:destroy_time": 1.25,
-            "minecraft:explosion_resistance": 4.2,
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
             "minecraft:unit_cube": {},
             "minecraft:on_player_placing": {
-                "event": "moregold:rotational"
+                "event": "event:rotational"
             },
             "minecraft:material_instances": {
+                "*": {
+                    "texture": "moregold:golden_log"
+                },
                 "up": {
                     "texture": "moregold:golden_log_top"
                 },
                 "down": {
                     "texture": "moregold:golden_log_top"
-                },
-                "*": {
-                    "texture": "moregold:golden_log"
                 }
+            },
+            "minecraft:on_interact": {
+                "condition": "q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_axe','minecraft:stone_axe','minecraft:iron_axe','minecraft:golden_axe','minecraft:diamond_axe','minecraft:netherite_axe')",
+                "event": "event:strip"
             }
         },
         "permutations": [
@@ -101,10 +110,66 @@
             }
         ],
         "events": {
-            "moregold:rotational": {
+            "event:rotational": {
                 "set_block_property": {
                     "moregold:rotation": "q.cardinal_block_face_placed_on"
                 }
+            },
+            "event:strip": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "playsound use.wood @p ~ ~ ~"
+                        },
+                        "damage": {
+                            "amount": 1,
+                            "type": "none",
+                            "target": "item"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 0",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 0]"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 1",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 1]"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 2",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 2]"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 3",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 3]"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 4",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 4]"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 5",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 5]"
+                        }
+                    },
+                    {
+                        "condition": "q.block_property('moregold:rotation') == 6",
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ moregold:stripped_golden_log [\"moregold:rotation\": 6]"
+                        }
+                    }
+                ]
             }
         }
     }

@@ -1,18 +1,18 @@
 {
-    "format_version": "1.16.220",
-    "magnet:iron_magnet_block": {
-        "sound": "stone"
-    },
-    "magnet:gold_magnet_block": {
-        "sound": "stone"
-    },
-    "magnet:copper_magnet_block": {
-        "sound": "stone"
-    },
-    "magnet:diamond_magnet_block": {
-        "sound": "stone"
-    },
-    "magnet:netherite_magnet_block": {
-        "sound": "stone"
-    }
+  "format_version": "1.16.220",
+  "magnet:iron_magnet_block": {
+    "sound": "stone"
+  },
+  "magnet:gold_magnet_block": {
+    "sound": "stone"
+  },
+  "magnet:copper_magnet_block": {
+    "sound": "stone"
+  },
+  "magnet:diamond_magnet_block": {
+    "sound": "stone"
+  },
+  "magnet:netherite_magnet_block": {
+    "sound": "stone"
+  }
 }

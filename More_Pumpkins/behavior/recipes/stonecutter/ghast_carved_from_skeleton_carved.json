@@ -1,0 +1,1 @@
+{"format_version": "1.19.40", "minecraft:recipe_shapeless": {"description": {"identifier": "morepumpkin:ghast_carved_from_skeleton_carved_stonecutting"}, "tags": ["stonecutter"], "ingredients": [{"item": "morepumpkin:ghast_carved_pumpkin"}], "result": "morepumpkin:skeleton_carved_pumpkin"}}

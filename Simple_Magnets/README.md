@@ -10,10 +10,10 @@ Easly pickup items from far away!
 |--------------------|----------|
 | supported          | `yes` |
 | namespace          | `magnet` |
-| version            | `1.1.0 ` |
+| version            | `1.2.0 ` |
 | resource UUID            | `16a46bd0-f937-4f63-88f3-c70280f6ffac` |
 | behavior UUID            | `c626559c-6a9e-4851-9b97-0213a2650294` |
-| mc_version         | `?` |
+| mc_version         | `1.19.80` |
 | multiplayer_tested | `no`     |
 | has_config         | `no`     |
 | dependency         | `null`   |

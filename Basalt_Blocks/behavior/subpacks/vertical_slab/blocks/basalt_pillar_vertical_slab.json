@@ -1,0 +1,226 @@
+{
+    "$credit": "Thanks to Legopitstop for creating this useful asset",
+    "format_version": "1.19.40",
+    "minecraft:block": {
+        "description": {
+            "identifier": "basaltblocks:polished_basalt_brick_pillar_vertical_slab",
+            "properties": {
+                "lps:direction": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "lps:type": [
+                    "single",
+                    "double"
+                ]
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stairs"
+            }
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:map_color": "#000000",
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4.2
+            },
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "basaltblocks:polished_basalt_brick_pillar_top"
+                },
+                "down": {
+                    "texture": "basaltblocks:polished_basalt_brick_pillar_top"
+                },
+                "*": {
+                    "texture": "basaltblocks:polished_basalt_brick_pillar"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "lps:place_block"
+            },
+            "minecraft:on_interact": {
+                "condition": "q.block_property('lps:type') != 'double' && q.is_item_name_any('slot.weapon.mainhand','basaltblocks:polished_basalt_brick_pillar_vertical_slab')",
+                "event": "lps:on_interact"
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('lps:direction') == 2 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/basalt_pillar_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -180,
+                        0
+                    ],
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 3 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/basalt_pillar_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 4 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/basalt_pillar_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ],
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:direction') == 5 && query.block_property('lps:type') == 'single'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/basalt_pillar_vertical_slab.json",
+                    "minecraft:geometry": "geometry.block.vertical_slab",
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ],
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            8
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('lps:type') == 'double'",
+                "components": {
+                    "minecraft:loot": "loot_tables/basaltblocks/blocks/basalt_pillar_double_vertical_slab.json",
+                    "minecraft:unit_cube": {}
+                }
+            }
+        ],
+        "events": {
+            "lps:on_interact": {
+                "decrement_stack": {},
+                "set_block_property": {
+                    "lps:type": "'double'",
+                    "lps:direction": "6"
+                },
+                "run_command": {
+                    "target": "player",
+                    "command": "playsound use.basalt @p"
+                }
+            },
+            "lps:place_block": {
+                "set_block_property": {
+                    "lps:direction": "(query.cardinal_facing_2d)"
+                }
+            }
+        }
+    }
+}

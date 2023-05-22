@@ -1,0 +1,1 @@
+{"format_version": "1.19.40", "minecraft:recipe_shapeless": {"description": {"identifier": "morepumpkin:uppercase_w_soul_lantern_from_uppercase_m_soul_lantern_stonecutting"}, "tags": ["stonecutter"], "ingredients": [{"item": "morepumpkin:uppercase_w_soul_jack_o_lantern"}], "result": "morepumpkin:uppercase_m_soul_jack_o_lantern"}}

@@ -1,33 +1,23 @@
-﻿########################################################
-# Ultimate Block Breaker                               #
-# Original by Sir_Craftypants, Bedrock by Legopitstop  #
-########################################################
+﻿pack.name=Ultimate Block Breaker RP
+pack.description=Block breaker! §8Developer: §6Legopitstop
 
-# Other translations
-gui.true=§2True
-gui.false=§4False
+gui.true=§2ON
+gui.false=§4OFF
 gui.upgrade=Upgraded to §7%s
 gui.downgrade=Downgraded to §7%s
-
-# Blocks
 tile.breaker:wooden_block_breaker.name=Wooden Block §7(#breaker)
 tile.breaker:stone_block_breaker.name=Stone Block §7(#breaker)
 tile.breaker:iron_block_breaker.name=Iron Block §7(#breaker)
 tile.breaker:gold_block_breaker.name=Golden Block §7(#breaker)
 tile.breaker:diamond_block_breaker.name=Diamond Block §7(#breaker)
 tile.breaker:netherite_block_breaker.name=Netherite Block §7(#breaker)
-
 item.breaker:stone_breaker_upgrade=Stone Breaker Upgrade §7(#breaker)
 item.breaker:stone_breaker_upgrade.desc=§7wood -> stone
-
 item.breaker:iron_breaker_upgrade=Iron Breaker Upgrade §7(#breaker)
 item.breaker:iron_breaker_upgrade.desc=§7stone -> iron
-
 item.breaker:gold_breaker_upgrade=Gold Breaker Upgrade §7(#breaker)
 item.breaker:gold_breaker_upgrade.desc=§7iron -> gold
-
 item.breaker:diamond_breaker_upgrade=Diamond Breaker Upgrade §7(#breaker)
 item.breaker:diamond_breaker_upgrade.desc=§7gold -> diamond
-
 item.breaker:netherite_breaker_upgrade=Netherite Breaker Upgrade §7(#breaker)
 item.breaker:netherite_breaker_upgrade.desc=§7diamond -> netherite

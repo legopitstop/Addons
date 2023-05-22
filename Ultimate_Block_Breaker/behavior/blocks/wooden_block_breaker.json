@@ -1,10 +1,12 @@
 {
-    "format_version": "1.17.3",
+    "format_version": "1.19.40",
     "minecraft:block": {
         "description": {
             "identifier": "breaker:wooden_block_breaker",
             "properties": {
                 "breaker:direction": [
+                    0,
+                    1,
                     2,
                     3,
                     4,
@@ -15,17 +17,21 @@
                     false,
                     true
                 ]
+            },
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.search"
             }
         },
         "components": {
-            "minecraft:creative_category": {
-                "category": "items",
-                "group": "itemGroup.search"
-            },
             "minecraft:loot": "loot_tables/blocks/wooden_block_breaker.json",
-            "minecraft:block_light_absorption": 0,
-            "minecraft:destroy_time": 3.5,
-            "minecraft:explosion_resistance": 3.5,
+            "minecraft:light_dampening": 0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3.5
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3.5
+            },
             "minecraft:unit_cube": {},
             "minecraft:on_player_placing": {
                 "event": "breaker:place_direction"
@@ -58,9 +64,9 @@
                             "texture": "breaker:wooden_block_breaker_side"
                         }
                     },
-                    "minecraft:ticking": {
+                    "minecraft:queued_ticking": {
                         "looping": true,
-                        "range": [
+                        "interval_range": [
                             11,
                             11
                         ],
@@ -93,6 +99,26 @@
                             "texture": "breaker:wooden_block_breaker_side"
                         }
                     }
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:direction') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('breaker:direction') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        180,
+                        0,
+                        0
+                    ]
                 }
             },
             {
@@ -140,7 +166,7 @@
             "breaker:on_interact": {
                 "sequence": [
                     {
-                        "condition": "query.get_equipped_item_name =='stone_breaker_upgrade'",
+                        "condition": "q.is_item_name_any('slot.weapon.mainhand','breaker:stone_breaker_upgrade')",
                         "trigger": {
                             "event": "breaker:upgrade"
                         }
@@ -189,67 +215,83 @@
                         "condition": "q.block_property('breaker:direction') == 2 && q.block_property('breaker:powered') == false",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_2_false ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 2, \"breaker:powered\": true]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 3 && q.block_property('breaker:powered') == false",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_3_false ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 3, \"breaker:powered\": true]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 4 && q.block_property('breaker:powered') == false",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_4_false ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 4, \"breaker:powered\": true]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 5 && q.block_property('breaker:powered') == false",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_5_false ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 5, \"breaker:powered\": true]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 2 && q.block_property('breaker:powered') == true",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_2_true ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 2, \"breaker:powered\": false]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 3 && q.block_property('breaker:powered') == true",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_3_true ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 3, \"breaker:powered\": false]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 4 && q.block_property('breaker:powered') == true",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_4_true ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 4, \"breaker:powered\": false]"
                         }
                     },
                     {
                         "condition": "q.block_property('breaker:direction') == 5 && q.block_property('breaker:powered') == true",
                         "run_command": {
                             "target": "block",
-                            "command": "structure load breaker:stone_block_breaker_5_true ~ ~ ~"
+                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 5, \"breaker:powered\": false]"
                         }
                     }
                 ]
             },
             "breaker:place_direction": {
                 "set_block_property": {
-                    "breaker:direction": "(query.cardinal_facing_2d)"
+                    "breaker:direction": "q.cardinal_facing"
                 }
             },
             "breaker:break_block": {
                 "sequence": [
+                    {
+                        "condition": "query.block_property('breaker:direction') == 0",
+                        "run_command": {
+                            "command": [
+                                "function breaker/up"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "query.block_property('breaker:direction') == 1",
+                        "run_command": {
+                            "command": [
+                                "function breaker/down"
+                            ]
+                        }
+                    },
                     {
                         "condition": "query.block_property('breaker:direction') == 2",
                         "run_command": {

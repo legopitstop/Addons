@@ -29,15 +29,11 @@
             "minecraft:repairable": {
                 "repair_items": [
                     {
-                        "items": [
-                            "magnet:copper_magnet"
-                        ],
+                        "items": ["magnet:copper_magnet"],
                         "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
                     },
                     {
-                        "items": [
-                            "minecraft:copper_ingot"
-                        ],
+                        "items": ["minecraft:copper_ingot"],
                         "repair_amount": "q.remaining_durability + 0.05"
                     }
                 ]
@@ -47,7 +43,7 @@
             "event:teleport_item": {
                 "run_command": {
                     "target": "self",
-                    "command": "tp @e[type=item,r=7.425] ~ ~ ~"
+                    "command": "function zzz/copper"
                 },
                 "damage": {
                     "amount": 1,

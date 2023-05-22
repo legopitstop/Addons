@@ -10,13 +10,13 @@ The only light add-on you will ever need!
 |--------------------|----------|
 | supported          | `yes` |
 | namespace          | `bright` |
-| version            | `1.1.0 ` |
+| version            | `1.2.0 ` |
 | resource UUID            | `a9667f51-351b-47b6-bf2b-cedaa45cd884` |
 | behavior UUID            | `2fe12920-6843-4f14-aa89-c4c1e14f4b9f` |
-| mc_version         | `?` |
+| mc_version         | `1.19.80` |
 | multiplayer_tested | `no`     |
 | has_config         | `no`     |
-| dependency         | `Assets Plus v1.2.0`   |
+| dependency         | `Assets Plus v1.4.0`   |
 
 ## LINKS
 - [Download](https://mcpedl.com/bright-addon-1/)

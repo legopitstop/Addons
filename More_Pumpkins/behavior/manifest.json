@@ -1,18 +1,18 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Happy Halloween! \u00c2\u00a78Pack by: \u00c2\u00a76Legopitstop",
-        "name": "More Pumpkins BP",
+        "description": "pack.description",
+        "name": "pack.name",
         "uuid": "4e1db273-4d60-4728-a674-7e5b3648f180",
         "version": [
             1,
-            0,
+            1,
             0
         ],
         "min_engine_version": [
             1,
-            17,
-            3
+            19,
+            80
         ]
     },
     "metadata": {
@@ -24,12 +24,12 @@
     },
     "modules": [
         {
-            "description": "Desc",
+            "description": "pack.description",
             "type": "data",
             "uuid": "c2ecdc36-955c-4e22-9b69-3aea371005a6",
             "version": [
                 1,
-                0,
+                1,
                 0
             ]
         }
@@ -39,7 +39,16 @@
             "uuid": "fc1059e6-366e-4fde-9b49-8be5b1434b3d",
             "version": [
                 1,
-                0,
+                1,
+                0
+            ]
+        },
+        {
+            "description": "Assets Plus RP",
+            "uuid": "c86dd7d9-e84e-456f-a84f-1993e353da4c",
+            "version": [
+                1,
+                4,
                 0
             ]
         }
