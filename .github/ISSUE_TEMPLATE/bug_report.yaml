@@ -1,6 +1,6 @@
-name: Bug Report
-description: Submit a bedrock bug report.
-title: "(ADDON) "
+name: Addon Bug Report
+description: Submit an addon bug report.
+title: "[addon] "
 labels: 
 - "bug :bug:"
 assignees:
@@ -10,6 +10,33 @@ body:
    attributes:
      value: |
       Note: Please search to see if an issue already exists for the bug you encountered.
+
+ - type: dropdown
+   id: addon
+   validations:
+     required: true
+   attributes:
+     label: What Addon are you using?
+     description: The Addon where the issue is taking place
+     multiple: false
+     options:
+       - Basalt Blocks
+       - Bright
+       - Canned
+       - Construction Blocks
+       - Modders Christmas
+       - More Blocks
+       - More Gold
+       - More Honey
+       - More Pumpkins
+       - More Stairs and Slabs
+       - Simple Magnets
+       - Spawner Craft
+       - Ultimate Block Breaker
+       - Christmas Presents (Deprived)
+       - Dr Seuss (Deprived)
+       - Magic Affinity (Deprived)
+       - Other
 
  - type: textarea
    id: describe
@@ -47,23 +74,24 @@ body:
      required: true
    attributes:
      label: Minecraft Version
-     description: The version of Minecraft that you are using this addon on.
-     placeholder: e.g. 1.18.2
+     description: The version of Minecraft that you are using this mod on.
+     placeholder: e.g. 1.20.10
 
  - type: input
    id: addon_version
    validations:
      required: true
    attributes:
-     label: Mod Version
-     description: The version of the Mod that you are using.
+     label: Addon Version
+     description: The version of the Addon that you are using.
+     placeholder: e.g. 1.0.0
 
  - type: input
    id: platform
    attributes:
      label: Platform
-     description: The device that you are using this addon on. 
-     placeholder: e.g. iOS, win10
+     description: The device that you are using this mod on. 
+     placeholder: e.g. Windows 11, iOS, Android
 
  - type: textarea
    id: other
