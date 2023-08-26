@@ -2,13 +2,13 @@
     "format_version": "1.19.40",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "spawnercraft:parrot_spawn_egg"
+            "identifier": "spawnercraft:camel_spawn_egg"
         },
         "tags": [
             "crafting_table"
         ],
         "pattern": [
-            " T ",
+            " S ",
             "SES",
             " G "
         ],
@@ -20,16 +20,13 @@
             "G": {
                 "item": "minecraft:gold_ingot"
             },
-            "T": {
-                "item": "minecraft:cocoa_beans"
-            },
             "S": {
-                "item": "minecraft:firework_rocket"
+                "item": "minecraft:cactus"
             }
         },
         "result": [
             {
-                "item": "minecraft:parrot_spawn_egg",
+                "item": "minecraft:camel_spawn_egg",
                 "count": 1
             }
         ]
