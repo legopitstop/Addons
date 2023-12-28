@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.5.0] - 12/27/2023
+### General
+- Updated for 1.20.51
+- Requires Assets+ v1.6.0
+- Added "Update 1.21" toggle in behavior pack settings.
+
+## [v1.4.0] - 11-7-2023
+### General
+- Updated for 1.20.41
+- Increasing layers will now play the sound for all players within 17 blocks.
+- You can now place the layers up side down.
+- Mangrove, Slime, and Honey layers have custom models.
+
 ## [v1.3.0] - 5-22-2023
 
 ### General

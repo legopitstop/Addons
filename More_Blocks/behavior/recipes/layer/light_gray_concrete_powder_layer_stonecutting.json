@@ -1,5 +1,5 @@
 {
-    "format_version": "1.19.40",
+    "format_version": "1.20.50",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "moreblocks:light_gray_concrete_powder_layer_stonecutting"
@@ -16,6 +16,12 @@
         "result": {
             "item": "moreblocks:light_gray_concrete_powder_layer",
             "count": 8
-        }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:concrete_powder",
+                "data": 8
+            }
+        ]
     }
 }

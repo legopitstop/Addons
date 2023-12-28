@@ -1,5 +1,5 @@
 {
-    "format_version": "1.19.40",
+    "format_version": "1.20.50",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "moreblocks:netherite_block_layer_stonecutting"
@@ -15,6 +15,11 @@
         "result": {
             "item": "moreblocks:netherite_block_layer",
             "count": 8
-        }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:netherite_block"
+            }
+        ]
     }
 }

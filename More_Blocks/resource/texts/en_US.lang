@@ -1,5 +1,28 @@
 ﻿pack.name=More Blocks RP
-pack.description=Lot's More Blocks! §8Developer: §6Legopitstop
+pack.description=v1.4.0 Lot's More Blocks! §8Developer: §6Legopitstop
+
+## 1.21 Layers
+tile.moreblocks:chiseled_copper_layer.name=Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:chiseled_tuff_brick_layer.name=Chiseled Tuff Brick Layer §7(#moreblocks)
+tile.moreblocks:chiseled_tuff_layer.name=Chiseled Tuff Layer §7(#moreblocks)
+tile.moreblocks:copper_grate_layer.name=Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:exposed_chiseled_copper_layer.name=Exposed Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:exposed_copper_grate_layer.name=Exposed Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:oxidized_chiseled_copper_layer.name=Oxidized Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:oxidized_copper_grate_layer.name=Oxidized Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:polished_tuff_layer.name=Polished Tuff Layer §7(#moreblocks)
+tile.moreblocks:tuff_brick_layer.name=Tuff Brick Layer §7(#moreblocks)
+tile.moreblocks:tuff_layer.name=Tuff Layer §7(#moreblocks)
+tile.moreblocks:waxed_chiseled_copper_layer.name=Waxed Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:waxed_copper_grate_layer.name=Waxed Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:waxed_exposed_chiseled_copper_layer.name=Waxed Exposed Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:waxed_exposed_copper_grate_layer.name=Waxed Exposed Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:waxed_oxidized_chiseled_copper_layer.name=Waxed Oxidized Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:waxed_oxidized_copper_grate_layer.name=Waxed Oxidized Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:waxed_weathered_chiseled_copper_layer.name=Waxed Weathered Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:waxed_weathered_copper_grate_layer.name=Waxed Weathered Copper Grate Layer §7(#moreblocks)
+tile.moreblocks:weathered_chiseled_copper_layer.name=Weathered Chiseled Copper Layer §7(#moreblocks)
+tile.moreblocks:weathered_copper_grate_layer.name=Weathered Copper Grate Layer §7(#moreblocks)
 
 ## 1.20 Layers
 tile.moreblocks:cherry_layer.name=Cherry Layer §7(#moreblocks)
@@ -276,7 +299,7 @@ tile.moreblocks:flowering_azalea_leaves_layer.name=Flowering Azalea Leaves Layer
 tile.moreblocks:ice_layer.name=Ice Layer §7(#moreblocks)
 tile.moreblocks:packed_ice_layer.name=Packed Ice Layer §7(#moreblocks)
 tile.moreblocks:blue_ice_layer.name=Blue Ice Layer §7(#moreblocks)
-tile.moreblocks:moss_layer.name=Mos Layer §7(#moreblocks)
+tile.moreblocks:moss_layer.name=Moss Layer §7(#moreblocks)
 tile.moreblocks:rooted_dirt_layer.name=Rooted Dirt Layer §7(#moreblocks)
 tile.moreblocks:mangrove_roots_layer.name=Mangrove Root Layer §7(#moreblocks)
 tile.moreblocks:muddy_mangrove_roots_layer.name=Muddy Mangrove Root Layer §7(#moreblocks)

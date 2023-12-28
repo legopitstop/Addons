@@ -4,16 +4,6 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "moreblocks:grass_side": {"textures": {"overlay_color": "#79c05a","path":"textures/blocks/grass_side"}},
-    "moreblocks:grass_top": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/grass_top"}},
-    "moreblocks:acacia_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/acacia_leaves"}},
-    "moreblocks:birch_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/birch_leaves"}},
-    "moreblocks:dark_oak_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/dark_oak_leaves"}},
-    "moreblocks:jungle_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/jungle_leaves"}},
-    "moreblocks:oak_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/oak_leaves2"}},
-    "moreblocks:spruce_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/spruce_leaves"}},
-    "moreblocks:mangrove_leaves": {"textures": {"overlay_color": "#79c05a","path":"textures/moreblocks/blocks/mangrove_leaves"}},
-
     "moreblocks:glass_layer_side1": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side1.png"},
     "moreblocks:glass_layer_side2": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side2.png"},
     "moreblocks:glass_layer_side3": {"textures": "textures/moreblocks/blocks/layers/glass_layer_side3.png"},

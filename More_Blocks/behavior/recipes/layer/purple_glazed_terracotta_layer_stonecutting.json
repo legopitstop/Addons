@@ -1,5 +1,5 @@
 {
-    "format_version": "1.19.40",
+    "format_version": "1.20.50",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "moreblocks:purple_glazed_terracotta_layer_stonecutting"
@@ -15,6 +15,11 @@
         "result": {
             "item": "moreblocks:purple_glazed_terracotta_layer",
             "count": 8
-        }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:purple_glazed_terracotta"
+            }
+        ]
     }
 }

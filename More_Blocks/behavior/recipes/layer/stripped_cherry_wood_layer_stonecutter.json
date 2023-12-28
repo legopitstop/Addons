@@ -1,1 +1,25 @@
-{"format_version": "1.17.1", "minecraft:recipe_shapeless": {"description": {"identifier": "moreblocks:stripped_cherry_wood_layer_stonecutting"}, "tags": ["stonecutter"], "ingredients": [{"item": "minecraft:stripped_cherry_wood"}], "result": {"item": "moreblocks:stripped_cherry_wood_layer", "count": 8}}}
+{
+    "format_version": "1.17.1",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "moreblocks:stripped_cherry_wood_layer_stonecutting"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stripped_cherry_wood"
+            }
+        ],
+        "result": {
+            "item": "moreblocks:stripped_cherry_wood_layer",
+            "count": 8
+        },
+        "unlock": [
+            {
+                "item": "minecraft:stripped_cherry_wood"
+            }
+        ]
+    }
+}

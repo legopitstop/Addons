@@ -1,9 +1,9 @@
 {
-    "format_version": "1.19.40",
+    "format_version": "1.20.50",
     "minecraft:block": {
         "description": {
             "identifier": "moreblocks:oak_log_layer",
-            "properties": {
+            "states": {
                 "moreblocks:layers": [
                     1,
                     2,
@@ -13,15 +13,16 @@
                     6,
                     7,
                     8
-                ],
-                "moreblocks:half": [
-                    "bottom",
-                    "top"
                 ]
             },
             "menu_category": {
                 "category": "construction",
                 "group": "itemGroup.search"
+            },
+            "traits": {
+                "minecraft:placement_position": {
+                    "enabled_states": ["minecraft:vertical_half"]
+                }
             }
         },
         "components": {
@@ -35,26 +36,35 @@
             },
             "minecraft:material_instances": {
                 "up": {
-                    "texture": "minecraft:oak_log_top",
-                    "render_method": "opaque"
+                    "texture": "minecraft:oak_log_top"
                 },
                 "down": {
-                    "texture": "minecraft:oak_log_top",
-                    "render_method": "opaque"
+                    "texture": "minecraft:oak_log_top"
                 },
                 "*": {
-                    "texture": "minecraft:oak_log",
-                    "render_method": "opaque"
+                    "texture": "minecraft:oak_log"
                 }
             },
             "minecraft:on_interact": {
-                "condition": "( q.is_item_name_any('slot.weapon.mainhand','moreblocks:oak_log_layer') && q.block_property('moreblocks:layers') != 8 ) || q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_axe','minecraft:stone_axe','minecraft:iron_axe','minecraft:golden_axe','minecraft:diamond_axe','minecraft:netherite_axe')",
+                "condition": "( q.is_item_name_any('slot.weapon.mainhand','moreblocks:oak_log_layer') && q.block_state('moreblocks:layers') != 8 ) || q.is_item_name_any('slot.weapon.mainhand','minecraft:wooden_axe','minecraft:stone_axe','minecraft:iron_axe','minecraft:golden_axe','minecraft:diamond_axe','minecraft:netherite_axe')",
                 "event": "event:on_interact"
             }
         },
-        "permutations": [
+         "permutations": [
+        {
+          "condition": "q.block_state('minecraft:vertical_half')=='top'",
+          "components": {
+            "minecraft:transformation": {
+              "rotation": [
+                180,
+                0,
+                0
+              ]
+            }
+          }
+        },
             {
-                "condition": "q.block_property('moreblocks:layers') == 1",
+                "condition": "q.block_state('moreblocks:layers') == 1",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer1.json",
                     "minecraft:geometry": "geometry.template_height0",
@@ -85,7 +95,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 2",
+                "condition": "q.block_state('moreblocks:layers') == 2",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer2.json",
                     "minecraft:geometry": "geometry.template_height1",
@@ -116,7 +126,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 3",
+                "condition": "q.block_state('moreblocks:layers') == 3",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer3.json",
                     "minecraft:geometry": "geometry.template_height2",
@@ -147,7 +157,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 4",
+                "condition": "q.block_state('moreblocks:layers') == 4",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer4.json",
                     "minecraft:geometry": "geometry.template_height3",
@@ -178,7 +188,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 5",
+                "condition": "q.block_state('moreblocks:layers') == 5",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer5.json",
                     "minecraft:geometry": "geometry.template_height4",
@@ -209,7 +219,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 6",
+                "condition": "q.block_state('moreblocks:layers') == 6",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer6.json",
                     "minecraft:geometry": "geometry.template_height5",
@@ -240,7 +250,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 7",
+                "condition": "q.block_state('moreblocks:layers') == 7",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer7.json",
                     "minecraft:geometry": "geometry.template_height6",
@@ -271,7 +281,7 @@
                 }
             },
             {
-                "condition": "q.block_property('moreblocks:layers') == 8",
+                "condition": "q.block_state('moreblocks:layers') == 8",
                 "components": {
                     "minecraft:loot": "loot_tables/blocks/oak_log_layer8.json",
                     "minecraft:unit_cube": {}
@@ -282,7 +292,7 @@
             "event:on_interact": {
                 "sequence": [
                     {
-                        "condition": "q.block_property('moreblocks:layers') != 8 && q.is_item_name_any('slot.weapon.mainhand','moreblocks:oak_log_layer')",
+                        "condition": "q.block_state('moreblocks:layers') != 8 && q.is_item_name_any('slot.weapon.mainhand','moreblocks:oak_log_layer')",
                         "trigger": {
                             "event": "event:increase_layers"
                         }
@@ -299,7 +309,7 @@
                 "sequence": [
                     {
                         "run_command": {
-                            "command": "playsound use.wood @p ~ ~ ~"
+                            "command": "playsound use.wood @a[r=17] ~ ~ ~"
                         },
                         "damage": {
                             "amount": 1,
@@ -308,51 +318,51 @@
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 1",
+                        "condition": "q.block_state('moreblocks:layers') == 1",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 1]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 1]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 2",
+                        "condition": "q.block_state('moreblocks:layers') == 2",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 2]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 2]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 3",
+                        "condition": "q.block_state('moreblocks:layers') == 3",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 3]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 3]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 4",
+                        "condition": "q.block_state('moreblocks:layers') == 4",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 4]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 4]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 5",
+                        "condition": "q.block_state('moreblocks:layers') == 5",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 5]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 5]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 6",
+                        "condition": "q.block_state('moreblocks:layers') == 6",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 6]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 6]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 7",
+                        "condition": "q.block_state('moreblocks:layers') == 7",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 7]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 7]"
                         }
                     },
                     {
-                        "condition": "q.block_property('moreblocks:layers') == 8",
+                        "condition": "q.block_state('moreblocks:layers') == 8",
                         "run_command": {
-                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\": 8]"
+                            "command": "setblock ~ ~ ~ moreblocks:stripped_oak_log_layer [\"moreblocks:layers\"= 8]"
                         }
                     }
                 ]
@@ -362,10 +372,10 @@
                     {
                         "decrement_stack": {},
                         "run_command": {
-                            "command": "playsound step.wood @p ~ ~ ~"
+                            "command": "playsound step.wood @a[r=17] ~ ~ ~"
                         },
-                        "set_block_property": {
-                            "moreblocks:layers": "q.block_property('moreblocks:layers') + 1"
+                        "set_block_state": {
+                            "moreblocks:layers": "q.block_state('moreblocks:layers') + 1"
                         }
                     }
                 ]
