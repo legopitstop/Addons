@@ -21,5 +21,5 @@ More Stairs and Slabs!
 ## LINKS
 - [Download](https://mcpedl.com/more-stairs-and-slabs-addon/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/More_Stairs_and_Slabs)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

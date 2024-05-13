@@ -21,5 +21,5 @@ MoreHoney Texture
 ## LINKS
 - [Download](https://mcpedl.com/more-honey-bedrock-addon/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/More_Honey)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

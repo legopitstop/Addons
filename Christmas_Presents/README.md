@@ -21,5 +21,5 @@ Christmas!
 ## LINKS
 - [Download](https://mcpedl.com/christmas-presents-addon/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Christmas_Presents)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

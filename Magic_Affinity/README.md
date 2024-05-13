@@ -19,5 +19,5 @@ DESC
 ## LINKS
 - [Download](https://mcpedl.com/magic-affinity/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Magic_Affinity)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

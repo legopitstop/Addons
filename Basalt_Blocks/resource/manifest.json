@@ -15,8 +15,8 @@
         "authors": [
             "legopitstop"
         ],
-        "license": "Legopitstop's Common License",
-        "url": "https://legopitstop.weebly.com"
+        "license": "https://license.lpsmods.dev",
+        "url": "https://lpsmods.dev"
     },
     "modules": [
         {

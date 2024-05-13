@@ -21,5 +21,5 @@ More Basalt
 ## LINKS
 - [Download](https://mcpedl.com/basalt-blocks-addon/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Basalt_Blocks)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

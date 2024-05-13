@@ -20,5 +20,5 @@ Craft spawn eggs & spawners!
 ## LINKS
 - [Download](https://mcpedl.com/spawner-craft-behavior-pack/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Spawner_Craft)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

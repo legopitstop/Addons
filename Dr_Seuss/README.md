@@ -21,5 +21,5 @@ Nostalgia Is Real!
 ## LINKS
 - [Download](https://mcpedl.com/dr-seuss-addon/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Dr_Seuss)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

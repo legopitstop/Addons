@@ -21,5 +21,5 @@ Merry Christmas!
 ## LINKS
 - [Download](https://mcpedl.com/modder-s-christmas/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Modders_Christmas)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

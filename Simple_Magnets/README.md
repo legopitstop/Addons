@@ -21,5 +21,5 @@ Easly pickup items from far away!
 ## LINKS
 - [Download](https://mcpedl.com/simple-magnets-add-on/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/Simple_Magnets)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)

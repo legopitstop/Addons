@@ -21,5 +21,5 @@ Lot's More Gold Food
 ## LINKS
 - [Download](https://mcpedl.com/more-gold-bedrock-add-on/)
 - [Wiki Page](https://github.com/legopitstop/addons/wiki/More_Gold)
-- [License](https://legopitstop.weebly.com/license.html)
+- [License](https://license.lpsmods.dev)
 - [Bug Report](https://github.com/legopitstop/addons/issues)
