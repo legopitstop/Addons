@@ -2,11 +2,10 @@
   "format_version": "1.20.50",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "spawnercraft:rabbit_spawn_egg"
+      "identifier": "spawnercraft:breeze_spawn_egg"
     },
     "tags": ["crafting_table"],
     "pattern": [" T ", "SES", " G "],
-    "group": "friendly",
     "key": {
       "E": {
         "item": "minecraft:egg"
@@ -14,25 +13,25 @@
       "G": {
         "item": "minecraft:gold_ingot"
       },
-      "T": {
-        "item": "minecraft:rabbit_hide"
-      },
       "S": {
-        "item": "minecraft:rabbit"
+        "item": "minecraft:wind_charge"
+      },
+      "T": {
+        "item": "minecraft:breeze_rod"
       }
     },
     "result": [
       {
-        "item": "minecraft:rabbit_spawn_egg",
+        "item": "minecraft:breeze_spawn_egg",
         "count": 1
       }
     ],
     "unlock": [
       {
-        "item": "minecraft:rabbit_hide"
+        "item": "minecraft:wind_charge"
       },
       {
-        "item": "minecraft:rabbit"
+        "item": "minecraft:breeze_rod"
       }
     ]
   }

@@ -1,37 +1,39 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:vindicator_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " T ",
-            "SES",
-            " G "
-        ],
-        "group": "hostile",
-        "key": {
-            "E": {
-                "item": "minecraft:egg"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "S": {
-                "item": "minecraft:emerald"
-            },
-            "T": {
-                "item": "minecraft:iron_axe"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:vindicator_spawn_egg",
-                "count": 1
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:vindicator_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" T ", "SES", " G "],
+    "group": "hostile",
+    "key": {
+      "E": {
+        "item": "minecraft:egg"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:emerald"
+      },
+      "T": {
+        "item": "minecraft:iron_axe"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:vindicator_spawn_egg",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:emerald"
+      },
+      {
+        "item": "minecraft:iron_axe"
+      }
+    ]
+  }
 }

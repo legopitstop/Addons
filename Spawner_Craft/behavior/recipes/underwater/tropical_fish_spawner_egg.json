@@ -1,41 +1,43 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:tropical_fish_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " T ",
-            "SES",
-            " G "
-        ],
-        "group": "underwater",
-        "key": {
-            "E": {
-                "item": "minecraft:egg"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "S": {
-                "item": "minecraft:water_bucket"
-            },
-            "T": {
-                "item": "minecraft:tropical_fish"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:tropical_fish_spawn_egg",
-                "count": 1
-            },
-            {
-                "item": "minecraft:bucket",
-                "count": 2
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:tropical_fish_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" T ", "SES", " G "],
+    "group": "underwater",
+    "key": {
+      "E": {
+        "item": "minecraft:egg"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:water_bucket"
+      },
+      "T": {
+        "item": "minecraft:tropical_fish"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:tropical_fish_spawn_egg",
+        "count": 1
+      },
+      {
+        "item": "minecraft:bucket",
+        "count": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:water_bucket"
+      },
+      {
+        "item": "minecraft:tropical_fish"
+      }
+    ]
+  }
 }

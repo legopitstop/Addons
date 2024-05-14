@@ -2,11 +2,10 @@
   "format_version": "1.20.50",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "spawnercraft:stray_spawn_egg"
+      "identifier": "spawnercraft:bogged_spawn_egg"
     },
     "tags": ["crafting_table"],
-    "pattern": [" T ", "SES", " G "],
-    "group": "hostile",
+    "pattern": [" T ", "REB", " G "],
     "key": {
       "E": {
         "item": "minecraft:skeleton_spawn_egg"
@@ -14,16 +13,20 @@
       "G": {
         "item": "minecraft:gold_ingot"
       },
-      "S": {
-        "item": "minecraft:ice"
+      "R": {
+        "item": "minecraft:red_mushroom"
+      },
+      "B": {
+        "item": "minecraft:brown_mushroom"
       },
       "T": {
-        "item": "minecraft:bow"
+        "item": "minecraft:arrow",
+        "data": 26
       }
     },
     "result": [
       {
-        "item": "minecraft:stray_spawn_egg",
+        "item": "minecraft:bogged_spawn_egg",
         "count": 1
       }
     ],
@@ -32,10 +35,14 @@
         "item": "minecraft:skeleton_spawn_egg"
       },
       {
-        "item": "minecraft:ice"
+        "item": "minecraft:red_mushroom"
       },
       {
-        "item": "minecraft:bow"
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:arrow",
+        "data": 26
       }
     ]
   }

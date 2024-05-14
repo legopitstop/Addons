@@ -1,33 +1,38 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:mob_spawner"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "BBB",
-            "BDB",
-            "BOB"
-        ],
-        "key": {
-            "B": {
-                "item": "minecraft:iron_bars"
-            },
-            "O": {
-                "item": "minecraft:obsidian"
-            },
-            "D": {
-                "item": "minecraft:diamond_block"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:mob_spawner",
-                "count": 1
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:mob_spawner"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["BBB", "BDB", "BOB"],
+    "key": {
+      "B": {
+        "item": "minecraft:iron_bars"
+      },
+      "O": {
+        "item": "minecraft:obsidian"
+      },
+      "D": {
+        "item": "minecraft:diamond_block"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:mob_spawner",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:iron_bars"
+      },
+      {
+        "item": "minecraft:obsidian"
+      },
+      {
+        "item": "minecraft:diamond_block"
+      }
+    ]
+  }
 }

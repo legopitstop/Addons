@@ -2,11 +2,10 @@
   "format_version": "1.20.50",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "spawnercraft:magma_cube_spawn_egg"
+      "identifier": "spawnercraft:armadillo_spawn_egg"
     },
     "tags": ["crafting_table"],
     "pattern": [" S ", "SES", " G "],
-    "group": "nether",
     "key": {
       "E": {
         "item": "minecraft:egg"
@@ -15,18 +14,16 @@
         "item": "minecraft:gold_ingot"
       },
       "S": {
-        "item": "minecraft:magma"
+        "item": "minecraft:armadillo_scute"
       }
     },
-    "result": [
-      {
-        "item": "minecraft:magma_cube_spawn_egg",
-        "count": 1
-      }
-    ],
+    "result": {
+      "item": "minecraft:armadillo_spawn_egg",
+      "count": 1
+    },
     "unlock": [
       {
-        "item": "minecraft:magma"
+        "item": "minecraft:armadillo_scute"
       }
     ]
   }

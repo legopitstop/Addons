@@ -1,5 +1,5 @@
 {
-    "format_version": "1.19.40",
+    "format_version": "1.20.50",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "spawnercraft:zombified_piglin_spawn_egg"
@@ -20,6 +20,14 @@
             {
                 "item": "minecraft:zombie_pigman_spawn_egg",
                 "count": 2
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:piglin_spawn_egg"
+            },
+            {
+                "item": "minecraft:zombie_spawn_egg"
             }
         ]
     }

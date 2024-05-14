@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 5/13/2024
+### General
+- Updated for 1.20.81
+- Recipes will unlock when you obtain an ingredient used in the recipe. 
+- Added "Update 1.21" toggle to pack settings for recipes coming to 1.21
+
+### New Recipes
+
+- Armadillo Spawn Egg
+
+### New Experimental Recipes
+
+- Breeze Spawn Egg
+- Bogged Spawn Egg
+
 ## [1.3.0] - 8-26-2023
 ### General
 - Updated for 1.20.1

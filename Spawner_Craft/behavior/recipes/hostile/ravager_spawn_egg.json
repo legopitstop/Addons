@@ -1,37 +1,39 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:ravager_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " T ",
-            "SES",
-            " G "
-        ],
-        "group": "hostile",
-        "key": {
-            "E": {
-                "item": "minecraft:egg"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "S": {
-                "item": "minecraft:iron_block"
-            },
-            "T": {
-                "item": "minecraft:saddle"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:ravager_spawn_egg",
-                "count": 1
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:ravager_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" T ", "SES", " G "],
+    "group": "hostile",
+    "key": {
+      "E": {
+        "item": "minecraft:egg"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:iron_block"
+      },
+      "T": {
+        "item": "minecraft:saddle"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:ravager_spawn_egg",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:iron_block"
+      },
+      {
+        "item": "minecraft:saddle"
+      }
+    ]
+  }
 }

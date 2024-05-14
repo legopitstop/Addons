@@ -1,38 +1,41 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:mooshroom_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " T ",
-            "SES",
-            " G "
-        ],
-        "group": "friendly",
-        "key": {
-            "E": {
-                "item": "minecraft:spawn_egg"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "T": {
-                "item": "minecraft:red_mushroom_block"
-            },
-            "S": {
-                "item": "minecraft:red_mushroom",
-                "data": 14
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:mooshroom_spawn_egg",
-                "count": 1
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:mooshroom_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" T ", "SES", " G "],
+    "group": "friendly",
+    "key": {
+      "E": {
+        "item": "minecraft:spawn_egg"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "T": {
+        "item": "minecraft:red_mushroom_block"
+      },
+      "S": {
+        "item": "minecraft:red_mushroom",
+        "data": 14
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:mooshroom_spawn_egg",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:red_mushroom_block"
+      },
+      {
+        "item": "minecraft:red_mushroom",
+        "data": 14
+      }
+    ]
+  }
 }

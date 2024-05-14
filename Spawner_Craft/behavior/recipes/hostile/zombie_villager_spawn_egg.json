@@ -1,26 +1,32 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shapeless": {
-        "description": {
-            "identifier": "spawnercraft:zombie_villager_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "hostile",
-        "ingredients": [
-            {
-                "item": "minecraft:villager_spawn_egg"
-            },
-            {
-                "item": "minecraft:zombie_spawn_egg"
-            }
-        ],
-        "result": [
-            {
-                "item": "minecraft:zombie_villager_spawn_egg",
-                "count": 2
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "spawnercraft:zombie_villager_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "group": "hostile",
+    "ingredients": [
+      {
+        "item": "minecraft:villager_spawn_egg"
+      },
+      {
+        "item": "minecraft:zombie_spawn_egg"
+      }
+    ],
+    "result": [
+      {
+        "item": "minecraft:zombie_villager_spawn_egg",
+        "count": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:villager_spawn_egg"
+      },
+      {
+        "item": "minecraft:zombie_spawn_egg"
+      }
+    ]
+  }
 }

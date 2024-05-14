@@ -1,41 +1,43 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:tadpole_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " T ",
-            "SES",
-            " G "
-        ],
-        "group": "underwater",
-        "key": {
-            "E": {
-                "item": "minecraft:egg"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "S": {
-                "item": "minecraft:water_bucket"
-            },
-            "T": {
-                "item": "minecraft:tadpole_bucket"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:tadpole_spawn_egg",
-                "count": 1
-            },
-            {
-                "item": "minecraft:bucket",
-                "count": 3
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:tadpole_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" T ", "SES", " G "],
+    "group": "underwater",
+    "key": {
+      "E": {
+        "item": "minecraft:egg"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:water_bucket"
+      },
+      "T": {
+        "item": "minecraft:tadpole_bucket"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:tadpole_spawn_egg",
+        "count": 1
+      },
+      {
+        "item": "minecraft:bucket",
+        "count": 3
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:water_bucket"
+      },
+      {
+        "item": "minecraft:tadpole_bucket"
+      }
+    ]
+  }
 }

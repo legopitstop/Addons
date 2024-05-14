@@ -1,26 +1,29 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shapeless": {
-        "description": {
-            "identifier": "spawnercraft:chicken_spawn_egg"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "friendly",
-        "ingredients": [
-            {
-                "item": "minecraft:egg"
-            },
-            {
-                "item": "minecraft:gold_ingot"
-            }
-        ],
-        "result": [
-            {
-                "item": "minecraft:chicken_spawn_egg",
-                "count": 1
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "spawnercraft:chicken_spawn_egg"
+    },
+    "tags": ["crafting_table"],
+    "group": "friendly",
+    "ingredients": [
+      {
+        "item": "minecraft:egg"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": [
+      {
+        "item": "minecraft:chicken_spawn_egg",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:egg"
+      }
+    ]
+  }
 }

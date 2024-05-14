@@ -1,37 +1,39 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "spawnercraft:frog_spawn_egg_from_pearlescent"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            " T ",
-            "SES",
-            " G "
-        ],
-        "group": "friendly",
-        "key": {
-            "E": {
-                "item": "minecraft:egg"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "T": {
-                "item": "minecraft:slime_ball"
-            },
-            "S": {
-                "item": "minecraft:pearlescent_froglight"
-            }
-        },
-        "result": [
-            {
-                "item": "minecraft:frog_spawn_egg",
-                "count": 1
-            }
-        ]
-    }
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spawnercraft:frog_spawn_egg_from_pearlescent"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" T ", "SES", " G "],
+    "group": "friendly",
+    "key": {
+      "E": {
+        "item": "minecraft:egg"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "T": {
+        "item": "minecraft:slime_ball"
+      },
+      "S": {
+        "item": "minecraft:pearlescent_froglight"
+      }
+    },
+    "result": [
+      {
+        "item": "minecraft:frog_spawn_egg",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:slime_ball"
+      },
+      {
+        "item": "minecraft:pearlescent_froglight"
+      }
+    ]
+  }
 }
