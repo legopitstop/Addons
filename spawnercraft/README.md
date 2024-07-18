@@ -10,9 +10,9 @@ Craft spawn eggs & spawners!
 |--------------------|----------|
 | supported          | `yes` |
 | namespace          | `spawnercraft` |
-| version            | `1.3.0 ` |
+| version            | `1.4.0 ` |
 | behavior UUID      | `52e6666c-5423-4c0b-bf8c-12f75f3b0d3c` |
-| mc_version         | `1.20.15` |
+| mc_version         | `1.20.80` |
 | multiplayer_tested | `no`     |
 | has_config         | `no`     |
 | dependency         | `null`   |
