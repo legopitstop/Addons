@@ -1,21 +1,21 @@
 {
-    "format_version": "1.16.221",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "magnet:copper_magnet_block"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "##",
-            "##"
-        ],
-        "key": {
-            "#": {
-                "item": "magnet:copper_magnet"
-            }
-        },
-        "result": "magnet:copper_magnet_block"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "magnet:copper_magnet_block"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["##", "##"],
+    "key": {
+      "#": {
+        "item": "magnet:copper_magnet"
+      }
+    },
+    "result": "magnet:copper_magnet_block",
+    "unlock": [
+      {
+        "item": "magnet:copper_magnet"
+      }
+    ]
+  }
 }

@@ -1,0 +1,2 @@
+# README!!
+Textures are copyright! DO NOT USE!! Textures, and everything else in this pack is licensed under [Legopitstop's Common License](https://lpsmods.devlegopitstops-common-license.html). All textures in this asset is created by Legopitstop.

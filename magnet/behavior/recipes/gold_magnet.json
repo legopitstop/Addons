@@ -1,20 +1,26 @@
 {
-    "format_version": "1.16.221",
-    "minecraft:recipe_shapeless": {
-        "description": {
-            "identifier": "magnet:gold_magnet"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "ingredients": [
-            {
-                "item": "minecraft:gold_ingot"
-            },
-            {
-                "item": "magnet:iron_magnet"
-            }
-        ],
-        "result": "magnet:gold_magnet"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "magnet:gold_magnet"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "magnet:iron_magnet"
+      }
+    ],
+    "result": "magnet:gold_magnet",
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "magnet:iron_magnet"
+      }
+    ]
+  }
 }

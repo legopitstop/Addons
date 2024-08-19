@@ -1,20 +1,26 @@
 {
-    "format_version": "1.16.221",
-    "minecraft:recipe_shapeless": {
-        "description": {
-            "identifier": "magnet:netherite_magnet"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "ingredients": [
-            {
-                "item": "minecraft:netherite_ingot"
-            },
-            {
-                "item": "magnet:diamond_magnet"
-            }
-        ],
-        "result": "magnet:netherite_magnet"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "magnet:netherite_magnet"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "minecraft:netherite_ingot"
+      },
+      {
+        "item": "magnet:diamond_magnet"
+      }
+    ],
+    "result": "magnet:netherite_magnet",
+    "unlock": [
+      {
+        "item": "minecraft:netherite_ingot"
+      },
+      {
+        "item": "magnet:diamond_magnet"
+      }
+    ]
+  }
 }

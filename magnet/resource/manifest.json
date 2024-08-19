@@ -1,37 +1,23 @@
 {
-    "format_version": 2,
-    "header": {
-        "description": "pack.description",
-        "name": "pack.name",
-        "uuid": "16a46bd0-f937-4f63-88f3-c70280f6ffac",
-        "version": [
-            1,
-            2,
-            0
-        ],
-        "min_engine_version": [
-            1,
-            19,
-            80
-        ]
-    },
-    "metadata": {
-        "authors": [
-            "legopitstop"
-        ],
-        "license": "https://license.lpsmods.dev",
-        "url": "https://lpsmods.dev"
-    },
-    "modules": [
-        {
-            "description": "pack.description",
-            "type": "resources",
-            "uuid": "e7c093ec-fe51-469f-81a9-6b97bb13277c",
-            "version": [
-                1,
-                2,
-                0
-            ]
-        }
-    ]
+  "format_version": 2,
+  "header": {
+    "description": "pack.description",
+    "name": "pack.name",
+    "uuid": "16a46bd0-f937-4f63-88f3-c70280f6ffac",
+    "version": [1, 3, 0],
+    "min_engine_version": [1, 21, 10]
+  },
+  "metadata": {
+    "authors": ["legopitstop"],
+    "license": "https://license.lpsmods.dev",
+    "url": "https://legopitstop.weebly.com"
+  },
+  "modules": [
+    {
+      "description": "pack.description",
+      "type": "resources",
+      "uuid": "e7c093ec-fe51-469f-81a9-6b97bb13277c",
+      "version": [1, 3, 0]
+    }
+  ]
 }

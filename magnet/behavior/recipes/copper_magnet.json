@@ -1,20 +1,26 @@
 {
-    "format_version": "1.16.221",
-    "minecraft:recipe_shapeless": {
-        "description": {
-            "identifier": "magnet:copper_magnet"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "ingredients": [
-            {
-                "item": "minecraft:copper_ingot"
-            },
-            {
-                "item": "magnet:gold_magnet"
-            }
-        ],
-        "result": "magnet:copper_magnet"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "magnet:copper_magnet"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "magnet:gold_magnet"
+      }
+    ],
+    "result": "magnet:copper_magnet",
+    "unlock": [
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "magnet:gold_magnet"
+      }
+    ]
+  }
 }

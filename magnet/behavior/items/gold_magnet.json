@@ -1,56 +1,29 @@
 {
-    "format_version": "1.19.20",
-    "minecraft:item": {
-        "description": {
-            "identifier": "magnet:gold_magnet",
-            "category": "equipment"
-        },
-        "components": {
-            "minecraft:max_stack_size": 1,
-            "minecraft:allow_off_hand": true,
-            "minecraft:creative_category": {
-                "parent": "itemGroup.search"
-            },
-            "minecraft:icon": {
-                "texture": "magnet:gold_magnet"
-            },
-            "minecraft:durability": {
-                "max_durability": 32
-            },
-            "minecraft:cooldown": {
-                "duration": 4,
-                "category": "gold_magnet"
-            },
-            "minecraft:on_use": {
-                "on_use": {
-                    "event": "event:teleport_item"
-                }
-            },
-            "minecraft:repairable": {
-                "repair_items": [
-                    {
-                        "items": ["magnet:gold_magnet"],
-                        "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
-                    },
-                    {
-                        "items": ["minecraft:gold_ingot"],
-                        "repair_amount": "q.remaining_durability + 0.05"
-                    }
-                ]
-            }
-        },
-        "events": {
-            "event:teleport_item": {
-                "run_command": {
-                    "target": "self",
-                    "command":"function zzz/gold"
-                },
-                "damage": {
-                    "amount": 1,
-                    "type": "durability",
-                    "target": "self"
-                }
-            }
-        }
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "magnet:gold_magnet",
+      "menu_category": { "category": "equipment", "group": "itemGroup.search" }
+    },
+    "components": {
+      "minecraft:custom_components": ["magnet:gold_magnet"],
+      "minecraft:max_stack_size": 1,
+      "minecraft:allow_off_hand": true,
+      "minecraft:icon": "magnet:gold_magnet",
+      "minecraft:durability": { "max_durability": 32 },
+      "minecraft:cooldown": { "duration": 4, "category": "gold_magnet" },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["magnet:gold_magnet"],
+            "repair_amount": "c.other -> q.remaining_durability + 0.05 * c.other -> q.max_durability"
+          },
+          {
+            "items": ["minecraft:gold_ingot"],
+            "repair_amount": "q.remaining_durability + 0.05"
+          }
+        ]
+      }
     }
+  }
 }
