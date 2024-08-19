@@ -1,25 +1,27 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "breaker:stone_breaker_upgrade"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "###",
-            "#P#",
-            "###"
-        ],
-        "key": {
-            "#": {
-                "item": "minecraft:cobblestone"
-            },
-            "P": {
-                "item": "minecraft:planks"
-            }
-        },
-        "result": "breaker:stone_breaker_upgrade"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "breaker:stone_breaker_upgrade"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "#P#", "###"],
+    "key": {
+      "#": {
+        "item": "minecraft:cobblestone"
+      },
+      "P": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": "breaker:stone_breaker_upgrade",
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      },
+      {
+        "item": "minecraft:planks"
+      }
+    ]
+  }
 }

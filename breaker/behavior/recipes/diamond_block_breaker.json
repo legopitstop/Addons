@@ -1,31 +1,39 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "breaker:diamond_block_breaker"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "BBB",
-            "RDI",
-            "BBB"
-        ],
-        "key": {
-            "B": {
-                "item": "minecraft:iron_block"
-            },
-            "R": {
-                "item": "minecraft:redstone_block"
-            },
-            "D": {
-                "item": "minecraft:diamond_shovel"
-            },
-            "I": {
-                "item": "minecraft:iron_ingot"
-            }
-        },
-        "result": "breaker:diamond_block_breaker"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "breaker:diamond_block_breaker"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["BBB", "RDI", "BBB"],
+    "key": {
+      "B": {
+        "item": "minecraft:iron_block"
+      },
+      "R": {
+        "item": "minecraft:redstone_block"
+      },
+      "D": {
+        "item": "minecraft:diamond_shovel"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": "breaker:diamond_block_breaker",
+    "unlock": [
+      {
+        "item": "minecraft:iron_block"
+      },
+      {
+        "item": "minecraft:redstone_block"
+      },
+      {
+        "item": "minecraft:diamond_shovel"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ]
+  }
 }

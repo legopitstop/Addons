@@ -1,31 +1,39 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "breaker:netherite_breaker_upgrade"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "#N#",
-            "ODO",
-            "###"
-        ],
-        "key": {
-            "#": {
-                "item": "minecraft:glass"
-            },
-            "N": {
-                "item": "minecraft:netherite_ingot"
-            },
-            "O": {
-                "item": "minecraft:obsidian"
-            },
-            "D": {
-                "item": "minecraft:diamond"
-            }
-        },
-        "result": "breaker:netherite_breaker_upgrade"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "breaker:netherite_breaker_upgrade"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["#N#", "ODO", "###"],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "N": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "O": {
+        "item": "minecraft:obsidian"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": "breaker:netherite_breaker_upgrade",
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      },
+      {
+        "item": "minecraft:netherite_ingot"
+      },
+      {
+        "item": "minecraft:obsidian"
+      },
+      {
+        "item": "minecraft:diamond"
+      }
+    ]
+  }
 }

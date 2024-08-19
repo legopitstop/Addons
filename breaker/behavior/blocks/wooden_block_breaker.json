@@ -1,331 +1,123 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:block": {
-        "description": {
-            "identifier": "breaker:wooden_block_breaker",
-            "properties": {
-                "breaker:direction": [
-                    0,
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6
-                ],
-                "breaker:powered": [
-                    false,
-                    true
-                ]
-            },
-            "menu_category": {
-                "category": "items",
-                "group": "itemGroup.search"
-            }
-        },
-        "components": {
-            "minecraft:loot": "loot_tables/blocks/wooden_block_breaker.json",
-            "minecraft:light_dampening": 0,
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 3.5
-            },
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 3.5
-            },
-            "minecraft:unit_cube": {},
-            "minecraft:on_player_placing": {
-                "event": "breaker:place_direction"
-            },
-            "minecraft:on_interact": {
-                "event": "breaker:on_interact"
-            }
-        },
-        "permutations": [
-            {
-                "condition": "query.block_property('breaker:powered') == true",
-                "components": {
-                    "minecraft:material_instances": {
-                        "up": {
-                            "texture": "breaker:wooden_block_breaker_top_on"
-                        },
-                        "down": {
-                            "texture": "breaker:block_breaker_bottom"
-                        },
-                        "north": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        },
-                        "south": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        },
-                        "east": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        },
-                        "west": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        }
-                    },
-                    "minecraft:queued_ticking": {
-                        "looping": true,
-                        "interval_range": [
-                            11,
-                            11
-                        ],
-                        "on_tick": {
-                            "event": "breaker:break_block"
-                        }
-                    }
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:powered') == false",
-                "components": {
-                    "minecraft:material_instances": {
-                        "up": {
-                            "texture": "breaker:wooden_block_breaker_top"
-                        },
-                        "down": {
-                            "texture": "breaker:block_breaker_bottom"
-                        },
-                        "north": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        },
-                        "south": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        },
-                        "east": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        },
-                        "west": {
-                            "texture": "breaker:wooden_block_breaker_side"
-                        }
-                    }
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:direction') == 0",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        0,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:direction') == 1",
-                "components": {
-                    "minecraft:rotation": [
-                        180,
-                        0,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:direction') == 2",
-                "components": {
-                    "minecraft:rotation": [
-                        90,
-                        0,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:direction') == 3",
-                "components": {
-                    "minecraft:rotation": [
-                        90,
-                        180,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:direction') == 4",
-                "components": {
-                    "minecraft:rotation": [
-                        90,
-                        90,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('breaker:direction') == 5",
-                "components": {
-                    "minecraft:rotation": [
-                        90,
-                        -90,
-                        0
-                    ]
-                }
-            }
-        ],
-        "events": {
-            "breaker:on_interact": {
-                "sequence": [
-                    {
-                        "condition": "q.is_item_name_any('slot.weapon.mainhand','breaker:stone_breaker_upgrade')",
-                        "trigger": {
-                            "event": "breaker:upgrade"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:powered') == true",
-                        "run_command": {
-                            "target": "player",
-                            "command": [
-                                "titleraw @s actionbar {\"rawtext\":[{\"translate\":\"gui.false\"}]}",
-                                "playsound random.click @p"
-                            ]
-                        },
-                        "set_block_property": {
-                            "breaker:powered": "false"
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:powered') == false",
-                        "run_command": {
-                            "target": "player",
-                            "command": [
-                                "titleraw @s actionbar {\"rawtext\":[{\"translate\":\"gui.true\"}]}",
-                                "playsound random.click @p"
-                            ]
-                        },
-                        "set_block_property": {
-                            "breaker:powered": "true"
-                        }
-                    }
-                ]
-            },
-            "breaker:upgrade": {
-                "sequence": [
-                    {
-                        "run_command": {
-                            "target": "player",
-                            "command": [
-                                "playsound firework.blast @s",
-                                "titleraw @s actionbar {\"rawtext\":[{\"translate\":\"gui.upgrade\",\"with\":{\"rawtext\":[{\"translate\":\"tile.breaker:stone_block_breaker.name\"}]}}]}"
-                            ]
-                        },
-                        "decrement_stack": {}
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 2 && q.block_property('breaker:powered') == false",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 2, \"breaker:powered\": true]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 3 && q.block_property('breaker:powered') == false",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 3, \"breaker:powered\": true]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 4 && q.block_property('breaker:powered') == false",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 4, \"breaker:powered\": true]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 5 && q.block_property('breaker:powered') == false",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 5, \"breaker:powered\": true]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 2 && q.block_property('breaker:powered') == true",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 2, \"breaker:powered\": false]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 3 && q.block_property('breaker:powered') == true",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 3, \"breaker:powered\": false]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 4 && q.block_property('breaker:powered') == true",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 4, \"breaker:powered\": false]"
-                        }
-                    },
-                    {
-                        "condition": "q.block_property('breaker:direction') == 5 && q.block_property('breaker:powered') == true",
-                        "run_command": {
-                            "target": "block",
-                            "command": "setblock ~ ~ ~ breaker:stone_block_breaker [\"breaker:direction\": 5, \"breaker:powered\": false]"
-                        }
-                    }
-                ]
-            },
-            "breaker:place_direction": {
-                "set_block_property": {
-                    "breaker:direction": "q.cardinal_facing"
-                }
-            },
-            "breaker:break_block": {
-                "sequence": [
-                    {
-                        "condition": "query.block_property('breaker:direction') == 0",
-                        "run_command": {
-                            "command": [
-                                "function breaker/up"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:direction') == 1",
-                        "run_command": {
-                            "command": [
-                                "function breaker/down"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:direction') == 2",
-                        "run_command": {
-                            "command": [
-                                "function breaker/north"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:direction') == 3",
-                        "run_command": {
-                            "command": [
-                                "function breaker/south"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:direction') == 4",
-                        "run_command": {
-                            "command": [
-                                "function breaker/west"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "query.block_property('breaker:direction') == 5",
-                        "run_command": {
-                            "command": [
-                                "function breaker/east"
-                            ]
-                        }
-                    }
-                ]
-            }
+  "format_version": "1.21.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "breaker:wooden_block_breaker",
+      "states": {
+        "breaker:powered": [false, true]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:facing_direction"]
         }
-    }
+      },
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.search"
+      }
+    },
+    "components": {
+      "minecraft:custom_components": ["breaker:breaker_block"],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:loot": "loot_tables/blocks/wooden_block_breaker.json",
+      "minecraft:light_dampening": 0,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.5
+      },
+      "minecraft:tick": {
+        "interval_range": [11, 11]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('breaker:powered')==true",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "breaker:wooden_block_breaker_top_on"
+            },
+            "down": {
+              "texture": "breaker:block_breaker_bottom"
+            },
+            "north": {
+              "texture": "breaker:wooden_block_breaker_side"
+            },
+            "south": {
+              "texture": "breaker:wooden_block_breaker_side"
+            },
+            "east": {
+              "texture": "breaker:wooden_block_breaker_side"
+            },
+            "west": {
+              "texture": "breaker:wooden_block_breaker_side"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('breaker:powered')==false",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "breaker:wooden_block_breaker_top"
+            },
+            "down": {
+              "texture": "breaker:block_breaker_bottom"
+            },
+            "north": {
+              "texture": "breaker:wooden_block_breaker_side"
+            },
+            "south": {
+              "texture": "breaker:wooden_block_breaker_side"
+            },
+            "east": {
+              "texture": "breaker:wooden_block_breaker_side"
+            },
+            "west": {
+              "texture": "breaker:wooden_block_breaker_side"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction')=='up'",
+        "components": {
+          "minecraft:transformation": { "rotation": [180, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction')=='down'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction')=='north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [90, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction')=='south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [90, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction')=='east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [90, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:facing_direction')=='west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [90, 90, 0] }
+        }
+      }
+    ]
+  }
 }

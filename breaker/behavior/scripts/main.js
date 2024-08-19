@@ -1,0 +1,1 @@
+import{world}from"@minecraft/server";import{registerBlockComponents}from"./registry";function worldInitialize(r){registerBlockComponents(r.blockComponentRegistry)}world.beforeEvents.worldInitialize.subscribe(worldInitialize);

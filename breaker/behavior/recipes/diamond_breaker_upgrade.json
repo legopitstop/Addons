@@ -1,28 +1,33 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "breaker:diamond_breaker_upgrade"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "###",
-            "DGD",
-            "###"
-        ],
-        "key": {
-            "#": {
-                "item": "minecraft:glass"
-            },
-            "G": {
-                "item": "minecraft:gold_ingot"
-            },
-            "D": {
-                "item": "minecraft:diamond"
-            }
-        },
-        "result": "breaker:diamond_breaker_upgrade"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "breaker:diamond_breaker_upgrade"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "DGD", "###"],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": "breaker:diamond_breaker_upgrade",
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "minecraft:diamond"
+      }
+    ]
+  }
 }

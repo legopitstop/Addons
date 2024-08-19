@@ -1,25 +1,27 @@
 {
-    "format_version": "1.19.40",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "breaker:iron_breaker_upgrade"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "pattern": [
-            "###",
-            "#C#",
-            "###"
-        ],
-        "key": {
-            "#": {
-                "item": "minecraft:iron_ingot"
-            },
-            "C": {
-                "item": "minecraft:cobblestone"
-            }
-        },
-        "result": "breaker:iron_breaker_upgrade"
-    }
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "breaker:iron_breaker_upgrade"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["###", "#C#", "###"],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": "breaker:iron_breaker_upgrade",
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ]
+  }
 }
